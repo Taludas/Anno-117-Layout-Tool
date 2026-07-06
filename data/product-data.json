@@ -1,0 +1,6215 @@
+{
+  "1010017": {
+    "associatedRegion": [],
+    "basePrice": 0,
+    "guid": 1010017,
+    "icon": "data/ui/fhd/base/icon_content/attributes/icon_2d_income.png",
+    "infoDescription": {
+      "brazilian": "O dinheiro pode ser trocado por mercadorias e serviços.",
+      "english": "Money can be exchanged for goods and services.",
+      "french": "L'argent peut être échangé contre des biens et des services.",
+      "german": "Geld kann gegen Waren und Dienstleistungen getauscht werden.",
+      "italian": "Il denaro può essere scambiato con beni e servizi.",
+      "japanese": "​金銭​は​品物​や​サービス​と​交換​できる。",
+      "korean": "​돈을 ​물품과 ​서비스로 ​교환할 ​수 ​있습니다.",
+      "polish": "Pieniędzmi można płacić za towary i usługi.",
+      "russian": "Деньги можно обменивать на товары и услуги.",
+      "simplified_chinese": "​金钱​可以​换取​商品​与​服务。",
+      "spanish": "El dinero sirve para canjearlo por productos y servicios.",
+      "traditional_chinese": "​金錢​可以​換取​商品​與​服務。"
+    },
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Denários",
+      "english": "Denarii",
+      "french": "Deniers",
+      "german": "Denare",
+      "italian": "Denari",
+      "japanese": "​デナリウス",
+      "korean": "​데나리우스",
+      "polish": "Denary",
+      "russian": "Денарии",
+      "simplified_chinese": "​第​纳​里​币",
+      "spanish": "Denarios",
+      "traditional_chinese": "​第​納​里​幣"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Meta"
+  },
+  "108222": {
+    "associatedRegion": [],
+    "basePrice": 0,
+    "guid": 108222,
+    "icon": "data/ui/fhd/base/icon_content/military/icon_3d_unit_auxilia.png",
+    "infoDescription": {
+      "brazilian": "Permite que você posicione mais Auxilias da Guarnição em suas Villas",
+      "english": "Allows you to station more Garrison Auxilia in your Villas",
+      "french": "Permet de poster davantage d'auxilia de garnison dans vos villas.",
+      "german": "Ermöglicht dir, mehr Auxiliareserven in deinen Villen zu stationieren.",
+      "italian": "Ti consente di posizionare più auxilia della guarnigione nelle tue ville",
+      "japanese": "​ヴィラ​により​多く​の​警備​アウクシリア​を​配備​できる​よう​に​なる",
+      "korean": "​빌라에 ​더 ​많은 ​수비대 ​보조병을 ​배치할 ​수 ​있습니다.",
+      "polish": "Sprawia, że w twoich willach może stacjonować liczniejszy garnizon auxilliariusów",
+      "russian": "Позволяет размещать больше гарнизонных ауксилариев на ваших виллах.",
+      "simplified_chinese": "​允许​你在​别墅​中​驻扎​更多​驻军​后​备​兵。",
+      "spanish": "Permite estacionar más auxiliares de guarnición en tus villas.",
+      "traditional_chinese": "​讓​你​能​在​別墅​駐紮​更多​駐防​後備​兵"
+    },
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Auxilias da Guarnição disponíveis",
+      "english": "Garrison Auxilia Available",
+      "french": "Auxilia de garnison disponibles",
+      "german": "Auxiliareserven",
+      "italian": "Auxilia della guarnigione disponibili",
+      "japanese": "​警備​アウクシリア​増員​許可証",
+      "korean": "​사용 ​가능한 ​수비대 ​보조병",
+      "polish": "Dostępny garnizon auxilliariusów",
+      "russian": "Резервы гарнизонных ауксилариев",
+      "simplified_chinese": "​可用​驻军​后​备​兵",
+      "spanish": "Auxiliares de guarnición disponibles",
+      "traditional_chinese": "​駐防​後備​兵​許可"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Meta"
+  },
+  "108223": {
+    "associatedRegion": [],
+    "basePrice": 0,
+    "guid": 108223,
+    "icon": "data/ui/fhd/base/icon_content/military/icon_3d_unit_archer.png",
+    "infoDescription": {
+      "brazilian": "Permite que você posicione mais Arqueiros da Guarnição em suas Villas",
+      "english": "Allows you to station more Garrison Archers in your Villas",
+      "french": "Permet de poster davantage d'archers de garnison dans vos villas.",
+      "german": "Ermöglicht dir, mehr Bogenschützenreserven in deinen Villen zu stationieren.",
+      "italian": "Ti consente di posizionare più arcieri della guarnigione nelle tue ville",
+      "japanese": "​ヴィラ​により​多く​の​民兵​の​警備​弓​兵​を​配備​できる​よう​に​なる",
+      "korean": "​빌라에 ​더 ​많은 ​수비대 ​궁수를 ​배치할 ​수 ​있습니다.",
+      "polish": "Sprawia, że w twoich willach może stacjonować liczniejszy garnizon łuczników",
+      "russian": "Позволяет размещать больше гарнизонных лучников на ваших виллах.",
+      "simplified_chinese": "​允许​你在​别墅​中​驻扎​更多​驻军​弓箭​手",
+      "spanish": "Permite estacionar más arqueros de guarnición en tus villas.",
+      "traditional_chinese": "​讓​你​能​在​別墅​駐紮​更多​駐防​弓箭​手"
+    },
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Arqueiros da Guarnição disponíveis",
+      "english": "Garrison Archers Available",
+      "french": "Archers de garnison disponibles",
+      "german": "Bogenschützenreserven",
+      "italian": "Arcieri della guarnigione disponibili",
+      "japanese": "​警備​弓​兵​増員​許可証",
+      "korean": "​사용 ​가능한 ​수비대 ​궁수",
+      "polish": "Dostępny garnizon łuczników",
+      "russian": "Резервы гарнизонных лучников",
+      "simplified_chinese": "​可用​驻军​弓箭​手",
+      "spanish": "Arqueros de guarnición disponibles",
+      "traditional_chinese": "​駐防​弓箭​手​許可"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Meta"
+  },
+  "108224": {
+    "associatedRegion": [],
+    "basePrice": 0,
+    "guid": 108224,
+    "icon": "data/ui/fhd/base/icon_content/military/icon_3d_unit_pretorian.png",
+    "infoDescription": {
+      "brazilian": "Permite que você posicione mais Cavalarias da Guarnição em suas Villas",
+      "english": "Allows you to station more Garrison Cavalry in your Villas",
+      "french": "Permet de poster davantage de cavaliers de garnison dans vos villas.",
+      "german": "Ermöglicht dir, mehr Kavallerieeserven in deinen Villen zu stationieren.",
+      "italian": "Ti consente di posizionare più cavallerie della guarnigione nelle tue ville",
+      "japanese": "​ヴィラ​により​多く​の​警備​騎兵​を​配備​できる​よう​に​なる",
+      "korean": "​빌라에 ​더 ​많은 ​수비대 ​기병을 ​배치할 ​수 ​있습니다.",
+      "polish": "Sprawia, że w twoich willach może stacjonować liczniejszy garnizon konnicy",
+      "russian": "Позволяет размещать больше гарнизонных всадников на ваших виллах.",
+      "simplified_chinese": "​允许​你在​别墅​中​驻扎​更多​驻军​骑兵。",
+      "spanish": "Permite estacionar más caballería de guarnición en tus villas.",
+      "traditional_chinese": "​讓​你​能​在​別墅​駐紮​更多​駐防​騎兵"
+    },
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Cavalarias da Guarnição disponíveis",
+      "english": "Garrison Cavalry Available",
+      "french": "Cavaliers de garnison disponibles",
+      "german": "Kavalleriereserven",
+      "italian": "Cavallerie della guarnigione disponibili",
+      "japanese": "​警備​騎兵​増員​許可証",
+      "korean": "​사용 ​가능한 ​수비대 ​기병",
+      "polish": "Dostępny garnizon konnicy",
+      "russian": "Резервы гарнизонных всадников",
+      "simplified_chinese": "​可用​驻军​骑兵",
+      "spanish": "Caballería de guarnición disponible",
+      "traditional_chinese": "​駐防​騎兵​許可"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Meta"
+  },
+  "13810": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 65,
+    "guid": 13810,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_armory_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Armadura",
+      "english": "Armour",
+      "french": "Armures",
+      "german": "Rüstung",
+      "italian": "Armatura",
+      "japanese": "​防具",
+      "korean": "​갑옷",
+      "polish": "Pancerz",
+      "russian": "Доспехи",
+      "simplified_chinese": "​护​甲",
+      "spanish": "Armadura",
+      "traditional_chinese": "​盔甲"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "145102": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 42,
+    "guid": 145102,
+    "icon": "data/ui/fhd/dlc01/icon_content/production_goods/icon_3d_obsidian_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Obsidiana",
+      "english": "Obsidian",
+      "french": "Obsidienne",
+      "german": "Obsidian",
+      "italian": "Ossidiana",
+      "japanese": "​黒曜石",
+      "korean": "​흑요석",
+      "polish": "Obsydian",
+      "russian": "Обсидиан",
+      "simplified_chinese": "​黑​曜​石",
+      "spanish": "Obsidiana",
+      "traditional_chinese": "​黑​曜​石"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "145220": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 68,
+    "guid": 145220,
+    "icon": "data/ui/fhd/dlc01/icon_content/production_goods/icon_3d_idol_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Estatuetas",
+      "english": "Statuettes",
+      "french": "Statuettes",
+      "german": "Figuren",
+      "italian": "Statuette",
+      "japanese": "​小​像",
+      "korean": "​조각상",
+      "polish": "Posążki",
+      "russian": "Статуэтки",
+      "simplified_chinese": "​小​雕像",
+      "spanish": "Estatuillas",
+      "traditional_chinese": "​小​雕像"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "145221": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 157,
+    "guid": 145221,
+    "icon": "data/ui/fhd/dlc01/icon_content/production_goods/icon_3d_boardgame_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Conjuntos de Latrunculi",
+      "english": "Latrunculi Sets",
+      "french": "Plateaux de Latrunculi",
+      "german": "Latrunculi-Sets",
+      "italian": "Componenti di Latrunculi",
+      "japanese": "​ラ​トル​ン​クリ​一式",
+      "korean": "​라트룬쿨리 ​세트",
+      "polish": "Zestawy Latrunculi",
+      "russian": "Наборы для латрункули",
+      "simplified_chinese": "​强盗​棋​棋​具",
+      "spanish": "Juegos de latrunculi",
+      "traditional_chinese": "​兵​棋​套​組"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "16200": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 16200,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_temple.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Templo",
+      "english": "Temple",
+      "french": "Temple",
+      "german": "Tempel",
+      "italian": "Tempio",
+      "japanese": "​神殿",
+      "korean": "​사원",
+      "polish": "Świątynia",
+      "russian": "Храм",
+      "simplified_chinese": "​神庙",
+      "spanish": "Templo",
+      "traditional_chinese": "​神廟"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "16201": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 16201,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_grammaticus.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Grammaticus",
+      "english": "Grammaticus",
+      "french": "Grammaticus",
+      "german": "Grammaticus",
+      "italian": "Grammaticus",
+      "japanese": "​ラテン語​学校",
+      "korean": "​학술원",
+      "polish": "Grammaticus",
+      "russian": "Грамматическая школа",
+      "simplified_chinese": "​文法​学院",
+      "spanish": "Gramático",
+      "traditional_chinese": "​文法​學院"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "16202": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 16202,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_wonder_celtic_bathhouse.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Banhos",
+      "english": "Baths",
+      "french": "Bains",
+      "german": "Bäder",
+      "italian": "Bagni",
+      "japanese": "​浴場",
+      "korean": "​목욕탕",
+      "polish": "Łaźnie",
+      "russian": "Термы",
+      "simplified_chinese": "​浴场",
+      "spanish": "Termas",
+      "traditional_chinese": "​浴場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2063": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 12,
+    "guid": 2063,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_flax_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Linho",
+      "english": "Flax",
+      "french": "Lin",
+      "german": "Flachs",
+      "italian": "Lino",
+      "japanese": "​亜麻",
+      "korean": "​아마",
+      "polish": "Len",
+      "russian": "Лен",
+      "simplified_chinese": "​亚麻",
+      "spanish": "Lino",
+      "traditional_chinese": "​亞麻"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2068": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 4,
+    "guid": 2068,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_oats_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Aveia",
+      "english": "Oats",
+      "french": "Avoine",
+      "german": "Hafer",
+      "italian": "Avena",
+      "japanese": "​オーツ​麦",
+      "korean": "​귀리",
+      "polish": "Owies",
+      "russian": "Овес",
+      "simplified_chinese": "​燕麦",
+      "spanish": "Avena",
+      "traditional_chinese": "​燕麥"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2069": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 6,
+    "guid": 2069,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wheat_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Trigo",
+      "english": "Wheat",
+      "french": "Blé",
+      "german": "Weizen",
+      "italian": "Grano",
+      "japanese": "​小麦",
+      "korean": "​밀",
+      "polish": "Pszenica",
+      "russian": "Пшеница",
+      "simplified_chinese": "​小麦",
+      "spanish": "Trigo",
+      "traditional_chinese": "​小麥"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2070": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 12,
+    "guid": 2070,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_grapes_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Uvas",
+      "english": "Grapes",
+      "french": "Raisin",
+      "german": "Weintrauben",
+      "italian": "Uva",
+      "japanese": "​ブドウ",
+      "korean": "​포도",
+      "polish": "Winogrona",
+      "russian": "Виноград",
+      "simplified_chinese": "​葡萄",
+      "spanish": "Uvas",
+      "traditional_chinese": "​葡萄"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2071": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 12,
+    "guid": 2071,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_lavender_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Lavanda",
+      "english": "Lavender",
+      "french": "Lavande",
+      "german": "Lavandula",
+      "italian": "Lavanda",
+      "japanese": "​ラベンダー",
+      "korean": "​라벤더",
+      "polish": "Lawenda",
+      "russian": "Лаванда",
+      "simplified_chinese": "​薰​衣​草",
+      "spanish": "Lavanda",
+      "traditional_chinese": "​薰​衣​草"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2072": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 12,
+    "guid": 2072,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_olives_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Azeitonas",
+      "english": "Olives",
+      "french": "Olives",
+      "german": "Oliven",
+      "italian": "Olive",
+      "japanese": "​オリーブ",
+      "korean": "​올리브",
+      "polish": "Oliwki",
+      "russian": "Оливки",
+      "simplified_chinese": "​橄榄",
+      "spanish": "Aceitunas",
+      "traditional_chinese": "​橄欖"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2073": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 2,
+    "guid": 2073,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_sheep_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Ovelhas",
+      "english": "Sheep",
+      "french": "Moutons",
+      "german": "Schafe",
+      "italian": "Pecora",
+      "japanese": "​羊",
+      "korean": "​양",
+      "polish": "Owce",
+      "russian": "Овцы",
+      "simplified_chinese": "​绵羊",
+      "spanish": "Ovejas",
+      "traditional_chinese": "​綿羊"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2074": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 3,
+    "guid": 2074,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_pigs_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Porcos",
+      "english": "Pigs",
+      "french": "Porcs",
+      "german": "Schweine",
+      "italian": "Maiali",
+      "japanese": "​豚",
+      "korean": "​돼지",
+      "polish": "Świnie",
+      "russian": "Свиньи",
+      "simplified_chinese": "​猪",
+      "spanish": "Cerdos",
+      "traditional_chinese": "​豬"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2075": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 32,
+    "guid": 2075,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_horses_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Cavalos",
+      "english": "Horses",
+      "french": "Chevaux",
+      "german": "Pferde",
+      "italian": "Cavalli",
+      "japanese": "​馬",
+      "korean": "​말",
+      "polish": "Konie",
+      "russian": "Лошади",
+      "simplified_chinese": "​马",
+      "spanish": "Caballos",
+      "traditional_chinese": "​馬"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2076": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 11,
+    "guid": 2076,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_honeycombs_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Favos de mel",
+      "english": "Honeycombs",
+      "french": "Rayons de miel",
+      "german": "Honigwaben",
+      "italian": "Favi",
+      "japanese": "​蜂の巣",
+      "korean": "​벌집",
+      "polish": "Plastry miodu",
+      "russian": "Соты",
+      "simplified_chinese": "​蜂​窝",
+      "spanish": "Panales",
+      "traditional_chinese": "​蜂窩"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2077": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 2,
+    "guid": 2077,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wood_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Madeira",
+      "english": "Wood",
+      "french": "Bois",
+      "german": "Holz",
+      "italian": "Legno",
+      "japanese": "​木材",
+      "korean": "​나무",
+      "polish": "Drewno",
+      "russian": "Дерево",
+      "simplified_chinese": "​原木",
+      "spanish": "Madera",
+      "traditional_chinese": "​原木"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2078": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 6,
+    "guid": 2078,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_limestone_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Calcário",
+      "english": "Limestone",
+      "french": "Calcaire",
+      "german": "Kalkstein",
+      "italian": "Calcare",
+      "japanese": "​石灰岩",
+      "korean": "​석회석",
+      "polish": "Wapień",
+      "russian": "Известняк",
+      "simplified_chinese": "​石灰岩",
+      "spanish": "Caliza",
+      "traditional_chinese": "​石灰岩"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2079": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 5,
+    "guid": 2079,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_silver_ore_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Minério de prata",
+      "english": "Silver Ore",
+      "french": "Minerai d'argent",
+      "german": "Silbererz",
+      "italian": "Minerale d'argento",
+      "japanese": "​銀​鉱石",
+      "korean": "​은광석",
+      "polish": "Ruda srebra",
+      "russian": "Серебряная руда",
+      "simplified_chinese": "​银​矿石",
+      "spanish": "Mena de plata",
+      "traditional_chinese": "​銀​礦石"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2080": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 5,
+    "guid": 2080,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_iron_ore_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Minério de ferro",
+      "english": "Iron Ore",
+      "french": "Minerai de fer",
+      "german": "Eisenerz",
+      "italian": "Minerale di ferro",
+      "japanese": "​鉄​鉱石",
+      "korean": "​철광석",
+      "polish": "Ruda żelaza",
+      "russian": "Железная руда",
+      "simplified_chinese": "​铁矿石",
+      "spanish": "Mena de hierro",
+      "traditional_chinese": "​鐵礦石"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2084": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 16,
+    "guid": 2084,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_marble_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Mármore bruto",
+      "english": "Uncut Marble",
+      "french": "Marbre brut",
+      "german": "Rohmarmor",
+      "italian": "Marmo grezzo",
+      "japanese": "​未​加工​の​大理石",
+      "korean": "​미가공 ​대리석",
+      "polish": "Nieociosany marmur",
+      "russian": "Необработанный мрамор",
+      "simplified_chinese": "​大理石​原石",
+      "spanish": "Mármol bruto",
+      "traditional_chinese": "​大理石​原石"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2085": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 4,
+    "guid": 2085,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_coal_ore_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Carvão",
+      "english": "Coal",
+      "french": "Charbon",
+      "german": "Kohle",
+      "italian": "Carbone",
+      "japanese": "​石炭",
+      "korean": "​탄",
+      "polish": "Węgiel",
+      "russian": "Уголь",
+      "simplified_chinese": "​煤炭",
+      "spanish": "Carbón",
+      "traditional_chinese": "​煤"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2086": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 4,
+    "guid": 2086,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_clay_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Argila",
+      "english": "Clay",
+      "french": "Argile",
+      "german": "Lehm",
+      "italian": "Creta",
+      "japanese": "​粘土",
+      "korean": "​점토",
+      "polish": "Glina",
+      "russian": "Глина",
+      "simplified_chinese": "​陶土",
+      "spanish": "Arcilla",
+      "traditional_chinese": "​陶土"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2087": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 18,
+    "guid": 2087,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_sturgeons_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Esturjão",
+      "english": "Sturgeon",
+      "french": "Esturgeon",
+      "german": "Störe",
+      "italian": "Storione",
+      "japanese": "​チョウザメ",
+      "korean": "​철갑상어",
+      "polish": "Jesiotr",
+      "russian": "Осетр",
+      "simplified_chinese": "​鲟鱼",
+      "spanish": "Esturión",
+      "traditional_chinese": "​鱘魚"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2088": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 6,
+    "guid": 2088,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_sardines_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Sardinhas",
+      "english": "Sardines",
+      "french": "Sardines",
+      "german": "Sardinen",
+      "italian": "Sardine",
+      "japanese": "​イワシ",
+      "korean": "​정어리",
+      "polish": "Sardynki",
+      "russian": "Сардины",
+      "simplified_chinese": "​沙丁鱼",
+      "spanish": "Sardinas",
+      "traditional_chinese": "​沙丁魚"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2089": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 8,
+    "guid": 2089,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_mackerels_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Cavala",
+      "english": "Mackerel",
+      "french": "Maquereaux",
+      "german": "Makrelen",
+      "italian": "Sgombro",
+      "japanese": "​サバ",
+      "korean": "​고등어",
+      "polish": "Makrela",
+      "russian": "Скумбрия",
+      "simplified_chinese": "​鲭鱼",
+      "spanish": "Caballas",
+      "traditional_chinese": "​鯖魚"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2090": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 4,
+    "guid": 2090,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_salt_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Sal",
+      "english": "Salt",
+      "french": "Sel",
+      "german": "Salz",
+      "italian": "Sale",
+      "japanese": "​塩",
+      "korean": "​소금",
+      "polish": "Sól",
+      "russian": "Соль",
+      "simplified_chinese": "​盐",
+      "spanish": "Sal",
+      "traditional_chinese": "​鹽"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2091": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 8,
+    "guid": 2091,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_silica_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Sílica",
+      "english": "Silica",
+      "french": "Silice",
+      "german": "Quarzsand",
+      "italian": "Silice",
+      "japanese": "​シ​リカ",
+      "korean": "​석영",
+      "polish": "Krzemionka",
+      "russian": "Кремнезем",
+      "simplified_chinese": "​硅石",
+      "spanish": "Sílice",
+      "traditional_chinese": "​矽石"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2093": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 4,
+    "guid": 2093,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_barley_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Cevada",
+      "english": "Barley",
+      "french": "Orge",
+      "german": "Gerste",
+      "italian": "Orzo",
+      "japanese": "​大麦",
+      "korean": "​보리",
+      "polish": "Jęczmień",
+      "russian": "Ячмень",
+      "simplified_chinese": "​大麦",
+      "spanish": "Cebada",
+      "traditional_chinese": "​大麥"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2094": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 4,
+    "guid": 2094,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_dye_plants_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Plantas tintoriais",
+      "english": "Dye Plants",
+      "french": "Plantes tinctoriales",
+      "german": "Färberpflanzen",
+      "italian": "Piante da tintura",
+      "japanese": "​染色​植物",
+      "korean": "​염료 ​식물",
+      "polish": "Rośliny barwnikowe",
+      "russian": "Красильные растения",
+      "simplified_chinese": "​染料​植物",
+      "spanish": "Plantas tintóreas",
+      "traditional_chinese": "​染料​植物"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2097": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 5,
+    "guid": 2097,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cockles_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Berbigões",
+      "english": "Cockles",
+      "french": "Coques",
+      "german": "Herzmuscheln",
+      "italian": "Cuori di mare",
+      "japanese": "​ザル​貝",
+      "korean": "​새조개",
+      "polish": "Małże sercówki",
+      "russian": "Гребешки",
+      "simplified_chinese": "​鸟​蛤",
+      "spanish": "Berberechos",
+      "traditional_chinese": "​鳥​蛤"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2099": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 2,
+    "guid": 2099,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_copper_ore_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Minério de cobre",
+      "english": "Copper Ore",
+      "french": "Minerai de cuivre",
+      "german": "Kupfererz",
+      "italian": "Minerale di rame",
+      "japanese": "​銅​鉱石",
+      "korean": "​구리 ​광석",
+      "polish": "Ruda miedzi",
+      "russian": "Медная руда",
+      "simplified_chinese": "​铜​矿石",
+      "spanish": "Mena de cobre",
+      "traditional_chinese": "​銅礦​石"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2100": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 2,
+    "guid": 2100,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_tin_ore_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Minério de estanho",
+      "english": "Tin Ore",
+      "french": "Minerai d'étain",
+      "german": "Zinnerz",
+      "italian": "Minerale di stagno",
+      "japanese": "​錫​鉱石",
+      "korean": "​주석 ​광석",
+      "polish": "Ruda cyny",
+      "russian": "Оловянная руда",
+      "simplified_chinese": "​锡​矿石",
+      "spanish": "Mena de estaño",
+      "traditional_chinese": "​錫​礦石"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2101": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 6,
+    "guid": 2101,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_granite_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Bloco de granito",
+      "english": "Granite Block",
+      "french": "Bloc de granite",
+      "german": "Granitblöcke",
+      "italian": "Blocco di granito",
+      "japanese": "​花崗岩​ブロック",
+      "korean": "​화강암 ​덩어리",
+      "polish": "Blok granitu",
+      "russian": "Гранитный блок",
+      "simplified_chinese": "​花岗岩​块",
+      "spanish": "Bloque de granito",
+      "traditional_chinese": "​花崗岩​塊"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2102": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 6,
+    "guid": 2102,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_mud_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Lama",
+      "english": "Mud",
+      "french": "Boue",
+      "german": "Schlamm",
+      "italian": "Fango",
+      "japanese": "​泥",
+      "korean": "​진흙",
+      "polish": "Błoto",
+      "russian": "Глинозем",
+      "simplified_chinese": "​泥巴",
+      "spanish": "Barro",
+      "traditional_chinese": "​泥巴"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2103": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 2,
+    "guid": 2103,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_reed_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Juncos",
+      "english": "Reeds",
+      "french": "Roseaux",
+      "german": "Schilf",
+      "italian": "Canne",
+      "japanese": "​葦",
+      "korean": "​갈대",
+      "polish": "Trzciny",
+      "russian": "Тростник",
+      "simplified_chinese": "​芦苇",
+      "spanish": "Junco",
+      "traditional_chinese": "​蘆葦"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2105": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 4,
+    "guid": 2105,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_auroch_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Auroques",
+      "english": "Ochs",
+      "french": "Bœufs",
+      "german": "Ochsen",
+      "italian": "Uri",
+      "japanese": "​牛",
+      "korean": "​소",
+      "polish": "Woły",
+      "russian": "Коровы",
+      "simplified_chinese": "​牛",
+      "spanish": "Bueyes",
+      "traditional_chinese": "​公牛"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2106": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 18,
+    "guid": 2106,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_marsh_birds_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Pequenos pássaros",
+      "english": "Small Birds",
+      "french": "Petits oiseaux",
+      "german": "Kleine Vögel",
+      "italian": "Piccoli uccelli",
+      "japanese": "​小鳥",
+      "korean": "​작은 ​새",
+      "polish": "Małe ptaki",
+      "russian": "Птички",
+      "simplified_chinese": "​小​鸟",
+      "spanish": "Aves pequeñas",
+      "traditional_chinese": "​小鳥"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2108": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 6,
+    "guid": 2108,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_eels_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Enguias",
+      "english": "Eels",
+      "french": "Anguilles",
+      "german": "Aale",
+      "italian": "Anguille",
+      "japanese": "​ウナギ",
+      "korean": "​장어",
+      "polish": "Węgorze",
+      "russian": "Угри",
+      "simplified_chinese": "​鳗鱼",
+      "spanish": "Anguilas",
+      "traditional_chinese": "​鰻魚"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2110": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 17,
+    "guid": 2110,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_leather_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Couro",
+      "english": "Leather",
+      "french": "Cuir",
+      "german": "Leder",
+      "italian": "Pelle",
+      "japanese": "​革",
+      "korean": "​가죽",
+      "polish": "Skóra",
+      "russian": "Кожа",
+      "simplified_chinese": "​皮革",
+      "spanish": "Cuero",
+      "traditional_chinese": "​皮革"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2112": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 18,
+    "guid": 2112,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_oysters_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Ostras",
+      "english": "Oysters",
+      "french": "Huîtres",
+      "german": "Austern",
+      "italian": "Ostriche",
+      "japanese": "​牡蠣",
+      "korean": "​굴",
+      "polish": "Ostrygi",
+      "russian": "Устрицы",
+      "simplified_chinese": "​牡蛎",
+      "spanish": "Ostras",
+      "traditional_chinese": "​牡蠣"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2115": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 15,
+    "guid": 2115,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_iron_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Ferro",
+      "english": "Iron",
+      "french": "Fer",
+      "german": "Eisen",
+      "italian": "Ferro",
+      "japanese": "​鉄",
+      "korean": "​철",
+      "polish": "Żelazo",
+      "russian": "Железо",
+      "simplified_chinese": "​铁",
+      "spanish": "Hierro",
+      "traditional_chinese": "​鐵"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2117": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 29,
+    "guid": 2117,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_glass_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Vidro",
+      "english": "Glass",
+      "french": "Verre",
+      "german": "Glas",
+      "italian": "Vetro",
+      "japanese": "​ガラス",
+      "korean": "​유리",
+      "polish": "Szkło",
+      "russian": "Стекло",
+      "simplified_chinese": "​玻璃",
+      "spanish": "Vidrio",
+      "traditional_chinese": "​玻璃"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2119": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 10,
+    "guid": 2119,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_flour_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Farinha",
+      "english": "Flour",
+      "french": "Farine",
+      "german": "Mehl",
+      "italian": "Farina",
+      "japanese": "​小麦粉",
+      "korean": "​밀가루",
+      "polish": "Mąka",
+      "russian": "Мука",
+      "simplified_chinese": "​面粉",
+      "spanish": "Harina",
+      "traditional_chinese": "​小麥粉"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2121": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 36,
+    "guid": 2121,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cloth_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Tecido",
+      "english": "Cloth",
+      "french": "Tissu",
+      "german": "Stoffe",
+      "italian": "Stoffa",
+      "japanese": "​布",
+      "korean": "​의류",
+      "polish": "Odzież",
+      "russian": "Ткань",
+      "simplified_chinese": "​布料",
+      "spanish": "Tela",
+      "traditional_chinese": "​布料"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2123": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 134,
+    "guid": 2123,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_ornamented_wood_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Madeira ornamentada",
+      "english": "Ornate Wood",
+      "french": "Bois ouvragé",
+      "german": "Verziertes Holz",
+      "italian": "Legno decorato",
+      "japanese": "​装飾​木材",
+      "korean": "​장식된 ​목재",
+      "polish": "Zdobione drewno",
+      "russian": "Узорное дерево",
+      "simplified_chinese": "​华丽​原木",
+      "spanish": "Madera decorada",
+      "traditional_chinese": "​華麗​原木"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2124": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 25,
+    "guid": 2124,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_pigments_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Pigmentos",
+      "english": "Pigments",
+      "french": "Pigments",
+      "german": "Farbstoffe",
+      "italian": "Pigmenti",
+      "japanese": "​顔料",
+      "korean": "​염료",
+      "polish": "Pigmenty",
+      "russian": "Красители",
+      "simplified_chinese": "​颜料",
+      "spanish": "Pigmentos",
+      "traditional_chinese": "​顏料"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2126": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 36,
+    "guid": 2126,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_celtic_green_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Verde celta",
+      "english": "Celtic Green",
+      "french": "Vert celte",
+      "german": "Keltischgrün",
+      "italian": "Verde celtico",
+      "japanese": "​ケルト​グリーン",
+      "korean": "​켈트 ​그린",
+      "polish": "Celtycka zieleń",
+      "russian": "Зеленая краска",
+      "simplified_chinese": "​凯​尔​特​绿",
+      "spanish": "Verde celta",
+      "traditional_chinese": "​凱​爾​特​綠"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2127": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 14,
+    "guid": 2127,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_bronze_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Bronze",
+      "english": "Bronze",
+      "french": "Bronze",
+      "german": "Bronze",
+      "italian": "Bronzo",
+      "japanese": "​青銅",
+      "korean": "​동",
+      "polish": "Brąz",
+      "russian": "Бронза",
+      "simplified_chinese": "​青铜",
+      "spanish": "Bronce",
+      "traditional_chinese": "​青銅"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2128": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 28,
+    "guid": 2128,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_chassis_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Chassi",
+      "english": "Chassis",
+      "french": "Châssis",
+      "german": "Unterbau",
+      "italian": "Telaio",
+      "japanese": "​車体",
+      "korean": "​차체",
+      "polish": "Podwozie",
+      "russian": "Рама",
+      "simplified_chinese": "​底盘",
+      "spanish": "Carrocería",
+      "traditional_chinese": "​底盤"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2129": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 15,
+    "guid": 2129,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_silver_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Prata",
+      "english": "Silver",
+      "french": "Argent",
+      "german": "Silber",
+      "italian": "Argento",
+      "japanese": "​銀",
+      "korean": "​은",
+      "polish": "Srebro",
+      "russian": "Серебро",
+      "simplified_chinese": "​白银",
+      "spanish": "Plata",
+      "traditional_chinese": "​白銀"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2131": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 8,
+    "guid": 2131,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_malt_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Malte",
+      "english": "Malt",
+      "french": "Malt",
+      "german": "Malz",
+      "italian": "Malto",
+      "japanese": "​麦芽",
+      "korean": "​맥아",
+      "polish": "Słód",
+      "russian": "Солод",
+      "simplified_chinese": "​麦芽",
+      "spanish": "Malta",
+      "traditional_chinese": "​麥芽"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2132": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 15,
+    "guid": 2132,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_pig_lard_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Banha",
+      "english": "Lard",
+      "french": "Saindoux",
+      "german": "Schmalz",
+      "italian": "Lardo",
+      "japanese": "​獣脂",
+      "korean": "​라드",
+      "polish": "Sadło",
+      "russian": "Сало",
+      "simplified_chinese": "​猪油",
+      "spanish": "Manteca",
+      "traditional_chinese": "​豬油"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2133": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 50,
+    "guid": 2133,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_bird_tongue_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Línguas de pássaros",
+      "english": "Bird Tongues",
+      "french": "Langues d'oiseau",
+      "german": "Vogelzungen",
+      "italian": "Lingue di uccelli",
+      "japanese": "​鳥​舌​肉",
+      "korean": "​새 ​혀",
+      "polish": "Ptasie języki",
+      "russian": "Птичьи язычки",
+      "simplified_chinese": "​鸟​舌",
+      "spanish": "Lenguas de ave",
+      "traditional_chinese": "​鳥​舌"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2135": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 23,
+    "guid": 2135,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_strings_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Barbante",
+      "english": "String",
+      "french": "Ficelle",
+      "german": "Saiten",
+      "italian": "Laccio",
+      "japanese": "​糸",
+      "korean": "​실",
+      "polish": "Struny",
+      "russian": "Струна",
+      "simplified_chinese": "​细​绳",
+      "spanish": "Hilo",
+      "traditional_chinese": "​細繩"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2136": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 12,
+    "guid": 2136,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_porridge_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Mingau",
+      "english": "Porridge",
+      "french": "Gruau",
+      "german": "Haferbrei",
+      "italian": "Zuppa d'avena",
+      "japanese": "​お​粥",
+      "korean": "​죽",
+      "polish": "Owsianka",
+      "russian": "Каша",
+      "simplified_chinese": "​粥",
+      "spanish": "Gachas",
+      "traditional_chinese": "​粥"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2137": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 26,
+    "guid": 2137,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_bread_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Pão",
+      "english": "Bread",
+      "french": "Pain",
+      "german": "Brot",
+      "italian": "Pane",
+      "japanese": "​パン",
+      "korean": "​빵",
+      "polish": "Chleb",
+      "russian": "Хлеб",
+      "simplified_chinese": "​面包",
+      "spanish": "Pan",
+      "traditional_chinese": "​麵包"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2138": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 45,
+    "guid": 2138,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wine_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Vinho",
+      "english": "Wine",
+      "french": "Vin",
+      "german": "Wein",
+      "italian": "Vino",
+      "japanese": "​ワイン",
+      "korean": "​포도주",
+      "polish": "Wino",
+      "russian": "Вино",
+      "simplified_chinese": "​葡萄酒",
+      "spanish": "Vino",
+      "traditional_chinese": "​葡萄酒"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2139": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 30,
+    "guid": 2139,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_garum_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Garum",
+      "english": "Garum",
+      "french": "Garum",
+      "german": "Garum",
+      "italian": "Garum",
+      "japanese": "​ガルム",
+      "korean": "​가룸",
+      "polish": "Garum",
+      "russian": "Гарум",
+      "simplified_chinese": "​鱼​酱",
+      "spanish": "Garo",
+      "traditional_chinese": "​魚​醬"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2140": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 99,
+    "guid": 2140,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_oysters_and_caviar_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Ostras com caviar",
+      "english": "Oysters with Caviar",
+      "french": "Huîtres et caviar",
+      "german": "Austern mit Kaviar",
+      "italian": "Ostriche con caviale",
+      "japanese": "​牡蠣​の​キャビア​添​え",
+      "korean": "​캐비어를 ​올린 ​굴",
+      "polish": "Ostrygi z kawiorem",
+      "russian": "Устрицы с икрой",
+      "simplified_chinese": "​牡蛎​鱼子​酱",
+      "spanish": "Ostras con caviar",
+      "traditional_chinese": "​牡蠣​魚子醬"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2141": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 12,
+    "guid": 2141,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_tunics_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Túnicas",
+      "english": "Tunics",
+      "french": "Tuniques",
+      "german": "Tuniken",
+      "italian": "Tuniche",
+      "japanese": "​チュニック",
+      "korean": "​튜닉",
+      "polish": "Tuniki",
+      "russian": "Туники",
+      "simplified_chinese": "​丘​尼​卡",
+      "spanish": "Túnicas",
+      "traditional_chinese": "​丘​尼​卡"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2142": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 10,
+    "guid": 2142,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_farmer_hat_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Píleo",
+      "english": "Pileus",
+      "french": "Pileus",
+      "german": "Pilei",
+      "italian": "Pileo",
+      "japanese": "​ピレウス​帽",
+      "korean": "​뾰족모자",
+      "polish": "Pilos",
+      "russian": "Пилосы",
+      "simplified_chinese": "​自由​帽",
+      "spanish": "Pileos",
+      "traditional_chinese": "​自由​帽"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2143": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 39,
+    "guid": 2143,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_lavender_soap_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Sabão",
+      "english": "Soap",
+      "french": "Savon",
+      "german": "Seife",
+      "italian": "Sapone",
+      "japanese": "​石鹸",
+      "korean": "​비누",
+      "polish": "Mydło",
+      "russian": "Мыло",
+      "simplified_chinese": "​肥皂",
+      "spanish": "Jabón",
+      "traditional_chinese": "​肥皂"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2144": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 41,
+    "guid": 2144,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_sandals_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Sandálias",
+      "english": "Sandals",
+      "french": "Sandales",
+      "german": "Sandalen",
+      "italian": "Sandali",
+      "japanese": "​サンダル",
+      "korean": "​샌들",
+      "polish": "Sandały",
+      "russian": "Сандалии",
+      "simplified_chinese": "​凉鞋",
+      "spanish": "Sandalias",
+      "traditional_chinese": "​涼鞋"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2145": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 95,
+    "guid": 2145,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_togas_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Togas",
+      "english": "Togas",
+      "french": "Toges",
+      "german": "Togen",
+      "italian": "Toghe",
+      "japanese": "​ト​ガ",
+      "korean": "​토가",
+      "polish": "Togi",
+      "russian": "Тоги",
+      "simplified_chinese": "​托​加",
+      "spanish": "Togas",
+      "traditional_chinese": "​托​加"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2146": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 198,
+    "guid": 2146,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_necklaces_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Colares",
+      "english": "Necklaces",
+      "french": "Colliers",
+      "german": "Halsketten",
+      "italian": "Collane",
+      "japanese": "​ネックレス",
+      "korean": "​목걸이",
+      "polish": "Naszyjniki",
+      "russian": "Ожерелья",
+      "simplified_chinese": "​项链",
+      "spanish": "Collares",
+      "traditional_chinese": "​項鍊"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2147": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 143,
+    "guid": 2147,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_lounger_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Espreguiçadeiras",
+      "english": "Loungers",
+      "french": "Chaises longues",
+      "german": "Liegen",
+      "italian": "Triclini",
+      "japanese": "​肘掛け​椅子",
+      "korean": "​긴 ​의자",
+      "polish": "Kanapy",
+      "russian": "Ложа",
+      "simplified_chinese": "​躺椅",
+      "spanish": "Divanes",
+      "traditional_chinese": "​躺椅"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2149": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 36,
+    "guid": 2149,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_olive_oil_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Azeite",
+      "english": "Olive Oil",
+      "french": "Huile d'olive",
+      "german": "Olivenöl",
+      "italian": "Olio d'oliva",
+      "japanese": "​オリーブ​オイル",
+      "korean": "​올리브유",
+      "polish": "Oliwa z oliwek",
+      "russian": "Оливковое масло",
+      "simplified_chinese": "​橄榄​油",
+      "spanish": "Aceite de oliva",
+      "traditional_chinese": "​橄欖油"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2150": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 67,
+    "guid": 2150,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wax_tablets_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Tábuas de escrita",
+      "english": "Writing Tablets",
+      "french": "Tablettes d'écriture",
+      "german": "Schrifttafeln",
+      "italian": "Tavolette da scrittura",
+      "japanese": "​筆記​板",
+      "korean": "​서판",
+      "polish": "Tabliczki do pisania",
+      "russian": "Дощечки для письма",
+      "simplified_chinese": "​写字​板",
+      "spanish": "Tablillas de escritura",
+      "traditional_chinese": "​書寫​蠟​板"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2151": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 110,
+    "guid": 2151,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_fine_glass_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Vidro fino",
+      "english": "Fine Glass",
+      "french": "Verres précieux",
+      "german": "Feines Glas",
+      "italian": "Vetro pregiato",
+      "japanese": "​高級​ガラス",
+      "korean": "​고급 ​유리",
+      "polish": "Porządne szkło",
+      "russian": "Тонкое стекло",
+      "simplified_chinese": "​精致​玻璃",
+      "spanish": "Cálices",
+      "traditional_chinese": "​精緻​玻璃"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2152": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 93,
+    "guid": 2152,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_mosaics_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Mosaicos",
+      "english": "Mosaics",
+      "french": "Mosaïques",
+      "german": "Mosaike",
+      "italian": "Mosaici",
+      "japanese": "​モザイク",
+      "korean": "​모자이크",
+      "polish": "Mozaiki",
+      "russian": "Мозаика",
+      "simplified_chinese": "​马赛​克",
+      "spanish": "Mosaicos",
+      "traditional_chinese": "​馬賽克"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2153": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 24,
+    "guid": 2153,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cheese_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Queijo",
+      "english": "Cheese",
+      "french": "Fromage",
+      "german": "Käse",
+      "italian": "Formaggio",
+      "japanese": "​チーズ",
+      "korean": "​치즈",
+      "polish": "Ser",
+      "russian": "Сыр",
+      "simplified_chinese": "​奶​酪",
+      "spanish": "Queso",
+      "traditional_chinese": "​起​司"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2154": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 20,
+    "guid": 2154,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_beer_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Cerveja",
+      "english": "Beer",
+      "french": "Bière",
+      "german": "Bier",
+      "italian": "Birra",
+      "japanese": "​ビール",
+      "korean": "​맥주",
+      "polish": "Piwo",
+      "russian": "Пиво",
+      "simplified_chinese": "​啤酒",
+      "spanish": "Cerveza",
+      "traditional_chinese": "​啤酒"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2155": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 98,
+    "guid": 2155,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_tongue_in_aspic_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Línguas de pássaros em gelatina",
+      "english": "Bird Tongues in Aspic",
+      "french": "Langues d'oiseau en aspic",
+      "german": "Vogelzungen in Aspik",
+      "italian": "Lingue di uccello in gelatina",
+      "japanese": "​鳥​舌​肉​アスピック",
+      "korean": "​젤리에 ​담근 ​새의 ​혀",
+      "polish": "Ptasie języki w galarecie",
+      "russian": "Птичьи язычки в желе",
+      "simplified_chinese": "​鸟​舌​肉冻",
+      "spanish": "Áspic de lenguas de ave",
+      "traditional_chinese": "​鳥​舌​肉​凍"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2156": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 39,
+    "guid": 2156,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_brooch_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Broches",
+      "english": "Brooches",
+      "french": "Broches",
+      "german": "Fibeln",
+      "italian": "Spille",
+      "japanese": "​ブローチ",
+      "korean": "​브로치",
+      "polish": "Brosze",
+      "russian": "Фибулы",
+      "simplified_chinese": "​胸针",
+      "spanish": "Broches",
+      "traditional_chinese": "​胸針"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2157": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 20,
+    "guid": 2157,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_torcs_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Torques",
+      "english": "Torcs",
+      "french": "Torques",
+      "german": "Torques",
+      "italian": "Torque",
+      "japanese": "​首輪",
+      "korean": "​토크",
+      "polish": "Bransolety",
+      "russian": "Торки",
+      "simplified_chinese": "​颈​环",
+      "spanish": "Torques",
+      "traditional_chinese": "​頸​環"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2158": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 21,
+    "guid": 2158,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_trouser_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Calças",
+      "english": "Trousers",
+      "french": "Pantalons",
+      "german": "Hosen",
+      "italian": "Brache",
+      "japanese": "​ズボン",
+      "korean": "​바지",
+      "polish": "Spodnie",
+      "russian": "Штаны",
+      "simplified_chinese": "​裤子",
+      "spanish": "Calzas",
+      "traditional_chinese": "​褲子"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2159": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 18,
+    "guid": 2159,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_reed_shoes_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Calçados de junco",
+      "english": "Reed Shoes",
+      "french": "Chausses en roseaux",
+      "german": "Schilfschuhe",
+      "italian": "Scarpe di canne",
+      "japanese": "​葦​の​靴",
+      "korean": "​갈대 ​신발",
+      "polish": "Łapcie",
+      "russian": "Обувь из тростника",
+      "simplified_chinese": "​芦苇​鞋",
+      "spanish": "Zapatos de junco",
+      "traditional_chinese": "​蘆葦​鞋"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2161": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 62,
+    "guid": 2161,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cloak_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Mantos",
+      "english": "Cloaks",
+      "french": "Capes",
+      "german": "Umhänge",
+      "italian": "Mantelli",
+      "japanese": "​外套",
+      "korean": "​망토",
+      "polish": "Płaszcze",
+      "russian": "Плащи",
+      "simplified_chinese": "​斗篷",
+      "spanish": "Mantos",
+      "traditional_chinese": "​斗篷"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2162": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 94,
+    "guid": 2162,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_handmirros_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Espelhos de mão",
+      "english": "Handmirrors",
+      "french": "Miroirs à main",
+      "german": "Handspiegel",
+      "italian": "Specchietti",
+      "japanese": "​手鏡",
+      "korean": "​손거울",
+      "polish": "Lusterka",
+      "russian": "Зеркальца",
+      "simplified_chinese": "​手​镜",
+      "spanish": "Espejos de mano",
+      "traditional_chinese": "​手鏡"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2163": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 88,
+    "guid": 2163,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_chariot_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Bigas",
+      "english": "Chariots",
+      "french": "Chars",
+      "german": "Streitwagen",
+      "italian": "Carri",
+      "japanese": "​戦車",
+      "korean": "​전차",
+      "polish": "Rydwany",
+      "russian": "Колесницы",
+      "simplified_chinese": "​战车",
+      "spanish": "Carros",
+      "traditional_chinese": "​戰車"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2166": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 187,
+    "guid": 2166,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_string_instrument_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Liras verticais",
+      "english": "Standing Lyres",
+      "french": "Lyres sur pied",
+      "german": "Lyren",
+      "italian": "Lire da terra",
+      "japanese": "​竪琴",
+      "korean": "​고정형 ​리라",
+      "polish": "Liry stojące",
+      "russian": "Лиры",
+      "simplified_chinese": "​立式​里拉​琴",
+      "spanish": "Liras de pie",
+      "traditional_chinese": "​立式​里拉​琴"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2169": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 18,
+    "guid": 2169,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wattle_daub_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Pau-a-pique",
+      "english": "Wattle & Daub",
+      "french": "Clayonnage",
+      "german": "Flechtwerk",
+      "italian": "Canne e fango",
+      "japanese": "​土​壁",
+      "korean": "​초벽",
+      "polish": "Szachulec",
+      "russian": "Прутья и глинозем",
+      "simplified_chinese": "​泥​笆​墙",
+      "spanish": "Zarzo y argamasa",
+      "traditional_chinese": "​編​竹​夾​泥​牆"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2171": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 24,
+    "guid": 2171,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_ropes_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Corda",
+      "english": "Rope",
+      "french": "Corde",
+      "german": "Seile",
+      "italian": "Corda",
+      "japanese": "​縄",
+      "korean": "​밧줄",
+      "polish": "Lina",
+      "russian": "Канаты",
+      "simplified_chinese": "​绳索",
+      "spanish": "Cuerda",
+      "traditional_chinese": "​繩索"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2172": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 20,
+    "guid": 2172,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_sails_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Velas",
+      "english": "Sails",
+      "french": "Voiles",
+      "german": "Segel",
+      "italian": "Vele",
+      "japanese": "​帆布",
+      "korean": "​돛",
+      "polish": "Żagle",
+      "russian": "Паруса",
+      "simplified_chinese": "​船​帆",
+      "spanish": "Velas",
+      "traditional_chinese": "​船​帆"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2173": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 42,
+    "guid": 2173,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_weapons_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Armas",
+      "english": "Weapons",
+      "french": "Armes",
+      "german": "Waffen",
+      "italian": "Armi",
+      "japanese": "​武器",
+      "korean": "​무기",
+      "polish": "Uzbrojenie",
+      "russian": "Оружие",
+      "simplified_chinese": "​武器",
+      "spanish": "Armas",
+      "traditional_chinese": "​武器"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2174": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 6,
+    "guid": 2174,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_timber_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Madeira de construção",
+      "english": "Timber",
+      "french": "Planches",
+      "german": "Bretter",
+      "italian": "Legname",
+      "japanese": "​木板",
+      "korean": "​목재",
+      "polish": "Deski",
+      "russian": "Доски",
+      "simplified_chinese": "​木材",
+      "spanish": "Tablones",
+      "traditional_chinese": "​木材"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2176": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 18,
+    "guid": 2176,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_tiles_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Telhas",
+      "english": "Tiles",
+      "french": "Tuiles",
+      "german": "Ziegel",
+      "italian": "Piastrelle",
+      "japanese": "​瓦",
+      "korean": "​타일",
+      "polish": "Kafelki",
+      "russian": "Плитка",
+      "simplified_chinese": "​瓦片",
+      "spanish": "Tejas",
+      "traditional_chinese": "​瓦片"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2178": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 38,
+    "guid": 2178,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_concrete_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Concreto",
+      "english": "Concrete",
+      "french": "Béton",
+      "german": "Beton",
+      "italian": "Calcestruzzo",
+      "japanese": "​コンクリート",
+      "korean": "​콘크리트",
+      "polish": "Beton",
+      "russian": "Бетон",
+      "simplified_chinese": "​混凝土",
+      "spanish": "Hormigón",
+      "traditional_chinese": "​混凝土"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2179": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 52,
+    "guid": 2179,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_marble_blocks_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Mármore",
+      "english": "Marble",
+      "french": "Marbre",
+      "german": "Marmor",
+      "italian": "Marmo",
+      "japanese": "​大理石",
+      "korean": "​대리석",
+      "polish": "Marmur",
+      "russian": "Мрамор",
+      "simplified_chinese": "​大理石",
+      "spanish": "Mármol",
+      "traditional_chinese": "​大理石"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2180": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 39,
+    "guid": 2180,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_tyrian_purple_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Púrpura tíria",
+      "english": "Tyrian Purple",
+      "french": "Rose tyrien",
+      "german": "Tyrischer Purpur",
+      "italian": "Viola di Tiro",
+      "japanese": "​テ​ィ​リ​アン​パー​プ​ル",
+      "korean": "​자색 ​염료",
+      "polish": "Purpura tyryjska",
+      "russian": "Пурпурная краска",
+      "simplified_chinese": "​蒂​尔​紫",
+      "spanish": "Púrpura imperial",
+      "traditional_chinese": "​蒂​爾​紫"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2181": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 0,
+    "guid": 2181,
+    "icon": "data/ui/fhd/base/icon_content/workforce/icon_2d_libertus_workforce_roman.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": true,
+    "name": {
+      "brazilian": "Mão de obra de liberti",
+      "english": "Libertus Workforce",
+      "french": "Main-d'œuvre (Liberti)",
+      "german": "Liberti-Arbeitskraft",
+      "italian": "Manodopera dei liberti",
+      "japanese": "​リベルトゥス​の​労働​力",
+      "korean": "​자유민 ​노동력",
+      "polish": "Siła robocza - wyzwoleńcy",
+      "russian": "Рабочая сила - либертины",
+      "simplified_chinese": "​自由​民​劳动​力",
+      "spanish": "Mano de obra liberta",
+      "traditional_chinese": "​自由​民​勞動力"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Area"
+  },
+  "2184": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 0,
+    "guid": 2184,
+    "icon": "data/ui/fhd/base/icon_content/workforce/icon_2d_plebeians_workforce_roman.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": true,
+    "name": {
+      "brazilian": "Força de trabalho dos plebeus",
+      "english": "Plebeian Workforce",
+      "french": "Main-d'œuvre (Plébéiens)",
+      "german": "Plebejer-Arbeitskraft",
+      "italian": "Manodopera dei plebei",
+      "japanese": "​プレブス​の​労働​力",
+      "korean": "​평민 ​노동력",
+      "polish": "Siła robocza - plebejusze",
+      "russian": "Рабочая сила - плебеи",
+      "simplified_chinese": "​平民​劳动​力",
+      "spanish": "Mano de obra plebeya",
+      "traditional_chinese": "​平民​勞動力"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Area"
+  },
+  "2185": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 0,
+    "guid": 2185,
+    "icon": "data/ui/fhd/base/icon_content/workforce/icon_2d_equites_workforce_roman.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": true,
+    "name": {
+      "brazilian": "Força de trabalho dos equites",
+      "english": "Equites Workforce",
+      "french": "Main-d'œuvre (Equites)",
+      "german": "Equites-Arbeitskraft",
+      "italian": "Manodopera degli equites",
+      "japanese": "​エクィテス​の​労働​力",
+      "korean": "​기사 ​노동력",
+      "polish": "Siła robocza - ekwici",
+      "russian": "Рабочая сила – эквиты",
+      "simplified_chinese": "​骑士​劳动​力",
+      "spanish": "Mano de obra équite",
+      "traditional_chinese": "​騎士​勞動力"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Area"
+  },
+  "2186": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 0,
+    "guid": 2186,
+    "icon": "data/ui/fhd/base/icon_content/workforce/icon_2d_patricians_workforce_roman.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": true,
+    "name": {
+      "brazilian": "Força de trabalho dos patrícios",
+      "english": "Patrician Workforce",
+      "french": "Main-d'œuvre (Patriciens)",
+      "german": "Patrizier-Arbeitskraft",
+      "italian": "Manodopera dei patrizi",
+      "japanese": "​パトリキ​の​労働​力",
+      "korean": "​파트리키 ​노동력",
+      "polish": "Siła robocza - patrycjusze",
+      "russian": "Рабочая сила – патриции",
+      "simplified_chinese": "​贵族​劳动​力",
+      "spanish": "Mano de obra patricia",
+      "traditional_chinese": "​貴族​勞動力"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Area"
+  },
+  "2192": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 2192,
+    "icon": "data/ui/fhd/base/icon_content/workforce/icon_2d_walders_workforce_albion.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": true,
+    "name": {
+      "brazilian": "Mão de obra de pernaltas",
+      "english": "Wader Workforce",
+      "french": "Main-d'œuvre (Tourbiers)",
+      "german": "Wanderer-Arbeitskraft",
+      "italian": "Manodopera dei limicoli",
+      "japanese": "​ウェーダー​の​労働​力",
+      "korean": "​물지기 ​노동력",
+      "polish": "Siła robocza - wędrowcy",
+      "russian": "Рабочая сила - болотники",
+      "simplified_chinese": "​沼​人​劳动​力",
+      "spanish": "Mano de obra légama",
+      "traditional_chinese": "​沼​人​勞動力"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Area"
+  },
+  "2196": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 2196,
+    "icon": "data/ui/fhd/base/icon_content/workforce/icon_2d_smiths_workforce_albion.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": true,
+    "name": {
+      "brazilian": "Mão de obra de ferreiros",
+      "english": "Smith Workforce",
+      "french": "Main-d'œuvre (Forgerons)",
+      "german": "Schmied-Arbeitskraft",
+      "italian": "Manodopera dei fabbri",
+      "japanese": "​スミス​の​労働​力",
+      "korean": "​대장장이 ​노동력",
+      "polish": "Siła robocza - rzemieślnicy",
+      "russian": "Рабочая сила – кузнецы",
+      "simplified_chinese": "​铁匠​劳动​力",
+      "spanish": "Mano de obra forjera",
+      "traditional_chinese": "​鐵匠​勞動力"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Area"
+  },
+  "2197": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 2197,
+    "icon": "data/ui/fhd/base/icon_content/workforce/icon_2d_aldermen_workforce_albion.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": true,
+    "name": {
+      "brazilian": "Mão de obra de edis",
+      "english": "Alderman Workforce",
+      "french": "Main-d'œuvre (Aldermen)",
+      "german": "Ältesten-Arbeitskraft",
+      "italian": "Manodopera degli aldermanni",
+      "japanese": "​アルダー​の​労働​力",
+      "korean": "​장로 ​노동력",
+      "polish": "Siła robocza - starsi",
+      "russian": "Рабочая сила – олдермены",
+      "simplified_chinese": "​长老​劳动​力",
+      "spanish": "Mano de obra álder",
+      "traditional_chinese": "​長老​勞動力"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Area"
+  },
+  "2198": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 2198,
+    "icon": "data/ui/fhd/base/icon_content/workforce/icon_2d_mercators_workforce_albion.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": true,
+    "name": {
+      "brazilian": "Força de trabalho dos mercatores",
+      "english": "Mercators Workforce",
+      "french": "Main-d'œuvre (Mercators)",
+      "german": "Mercator-Arbeitskraft",
+      "italian": "Manodopera dei mercator",
+      "japanese": "​メルカトル​の​労働​力",
+      "korean": "​상인 ​노동력",
+      "polish": "Siła robocza - merkatorzy",
+      "russian": "Рабочая сила – меркаторы",
+      "simplified_chinese": "​商人​劳动​力",
+      "spanish": "Mano de obra mercadora",
+      "traditional_chinese": "​商人​勞動力"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Area"
+  },
+  "2199": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 2199,
+    "icon": "data/ui/fhd/base/icon_content/workforce/icon_2d_nobles_workforce_albion.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": true,
+    "name": {
+      "brazilian": "Força de trabalho dos nobres",
+      "english": "Nobles Workforce",
+      "french": "Main-d'œuvre (Nobles)",
+      "german": "Edelmänner-Arbeitskraft",
+      "italian": "Manodopera dei nobili",
+      "japanese": "​ノビレス​の​労働​力",
+      "korean": "​귀족 ​노동력",
+      "polish": "Siła robocza - wielmożowie",
+      "russian": "Рабочая сила – кельтская знать",
+      "simplified_chinese": "​领​主​劳动​力",
+      "spanish": "Mano de obra noble",
+      "traditional_chinese": "​領主​勞動力"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Area"
+  },
+  "2671": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 2671,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_marketplace.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Mercado",
+      "english": "Market",
+      "french": "Marché",
+      "german": "Markt",
+      "italian": "Mercato",
+      "japanese": "​市場",
+      "korean": "​시장",
+      "polish": "Targowisko",
+      "russian": "Рынок",
+      "simplified_chinese": "​市场",
+      "spanish": "Mercado",
+      "traditional_chinese": "​市場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2677": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 0,
+    "guid": 2677,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_tavern.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Taverna",
+      "english": "Tavern",
+      "french": "Taverne",
+      "german": "Taberna",
+      "italian": "Taverna",
+      "japanese": "​酒場",
+      "korean": "​선술집",
+      "polish": "Karczma",
+      "russian": "Таберна",
+      "simplified_chinese": "​酒馆",
+      "spanish": "Taberna",
+      "traditional_chinese": "​酒館"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2678": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 0,
+    "guid": 2678,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_library.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Biblioteca",
+      "english": "Library",
+      "french": "Bibliothèque",
+      "german": "Bibliothek",
+      "italian": "Biblioteca",
+      "japanese": "​図書館",
+      "korean": "​도서관",
+      "polish": "Biblioteka",
+      "russian": "Библиотека",
+      "simplified_chinese": "​图书​馆",
+      "spanish": "Biblioteca",
+      "traditional_chinese": "​圖書館"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2679": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 0,
+    "guid": 2679,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_sanctuary.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Santuário",
+      "english": "Sanctuary",
+      "french": "Sanctuaire",
+      "german": "Heiligtum",
+      "italian": "Santuario",
+      "japanese": "​聖域",
+      "korean": "​성소",
+      "polish": "Sanktuarium",
+      "russian": "Святилище",
+      "simplified_chinese": "​圣​所",
+      "spanish": "Santuario",
+      "traditional_chinese": "​聖​所"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2680": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 2680,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_grammaticus.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Grammaticus",
+      "english": "Grammaticus",
+      "french": "Grammaticus",
+      "german": "Grammaticus",
+      "italian": "Grammaticus",
+      "japanese": "​ラテン語​学校",
+      "korean": "​학술원",
+      "polish": "Grammaticus",
+      "russian": "Грамматическая школа",
+      "simplified_chinese": "​文法​学院",
+      "spanish": "Gramático",
+      "traditional_chinese": "​文法​學院"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2681": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 0,
+    "guid": 2681,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_wonder_roman_forum.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Fórum",
+      "english": "Forum",
+      "french": "Forum",
+      "german": "Forum",
+      "italian": "Foro",
+      "japanese": "​公共​広場",
+      "korean": "​포럼",
+      "polish": "Forum",
+      "russian": "Форум",
+      "simplified_chinese": "​公共​集会​广场",
+      "spanish": "Foro",
+      "traditional_chinese": "​公共​集會​廣場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "2683": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 2683,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_theatre.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Teatro",
+      "english": "Theatre",
+      "french": "Théâtre",
+      "german": "Theater",
+      "italian": "Teatro",
+      "japanese": "​劇場",
+      "korean": "​극장",
+      "polish": "Teatr",
+      "russian": "Театр",
+      "simplified_chinese": "​剧场",
+      "spanish": "Teatro",
+      "traditional_chinese": "​劇場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2684": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 2684,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_temple.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Templo",
+      "english": "Temple",
+      "french": "Temple",
+      "german": "Tempel",
+      "italian": "Tempio",
+      "japanese": "​神殿",
+      "korean": "​사원",
+      "polish": "Świątynia",
+      "russian": "Храм",
+      "simplified_chinese": "​神庙",
+      "spanish": "Templo",
+      "traditional_chinese": "​神廟"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2685": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 2685,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_wonder_roman_bathhouse.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Banhos",
+      "english": "Baths",
+      "french": "Bains",
+      "german": "Bäder",
+      "italian": "Bagni",
+      "japanese": "​浴場",
+      "korean": "​목욕탕",
+      "polish": "Łaźnie",
+      "russian": "Термы",
+      "simplified_chinese": "​浴场",
+      "spanish": "Termas",
+      "traditional_chinese": "​浴場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "2686": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 0,
+    "guid": 2686,
+    "icon": "data/ui/fhd/base/icon_content/colosseum/icon_3d_colosseum.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Anfiteatro",
+      "english": "Amphitheatre",
+      "french": "Amphithéâtre",
+      "german": "Amphitheater",
+      "italian": "Anfiteatro",
+      "japanese": "​円形​闘技​場",
+      "korean": "​원형 ​극장",
+      "polish": "Amfiteatr",
+      "russian": "Амфитеатр",
+      "simplified_chinese": "​圆形​剧场",
+      "spanish": "Anfiteatro",
+      "traditional_chinese": "​圓形​劇場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "30724": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 30724,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_construction_category_aqueduct.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Cisterna de aqueduto",
+      "english": "Aqueduct Cistern",
+      "french": "Citerne d'aqueduc",
+      "german": "Zisterne",
+      "italian": "Cisterna dell'acquedotto",
+      "japanese": "​貯水池",
+      "korean": "​수도교 ​저수조",
+      "polish": "Zbiornik akweduktowy",
+      "russian": "Цистерна акведука",
+      "simplified_chinese": "​水道​蓄水池",
+      "spanish": "Cisterna de acueducto",
+      "traditional_chinese": "​水道​蓄水池"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "30733": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 30733,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_construction_category_aqueduct.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Cisterna de aqueduto",
+      "english": "Aqueduct Cistern",
+      "french": "Citerne d'aqueduc",
+      "german": "Zisterne",
+      "italian": "Cisterna dell'acquedotto",
+      "japanese": "​貯水池",
+      "korean": "​수도교 ​저수조",
+      "polish": "Zbiornik akweduktowy",
+      "russian": "Цистерна акведука",
+      "simplified_chinese": "​水道​蓄水池",
+      "spanish": "Cisterna de acueducto",
+      "traditional_chinese": "​水道​蓄水池"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "3158": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 15,
+    "guid": 3158,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_murex_snails_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Caramujos múrex",
+      "english": "Murex Snails",
+      "french": "Murex",
+      "german": "Purpurschnecken",
+      "italian": "Murice spinoso",
+      "japanese": "​ムレックス​貝",
+      "korean": "​뿔고둥",
+      "polish": "Ślimaki murex",
+      "russian": "Моллюски-иглянки",
+      "simplified_chinese": "​骨​螺",
+      "spanish": "Cañadillas",
+      "traditional_chinese": "​骨​螺"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "31694": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 4,
+    "guid": 31694,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_hemp_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Cânhamo",
+      "english": "Hemp",
+      "french": "Chanvre",
+      "german": "Hanf",
+      "italian": "Canapa",
+      "japanese": "​麻",
+      "korean": "​삼",
+      "polish": "Konopie",
+      "russian": "Конопля",
+      "simplified_chinese": "​火​麻",
+      "spanish": "Cáñamo",
+      "traditional_chinese": "​火​麻"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31695": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 8,
+    "guid": 31695,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_resin_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Resina",
+      "english": "Resin",
+      "french": "Résine",
+      "german": "Harz",
+      "italian": "Resina",
+      "japanese": "​樹脂",
+      "korean": "​수지",
+      "polish": "Żywica",
+      "russian": "Смола",
+      "simplified_chinese": "​树脂",
+      "spanish": "Resina",
+      "traditional_chinese": "​樹脂"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31697": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 80,
+    "guid": 31697,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_gold_ore_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Minério de ouro",
+      "english": "Gold Ore",
+      "french": "Minerai d'or",
+      "german": "Golderz",
+      "italian": "Minerale d'oro",
+      "japanese": "​金​鉱石",
+      "korean": "​금광석",
+      "polish": "Ruda złota",
+      "russian": "Золотая руда",
+      "simplified_chinese": "​金​矿石",
+      "spanish": "Mena de oro",
+      "traditional_chinese": "​金​礦石"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "31698": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 108,
+    "guid": 31698,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_gold_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Ouro",
+      "english": "Gold",
+      "french": "Or",
+      "german": "Gold",
+      "italian": "Oro",
+      "japanese": "​金",
+      "korean": "​금",
+      "polish": "Złoto",
+      "russian": "Золото",
+      "simplified_chinese": "​金",
+      "spanish": "Oro",
+      "traditional_chinese": "​金"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "31700": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 28,
+    "guid": 31700,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_amphorae_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Ânforas",
+      "english": "Amphorae",
+      "french": "Amphores",
+      "german": "Amphoren",
+      "italian": "Anfore",
+      "japanese": "​アンフォラ",
+      "korean": "​암포라",
+      "polish": "Amfora",
+      "russian": "Амфоры",
+      "simplified_chinese": "​双耳瓶",
+      "spanish": "Ánforas",
+      "traditional_chinese": "​雙耳瓶"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31701": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 9,
+    "guid": 31701,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_herbs_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Ervas",
+      "english": "Herbs",
+      "french": "Herbes",
+      "german": "Kräuter",
+      "italian": "Erbe",
+      "japanese": "​ハーブ",
+      "korean": "​약초",
+      "polish": "Zioła",
+      "russian": "Травы",
+      "simplified_chinese": "​药​草",
+      "spanish": "Hierbas",
+      "traditional_chinese": "​藥草"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31702": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 12,
+    "guid": 31702,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_beaver_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Castores",
+      "english": "Beavers",
+      "french": "Castors",
+      "german": "Biber",
+      "italian": "Castori",
+      "japanese": "​ビーバー",
+      "korean": "​비버",
+      "polish": "Bobry",
+      "russian": "Бобры",
+      "simplified_chinese": "​海狸",
+      "spanish": "Castores",
+      "traditional_chinese": "​河​狸"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31703": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 24,
+    "guid": 31703,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_lye_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Salfregão",
+      "english": "Saltwash",
+      "french": "Sels décapants",
+      "german": "Salzlake",
+      "italian": "Lavanda di sale",
+      "japanese": "​ソルトウォッシュ",
+      "korean": "​염 ​세척",
+      "polish": "Wybielacz",
+      "russian": "Соляной раствор",
+      "simplified_chinese": "​盐​洗",
+      "spanish": "Lavado de sal",
+      "traditional_chinese": "​鹽​洗"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31704": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 40,
+    "guid": 31704,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wig_base_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Adorno para cabeça",
+      "english": "Head Piece",
+      "french": "Couvre-chef",
+      "german": "Haarnetz",
+      "italian": "Copricapo",
+      "japanese": "​頭​飾り",
+      "korean": "​머리 ​장식",
+      "polish": "Ozdoba głowy",
+      "russian": "Головной убор",
+      "simplified_chinese": "​头​饰",
+      "spanish": "Tocado",
+      "traditional_chinese": "​頭​飾"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31706": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 39,
+    "guid": 31706,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_clan_shields_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Escudos de clã",
+      "english": "Clan Shields",
+      "french": "Boucliers claniques",
+      "german": "Clanschilde",
+      "italian": "Scudi del clan",
+      "japanese": "​部族​の​盾",
+      "korean": "​가문 ​방패",
+      "polish": "Tarcze klanowe",
+      "russian": "Клановые щиты",
+      "simplified_chinese": "​家族​盾牌",
+      "spanish": "Escudos de clan",
+      "traditional_chinese": "​家族​盾牌"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31707": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 64,
+    "guid": 31707,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_pelt_hat_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Chapéus de pele",
+      "english": "Fur Hats",
+      "french": "Chapeaux en fourrures",
+      "german": "Fellmützen",
+      "italian": "Cappelli di pelliccia",
+      "japanese": "​毛皮​の​帽子",
+      "korean": "​모피 ​모자",
+      "polish": "Futrzane czapki",
+      "russian": "Меховые шапки",
+      "simplified_chinese": "​皮毛​帽",
+      "spanish": "Gorros de piel",
+      "traditional_chinese": "​皮毛​帽"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31708": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 96,
+    "guid": 31708,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wig_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Perucas",
+      "english": "Wigs",
+      "french": "Perruques",
+      "german": "Perücken",
+      "italian": "Parrucche",
+      "japanese": "​かつら",
+      "korean": "​가발",
+      "polish": "Peruki",
+      "russian": "Парики",
+      "simplified_chinese": "​假发",
+      "spanish": "Pelucas",
+      "traditional_chinese": "​假髮"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31709": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 38,
+    "guid": 31709,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_granite_block_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Granito",
+      "english": "Granite",
+      "french": "Granite",
+      "german": "Granit",
+      "italian": "Granito",
+      "japanese": "​花崗岩",
+      "korean": "​화강암",
+      "polish": "Granit",
+      "russian": "Гранит",
+      "simplified_chinese": "​花岗岩",
+      "spanish": "Granito",
+      "traditional_chinese": "​花崗岩"
+    },
+    "productCategory": {
+      "brazilian": "Material de construção",
+      "english": "Construction Material",
+      "french": "Matériau de construction",
+      "german": "Baumaterial",
+      "italian": "Materiale da costruzione",
+      "japanese": "​建設​資材",
+      "korean": "​건축 ​자재",
+      "polish": "Materiał budowlany",
+      "russian": "Строительный материал",
+      "simplified_chinese": "​建筑​材料",
+      "spanish": "Material de construcción",
+      "traditional_chinese": "​建築​材料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31757": {
+    "associatedRegion": [
+      "Roman",
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 31757,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_gambling_house.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Casa de apostas",
+      "english": "Gambling House",
+      "french": "Maison de jeu",
+      "german": "Aleatorium",
+      "italian": "Casa da gioco",
+      "japanese": "​賭博​場",
+      "korean": "​도박장",
+      "polish": "Szulernia",
+      "russian": "Игорный дом",
+      "simplified_chinese": "​赌场",
+      "spanish": "Casa de apuestas",
+      "traditional_chinese": "​賭場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Roman",
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "31768": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 52,
+    "guid": 31768,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_roast_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Carne assada",
+      "english": "Roast Beef",
+      "french": "Bœuf rôti",
+      "german": "Rinderbraten",
+      "italian": "Manzo arrostito",
+      "japanese": "​ロースト​ビーフ",
+      "korean": "​소고기구이",
+      "polish": "Pieczeń wołowa",
+      "russian": "Жаркое",
+      "simplified_chinese": "​烤牛肉",
+      "spanish": "Ternera asada",
+      "traditional_chinese": "​烤牛肉"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "37132": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 37132,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_theatre.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Teatro",
+      "english": "Theatre",
+      "french": "Théâtre",
+      "german": "Theater",
+      "italian": "Teatro",
+      "japanese": "​劇場",
+      "korean": "​극장",
+      "polish": "Teatr",
+      "russian": "Театр",
+      "simplified_chinese": "​剧场",
+      "spanish": "Teatro",
+      "traditional_chinese": "​劇場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "37133": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 37133,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_gambling_house.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Casa de apostas",
+      "english": "Gambling House",
+      "french": "Maison de jeu",
+      "german": "Aleatorium",
+      "italian": "Casa da gioco",
+      "japanese": "​賭博​場",
+      "korean": "​도박장",
+      "polish": "Szulernia",
+      "russian": "Игорный дом",
+      "simplified_chinese": "​赌场",
+      "spanish": "Casa de apuestas",
+      "traditional_chinese": "​賭場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "55954": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 30,
+    "guid": 55954,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_drinkhorns_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Chifres de bebida",
+      "english": "Drinking Horns",
+      "french": "Cornes à boire",
+      "german": "Trinkhörner",
+      "italian": "Corni per bere",
+      "japanese": "​角​杯",
+      "korean": "​뿔잔",
+      "polish": "Rogi do picia",
+      "russian": "Рога для питья",
+      "simplified_chinese": "​角​杯",
+      "spanish": "Cuernas",
+      "traditional_chinese": "​角​杯"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "55955": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 55955,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_barrows.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Túmulo",
+      "english": "Barrow",
+      "french": "Tumulus",
+      "german": "Hügelgrab",
+      "italian": "Tumulo",
+      "japanese": "​塚",
+      "korean": "​무덤",
+      "polish": "Kurhan",
+      "russian": "Курган",
+      "simplified_chinese": "​坟​冢",
+      "spanish": "Túmulo",
+      "traditional_chinese": "​墳​塚"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "55956": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 55956,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_sacred_grove.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Bosque sagrado",
+      "english": "Sacred Grove",
+      "french": "Bosquet sacré",
+      "german": "Heiliger Hain",
+      "italian": "Bosco sacro",
+      "japanese": "​神聖​な​森",
+      "korean": "​성림",
+      "polish": "Święty gaj",
+      "russian": "Священная роща",
+      "simplified_chinese": "​神圣​树林",
+      "spanish": "Arboleda sagrada",
+      "traditional_chinese": "​神聖​樹林"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "6706": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 6706,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_marketplace.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Mercado",
+      "english": "Market",
+      "french": "Marché",
+      "german": "Markt",
+      "italian": "Mercato",
+      "japanese": "​市場",
+      "korean": "​시장",
+      "polish": "Targowisko",
+      "russian": "Рынок",
+      "simplified_chinese": "​市场",
+      "spanish": "Mercado",
+      "traditional_chinese": "​市場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "6707": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 6707,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_sportsfield.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Área recreativa",
+      "english": "Recreation Ground",
+      "french": "Aire récréative",
+      "german": "Wettkampfwiese",
+      "italian": "Area ricreativa",
+      "japanese": "​運動場",
+      "korean": "​휴양지",
+      "polish": "Strefa wypoczynku",
+      "russian": "Площадка для игр",
+      "simplified_chinese": "​休闲​运动​场",
+      "spanish": "Campo recreativo",
+      "traditional_chinese": "​休閒​運動場"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "6708": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 6708,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_town_hall.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Conselho de edis",
+      "english": "Alder Council",
+      "french": "Conseil des anciens",
+      "german": "Ältestenrat",
+      "italian": "Consiglio degli aldermanni",
+      "japanese": "​市議会",
+      "korean": "​의회",
+      "polish": "Rada Starszych",
+      "russian": "Совет олдерменов",
+      "simplified_chinese": "​桤​木​议会",
+      "spanish": "Concejo de álderes",
+      "traditional_chinese": "​長老​議會"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "6709": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 6709,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_bardic_hall.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Casa Bárdica",
+      "english": "Bardic Hearth",
+      "french": "Théâtre bardique",
+      "german": "Sängerstube",
+      "italian": "Focolare del bardo",
+      "japanese": "​吟遊詩人​の​暖炉",
+      "korean": "​음유시인의 ​화로",
+      "polish": "Scena barda",
+      "russian": "Подмостки барда",
+      "simplified_chinese": "​吟游​诗人​火炉",
+      "spanish": "Corral bárdico",
+      "traditional_chinese": "​吟遊詩人​聚​所"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "6710": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 0,
+    "guid": 6710,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_fanum.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Fano",
+      "english": "Fanum",
+      "french": "Fanum",
+      "german": "Fanum",
+      "italian": "Fanum",
+      "japanese": "​聖​所",
+      "korean": "​파눔",
+      "polish": "Chram",
+      "russian": "Фан",
+      "simplified_chinese": "​圣​域",
+      "spanish": "Fano",
+      "traditional_chinese": "​聖域"
+    },
+    "productCategory": null,
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "7985": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 12,
+    "guid": 7985,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_samphire_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Barrilha",
+      "english": "Saltwort",
+      "french": "Salicorne",
+      "german": "Salzkraut",
+      "italian": "Salicornia",
+      "japanese": "​アッ​ケシ​ソウ",
+      "korean": "​함초",
+      "polish": "Solanka",
+      "russian": "Солерос",
+      "simplified_chinese": "​海​蓬​菜",
+      "spanish": "Salicornia",
+      "traditional_chinese": "​海​蓬​菜"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "8404": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 12,
+    "guid": 8404,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_ponies_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Pôneis",
+      "english": "Ponies",
+      "french": "Poneys",
+      "german": "Ponys",
+      "italian": "Pony",
+      "japanese": "​ポニー",
+      "korean": "​조랑말",
+      "polish": "Kucyki",
+      "russian": "Пони",
+      "simplified_chinese": "​小马",
+      "spanish": "Ponis",
+      "traditional_chinese": "​小​馬"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "8405": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 28,
+    "guid": 8405,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_sausages_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Salsichas",
+      "english": "Sausages",
+      "french": "Saucisses",
+      "german": "Würste",
+      "italian": "Salsicce",
+      "japanese": "​ソーセージ",
+      "korean": "​소시지",
+      "polish": "Kiełbaski",
+      "russian": "Колбаса",
+      "simplified_chinese": "​香肠",
+      "spanish": "Salchichas",
+      "traditional_chinese": "​香腸"
+    },
+    "productCategory": {
+      "brazilian": "Necessidade",
+      "english": "Need",
+      "french": "Besoin",
+      "german": "Bedürfnis",
+      "italian": "Bisogno",
+      "japanese": "​需要",
+      "korean": "​요구",
+      "polish": "Potrzeba",
+      "russian": "Потребность",
+      "simplified_chinese": "​需求",
+      "spanish": "Necesidad",
+      "traditional_chinese": "​需求"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "8420": {
+    "associatedRegion": [
+      "Celtic"
+    ],
+    "basePrice": 15,
+    "guid": 8420,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_seashells_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Conchas",
+      "english": "Seashells",
+      "french": "Nacre",
+      "german": "Kammmuschelschalen",
+      "italian": "Conchiglie",
+      "japanese": "​貝殻",
+      "korean": "​조개껍데기",
+      "polish": "Muszle morskie",
+      "russian": "Ракушки",
+      "simplified_chinese": "​贝壳",
+      "spanish": "Conchas marinas",
+      "traditional_chinese": "​貝殼"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Celtic"
+    ],
+    "storageLevel": "Building"
+  },
+  "8558": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 41,
+    "guid": 8558,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_caviar_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Caviar",
+      "english": "Caviar",
+      "french": "Caviar",
+      "german": "Kaviar",
+      "italian": "Caviale",
+      "japanese": "​キャビア",
+      "korean": "​캐비어",
+      "polish": "Kawior",
+      "russian": "Икра",
+      "simplified_chinese": "​鱼子​酱",
+      "spanish": "Caviar",
+      "traditional_chinese": "​魚子醬"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "8561": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 12,
+    "guid": 8561,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cypress_wood_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Sandáraca",
+      "english": "Sandarac Wood",
+      "french": "Sandaraque",
+      "german": "Sandarakholz",
+      "italian": "Legno di sandracca",
+      "japanese": "​サンダラック​の​木材",
+      "korean": "​샌드락 ​나무",
+      "polish": "Żywiczne drewno",
+      "russian": "Сандараковое дерево",
+      "simplified_chinese": "​山​达​树​原木",
+      "spanish": "Madera de sandáraca",
+      "traditional_chinese": "​山​達​樹​原木"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "8562": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 75,
+    "guid": 8562,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cushion_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Almofadas",
+      "english": "Cushions",
+      "french": "Coussins",
+      "german": "Polster",
+      "italian": "Cuscini",
+      "japanese": "​クッション",
+      "korean": "​쿠션",
+      "polish": "Poduszki",
+      "russian": "Подушки",
+      "simplified_chinese": "​座​垫",
+      "spanish": "Cojines",
+      "traditional_chinese": "​座墊"
+    },
+    "productCategory": {
+      "brazilian": "Produto intermediário",
+      "english": "Intermediate Product",
+      "french": "Produit intermédiaire",
+      "german": "Zwischenprodukt",
+      "italian": "Prodotto intermedio",
+      "japanese": "​中間​財",
+      "korean": "​중간재",
+      "polish": "Produkt średniej jakości",
+      "russian": "Промежуточный продукт",
+      "simplified_chinese": "​中间​产品",
+      "spanish": "Producto intermedio",
+      "traditional_chinese": "​中間​產品"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "8563": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 15,
+    "guid": 8563,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_minerals_goods.png",
+    "infoDescription": null,
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Minerais",
+      "english": "Minerals",
+      "french": "Minéraux",
+      "german": "Mineralien",
+      "italian": "Minerali",
+      "japanese": "​鉱物",
+      "korean": "​광물",
+      "polish": "Minerały",
+      "russian": "Минералы",
+      "simplified_chinese": "​矿物",
+      "spanish": "Minerales",
+      "traditional_chinese": "​礦物"
+    },
+    "productCategory": {
+      "brazilian": "Matéria-prima",
+      "english": "Raw Material",
+      "french": "Matériau brut",
+      "german": "Rohmaterial",
+      "italian": "Materie prime",
+      "japanese": "​原料",
+      "korean": "​원자재",
+      "polish": "Surowiec",
+      "russian": "Сырье",
+      "simplified_chinese": "​原材料",
+      "spanish": "Material primario",
+      "traditional_chinese": "​原料"
+    },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "91372": {
+    "associatedRegion": [],
+    "basePrice": 0,
+    "guid": 91372,
+    "icon": "data/ui/fhd/base/icon_content/generic/icon_2d_permit_guesthouse.png",
+    "infoDescription": {
+      "brazilian": "Permite que você construa mais um Officium em suas Ilhas.",
+      "english": "Allows you to build one more Officium on your Islands.",
+      "french": "Permet de construire un officium de plus sur vos îles.",
+      "german": "Ermöglicht dir, ein weiteres Officium auf deinen Inseln zu bauen.",
+      "italian": "Ti permette di costruire un'ulteriore foresteria sulle tue isole.",
+      "japanese": "​島​に​オフィキウム​を​さらに​１​つ​建設​できる。",
+      "korean": "​섬에 ​집무실을 ​하나 ​더 ​건설할 ​수 ​있습니다.",
+      "polish": "Pozwala wznosić na twoich wyspach dodatkowe oficjum.",
+      "russian": "Позволяет построить еще один оффиций на ваших островах.",
+      "simplified_chinese": "​允许​你在​岛​上​多​建造​一座​官署。",
+      "spanish": "Te permite construir una oficina más en tus islas.",
+      "traditional_chinese": "​允許​你在​島嶼​上​多​建造​一座​公務​所。"
+    },
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Certificado de Officium",
+      "english": "Officium Permit",
+      "french": "Permis (officium)",
+      "german": "Officia-Baurecht",
+      "italian": "Permesso per la foresteria",
+      "japanese": "​オフィキウム​使用​許可証",
+      "korean": "​집무실 ​허가서",
+      "polish": "Zgoda na oficjum",
+      "russian": "Разрешение на оффиций",
+      "simplified_chinese": "​官署​许可",
+      "spanish": "Permiso de oficina",
+      "traditional_chinese": "​公務​所​許可"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Meta"
+  },
+  "93770": {
+    "associatedRegion": [],
+    "basePrice": 0,
+    "guid": 93770,
+    "icon": "data/ui/fhd/base/icon_content/generic/icon_2d_permit_depot.png",
+    "infoDescription": {
+      "brazilian": "Permite que você construa mais um Depósito em suas Ilhas.",
+      "english": "Allows you to build one more Depot on your Islands.",
+      "french": "Permet de construire un dépôt de plus sur vos îles.",
+      "german": "Ermöglicht dir, ein weiteres Depot auf deinen Inseln zu bauen.",
+      "italian": "Ti permette di costruire un ulteriore deposito sulle tue isole.",
+      "japanese": "​島​に​貯蔵​所​を​さらに​1​つ​建設​できる。",
+      "korean": "​섬에 ​저장소를 ​하나 ​더 ​건설할 ​수 ​있습니다.",
+      "polish": "Pozwala wznosić na twoich wyspach dodatkowy skład.",
+      "russian": "Позволяет построить еще одну портовую базу на ваших островах.",
+      "simplified_chinese": "​允许​你在​岛​上​多​建造​一座​小​仓库。",
+      "spanish": "Te permite construir un depósito más en tus islas.",
+      "traditional_chinese": "​允許​你在​島嶼​上​多​建造​一座​小​倉庫。"
+    },
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Certificado de Depósito",
+      "english": "Depot Permit",
+      "french": "Permis (dépôt)",
+      "german": "Depot-Baurecht",
+      "italian": "Permesso per il deposito",
+      "japanese": "​貯蔵​所​使用​許可証",
+      "korean": "​저장소 ​허가서",
+      "polish": "Zgoda na korzystanie ze składu",
+      "russian": "Разрешение на портовую базу",
+      "simplified_chinese": "​小​仓库​许可",
+      "spanish": "Permiso de depósito",
+      "traditional_chinese": "​小​倉庫​許可"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Meta"
+  },
+  "93771": {
+    "associatedRegion": [],
+    "basePrice": 0,
+    "guid": 93771,
+    "icon": "data/ui/fhd/base/icon_content/generic/icon_2d_permit_shrine.png",
+    "infoDescription": {
+      "brazilian": "Permite que você construa mais um Sacrário de qualquer tipo em suas Ilhas.",
+      "english": "Allows you to build one more Shrine of any kind on your Islands.",
+      "french": "Permet de construire un autel de plus sur vos îles.",
+      "german": "Ermöglicht dir, einen weiteren beliebigen Schrein auf deinen Inseln zu bauen.",
+      "italian": "Ti permette di costruire un ulteriore sacrario di qualsiasi tipo sulle tue isole.",
+      "japanese": "​島​に​任意​の​種類​の​祭壇​を​さらに​1​つ​建設​できる。",
+      "korean": "​섬에 ​종류에 ​제한 ​없이 ​제단을 ​하나 ​더 ​건설할 ​수 ​있습니다.",
+      "polish": "Pozwala wznosić na twoich wyspach dodatkową kapliczkę.",
+      "russian": "Позволяет построить еще одну святыню на ваших островах.",
+      "simplified_chinese": "​允许​你在​岛​上​多​建造​一座​任意​种类​的​圣坛。",
+      "spanish": "Te permite construir un altar más de cualquier tipo en tus islas.",
+      "traditional_chinese": "​允許​你在​島嶼​上​多​建造​一座​任何​種類​的​聖壇。"
+    },
+    "isAbstract": false,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Certificado de Sacrário",
+      "english": "Shrine Permit",
+      "french": "Permis (autel)",
+      "german": "Schrein-Baurecht",
+      "italian": "Permesso per il sacrario",
+      "japanese": "​神殿​使用​許可証",
+      "korean": "​제단 ​허가서",
+      "polish": "Zgoda na korzystanie z kapliczki",
+      "russian": "Разрешение на святыню",
+      "simplified_chinese": "​圣坛​许可",
+      "spanish": "Permiso de altar",
+      "traditional_chinese": "​聖壇​許可"
+    },
+    "productCategory": null,
+    "productionRegions": [],
+    "storageLevel": "Meta"
+  }
+}

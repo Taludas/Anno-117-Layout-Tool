@@ -1,0 +1,1987 @@
+{
+  "145223": {
+    "guid": 145223,
+    "icon": "data/ui/fhd/dlc01/icon_content/production_goods/icon_3d_idol_goods.png",
+    "needAttributes": {
+      "Belief": 2.0,
+      "Money": 3.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Estas pequenas divindades dão um toque de luxo ao conjunto de qualquer altar doméstico. ",
+      "english": "These small gods add a touch of luxury to the ensemble at any household shrine. ",
+      "french": "Ces petits dieux ajoutent une touche de luxe à tout sanctuaire domestique. ",
+      "german": "Diese kleinen Götter verleihen jedem Hausschrein einen Hauch Luxus. ",
+      "italian": "Queste piccole divinità aggiungono un po' di prestigio in ogni sacrario domestico. ",
+      "japanese": "​小さな​神像。​家々​に​ある​祭壇​に​厳​かな​雰囲気​を​もたらす。 ",
+      "korean": "​어느 ​가정의 ​제단에서도 ​한층 ​고급스러운 ​분위기를 ​더해줍니다. ",
+      "polish": "Te pomniejsze bóstwa wprowadzają powiew luksusu do wystroju każdej domowej kapliczki. ",
+      "russian": "Маленькие изображения богов и капелька роскоши для каждой домашней святыни. ",
+      "simplified_chinese": "​这些​小小​神像，​无论​安​放在​谁家​的​神​龛​之中，​都能​增添​一抹​奢华​之​色。 ",
+      "spanish": "Estos pequeños dioses añaden un toque lujoso a cualquier altar casero. ",
+      "traditional_chinese": "​這些​小型​神像​為​各個​家庭​小​聖壇​增添​一絲​奢華​氣息。 "
+    },
+    "needProduct": 145220,
+    "supplyWeight": 4.0
+  },
+  "145224": {
+    "guid": 145224,
+    "icon": "data/ui/fhd/dlc01/icon_content/production_goods/icon_3d_idol_goods.png",
+    "needAttributes": {
+      "Belief": 2.0,
+      "Money": 3.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Estas pequenas divindades dão um toque de luxo ao conjunto de qualquer altar doméstico. ",
+      "english": "These small gods add a touch of luxury to the ensemble at any household shrine. ",
+      "french": "Ces petits dieux ajoutent une touche de luxe à tout sanctuaire domestique. ",
+      "german": "Diese kleinen Götter verleihen jedem Hausschrein einen Hauch Luxus. ",
+      "italian": "Queste piccole divinità aggiungono un po' di prestigio in ogni sacrario domestico. ",
+      "japanese": "​小さな​神像。​家々​に​ある​祭壇​に​厳​かな​雰囲気​を​もたらす。 ",
+      "korean": "​어느 ​가정의 ​제단에서도 ​한층 ​고급스러운 ​분위기를 ​더해줍니다. ",
+      "polish": "Te pomniejsze bóstwa wprowadzają powiew luksusu do wystroju każdej domowej kapliczki. ",
+      "russian": "Маленькие изображения богов и капелька роскоши для каждой домашней святыни. ",
+      "simplified_chinese": "​这些​小小​神像，​无论​安​放在​谁家​的​神​龛​之中，​都能​增添​一抹​奢华​之​色。 ",
+      "spanish": "Estos pequeños dioses añaden un toque lujoso a cualquier altar casero. ",
+      "traditional_chinese": "​這些​小型​神像​為​各個​家庭​小​聖壇​增添​一絲​奢華​氣息。 "
+    },
+    "needProduct": 145220,
+    "supplyWeight": 2.0
+  },
+  "145225": {
+    "guid": 145225,
+    "icon": "data/ui/fhd/dlc01/icon_content/production_goods/icon_3d_boardgame_goods.png",
+    "needAttributes": {
+      "Happiness": 3.0,
+      "Knowledge": 3.0,
+      "Money": 4.0
+    },
+    "needDescription": {
+      "brazilian": "Latrunculi, o jogo dos soldados, ensina sobre captura e comando a partir do conforto de uma cadeira dobrável. ",
+      "english": "Latrunculi, the game of soldiers, teaches capture and command from the comfort of a folding chair. ",
+      "french": "Le jeu des Latrunculi, ou latroncules, enseigne l'art de la conquête et du commandement depuis le confort d'un siège pliant. ",
+      "german": "Latrunculi, das Soldatenspiel, bringt einem bei, wie man erobert und befehligt – während man bequem auf einem Klappstuhl sitzt. ",
+      "italian": "Con Latrunculi, il gioco dei soldati, si può imparare come comandare e conquistare rimanendo comodamente seduti. ",
+      "japanese": "​この​ボード​ゲーム​は​ラ​トル​ン​クリ​と​呼​ば​れ、​折​り​畳​み​椅子​に​ゆったり​と​座り​ながら​軍略​について​学ぶ​こと​が​できる。 ",
+      "korean": "​병사들이 ​즐겨 ​하는 ​라트룬쿨리는 ​접이식 ​의자에 ​편안히 ​앉아 ​점령과 ​지휘가 ​무엇인지 ​배울 ​수 ​있는 ​게임입니다. ",
+      "polish": "Latrunculi, gra żołnierzy, uczy podbijania i dowodzenia bez potrzeby opuszczania wygodnego fotela. ",
+      "russian": "Латрункули, солдатская игра, обучает командовать и захватывать, не сходя с удобного складного стула. ",
+      "simplified_chinese": "​强盗​棋，​一种​模拟​领​军​的​游戏。​让​人​坐在​舒适​的​折叠​椅​上，​便能​领悟​攻城​略​地​与​统帅​之道。 ",
+      "spanish": "El latrunculi, o juego de los soldados, enseña a capturar y a comandar desde la comodidad de una silla plegable. ",
+      "traditional_chinese": "​「兵​棋」​是​一​款​關於​士兵​的​棋盤​遊戲，​讓人​即使​安​坐在​摺疊​椅​上，​也能​體驗​俘虜​與​指揮​的​樂趣。 "
+    },
+    "needProduct": 145221,
+    "supplyWeight": 8.0
+  },
+  "145226": {
+    "guid": 145226,
+    "icon": "data/ui/fhd/dlc01/icon_content/production_goods/icon_3d_boardgame_goods.png",
+    "needAttributes": {
+      "Happiness": 3.0,
+      "Knowledge": 3.0,
+      "Money": 4.0
+    },
+    "needDescription": {
+      "brazilian": "Latrunculi, o jogo dos soldados, ensina sobre captura e comando a partir do conforto de uma cadeira dobrável. ",
+      "english": "Latrunculi, the game of soldiers, teaches capture and command from the comfort of a folding chair. ",
+      "french": "Le jeu des Latrunculi, ou latroncules, enseigne l'art de la conquête et du commandement depuis le confort d'un siège pliant. ",
+      "german": "Latrunculi, das Soldatenspiel, bringt einem bei, wie man erobert und befehligt – während man bequem auf einem Klappstuhl sitzt. ",
+      "italian": "Con Latrunculi, il gioco dei soldati, si può imparare come comandare e conquistare rimanendo comodamente seduti. ",
+      "japanese": "​この​ボード​ゲーム​は​ラ​トル​ン​クリ​と​呼​ば​れ、​折​り​畳​み​椅子​に​ゆったり​と​座り​ながら​軍略​について​学ぶ​こと​が​できる。 ",
+      "korean": "​병사들이 ​즐겨 ​하는 ​라트룬쿨리는 ​접이식 ​의자에 ​편안히 ​앉아 ​점령과 ​지휘가 ​무엇인지 ​배울 ​수 ​있는 ​게임입니다. ",
+      "polish": "Latrunculi, gra żołnierzy, uczy podbijania i dowodzenia bez potrzeby opuszczania wygodnego fotela. ",
+      "russian": "Латрункули, солдатская игра, обучает командовать и захватывать, не сходя с удобного складного стула. ",
+      "simplified_chinese": "​强盗​棋，​一种​模拟​领​军​的​游戏。​让​人​坐在​舒适​的​折叠​椅​上，​便能​领悟​攻城​略​地​与​统帅​之道。 ",
+      "spanish": "El latrunculi, o juego de los soldados, enseña a capturar y a comandar desde la comodidad de una silla plegable. ",
+      "traditional_chinese": "​「兵​棋」​是​一​款​關於​士兵​的​棋盤​遊戲，​讓人​即使​安​坐在​摺疊​椅​上，​也能​體驗​俘虜​與​指揮​的​樂趣。 "
+    },
+    "needProduct": 145221,
+    "supplyWeight": 4.0
+  },
+  "2665": {
+    "guid": 2665,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_sardines_goods.png",
+    "needAttributes": {
+      "Money": 1.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Uma família petiscando uma sardinha ossuda ainda consegue se alimentar e se manter saudável.",
+      "english": "A family picking at the bony Sardine, can still be fed and kept in health.",
+      "french": "Même à ronger la sardine et ses arêtes, une famille peut trouver de quoi subsister et garder la santé.",
+      "german": "Selbst eine knochige Sardine kann reichen, um eine Familie zu ernähren.",
+      "italian": "Una famiglia che raccoglie sardine ossute può comunque essere nutrita e mantenuta in salute.",
+      "japanese": "​骨​ばかり​の​イワシ​を​食​べ​て​いる​家族​は​飢える​こと​は​なく、​健康​で​さえ​ある。",
+      "korean": "​뼈만 ​앙상한 ​정어리라도 ​한 ​가족이 ​배불리 ​먹고 ​건강을 ​유지할 ​수 ​있습니다.",
+      "polish": "Rodzina karmiona ościstymi sardynkami jest zarówno najedzona, jak i zdrowa.",
+      "russian": "Даже если все, что есть у семьи, – костлявая сардина, этого хватит, чтобы насытиться и сохранить здоровье.",
+      "simplified_chinese": "​即使​只​啃​带​骨​沙丁鱼，​也能​让​一家​人​吃​饱​肚子​并​保持​健康。",
+      "spanish": "Las sardinas, por espinosas que sean, aportan los nutrientes necesarios para que una familia entera goce de salud.",
+      "traditional_chinese": "​即使​一家​人​都在​啃​帶​骨​沙丁魚，​依然​能​在​吃飽​的​同時​維持​健康。"
+    },
+    "needProduct": 2088,
+    "supplyWeight": 1.0
+  },
+  "2668": {
+    "guid": 2668,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_porridge_goods.png",
+    "needAttributes": {
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Mingau é um alimento básico, fácil de produzir para as massas. Mas ninguém gosta do sabor.",
+      "english": "Porridge is a staple; easy to produce for the masses. No-one loves the taste though.",
+      "french": "Nourriture des masses par excellence, la bouillie se prépare aisément. Quant à l'apprécier, c'est une autre affaire.",
+      "german": "Haferbrei ist ein Grundnahrungsmittel. Schnell hergestellt, sättigt es die Massen. Aber niemand ergötzt sich am Geschmack.",
+      "italian": "La zuppa d'avena è un alimento base, facile da produrre per le masse, ma il sapore non piace a nessuno.",
+      "japanese": "​大量​に​作れる​粥​は​主食​の​ひとつ​だが、​味​が​好き​な​者​は​誰​も​い​ない。",
+      "korean": "​많은 ​이들을 ​위해 ​쉽게 ​만들 ​수 ​있는 ​주식, ​죽입니다. ​하지만 ​맛있다고 ​하는 ​사람은 ​없지요.",
+      "polish": "Owsianka to podstawowy, łatwy do masowej produkcji pokarm — chociaż nikt nie lubi jej smaku.",
+      "russian": "Каша – основа всего. Ею легко можно обеспечить всех. Правда, вкус ее никому не нравится.",
+      "simplified_chinese": "​粥​是​主食，​很​容易​大规模​生产，​但​没​人​喜欢​它的​味道。",
+      "spanish": "Las gachas son un alimento básico y fácil de producir para las masas. Una pena que a nadie le guste cómo saben.",
+      "traditional_chinese": "​粥​是​主食，​很​容易​大規模​生產，​但​沒人​喜歡​它的​味道。"
+    },
+    "needProduct": 2136,
+    "supplyWeight": 1.0
+  },
+  "2689": {
+    "guid": 2689,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_bread_goods.png",
+    "needAttributes": {
+      "Money": 1.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "A imensa popularidade e praticidade do pão também o tornam altamente lucrativo para quem trabalha no ramo.",
+      "english": "Bread's immense popularity and convenience also make it highly lucrative to those in the trade.",
+      "french": "Sa grande popularité et sa commodité font du pain un produit fort lucratif pour ceux qui en maîtrisent le négoce.",
+      "german": "Die große Beliebtheit und Bekömmlichkeit des Brotes machen es auch für den Handel sehr lukrativ.",
+      "italian": "L'immensa popolarità e convenienza del pane lo rendono anche molto redditizio per chi lavora nel settore.",
+      "japanese": "​パン​の​圧倒的​な​人気​と​利便​性​は、​それで​商売​する​者​にとって​は​まさに​金​の​なる​木​だ。",
+      "korean": "​빵은 ​대중적이고 ​편리할 ​뿐만 ​아니라 ​상인들에게 ​막대한 ​이윤을 ​안겨주는 ​품목이라 ​할 ​수 ​있습니다.",
+      "polish": "Niezwykła popularność oraz dostępność chleba czynią jego sprzedaż również nader opłacalną.",
+      "russian": "Хлеб – еда удобная и любимая народом, а значит, тех, кто ею торгует, ждет приличная прибыль.",
+      "simplified_chinese": "​面包​因为​其​极​高​的​人​气​和​便利​性，​对于​商人​来说​是​很​赚钱​的​商品。",
+      "spanish": "La inmensa popularidad y practicidad del pan lo convierten en un producto muy rentable para quienes se dedican a hacerlo.",
+      "traditional_chinese": "​麵包​因為​極​受歡迎​及其​便利​程度，​是​商人​獲取​高​利潤​的​來源。"
+    },
+    "needProduct": 2137,
+    "supplyWeight": 2.0
+  },
+  "2690": {
+    "guid": 2690,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wine_goods.png",
+    "needAttributes": {
+      "Belief": 2.0,
+      "Happiness": 1.0,
+      "Knowledge": -1.0,
+      "Money": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Os romanos valorizam o vinho por seu poder de levantar um espírito abatido, desde que bebido com moderação, é claro.",
+      "english": "Romans prize wine for its power to lift the beleaguered spirit, taken in moderation, of course.",
+      "french": "Les Romains louent le vin pour l'élan qu'il donne aux esprits fatigués... pourvu qu'on en boive avec retenue.",
+      "german": "Die Römer schätzen den Wein, weil er den angeschlagenen Geist beleben kann, wenn man es nicht übertreibt.",
+      "italian": "I romani apprezzano il vino perché risolleva le anime tormentate, se assunto con moderazione, ovviamente.",
+      "japanese": "​ローマ​人​は、​ワイン​に​は​疲れ​た​心​を​癒す​力​が​ある​と​評価​し​て​いる。​もちろん、​適量​で​楽しむ​限り​だが。",
+      "korean": "​로마인들은 ​포도주가 ​지친 ​영혼을 ​달래준다고 ​하여 ​귀히 ​여기지만, ​여기에도 ​물론 ​절제가 ​필요한 ​법입니다.",
+      "polish": "Rzymianie cenią wino za jego zdolność do podnoszenia podupadłego ducha, oczywiście, gdy jest spożywane w rozsądnych ilościach.",
+      "russian": "Римляне ценят вино за то, что оно способно оживить поникших духом. Но не стоит забывать, что все хорошо в меру.",
+      "simplified_chinese": "​罗马​人​很​珍​视​葡萄酒，​因为​它​能​重振​低落​的​精神，​当然，​前提​是​适度​饮用。",
+      "spanish": "Los romanos valoran el vino por su poder para levantar el ánimo atribulado, pero siempre con moderación, claro.",
+      "traditional_chinese": "​羅馬​人​很​珍視​葡萄酒，​因為​葡萄酒​能​讓​低落​的​人​提​振​精神，​當然，​必須​適度​飲用。"
+    },
+    "needProduct": 2138,
+    "supplyWeight": 4.0
+  },
+  "2746": {
+    "guid": 2746,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_garum_goods.png",
+    "needAttributes": {
+      "Happiness": 1.0,
+      "Money": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Um condimento de peixe que sem dúvida coloca um sorriso no rosto das pessoas, o garum combina com pão, mingau... qualquer coisa!",
+      "english": "A fishy condiment sure to put a smile on people's faces, Garum pairs with bread, porridge— anything!",
+      "french": "Ce condiment au parfum marin met du cœur au ventre. Le garum se marie aussi bien avec le pain qu'avec la bouillie... ou tout autre mets !",
+      "german": "Das fischige Garum zaubert ein Lächeln auf die Gesichter der Menschen und passt zu Brot, Brei – oder allem anderen!",
+      "italian": "Un condimento a base di pesce farà sorridere la gente, il garum si abbina a pane, alla zuppa d'avena... a qualsiasi cosa!",
+      "japanese": "​魚の​風味​が​特徴​の​調味料​で、​人々​の​笑顔​を​引き出す​こと​間違い​なし。​ガルム​は​パン、​粥、​何​に​でも​合う！",
+      "korean": "​가룸은 ​사람들의 ​얼굴에 ​미소를 ​띠게 ​하는 ​생선 ​소스로, ​빵이나 ​죽 ​등 ​무엇과도 ​잘 ​어울립니다!",
+      "polish": "Ten rybny dodatek na pewno wywołuje uśmiech na niejednej twarzy, albowiem garum można łączyć z pieczywem czy owsianką — dosłownie ze wszystkim!",
+      "russian": "Рыбный соус, от одного аромата которого становишься счастливее. Хорош с хлебом, с кашей – да с чем угодно!",
+      "simplified_chinese": "​一种​人们​喜​闻​乐见​的​腥​香​调味​料，​可以​搭配​面包、​粥……​乃至​任何​东西​一起​食用！",
+      "spanish": "El garo, un condimento a base de pescado que no deja a nadie indiferente, se puede echar al pan, a las gachas... ¡a todo!",
+      "traditional_chinese": "​魚​醬​是能​讓人​露出​笑容​的​調味料，​搭配​麵包、​粥​或​其他​食物​都可以！"
+    },
+    "needProduct": 2139,
+    "supplyWeight": 2.0
+  },
+  "2747": {
+    "guid": 2747,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cheese_goods.png",
+    "needAttributes": {
+      "Money": 3.0,
+      "Population": 2.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "O queijo está entre as iguarias mais nutritivas servidas em festas. O fato de ser feito por bárbaros dá um toque ainda mais especial.",
+      "english": "Cheese is among the heartiest delicacies paraded at parties. That it is barbarian-made adds a premium.",
+      "french": "Le fromage figure parmi les mets les plus roboratifs des banquets, et ses origines barbares ne font qu'en rehausser le prix.",
+      "german": "Käse gehört zu den herzhaftesten Köstlichkeiten, die auf Festen angeboten werden. Die Tatsache, dass er von Barbaren hergestellt wird, verleiht ihm eine besondere Note.",
+      "italian": "Il formaggio è una delle prelibatezze più sostanziose presenti alle feste. Il fatto che sia di fabbricazione barbarica aggiunge un vantaggio.",
+      "japanese": "​チーズ​は​パーティー​で​振る​舞​われる​最も​豪華​な​珍味​の​一つ。​それ​が​野蛮​人​によって​作​ら​れ​て​いる​点​が、​さらに​価値​を​高め​て​いる。",
+      "korean": "​치즈는 ​연회에서 ​선보이는 ​가장 ​든든한 ​진미입니다. ​야만인들이 ​만들었다는 ​점이 ​가치를 ​더하지요.",
+      "polish": "Ser zalicza się do najbardziej wyszukanych frykasów, jakie są serwowane na przyjęciach. Oto wyborny wkład barbarzyńców w kulturę cesarstwa.",
+      "russian": "Сыр – одно из самых сытных угощений на празднествах. Тем шикарнее, что делают его варвары.",
+      "simplified_chinese": "​奶​酪​本​就是​宴会​上​最​受欢迎​的​美食​之一。​“蛮族​出品”​的​标签​更是​增添​了​其​价值。",
+      "spanish": "El queso es uno de los platos más exquisitos que se sirven en las fiestas. Que sea, además, una elaboración bárbara le da un valor añadido.",
+      "traditional_chinese": "​起​司​是​宴會​盛​上​的​豐盛​佳餚​之一。​出自​野蠻​人​隻手​又​更​增添​其​價值。"
+    },
+    "needProduct": 2153,
+    "supplyWeight": 4.0
+  },
+  "2748": {
+    "guid": 2748,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_oysters_and_caviar_goods.png",
+    "needAttributes": {
+      "Health": 2.0,
+      "Money": 3.0,
+      "Population": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Muitos acreditam que essa abundância excessiva de joias marinhas equilibra os humores e inflama a libido.",
+      "english": "This excessive abundance of sea jewels is thought by many to balance the humours and inflame the libido.",
+      "french": "Beaucoup attribuent à cette abondance de délices marins la vertu de rétablir les humeurs... et d'échauffer les ardeurs.",
+      "german": "Dieser übermäßige Reichtum an Meeresjuwelen soll angeblich eine ausgleichende Wirkung auf Körpersäfte haben und zur Anregung der Libido dienen.",
+      "italian": "Molti ritengono che questa abbondanza eccessiva di gemme marine equilibri gli umori e accenda la libido.",
+      "japanese": "​この​海​の​宝石​が​もつ​過剰​な​まで​の​栄養​は​体液​の​バランス​を​整​え、​性欲​を​刺激​する​という​の​が​通俗​に​な​って​いる。",
+      "korean": "​이렇게 ​풍성한 ​바다의 ​보석들은 ​체액의 ​균형을 ​맞추고 ​정욕을 ​불러일으킨다고 ​여겨집니다.",
+      "polish": "Obfite spożywanie owoców morza zdaniem wielu równoważy humory i rozpala dziarskość.",
+      "russian": "Многие считают, что обилие даров моря улучшает баланс гуморов и разжигает страсть.",
+      "simplified_chinese": "​这​过剩​的​海洋​珍宝​被​许多​人​认为​能​平衡​体液，​以及​激发​性欲。",
+      "spanish": "Muchos creen que la ingesta excesiva de estos manjares marinos equilibra los humores e intensifica la libido.",
+      "traditional_chinese": "​這​過剩​的​海洋​珍寶​被​許多​人​認為​能​調和​體液，​以及​激發​性慾。"
+    },
+    "needProduct": 2140,
+    "supplyWeight": 8.0
+  },
+  "2749": {
+    "guid": 2749,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_tongue_in_aspic_goods.png",
+    "needAttributes": {
+      "Happiness": -2.0,
+      "Money": 6.0,
+      "Prestige": 6.0
+    },
+    "needDescription": {
+      "brazilian": "Ninguém admite como línguas em gelatina são desagradáveis de comer, pois o valor delas está inteiramente na ilusão.",
+      "english": "None will admit how unpleasant Jellied Tongues are to eat, for their value lies entirely in the illusion.",
+      "french": "On ne dira mot du supplice que sont les langues en gelée... leur mérite, tout factice, repose sur le seul intérêt de leur présentation.",
+      "german": "Niemand wird zugeben, wie unangenehm der Verzehr von Zungen in Aspik ist, denn ihr Wert liegt ausschließlich in der Illusion.",
+      "italian": "Nessuno ammetterà quanto siano disgustose le lingue in gelatina, perché il loro valore risiede totalmente nell'illusione.",
+      "japanese": "​ゼリー​状​の​舌​を​食べる​と​不快​に​なる​の​を​誰​も​認め​よう​と​しない。​その​食材​に​ある​幻想​こそ​に​価値​が​ある​の​だから。",
+      "korean": "​젤리로 ​만든 ​혀가 ​먹기에 ​불쾌하다는 ​건 ​아무도 ​인정하지 ​않습니다. ​그 ​가치는 ​온전히 ​환상에 ​있으니까요.",
+      "polish": "Nikt nie przyzna, jakie tak naprawdę niesmaczne są języczki w galarecie, bo ich sukces leży wyłącznie w iluzji zamożności.",
+      "russian": "Никто не признается, что язычки в желе – гадость. Иначе они утратят всякую ценность.",
+      "simplified_chinese": "​没有​人​会​承认​这种​果冻​一样​的​舌头​有​多​难​吃，​因为​它的​价值​全​在于​幻想。",
+      "spanish": "Nadie se atreve a admitir lo desagradable que es comer una lengua gelatinosa; su valor radica en la imagen que proyecta.",
+      "traditional_chinese": "​沒有​人​會​承認​果凍​舌頭​吃起來​多​可怕，​因為​它的​價值​全​在於​幻想。"
+    },
+    "needProduct": 2155,
+    "supplyWeight": 8.0
+  },
+  "2750": {
+    "guid": 2750,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_marketplace.png",
+    "needAttributes": {
+      "Money": 1.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Ponto de encontro central para comércio e escambo, bom para qualquer comunidade.",
+      "english": "Central gathering place for trade and barter, that every community could use.",
+      "french": "Un centre névralgique d'échange et de troc, tel qu'il en faudrait dans chaque communauté.",
+      "german": "Ein zentraler Treffpunkt für Handel und Tausch, den jede Gemeinschaft braucht.",
+      "italian": "Luogo di ritrovo centrale per il commercio e il baratto, utilizzabile da ogni comunità.",
+      "japanese": "​交易​と​物々交換​の​中心​と​なる​集会​所​で​あり、​あらゆる​コミュニティ​が​使える​場所。",
+      "korean": "​모든 ​공동체에 ​필요한 ​교역과 ​물물교환을 ​위한 ​중심 ​집결지입니다.",
+      "polish": "Centralne miejsce spotkań kupców i handlarzy, którego potrzebuje każda społeczność.",
+      "russian": "Главное место для заключения сделок и обмена товарами, которое пригодится любому сообществу.",
+      "simplified_chinese": "​每​个​社区​都​不可或缺​的​中央​集会​场所，​专门​用于​金钱​交易​和​以​物​易​物。",
+      "spanish": "Un punto de encuentro para el comercio y el trueque al alcance de todas las comunidades.",
+      "traditional_chinese": "​每個​社區​都​需要​一座​中央​聚集​場所，​用來​金錢​交易​和​以​物​易​物。"
+    },
+    "needProduct": 2671,
+    "supplyWeight": 1.0
+  },
+  "2751": {
+    "guid": 2751,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_tavern.png",
+    "needAttributes": {
+      "Happiness": 1.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Não importa se você busca companhia ou quer beber sozinho, todos são bem-vindos na taverna. ",
+      "english": "Whether you're seeking company or drinking alone, all are welcome in taberna. ",
+      "french": "Que l'on cherche la conversation ou la solitude d'un verre, la taberna ouvre ses portes à chacun. ",
+      "german": "Ob man nun Gesellschaft sucht oder allein trinken möchte, in der Taberna sind alle willkommen. ",
+      "italian": "Che siate in cerca di compagnia o vogliate bere per conto vostro, la taberna vi accoglierà. ",
+      "japanese": "​仲間​を​探​し​て​いる​人​も、​一人​で​飲​みたい​人​も、​酒場​は​誰​でも​歓迎​する。 ",
+      "korean": "​친구와 ​함께하든 ​홀로 ​술을 ​마시든, ​술집에서는 ​모두를 ​환영합니다. ",
+      "polish": "Niezależnie od tego, czy ktoś szuka towarzystwa czy woli pić w samotności, w karczmie każdy jest mile widziany. ",
+      "russian": "Ищете ли вы компанию или хотите выпить в одиночестве, в таберне рады всем. ",
+      "simplified_chinese": "​无论​是想​找人​作伴​还是​自​斟​自​饮，​酒馆​统统​欢迎。 ",
+      "spanish": "Tanto si buscas compañía como si prefieres beber a solas, en la taberna todo el mundo es bienvenido. ",
+      "traditional_chinese": "​無論​是想​尋求​陪伴​還是​獨自​飲酒，​酒館​歡迎​所有​人。 "
+    },
+    "needProduct": 2677,
+    "supplyWeight": 1.0
+  },
+  "2752": {
+    "guid": 2752,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_library.png",
+    "needAttributes": {
+      "FireSafety": -2.0,
+      "Knowledge": 7.0,
+      "Prestige": 3.0
+    },
+    "needDescription": {
+      "brazilian": "O silêncio só é rompido pelo barulho do papiro e o riscar das penas. ",
+      "english": "The silence is only broken by the rustling of papyrus and the scratching of quills. ",
+      "french": "Le silence n'est troublé que par le froissement du papyrus et le grattement des plumes. ",
+      "german": "Das Schweigen wird nur durch das Rascheln von Papyrus und das Kratzen der Federn unterbrochen. ",
+      "italian": "Il silenzio è rotto solo dal fruscio dei papiri e dallo scricchiolio delle penne. ",
+      "japanese": "​静けさ​は、​パピルス​の​さ​ざ​め​き​と​羽​ペン​の​かすか​な​音​によって​のみ​破​られる。 ",
+      "korean": "​파피루스 ​스치는 ​소리와 ​깃펜 ​긁는 ​소리만이 ​정적을 ​깨뜨립니다. ",
+      "polish": "Ciszę tego miejsca zakłóca jedynie szelest papirusu i skrzypienie piór. ",
+      "russian": "Тишину нарушает лишь шорох папируса и царапанье перьев. ",
+      "simplified_chinese": "​唯有​纸​莎草​的​沙沙声​与​羽毛​笔​的​书写​声​打破​宁静。 ",
+      "spanish": "Lo único que rompe el silencio es el susurro de los papiros y el rascar de las plumas. ",
+      "traditional_chinese": "​唯有​莎​草紙​的​沙沙聲​與​羽毛​筆​的​書寫​聲​打破​寧靜。 "
+    },
+    "needProduct": 2678,
+    "supplyWeight": 8.0
+  },
+  "2753": {
+    "guid": 2753,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_sanctuary.png",
+    "needAttributes": {
+      "Belief": 2.0,
+      "Happiness": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Um refúgio tranquilo da agitação, o santuário abre seus portões para os devotos silenciosos. ",
+      "english": "A tranquil respite from the hustle and bustle, the Sanctuary opens its gates to the quietly devoted. ",
+      "french": "Tranquille refuge loin de l'agitation, le sanctuaire accueille ceux qui pratiquent leur foi dans le silence. ",
+      "german": "Das Heiligtum ist ein ruhiger Zufluchtsort vor der Hektik des Alltags und öffnet seine Pforten für die stillen Gläubigen. ",
+      "italian": "Ottimo per prendersi una pausa dal trambusto, il Santuario apre le sue porte ai silenziosi devoti. ",
+      "japanese": "​喧騒​から​離れ​た​静か​な​休息​の​場。​聖域​は、​静か​に​愛​を​捧げる​者​たち​を​迎え入れる。 ",
+      "korean": "​분주한 ​일상에서 ​벗어나 ​평온을 ​찾으려는 ​경건한 ​이들을 ​위해 ​성소의 ​문이 ​열립니다. ",
+      "polish": "Jako cichy azyl będący ucieczką przed zgiełkiem i gwarem, sanktuarium otwiera swoje bramy przed każdym, kto pragnie modlić się w spokoju. ",
+      "russian": "Святилище дарит тишину и покой всем, кто устал от шума и суеты. ",
+      "simplified_chinese": "​圣​所​会​向​安静​的​虔信​者​敞开​其​大门，​为​喧嚣​的​日常​带来​一方​静​谧。 ",
+      "spanish": "El santuario, refugio del ajetreo y el bullicio, abre sus puertas a los devotos más silenciosos. ",
+      "traditional_chinese": "​聖​所能​為​喧囂​的​日常​帶來​一方​靜謐，​向​安靜​的​虔信​者​敞開​其​大門。 "
+    },
+    "needProduct": 2679,
+    "supplyWeight": 2.0
+  },
+  "2754": {
+    "guid": 2754,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_grammaticus.png",
+    "needAttributes": {
+      "Knowledge": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Com a leitura de poesia e filosofia vem o risco real de se tornar \"inteligente demais\".",
+      "english": "With the reading of poetry and philosophy comes the real risk of becoming \"overly clever\".",
+      "french": "Qui s'adonne aux vers et aux spéculations s'expose à ce péril notoire : finir par faire preuve d'esprit.",
+      "german": "Wer sich in Poesie und Philosophie vertieft, riskiert, „zu klug“ zu werden.",
+      "italian": "Leggendo poesie e testi di filosofia, si rischia di diventare \"eccessivamente arguti\".",
+      "japanese": "​詩​や​哲学​を​読む​こと​は、​「過剰​に​知的​な」​人間​に​な​って​しまう​本物​の​リスク​を​伴う。",
+      "korean": "​시와 ​철학을 ​읽다 ​보면 ​\"지나치게 ​영리해질\" ​위험이 ​따르기 ​마련입니다.",
+      "polish": "Czytanie poetów i filozofów niesie ze sobą realne ryzyko pozyskania \"nadmiaru mądrości\".",
+      "russian": "Любители поэзии и философских трудов рискуют прослыть всезнайками.",
+      "simplified_chinese": "​研​读​诗歌​与​哲学​真的​会​有​变得​“聪明​过头”​的​风险。",
+      "spanish": "La poesía y la filosofía entrañan el riesgo de «pasarse de listo».",
+      "traditional_chinese": "​研讀​詩歌​與​哲學​會​帶來​變得​「過度​聰明」​的​風險。"
+    },
+    "needProduct": 2680,
+    "supplyWeight": 2.0
+  },
+  "2755": {
+    "guid": 2755,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_wonder_celtic_forum.png",
+    "needAttributes": {
+      "Money": 2.0,
+      "Population": 2.0,
+      "Prestige": 3.0
+    },
+    "needDescription": {
+      "brazilian": "O fórum, com seus grandes bancos, calçadas públicas e fontes, oferece um pouco de tudo à cidade.",
+      "english": "The Forum with its grand stalls, public walkways and fountains, offers the city a little of everything.",
+      "french": "Avec ses vastes étals, ses promenades publiques et ses fontaines, le forum donne à la ville un aperçu de toutes choses.",
+      "german": "Das Forum mit seinen großen Ständen, öffentlichen Wegen und Brunnen bietet der Stadt ein wenig von allem.",
+      "italian": "Il forum, con le sue maestose bancarelle, i marciapiedi e le fontane, offre un po' di tutto.",
+      "japanese": "​広場​は、​壮観​な​屋台、​広々​と​した​歩道、​そして​噴水​を​備え、​街​に​彩り​豊か​な​魅力​を​与える。",
+      "korean": "​웅장한 ​상점과 ​산책로, ​분수가 ​있는 ​포럼은 ​도시에 ​모든 ​것을 ​선사합니다.",
+      "polish": "Forum, ze swoimi wspaniałymi stoiskami, publicznymi chodnikami i fontannami, zapewnia miastu po trochu wszystkiego.",
+      "russian": "Форум с величественными портиками, дорожками и фонтанами и сам как небольшой город.",
+      "simplified_chinese": "​广场​有​华丽​的​摊​位、​公共​步道​和​喷泉，​汇集​了​城市​万象​的​缩影。",
+      "spanish": "El foro, con sus tribunas, paseos públicos y fuentes, ofrece a la ciudad un poco de todo.",
+      "traditional_chinese": "​廣場​有​華麗​的​攤位、​公共​步道​與​噴泉，​是能​稍微​體驗​城市​萬象​之地。"
+    },
+    "needProduct": 2681,
+    "supplyWeight": 4.0
+  },
+  "2756": {
+    "guid": 2756,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_theatre.png",
+    "needAttributes": {
+      "Happiness": 3.0,
+      "Knowledge": 1.0,
+      "Prestige": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Uma cidade capaz de zombar de si mesma por meio de uma sátira, ou de aprender com uma tragédia, precisa de um teatro.",
+      "english": "A city that can afford to laugh at itself through satire, or else to learn from tragedy, needs a Theatre.",
+      "french": "Il faut un théâtre à toute cité qui prétend rire d'elle-même par la satire, ou s'élever par les leçons de la tragédie.",
+      "german": "Eine Stadt, die es sich leisten kann, durch Satire über sich selbst zu lachen oder aus einer Tragödie zu lernen, braucht ein Theater.",
+      "italian": "Una città che può permettersi di ridere di se stessa attraverso la satira o che voglia apprendere dalla tragedia ha bisogno di un teatro.",
+      "japanese": "​皮肉​を通じて​自ら​を​笑う​こと​が​できる、​あるいは​悲劇​から​学ぶ​こと​が​できる​都市​に​は、​劇場​が​必要​だ。",
+      "korean": "​풍자를 ​통해 ​스스로를 ​비웃거나 ​비극에서 ​교훈을 ​얻는 ​사람들의 ​도시에는 ​극장이 ​필요합니다.",
+      "polish": "Każde miasto, które potrafi śmiać się samo z siebie, oglądając satyry, lub woli uczyć się na dramatach, potrzebuje teatru.",
+      "russian": "Городу, жители которого способны посмеяться над собой в сатире или вынести уроки из трагедии, необходим театр.",
+      "simplified_chinese": "​每一​座​敢于​讥讽​自嘲，​或​从​悲剧​中​汲取​教训​的​城市，​都​值得​拥有​一座​剧场。",
+      "spanish": "Toda ciudad que sepa reírse de sí misma por medio de la sátira, o aprender por medio de la tragedia, necesita un teatro.",
+      "traditional_chinese": "​一座​能​藉由​譏諷​自嘲，​或​從​悲劇​中​學習​的​城市，​都​值得​擁有​一座​劇場。"
+    },
+    "needProduct": 2683,
+    "supplyWeight": 4.0
+  },
+  "2759": {
+    "guid": 2759,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_temple.png",
+    "needAttributes": {
+      "Belief": 6.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Grandes templos atraem multidões dispostas a perder todo o senso de si para comungar com o divino.",
+      "english": "Grand temples draw crowds willing to lose all sense of themselves to commune with the divine.",
+      "french": "Les vastes temples attirent les foules, prêtes à s'oublier tout entières pour mieux s'élever vers les dieux.",
+      "german": "Große Tempel ziehen Menschenmengen an, die sich ganz dem Göttlichen hingeben wollen.",
+      "italian": "I grandiosi templi attirano folle disposte a perdere la propria identità per entrare in comunione con il divino.",
+      "japanese": "​壮大​な​神殿​に​は、​神聖​な​存在​と​交わる​ため、​自分​自身​の​感覚​を​すべて​失う​覚悟​を​持​っ​た​人々​が​集まる。",
+      "korean": "​웅장한 ​신전은 ​신과 ​교감하기 ​위해 ​자아를 ​잃으려는 ​이들을 ​끌어들입니다.",
+      "polish": "Wielkie świątynie przyciągają tłumy tych, którzy pragną zatracić się w jedności z bogami.",
+      "russian": "Большие храмы привлекают толпы людей, жаждущих забыть невзгоды и приблизиться к божественному.",
+      "simplified_chinese": "​宏伟​的​神庙​吸引​着​愿意​彼​底​忘我，​只为​与​神灵​交流​的​民众。",
+      "spanish": "Los templos más grandes atraen a multitudes dispuestas a perder su propia conciencia con tal de comunicarse con lo divino.",
+      "traditional_chinese": "​宏偉​的​神廟​能​吸引​群眾​前來，​為了​與​神靈​交流，​甘願​失去​所有​感官。"
+    },
+    "needProduct": 2684,
+    "supplyWeight": 8.0
+  },
+  "2768": {
+    "guid": 2768,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_tunics_goods.png",
+    "needAttributes": {
+      "Money": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Até os liberti abrem suas bolsas para comprar túnicas de lã simples e bem-feitas.",
+      "english": "Even the liberti will open their purses for simple, well-made woolen tunics.",
+      "french": "Il n'est point de Libertus qui ne débourse quelques deniers pour une tunique de laine, si elle est simple et solidement tissée.",
+      "german": "Selbst die Liberti öffnen ihre Geldbeutel für einfache, gut gefertigte Wolltuniken.",
+      "italian": "Anche i liberti aprono le loro bisacce e comprano tuniche di lana semplici e ben fatte.",
+      "japanese": "​シンプル​で​質​の​いい​羊毛​の​チュニック​に​は、​リベルトゥス​で​さえ​財布​の​紐​を​緩める​だ​ろう。",
+      "korean": "​자유민들조차도 ​잘 ​만든 ​울 ​튜닉이라면 ​지갑을 ​열 ​것입니다.",
+      "polish": "Nawet wyzwoleniec sięgnie głębiej do sakiewki, byle tylko mieć solidnie wykonaną, wełnianą tunikę.",
+      "russian": "Даже либертины раскошелятся на простые и добротные шерстяные туники.",
+      "simplified_chinese": "​即使是​自由​民​也​愿意​掏​钱​购买​样式​简单​又​制作​精良​的​羊毛​丘​尼​卡。",
+      "spanish": "Incluso los libertos están dispuestos a pagar por túnicas de lana que estén bien confeccionadas.",
+      "traditional_chinese": "​即使是​自由​民​也​願意​掏錢​購買​樣式​簡單​又​製作​精良​的​羊毛​丘​尼​卡。"
+    },
+    "needProduct": 2141,
+    "supplyWeight": 1.0
+  },
+  "2769": {
+    "guid": 2769,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_farmer_hat_goods.png",
+    "needAttributes": {
+      "Happiness": 1.0,
+      "Money": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Um chapéu humilde e reconfortante no estilo helênico, para o sol sorridente e a glória bucólica.",
+      "english": "A humble, comforting hat in the hellenic style, for the smiling sun and bucolic bliss.",
+      "french": "Un humble couvre-chef dans le plus pur style hellénique, propice aux jours ensoleillés et aux plaisirs champêtres.",
+      "german": "Ein schlichter, behaglicher Hut im hellenischen Stil, wie gemacht für die strahlende Sonne und ländliche Glückseligkeit.",
+      "italian": "Un umile e comodo cappello in stile ellenico, adatto al sole sorridente e all'estasi bucolica.",
+      "japanese": "​ギリシャ​風​の​素朴​で​着心地​の​いい​帽子。​微笑む​太陽​の​下​や、​楽しい​田舎​暮らし​で​ぜひ​身​につけ​たい。",
+      "korean": "​헬레니즘 ​양식의 ​수수하고 ​포근한 ​모자로, ​따스한 ​태양과 ​전원의 ​행복을 ​누리세요.",
+      "polish": "Skromne, wygodne nakrycie głowy w stylu greckim, w sam raz na wesołe słoneczko i wypoczynek na łonie natury.",
+      "russian": "Скромный и удобный колпак в эллинском стиле – в самый раз для сияющего солнца и буколической неги.",
+      "simplified_chinese": "​一顶​朴​实​又​舒适​的​希腊​风​帽子，​与​灿烂​的​太阳​和​乡村​的​恬静​十分​般配。",
+      "spanish": "Un sombrero modesto y cómodo al más puro estilo helénico, para recibir la sonrisa del sol y la dicha bucólica.",
+      "traditional_chinese": "​一​頂​樸實​又​舒適​的​希臘​風​帽子，​為​燦爛​的​太陽​與​鄉村​的​恬靜​而​戴。"
+    },
+    "needProduct": 2142,
+    "supplyWeight": 1.0
+  },
+  "2770": {
+    "guid": 2770,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_lavender_soap_goods.png",
+    "needAttributes": {
+      "Health": 2.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Quem diria que gordura e cinzas poderiam produzir um resultado tão limpinho?",
+      "english": "Who would have thought that fat drippings and ashes could produce such squeaky clean results?",
+      "french": "Qui aurait imaginé que le mélange de suint et de cendres puisse aboutir à une propreté aussi impeccable ?",
+      "german": "Wer hätte gedacht, dass Fettreste und Asche so gründlich reinigen können?",
+      "italian": "Chi avrebbe mai pensato che il grasso gocciolante e la cenere potessero pulire?",
+      "japanese": "​滴る​脂​と​灰​が​これほど​ピカピカ​に​なる​と​は、​誰​が​想像​した​だ​ろう​か？",
+      "korean": "​기름기와 ​재로 ​이렇게 ​깨끗한 ​결과물을 ​만들 ​수 ​있다니, ​누가 ​상상이나 ​했겠습니까?",
+      "polish": "Kto by pomyślał, że odrobina tłuszczu i popiołu może dać taki czysty efekt?",
+      "russian": "Кто бы мог подумать, что после жира и золы все будет скрипеть от чистоты?",
+      "simplified_chinese": "​谁能​想到​脂肪​与​灰烬​能​带来​这么​洁净​的​效果？",
+      "spanish": "¿Quién habría dicho que los restos de grasa y las cenizas podrían arrojar tan limpios resultados?",
+      "traditional_chinese": "​誰能​想到​脂肪​與​灰燼​能​帶來​這麼​潔淨​的​效果？"
+    },
+    "needProduct": 2143,
+    "supplyWeight": 2.0
+  },
+  "2771": {
+    "guid": 2771,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_sandals_goods.png",
+    "needAttributes": {
+      "Money": 2.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Calçados bem torneados para romanos de todas as classes e tamanhos, adequados para dias quentes.",
+      "english": "Shapely footwear for romans of all ranks and sizes, well-suited for warm weather.",
+      "french": "Des chaussures aux lignes soignées, prisées des Romains de tout rang et toute stature, taillées pour les jours de chaleur.",
+      "german": "Formschönes Schuhwerk für Römer jeder Größe und jeden Rangs, ideal für warmes Wetter.",
+      "italian": "Calzature eleganti per romani di ogni ceto e taglia, adatte alla bella stagione.",
+      "japanese": "​ローマ​の​あらゆる​階級​と​体型​に​合う、​暖か​な​気候​に​最適​かつ​見栄え​も​良い​靴。",
+      "korean": "​따뜻한 ​날씨에 ​잘 ​어울리는, ​모든 ​계급과 ​체격의 ​로마인을 ​위한 ​우아한 ​신발입니다.",
+      "polish": "Zgrabne obuwie dla rzymianina o dowolnej pozycji i wielkości, najlepsze na ciepłą pogodę.",
+      "russian": "Изящная обувь для римлян любого сложения и положения, отлично подходит для жаркой погоды.",
+      "simplified_chinese": "​为​各​阶层、​各​尺寸​罗马​人​量​身​打造​的​合​脚​鞋，​非常​适合​温暖​的​气候。",
+      "spanish": "Un calzado apropiado para romanos de todos los rangos y tallas e idóneo para climas cálidos.",
+      "traditional_chinese": "​為​各階層、​各​尺寸​羅馬​人​量​身​打造​的​合​腳​鞋，​非常​適合​溫暖​的​氣候。"
+    },
+    "needProduct": 2144,
+    "supplyWeight": 2.0
+  },
+  "2772": {
+    "guid": 2772,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_togas_goods.png",
+    "needAttributes": {
+      "Population": 2.0,
+      "Prestige": 3.0
+    },
+    "needDescription": {
+      "brazilian": "A única vestimenta pela qual romanos são identificados. Até a mais fina faixa de púrpura tíria atrai uma multidão... e uma chama.",
+      "english": "The one garment by which Romans are identified. Even the slenderest strip of Tyrian purple will draw a crowd— and a flame.",
+      "french": "Le seul habit qui suffit à dire « Romain ». Un simple liseré de pourpre tyrienne suffit à attirer la foule... et parfois le feu.",
+      "german": "Das Kleidungsstück schlechthin, an dem man einen Römer erkennt. Schon ein Hauch von tyrischem Purpur zieht Blicke an – und Feuer.",
+      "italian": "L'unica veste con cui si identificano i romani. Anche la più sottile striscia di porpora di Tiro attirerà la folla... e le fiamme.",
+      "japanese": "​ローマ​人​を​特徴付ける​唯一​の​衣服。​貝​紫色​の​ほんの​小さな​帯​でも​群衆​を​引き​寄せ​——​そして​炎​を​引き寄せる。",
+      "korean": "​로마인을 ​구별 ​짓는 ​단 ​하나의 ​의복입니다. ​자색 ​천의 ​가느다란 ​띠 ​하나만으로도 ​군중이 ​모이고, ​불꽃이 ​일어날 ​것입니다.",
+      "polish": "Element odzieży charakterystyczny dla każdego Rzymianina. Nawet niewielka ilość tyryjskiej purpury może przyciągać spojrzenia — i ogień.",
+      "russian": "Одеяния, знаковые для римлян. Даже тончайшая лента пурпурной ткани привлечет целую толпу – следите, чтобы не было драк.",
+      "simplified_chinese": "​罗马​人的​标志​性​服饰。​即使是​最​细​的​蒂​尔​紫​丝带，​也能​吸引​众人​目光​——​甚至​招来​祸患。",
+      "spanish": "La prenda que más caracteriza a los romanos. Hasta el menor atisbo de púrpura imperial atraerá a las masas... y a las llamas.",
+      "traditional_chinese": "​象徵​羅馬​人​身分​的​服飾。​即使是​最​細​的​蒂​爾​紫​絲帶，​也能​吸引​眾人​目光​——​甚至​吸引​火焰​燒灼。"
+    },
+    "needProduct": 2145,
+    "supplyWeight": 4.0
+  },
+  "2773": {
+    "guid": 2773,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_brooch_goods.png",
+    "needAttributes": {
+      "Belief": 3.0,
+      "Money": 4.0
+    },
+    "needDescription": {
+      "brazilian": "Se os romanos tiverem que pagar taxas de importação por broches, paciência! Qualquer coisa para manter a toga no lugar!",
+      "english": "If a Roman must pay import duties for Brooches, so be it, anything to hold that toga in place!",
+      "french": "Que le Romain s'acquitte de droits pour ses broches, soit ! Mieux vaut cela que de voir sa toge lui glisser des épaules.",
+      "german": "Wenn ein Römer Zoll für Fibeln zahlen muss, soll es so sein. Hauptsache die Toga sitzt!",
+      "italian": "Se un romano deve pagare dei dazi per le spille, allora così sia. Farebbe qualsiasi cosa per tenere la toga in ordine!",
+      "japanese": "​ローマ​人​が​ブローチ​に​輸入​税​を​支払​わな​け​れ​ば​なら​ない​の​なら、​仕方​が​ない。​ト​ガ​は​留め​具​が​ない​と​始​ま​ら​ない​の​だから！",
+      "korean": "​로마인이 ​브로치에 ​수입세를 ​내야 ​한다면, ​그렇게 ​하는 ​수밖에요. ​토가를 ​고정하는 ​데는 ​무엇이든 ​필요하니까요!",
+      "polish": "Jeśli Rzymianin musi zapłacić podatek importowy od brosz, to trudno, najważniejsze, żeby toga nie spadała!",
+      "russian": "Если римлянам придется платить пошлины за ввоз фибул, возражений не будет. Что угодно, лишь бы тога не сползала!",
+      "simplified_chinese": "​如果​罗马​人​必须​为​胸针​付​进口​税，​那就​付​吧，​任何​能​固定​托​加​的​东西​都​值得​付钱！",
+      "spanish": "Si un romano debe pagar aranceles por un broche, adelante; ¡todo sea por que no se le caiga la toga!",
+      "traditional_chinese": "​如果​羅馬​人​必須​為​胸針​付​進口稅，​那就​付​吧，​任何​能​固定​托​加​的​東西​都​值得​付錢！"
+    },
+    "needProduct": 2156,
+    "supplyWeight": 4.0
+  },
+  "2774": {
+    "guid": 2774,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_necklaces_goods.png",
+    "needAttributes": {
+      "Money": 6.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Colares são sofisticados e caros.",
+      "english": "Necklaces are both sophisticated, and expensive.",
+      "french": "Les colliers sont à la fois raffinés... et coûteux.",
+      "german": "Halsketten sind sowohl kultiviert als auch teuer.",
+      "italian": "Le collane sono sofisticate e costose.",
+      "japanese": "​ネックレス​は​おしゃれ​度​は​もちろん​値段​も​高い。",
+      "korean": "​목걸이는 ​우아하면서도 ​값비싼 ​장신구입니다.",
+      "polish": "Naszyjniki są zarówno eleganckie, jak i kosztowne.",
+      "russian": "Ожерелья и изысканны, и дороги.",
+      "simplified_chinese": "​项链​既​精致​又​昂贵。",
+      "spanish": "Los collares son sofisticados a la vez que costosos.",
+      "traditional_chinese": "​項鍊​既​精緻​又​昂貴。"
+    },
+    "needProduct": 2146,
+    "supplyWeight": 8.0
+  },
+  "2775": {
+    "guid": 2775,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cloak_goods.png",
+    "needAttributes": {
+      "Happiness": 2.0,
+      "Health": 2.0,
+      "Money": 4.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Os romanos criaram suas próprias superstições sobre os poderes dos anéis de pescoço celtas. Um autêntico lhe custará um bom dinheiro.",
+      "english": "Romans have developed their own superstitions about the powers of Celtic neck rings. A bona fide one will set you back a fair price.",
+      "french": "Les Romains, à leur tour, prêtent mille vertus aux torques des Celtes. Un authentique modèle vous en coûtera un bon prix.",
+      "german": "Die Römer haben ihren eigenen Aberglauben über die Kräfte der keltischen Halsringe entwickelt. Ein echtes Exemplar kostet einen guten Preis.",
+      "italian": "I romani hanno alimentato le loro superstizioni sui poteri dei collari celtici. Chi è in buona fede ti farà pagare un prezzo equo.",
+      "japanese": "​ローマ​人​は、​ケルト​の​首輪​の​力​について​勝手​な​迷信​を​育​んで​きた。​本物​の​逸品​は​相当​な​値段​が​する。",
+      "korean": "​로마인들은 ​켈트족의 ​목걸이가 ​지닌 ​힘에 ​대해 ​나름의 ​미신을 ​만들어냈습니다. ​진품 ​하나면 ​제법 ​큰 ​돈을 ​내야 ​하지요.",
+      "polish": "Rzymianie opracowali własny system zabobonów dotyczący mocy celtyckich bransolet na szyję. Na szczęście zawsze znajdzie się uczciwy handlarz, który zaoferuje je w dobrej cenie.",
+      "russian": "У римлян появились собственные поверья о кельтских шейных кольцах. Подлинное обойдется вам в приличную сумму.",
+      "simplified_chinese": "​罗马​人​对​凯​尔​特​颈​环​的​力量​非常​迷信，​要​想​获得​一件​真品​你​得​花上​一大​笔钱。",
+      "spanish": "Los romanos han desarrollado sus propias supersticiones en torno a los «anillos» que se ponen los celtas en el cuello. Uno de los buenos cuesta un ojo de la cara.",
+      "traditional_chinese": "​羅馬​人​對​凱​爾​特​頸​環​的​力量​非常​迷信，​真正​的​頸​環​價格​不​菲。"
+    },
+    "needProduct": 2161,
+    "supplyWeight": 8.0
+  },
+  "2776": {
+    "guid": 2776,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_lounger_goods.png",
+    "needAttributes": {
+      "FireSafety": -1.0,
+      "Happiness": 1.0,
+      "Money": 5.0,
+      "Population": 1.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Dê a aparência de um estilo de vida descontraído e autenticamente romano com valiosos lecti, desde que não sejam expostos à luz, é claro...",
+      "english": "Give the appearance of a laid-back, authentically Roman lifestyle with expensive lecti, provided they don't catch light, of course...",
+      "french": "Offrez à votre demeure le visage d'un confort résolument romain en l'agrémentant de somptueux lecti... pourvu qu'ils ne s'embrasent pas, naturellement.",
+      "german": "Vermittelt das Flair des authentisch-römischen Lifestyles mit teuren Lecti – solange kein Licht darauffällt ...",
+      "italian": "Danno l'impressione dell'autentico e rilassato stile di vita romano con i loro lecti costosi. A patto che non entri la luce, ovviamente...",
+      "japanese": "​高価​な​寝​椅子​で​のんびり​と​した​本格​的​な​ローマ​の​ライフスタイル​を​演出​しよう。​もちろん、​火事​で​台無し​に​なら​ない​限り​だが…",
+      "korean": "​값비싼 ​침대를 ​배치해 ​여유로운 ​로마식 ​생활을 ​연출해 ​보세요. ​물론 ​불만 ​붙지 ​않는다면 ​말이죠...",
+      "polish": "Możesz wygodnie wylegiwać w prawdziwie rzymskiej i kosztownej lektyce, przynajmniej dopóki nie zaprószysz w niej ognia...",
+      "russian": "Почувствуйте себя вальяжным римлянином и вздремните на роскошной клинии… при условии, что блики света не будут вам мешать.",
+      "simplified_chinese": "​用​昂贵​的​躺椅​营​造​慵​懒​地道​的​罗马​生活​情调，​当然​前提​是​确保​它们​别​着火……",
+      "spanish": "Crea la impresión de un estilo de vida relajado y tradicionalmente romano con lechos caros. Pero cuidado con el fuego...",
+      "traditional_chinese": "​營造​出​一種​悠閒、​道地​的​羅馬​生活​氛圍，​配​上​昂貴​的​躺椅​——​當然，​前提​是​它們​別​著​火……"
+    },
+    "needProduct": 2147,
+    "supplyWeight": 8.0
+  },
+  "2777": {
+    "guid": 2777,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_amphorae_goods.png",
+    "needAttributes": {
+      "FireSafety": 1.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Um gargalo elegante e uma terracota ricamente decorada para exibir sua riqueza... e seu vinho. ",
+      "english": "An elegant neck and richly decorated terracocta to show off your wealth— and your wine. ",
+      "french": "Col élancé, terre cuite somptueusement ornée : de quoi exhiber votre opulence... et votre meilleur cru. ",
+      "german": "Ein eleganter Hals und reich verziertes Terrakotta, um deinen Reichtum – und deinen Wein – zur Schau zu stellen. ",
+      "italian": "Un collo elegante e una terracotta riccamente decorata per sfoggiare la tua ricchezza... e il tuo vino. ",
+      "japanese": "​優雅​な​首​の​形​と​豪華​に​装飾​さ​れ​た​テラコッタ​で、​あなた​の​富​と​ワイン​を​際​立​たせる。 ",
+      "korean": "​우아한 ​목과 ​화려하게 ​장식된 ​테라코타로 ​부와 ​포도주를 ​자랑하십시오. ",
+      "polish": "Bogato zdobiony gliniany produkt z elegancką szyjką, który pozwoli ci pochwalić się swą zamożnością — i winem. ",
+      "russian": "Изящная горловина и украшенная терракота продемонстрируют ваше богатство (и вино). ",
+      "simplified_chinese": "​拥有​优雅​瓶颈​与​华丽​装饰​的​陶器，​用以​炫耀​你的​财富​——​以及​美酒。 ",
+      "spanish": "Un recipiente de tierra cocida y cuello elegante con el que presumir de riqueza... y de vino. ",
+      "traditional_chinese": "​擁有​優雅​脖頸​與​華麗​裝飾​的​陶器，​用以​炫耀​你的​財富​——​以及​美酒。 "
+    },
+    "needProduct": 31700,
+    "supplyWeight": 2.0
+  },
+  "2778": {
+    "guid": 2778,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_olive_oil_goods.png",
+    "needAttributes": {
+      "Health": 1.0,
+      "Money": 1.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Este condimento básico do império não só é saudável, como também evita que atletas de luta grudem uns nos outros.",
+      "english": "This staple of the empire not only serves as a healthy condiment, but keeps wrestling athletes from sticking together.",
+      "french": "Ce condiment essentiel dans tout l'empire est aussi très prisé des lutteurs : il préserve la santé et les empêche de trop se coller à la peau.",
+      "german": "Dieses Grundnahrungsmittel des Reiches dient nicht nur als gesunde Zutat, sondern verhindert auch, dass die Ringkämpfer aneinander kleben.",
+      "italian": "Questo alimento base dell'impero non solo funge da sano condimento, ma impedisce ai lottatori di restare attaccati.",
+      "japanese": "​帝国​を​代表​する​特産​品。​健康​的​な​調味料​として​だけ​で​なく、​レスリング​選手​同士​が​く​っ​つ​か​ない​よう​に​する​ため​に​も​使える。",
+      "korean": "​제국의 ​이 ​필수품은 ​건강에 ​좋은 ​조미료일 ​뿐 ​아니라, ​레슬링 ​선수들이 ​서로 ​달라붙지 ​않게 ​해줍니다.",
+      "polish": "Ta podstawa gospodarki cesarstwa jest nie tylko zdrowym dodatkiem, ale sprawia też, że sportowcy nie kleją się do siebie.",
+      "russian": "Главный товар империи. Вкусная и полезная заправка для блюд, а еще благодаря ему атлеты-борцы не слишком прилипчивы.",
+      "simplified_chinese": "​这​款​帝国​主食​不仅是​一种​健康​的​调味​料，​还​能​防止​摔角​的​运动​员​黏​在一起。",
+      "spanish": "Este producto básico del Imperio no solo es un condimento de lo más saludable, sino que también impide que los atletas se queden pegados.",
+      "traditional_chinese": "​這​款​帝國​的​主要​食品​不僅是​健康​的​調味料，​還能​防止​摔角​的​運動員​黏​在一起。"
+    },
+    "needProduct": 2149,
+    "supplyWeight": 2.0
+  },
+  "2779": {
+    "guid": 2779,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wax_tablets_goods.png",
+    "needAttributes": {
+      "Knowledge": 3.0,
+      "Money": 2.0
+    },
+    "needDescription": {
+      "brazilian": "O mundo parece muito menos complicado quando cada mínimo detalhe é gravado em cera.",
+      "english": "The world seems so much more straightforward when you have every little detail scored in wax.",
+      "french": "L'existence semble bien plus limpide lorsqu'on inscrit dans la cire le moindre détail, si modeste soit-il.",
+      "german": "Die Welt scheint so viel überschaubarer zu sein, wenn man jedes kleine Detail in Wachs eingekerbt hat.",
+      "italian": "Il mondo sembra molto più chiaro quando ogni suo piccolo dettaglio viene inciso sulla cera.",
+      "japanese": "​あらゆる​細部​が​蝋​で​記録​さ​れ​て​いる​と、​世界​は​はるかに​単純​に​見える。",
+      "korean": "​세세한 ​것들을 ​모두 ​밀랍에 ​기록해 ​두면 ​세상이 ​한결 ​명쾌해 ​보이는 ​법입니다.",
+      "polish": "Świat wydaje się o wiele prostszy, gdy każdy szczegół masz wyryty w wosku.",
+      "russian": "Мир кажется куда проще, если каждую малейшую деталь отмечать на воске.",
+      "simplified_chinese": "​当​你在​蜡板​上​记录​下​每​个​细节​时，​整个​世界​似乎​都​变得​更加​简单明了​了。",
+      "spanish": "El mundo resulta mucho más sencillo cuando lo tienes todo apuntadito en cera.",
+      "traditional_chinese": "​在​蠟​板​上​記錄​每個​細節​時，​世界​似乎​變得​更加​簡單明瞭​了。"
+    },
+    "needProduct": 2150,
+    "supplyWeight": 4.0
+  },
+  "2780": {
+    "guid": 2780,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_fine_glass_goods.png",
+    "needAttributes": {
+      "Money": 3.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Oferecer uma taça de vidro precioso a um convidado não é algo que qualquer romano pode fazer. ",
+      "english": "To offer a house guest a cup formed of precious glass, is not something just any Roman can do. ",
+      "french": "Présenter à un hôte une coupe de verre précieux n'est pas donné à tous les Romains. ",
+      "german": "Einem Hausgast einen Becher aus kostbarem Glas anzubieten, ist etwas, das nicht jeder Römer kann. ",
+      "italian": "Offrire a un ospite una coppa di vetro pregiato non è una cosa che tutti i romani possono permettersi. ",
+      "japanese": "​貴重​な​ガラス​で​でき​た​カップ​を​客人​に​出す​こと​は、​並み​の​ローマ​人​に​できる​こと​では​ない。 ",
+      "korean": "​귀한 ​유리잔으로 ​손님을 ​대접하는 ​것은 ​아무나 ​할 ​수 ​있는 ​일이 ​아닙니다. ",
+      "polish": "Serwowanie gościom napitków w naczyniach odlanych z cennego szkła, to luksus, na jaki stać mało którego Rzymianina. ",
+      "russian": "Не каждый римлянин может предложить гостю чашу из драгоценного стекла. ",
+      "simplified_chinese": "​用​贵重​玻璃​制成​的​杯​盏​招待​过夜​宾客，​可不是​一般​罗马​人​能​办到​的。 ",
+      "spanish": "No cualquier romano puede ofrecerles a sus invitados una copa hecha de este vidrio tan valioso. ",
+      "traditional_chinese": "​用​貴重​玻璃​製成​的​杯​盞​招待​過夜​賓客，​可不是​一般​羅馬​人​能​辦到​的。 "
+    },
+    "needProduct": 2151,
+    "supplyWeight": 4.0
+  },
+  "2781": {
+    "guid": 2781,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_chariot_goods.png",
+    "needAttributes": {
+      "Happiness": 2.0,
+      "Health": -1.0,
+      "Money": 5.0,
+      "Prestige": 4.0
+    },
+    "needDescription": {
+      "brazilian": "Um brinquedo caro para aventureiros de certa idade. Correr pelas ruas irregulares em uma dessas é procurar confusão.",
+      "english": "An expensive toy for thrill seekers of a certain age, racing through uneven streets on one of these is asking for trouble.",
+      "french": "Un jouet coûteux pour amateurs de sensations d'un certain âge. Dévaler les rues pavées sur ces engins, c'est jouer avec sa vie.",
+      "german": "Ein teures Spielzeug für Abenteuerlustige ab einem gewissen Alter, das beim Rasen durch holprige Straßen mehr Ärger als Freude bringt.",
+      "italian": "Un giocattolo costoso per gli amanti anziani del brivido, ma sfrecciare per le strade dissestate su uno di questi veicoli è un'impresa impossibile.",
+      "japanese": "​スリル​を​求める​一部​の​年齢​層​向け​の​高価​な​玩具。​この​乗り物​で​凹凸​の​ある​街​中​を​疾走​する​の​は​トラブル​の​元​だ。",
+      "korean": "​박진감을 ​원하는 ​특정 ​연령대의 ​이들을 ​위한 ​값비싼 ​장난감으로, ​여기에 ​올라탄 ​채로 ​울퉁불퉁한 ​거리를 ​달리는 ​건 ​스스로 ​화를 ​자초하는 ​일입니다.",
+      "polish": "Kosztowna zabawka dla ludzi, którym w pewnym wieku zaczyna brakować emocji, ale ściganie się nią po nierównych ulicach, to szukanie guza.",
+      "russian": "Дорогая игрушка для тех, кто любит острые ощущения и достиг определенного возраста. Носиться на такой по неровным улицам – напрашиваться на неприятности.",
+      "simplified_chinese": "​对于​已​达​特定​年龄​但​追求​刺激​的​人​来说，​驾驶​这种​在​崎岖​街道​上​竞​速​的​玩具​是​自找麻烦。",
+      "spanish": "Un juguete caro para los amantes de las emociones fuertes que tienen ya una edad. Recorrer calles irregulares en uno de estos vehículos es sinónimo de jugarse la vida.",
+      "traditional_chinese": "​對於​已達​特定​年齡​但​追求​刺激​的​人​來說，​駕駛​這種​在​崎嶇​街道​上​競​速​的​玩具​是​自找麻煩。"
+    },
+    "needProduct": 2163,
+    "supplyWeight": 8.0
+  },
+  "2782": {
+    "guid": 2782,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_wonder_roman_bathhouse.png",
+    "needAttributes": {
+      "FireSafety": 3.0,
+      "Health": 2.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Casas de banho não são baratas de se manter, mas são imensamente populares, ostentando vastas reservas de água geralmente limpa.",
+      "english": "Bathhouses aren't cheap to run, but are immensely popular, boasting vast reserves of generally clean water.",
+      "french": "Leur entretien est dispendieux, certes, mais les thermes font l'unanimité. Et puis, on y vante les grandes réserves d'une eau... disons, convenablement claire.",
+      "german": "Der Betrieb von Badehäusern ist nicht billig, aber sie sind sehr beliebt und verfügen über große Reserven an normalerweise sauberem Wasser.",
+      "italian": "La gestione delle terme è piuttosto onerosa, ma sono immensamente popolari e vantano grosse riserve d'acqua, generalmente pulita.",
+      "japanese": "​浴場​の​運営​は​安​く​は​ない​が、​非常​に​人気​が​あり、​総合​的​に​清潔​な​水​を​たっぷり​蓄え​て​いる。",
+      "korean": "​목욕탕 ​운영 ​비용이 ​만만치 ​않지만, ​깨끗한 ​물을 ​풍부히 ​보유하여 ​큰 ​인기를 ​누리고 ​있습니다.",
+      "polish": "Prowadzenie łaźni nie jest tanie, ale cieszą się one ogromną popularnością, zużywając kolosalne zasoby na ogół czystej wody.",
+      "russian": "Термы недешевы в содержании, но весьма популярны у населения. А еще здесь хранятся большие запасы относительно чистой воды.",
+      "simplified_chinese": "​浴场​的​营运​成本​不低，​但​非常​受欢迎，​主​打​拥有​大量​“通常​算​干净”​的​水。",
+      "spanish": "Las termas salen bastante caras, pero gozan de mucha popularidad por sus amplias reservas de agua más o menos limpia.",
+      "traditional_chinese": "​浴場​的​營運​成本​不低，​但​非常​受歡迎，​主​打​大量​「通常​算​乾淨」​的​水。"
+    },
+    "needProduct": 2685,
+    "supplyWeight": 4.0
+  },
+  "2783": {
+    "guid": 2783,
+    "icon": "data/ui/fhd/base/icon_content/colosseum/icon_3d_colosseum.png",
+    "needAttributes": {
+      "Happiness": 3.0,
+      "Population": 3.0,
+      "Prestige": 7.0
+    },
+    "needDescription": {
+      "brazilian": "Um local de espetáculo ostentoso cujo ritual sangrento pode beirar o sobrenatural aos olhos de muitos romanos. Jogos do Anfiteatro fornecem efeitos de Esplendor globais.",
+      "english": "A place of ostentatious spectacle whose bloody ritual may verge on the supernatural in the eyes of many Romans. ",
+      "french": "Un théâtre de faste et de sang, où le rituel meurtrier frôle parfois le surnaturel pour nombre de citoyens romains. Les jeux de l'amphithéâtre confèrent des effets de Splendeur.",
+      "german": "Ein Ort des prunkvollen Spektakels, dessen blutige Rituale in den Augen vieler Römer an die Grenze des Übernatürlichen reichen. Spiele im Amphitheater bieten globale Pracht-Effekte.",
+      "italian": "Un appariscente luogo di spettacolo il cui rituale sanguinoso potrebbe rasentare il soprannaturale agli occhi di molti romani. I giochi dell'anfiteatro conferiscono Splendore.",
+      "japanese": "​派手​な​見せ物​の​場​で​あり。​血​生臭い​儀式​は、​多く​の​ローマ​人​にとって​ほとんど​超自然​的​な​もの​として​映る​の​かも​し​れ​ない。​円形​闘技​場​の​試合​は​世界​全体​に​輝き​の​効果​を​与える。",
+      "korean": "​화려한 ​구경거리가 ​펼쳐지는 ​이곳에서, ​피로 ​물든 ​의식은 ​많은 ​로마인의 ​눈에 ​초자연적으로 ​비칠 ​것입니다. ​원형 ​극장 ​경기가 ​전역에 ​영광 ​효과를 ​제공합니다.",
+      "polish": "Miejsce wspaniałych widowisk, które w oczach wielu Rzymian przybierają kształt krwawego rytuału o nadprzyrodzonej mocy. Rozrywki w amfiteatrze zapewniają efekty związane z globalnym splendorem.",
+      "russian": "Место грандиозных зрелищ – эти кровавые ритуалы в глазах многих римлян граничат со сверхъестественным. Проведение игр в амфитеатре влияет на глобальные эффекты размаха.",
+      "simplified_chinese": "​一个​极​尽​奢华​的​表演​场地，​在​这里​上演​的​血腥​仪式​在​许多​罗马​人​眼中​已​近乎​于​超自然​神迹。​圆形​剧场​角​斗​的​辉煌​效果​将​惠​及​全​岛。",
+      "spanish": "Un lugar en el que se celebran sangrientos espectáculos que, en ocasiones, rayan lo sobrenatural a ojos de muchos romanos. Los juegos del anfiteatro proporcionan efectos de esplendor globales.",
+      "traditional_chinese": "​這是​一座​奢華​的​表演​場地，​其中​血腥​的​儀式​在​許多​羅馬​人​眼中​已經​接近​超自然​了。​圓形​劇場​比賽​能​提供​全域​輝煌​效果。"
+    },
+    "needProduct": 2686,
+    "supplyWeight": 8.0
+  },
+  "2784": {
+    "guid": 2784,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_handmirros_goods.png",
+    "needAttributes": {
+      "Health": 2.0,
+      "Knowledge": 2.0,
+      "Money": 4.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Reflexos do eu, dos tempos e da luz dos deuses. Vale até uns sestércios!",
+      "english": "Reflections of self, the times and the gods-given light. Worth a sestertius or two and all!",
+      "french": "Reflets de l'âme, des âges et de la lumière dévolue par les dieux. Une pièce qui vaut son pesant de sesterces, sans conteste.",
+      "german": "Reflexionen über das Selbst, die Zeit und das von den Göttern geschenkte Licht. Das ist doch ein oder zwei Sesterzen wert!",
+      "italian": "Riflessi della propria anima, dei tempi e della luce donata dagli déi. Tutto ciò può valere qualche sesterzio e anche di più!",
+      "japanese": "​自分​自身、​時代、​そして​神々​から​授​か​っ​た​光​を​映し出す。​銅貨​一、​二枚​で​買える​なら​安い​もの！",
+      "korean": "​자아와 ​시대, ​그리고 ​신이 ​부여한 ​빛을 ​투영합니다. ​세스테르티우스 ​한두 ​개 ​정도의 ​가치는 ​충분하고도 ​남지요!",
+      "polish": "Odbija obraz twój, obecnych czasów i światła danego przez bogów. Warte to może jedną lub dwie sestercje, to wszystko!",
+      "russian": "Отражают всё: и тебя, и времена, и богами дарованный свет. Это стоит сестерция, а то и двух!",
+      "simplified_chinese": "​照​出​自我，​照​出​时代，​照​出​神​赐​之​光。​只要​一​两​个​塞​斯​特​斯​银币，​就​全都​有了！",
+      "spanish": "Un reflejo de su dueño, la época y la luz divina. ¡Vale por lo menos uno o dos sestercios!",
+      "traditional_chinese": "​映照​自身、​時代，​以及​神​賜予​的​光芒。​絕對​值得​一兩​枚​塞​斯​特​斯​幣。"
+    },
+    "needProduct": 2162,
+    "supplyWeight": 8.0
+  },
+  "2785": {
+    "guid": 2785,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_lye_goods.png",
+    "needAttributes": {
+      "Belief": 2.0,
+      "Knowledge": 2.0,
+      "Money": 4.0
+    },
+    "needDescription": {
+      "brazilian": "A sabedoria de qualquer cultura pode ser transmitida em versos falados, também com a intenção de agradar os ouvidos.",
+      "english": "The wisdom of any culture may be passed down in spoken verse— also intended to please the ear.",
+      "french": "Toute sagesse se perpétue par le chant des vers, porteurs de savoir et plaisirs pour l'oreille.",
+      "german": "Die Weisheit jeder Kultur kann in gesprochenen Versen weitergegeben werden, die ebenfalls das Ohr erfreuen sollen.",
+      "italian": "La saggezza di qualsiasi cultura può essere tramandata attraverso la parola, anche per dare piacere all'orecchio.",
+      "japanese": "​あらゆる​文化​の​知恵​は、​韻文​で​口承​さ​れる​こと​が​ある。​耳​に​心地よい​こと​も​大切​な​の​だ。",
+      "korean": "​어느 ​문화에서든 ​지혜는 ​구전되며, ​귀 ​또한 ​즐겁게 ​하는 ​법입니다.",
+      "polish": "Mądrość każdej kultury można przekazać mową wiązaną — a przy tym miłą dla ucha.",
+      "russian": "Всю мудрость любой культуры можно передать стихами – а еще они приятны слуху.",
+      "simplified_chinese": "​所有​文化​的​智慧​都能​以此​为​载体​口口​相传​——​不仅​如此，​它们​还​很​悦耳动听。",
+      "spanish": "Toda cultura se vale del verso para transmitir su saber, pero eso no quita que no deba ir acompañado de una buena melodía.",
+      "traditional_chinese": "​所有​文化​的​智慧​都能​透過​口頭​詩歌​傳承​——​而​詩歌​同時​也​悅耳動聽。"
+    },
+    "needProduct": 2166,
+    "supplyWeight": 8.0
+  },
+  "31758": {
+    "guid": 31758,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_gambling_house.png",
+    "needAttributes": {
+      "Happiness": -2.0,
+      "Money": 3.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "A sorte foi lançada, e toda a contenção de classe, corroída por apostas promissoras. E mais tarde, arrependimentos.",
+      "english": "The dice has been cast, all restraint of their class eroded by promising bets. And later - regrets.",
+      "french": "Le sort en est jeté : la noblesse de leur rang s'efface sous l'attrait des mises. Viennent ensuite les regrets, tardifs et muets.",
+      "german": "Die Würfel sind gefallen, jegliche Zurückhaltung ihrer Klasse wird durch vielversprechende Wetten aufgehoben. Und später – das Bedauern.",
+      "italian": "Il dado è tratto, tutte le restrizioni imposte alla loro classe sono state erose da scommesse promettenti e poi... dai rimpianti.",
+      "japanese": "​賽​が​投​げ​ら​れ、​高貴​で​あら​ね​ば​という​自制心​は、​魅力​的​な​賭け​の​前​に​完全​に​崩れ​去​っ​た。​そして​後に​は… ​後悔​が​残る。",
+      "korean": "​주사위는 ​던져졌고, ​내기의 ​유혹으로 ​계급 ​내 ​절제는 ​무너졌습니다. ​그리고 ​이후에는 ​후회가 ​뒤따릅니다.",
+      "polish": "Kości zostały rzucone, a gorączka zakładów zaciera różnice klasowe. Później wszyscy też żałują tak samo.",
+      "russian": "Ставка сделана, кости брошены, и вот даже самый воспитанный римлянин готов забыть о сдержанности – о чем позже будет жалеть…",
+      "simplified_chinese": "​赌注​一下，​阶级​顾忌​全​抛光，​随​之​而来​的​仅存​悔恨。",
+      "spanish": "Al caer los dados, también lo hacen las jerarquías a causa de apuestas prometedoras. El arrepentimiento viene después.",
+      "traditional_chinese": "​賭注​一下，​階級​顧忌​全​拋光，​隨​之​而來​的​僅存​悔恨。"
+    },
+    "needProduct": 31757,
+    "supplyWeight": 4.0
+  },
+  "37175": {
+    "guid": 37175,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_theatre.png",
+    "needAttributes": {
+      "Happiness": 3.0,
+      "Knowledge": 1.0,
+      "Prestige": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Uma cidade capaz de zombar de si mesma por meio de uma sátira, ou de aprender com uma tragédia, precisa de um teatro.",
+      "english": "A city that can afford to laugh at itself through satire, or else to learn from tragedy, needs a Theatre.",
+      "french": "Il faut un théâtre à toute cité qui prétend rire d'elle-même par la satire, ou s'élever par les leçons de la tragédie.",
+      "german": "Eine Stadt, die es sich leisten kann, durch Satire über sich selbst zu lachen oder aus einer Tragödie zu lernen, braucht ein Theater.",
+      "italian": "Una città che può permettersi di ridere di se stessa attraverso la satira o che voglia apprendere dalla tragedia ha bisogno di un teatro.",
+      "japanese": "​皮肉​を通じて​自ら​を​笑う​こと​が​できる、​あるいは​悲劇​から​学ぶ​こと​が​できる​都市​に​は、​劇場​が​必要​だ。",
+      "korean": "​풍자를 ​통해 ​스스로를 ​비웃거나 ​비극에서 ​교훈을 ​얻는 ​사람들의 ​도시에는 ​극장이 ​필요합니다.",
+      "polish": "Każde miasto, które potrafi śmiać się samo z siebie, oglądając satyry, lub woli uczyć się na dramatach, potrzebuje teatru.",
+      "russian": "Городу, жители которого способны посмеяться над собой в сатире или вынести уроки из трагедии, необходим театр.",
+      "simplified_chinese": "​每一​座​敢于​讥讽​自嘲，​或​从​悲剧​中​汲取​教训​的​城市，​都​值得​拥有​一座​剧场。",
+      "spanish": "Toda ciudad que sepa reírse de sí misma por medio de la sátira, o aprender por medio de la tragedia, necesita un teatro.",
+      "traditional_chinese": "​一座​能​藉由​譏諷​自嘲，​或​從​悲劇​中​學習​的​城市，​都​值得​擁有​一座​劇場。"
+    },
+    "needProduct": 2683,
+    "supplyWeight": 4.0
+  },
+  "37176": {
+    "guid": 37176,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_gambling_house.png",
+    "needAttributes": {
+      "Happiness": -2.0,
+      "Money": 3.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "A sorte foi lançada, e toda a contenção de classe, corroída por apostas promissoras. E mais tarde, arrependimentos.",
+      "english": "The dice has been cast, all restraint of their class eroded by promising bets. And later - regrets.",
+      "french": "Le sort en est jeté : la noblesse de leur rang s'efface sous l'attrait des mises. Viennent ensuite les regrets, tardifs et muets.",
+      "german": "Die Würfel sind gefallen, jegliche Zurückhaltung ihrer Klasse wird durch vielversprechende Wetten aufgehoben. Und später – das Bedauern.",
+      "italian": "Il dado è tratto, tutte le restrizioni imposte alla loro classe sono state erose da scommesse promettenti e poi... dai rimpianti.",
+      "japanese": "​賽​が​投​げ​ら​れ、​高貴​で​あら​ね​ば​という​自制心​は、​魅力​的​な​賭け​の​前​に​完全​に​崩れ​去​っ​た。​そして​後に​は… ​後悔​が​残る。",
+      "korean": "​주사위는 ​던져졌고, ​내기의 ​유혹으로 ​계급 ​내 ​절제는 ​무너졌습니다. ​그리고 ​이후에는 ​후회가 ​뒤따릅니다.",
+      "polish": "Kości zostały rzucone, a gorączka zakładów zaciera różnice klasowe. Później wszyscy też żałują tak samo.",
+      "russian": "Ставка сделана, кости брошены, и вот даже самый воспитанный римлянин готов забыть о сдержанности – о чем позже будет жалеть…",
+      "simplified_chinese": "​赌注​一下，​阶级​顾忌​全​抛光，​随​之​而来​的​仅存​悔恨。",
+      "spanish": "Al caer los dados, también lo hacen las jerarquías a causa de apuestas prometedoras. El arrepentimiento viene después.",
+      "traditional_chinese": "​賭注​一下，​階級​顧忌​全​拋光，​隨​之​而來​的​僅存​悔恨。"
+    },
+    "needProduct": 31757,
+    "supplyWeight": 4.0
+  },
+  "55946": {
+    "guid": 55946,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_drinkhorns_goods.png",
+    "needAttributes": {
+      "Happiness": 2.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Habilmente esvaziado, e em breve cheio de alegria líquida.",
+      "english": "Expertly hollowed out, soon to be filled with liquid joy.",
+      "french": "Habilement évidée, elle n'attend plus que d'être remplie d'un joyeux breuvage.",
+      "german": "Fachmännisch ausgehöhlt und bald mit flüssiger Freude gefüllt.",
+      "italian": "Ora è vuoto, ma presto sarà riempito di gioia liquida.",
+      "japanese": "​職人​の​技​で​作​ら​れ​た​杯。​もうすぐ​美味しい​飲み物​が​注​が​れる。",
+      "korean": "​정교하게 ​파낸 ​이 ​항아리 ​안에 ​곧 ​즐거움을 ​주는 ​술이 ​가득 ​들어찰 ​것입니다.",
+      "polish": "Fachowo wydrążone, niebawem napełnią się radością w płynie.",
+      "russian": "Мастерски изготовлены и скоро наполнятся радостью.",
+      "simplified_chinese": "​里面​被​精巧​地​挖空，​很快​就​会​装满​欢​愉​的​液体。",
+      "spanish": "Vaciadas por manos expertas, pero pronto llenas de júbilo en estado líquido.",
+      "traditional_chinese": "​精巧​地​挖空，​即將​裝滿​歡愉​的​液體。"
+    },
+    "needProduct": 55954,
+    "supplyWeight": 2.0
+  },
+  "55950": {
+    "guid": 55950,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_barrows.png",
+    "needAttributes": {
+      "Belief": 3.0,
+      "Health": 2.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Túmulos são lugares de contemplação e comunhão com o que vem depois.",
+      "english": "Barrows are a place of contemplation and communion with what comes after.",
+      "french": "Les tertres funéraires sont propices au recueillement, et au dialogue silencieux avec ce qui vient après.",
+      "german": "Hügelgräber sind ein Ort des Nachdenkens und der Gemeinschaft, mit dem, was danach kommt.",
+      "italian": "I tumuli sono un luogo di contemplazione e comunione con il futuro.",
+      "japanese": "​墳丘​墓​は、​瞑想​の​ため​の​場所​で​あり、​現世​と​冥界​が​交わる​場所​でも​ある。",
+      "korean": "​무덤은 ​사후 ​세계와 ​교감하고 ​명상하는 ​장소입니다.",
+      "polish": "Kurhany to miejsca modlitwy oraz spotkań z zaświatami.",
+      "russian": "Курганы – места для глубоких размышлений о жизни и о том, что грядет после нее.",
+      "simplified_chinese": "​坟​冢​是​沉思​以及​与​来世​交流​之地。",
+      "spanish": "Los túmulos son lugares de contemplación y comunión con lo que venga después.",
+      "traditional_chinese": "​墳​塚​是​沉思​以及​與​來世​交流​之地。"
+    },
+    "needProduct": 55955,
+    "supplyWeight": 4.0
+  },
+  "55951": {
+    "guid": 55951,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_sacred_grove.png",
+    "needAttributes": {
+      "Belief": 4.0,
+      "Knowledge": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Dizem que os bosques sagrados são vigiados pelos próprios deuses.",
+      "english": "Sacred Groves are said to be watched by the gods themselves.",
+      "french": "Les bosquets sacrés seraient placés sous la garde des dieux eux-mêmes.",
+      "german": "Man sagt, heilige Haine werden von den Göttern selbst bewacht.",
+      "italian": "Si dice che i Boschi Sacri siano sorvegliati proprio dagli dèi.",
+      "japanese": "​神聖​な​森​は​神々​によって​見​守​ら​れ​て​いる​という。",
+      "korean": "​신성한 ​숲은 ​신들이 ​직접 ​지켜본다고 ​전해집니다.",
+      "polish": "Podobno nad świętymi gajami czuwają sami bogowie.",
+      "russian": "Говорят, что за священными рощами приглядывают сами боги.",
+      "simplified_chinese": "​据说​神圣​树林​受到​诸​神​亲自​守​护。",
+      "spanish": "Dicen que las arboledas sagradas son veladas por los mismísimos dioses.",
+      "traditional_chinese": "​據說​神聖​樹林​受到​諸​神​親自​守護。"
+    },
+    "needProduct": 55956,
+    "supplyWeight": 4.0
+  },
+  "55960": {
+    "guid": 55960,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_amphorae_goods.png",
+    "needAttributes": {
+      "FireSafety": 1.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Um gargalo elegante e uma terracota ricamente decorada para exibir sua riqueza... e seu vinho. ",
+      "english": "An elegant neck and richly decorated terracocta to show off your wealth— and your wine. ",
+      "french": "Col élancé, terre cuite somptueusement ornée : de quoi exhiber votre opulence... et votre meilleur cru. ",
+      "german": "Ein eleganter Hals und reich verziertes Terrakotta, um deinen Reichtum – und deinen Wein – zur Schau zu stellen. ",
+      "italian": "Un collo elegante e una terracotta riccamente decorata per sfoggiare la tua ricchezza... e il tuo vino. ",
+      "japanese": "​優雅​な​首​の​形​と​豪華​に​装飾​さ​れ​た​テラコッタ​で、​あなた​の​富​と​ワイン​を​際​立​たせる。 ",
+      "korean": "​우아한 ​목과 ​화려하게 ​장식된 ​테라코타로 ​부와 ​포도주를 ​자랑하십시오. ",
+      "polish": "Bogato zdobiony gliniany produkt z elegancką szyjką, który pozwoli ci pochwalić się swą zamożnością — i winem. ",
+      "russian": "Изящная горловина и украшенная терракота продемонстрируют ваше богатство (и вино). ",
+      "simplified_chinese": "​拥有​优雅​瓶颈​与​华丽​装饰​的​陶器，​用以​炫耀​你的​财富​——​以及​美酒。 ",
+      "spanish": "Un recipiente de tierra cocida y cuello elegante con el que presumir de riqueza... y de vino. ",
+      "traditional_chinese": "​擁有​優雅​脖頸​與​華麗​裝飾​的​陶器，​用以​炫耀​你的​財富​——​以及​美酒。 "
+    },
+    "needProduct": 31700,
+    "supplyWeight": 2.0
+  },
+  "55961": {
+    "guid": 55961,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_olive_oil_goods.png",
+    "needAttributes": {
+      "Health": 1.0,
+      "Money": 3.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Este condimento básico do império não só é saudável, como também evita que atletas de luta grudem uns nos outros.",
+      "english": "This staple of the empire not only serves as a healthy condiment, but keeps wrestling athletes from sticking together.",
+      "french": "Ce condiment essentiel dans tout l'empire est aussi très prisé des lutteurs : il préserve la santé et les empêche de trop se coller à la peau.",
+      "german": "Dieses Grundnahrungsmittel des Reiches dient nicht nur als gesunde Zutat, sondern verhindert auch, dass die Ringkämpfer aneinander kleben.",
+      "italian": "Questo alimento base dell'impero non solo funge da sano condimento, ma impedisce ai lottatori di restare attaccati.",
+      "japanese": "​帝国​を​代表​する​特産​品。​健康​的​な​調味料​として​だけ​で​なく、​レスリング​選手​同士​が​く​っ​つ​か​ない​よう​に​する​ため​に​も​使える。",
+      "korean": "​제국의 ​이 ​필수품은 ​건강에 ​좋은 ​조미료일 ​뿐 ​아니라, ​레슬링 ​선수들이 ​서로 ​달라붙지 ​않게 ​해줍니다.",
+      "polish": "Ta podstawa gospodarki cesarstwa jest nie tylko zdrowym dodatkiem, ale sprawia też, że sportowcy nie kleją się do siebie.",
+      "russian": "Главный товар империи. Вкусная и полезная заправка для блюд, а еще благодаря ему атлеты-борцы не слишком прилипчивы.",
+      "simplified_chinese": "​这​款​帝国​主食​不仅是​一种​健康​的​调味​料，​还​能​防止​摔角​的​运动​员​黏​在一起。",
+      "spanish": "Este producto básico del Imperio no solo es un condimento de lo más saludable, sino que también impide que los atletas se queden pegados.",
+      "traditional_chinese": "​這​款​帝國​的​主要​食品​不僅是​健康​的​調味料，​還能​防止​摔角​的​運動員​黏​在一起。"
+    },
+    "needProduct": 2149,
+    "supplyWeight": 2.0
+  },
+  "6424": {
+    "guid": 6424,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_eels_goods.png",
+    "needAttributes": {
+      "Money": 1.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "De corpo espesso e mais nutritiva que o berbigão, a enguia vale mais para o romano que não se importa com um pouco de cartilagem.",
+      "english": "Thick-bodied and more nourishing than cockles, Eels are worth more to the Roman who doesn't mind a bit of gristle.",
+      "french": "Plus dodues et roboratives que les modestes coques, les anguilles trouvent grâce aux yeux du Romain peu regardant sur quelques morceaux coriaces.",
+      "german": "Kräftiger und nahrhafter als Muscheln sind Aale - Gold wert für Römer, denen ein bisschen Knorpel nichts ausmacht.",
+      "italian": "Più corpose e nutrienti dei cuori di mare, le anguille sono molto amate dai romani a cui non dispiace sgranocchiare un po' di cartilagine.",
+      "japanese": "​太​く​肉​厚​で、​ザル​貝​より​も​栄養​の​ある​ウナギ​は、​多少​小骨​が​あっ​て​も​気​に​しない​ローマ​人​にとって​価値​の​ある​食材​だ。",
+      "korean": "​새조개보다 ​살점이 ​두껍고 ​영양가도 ​높은 ​장어는, ​질긴 ​살코기쯤은 ​개의치 ​않는 ​로마인에게 ​더 ​값진 ​음식입니다.",
+      "polish": "Grubsze i bardziej sycące niż małże sercówki, węgorze są cenniejszym przysmakiem dla Rzymianina, któremu nie przeszkadzają drobne chrząstki.",
+      "russian": "Угри куда мясистее и питательнее, чем гребешки, а потому скорее придутся по вкусу римлянам, которые любят все большое.",
+      "simplified_chinese": "​鳗鱼​体型​厚​实，​比​鸟​蛤​更有​营养，​对​不介意​肉​有点​筋​的​罗马​人​而言​更有​价值。",
+      "spanish": "Las anguilas, más contundentes y nutritivas que los berberechos, son más codiciadas por los romanos a los que no les importa encontrarse un poco de cartílago.",
+      "traditional_chinese": "​鰻魚​體型​厚實，​比​鳥​蛤​更有​營養，​對​不介意​肉​有點​筋​的​羅馬​人​而言​更有​價值。"
+    },
+    "needProduct": 2108,
+    "supplyWeight": 1.0
+  },
+  "6429": {
+    "guid": 6429,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cockles_goods.png",
+    "needAttributes": {
+      "Happiness": 1.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "O sabor doce e delicado do humilde berbigão é suficiente para fazer qualquer um sair de sua concha.",
+      "english": "The sweet delicate taste of the humble cockle is enough to bring anyone out of their shell.",
+      "french": "La saveur délicate de la modeste coque suffit à faire sortir n'importe qui de sa coquille.",
+      "german": "Der süße, delikate Geschmack der Herzmuschel vermag jeden für Neues zu öffnen.",
+      "italian": "Il sapore dolce e delicato di un cuore di mare è sufficiente per far uscire chiunque dal proprio guscio.",
+      "japanese": "​何​の​変哲​も​ない​ザル​貝​の​甘​く​繊細​な​味わい​は、​誰​の​心​の​殻​でも​破​って​しまう。",
+      "korean": "​수줍은 ​새조개의 ​달콤하고 ​섬세한 ​맛은 ​누구라도 ​마음을 ​열게 ​만들기에 ​충분합니다.",
+      "polish": "Słodki, subtelny smak tego skromnego małża sprawi, że każdy wyjdzie ze swojej muszli.",
+      "russian": "Может, у скромного гребешка жемчуга и не найти, но сладковатый нежный вкус под стать сокровищу.",
+      "simplified_chinese": "​不起眼​的​鸟​蛤​甜美​细腻​的​口感，​足以​撬开​任何人​的​心房。",
+      "spanish": "El sabor dulce y delicado del berberecho es capaz de sacar a cualquiera de su caparazón.",
+      "traditional_chinese": "​不起眼​的​鳥​蛤​甜美​細膩​的​風味，​足以​撬開​任何人​的​心房。"
+    },
+    "needProduct": 2097,
+    "supplyWeight": 1.0
+  },
+  "6430": {
+    "guid": 6430,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cheese_goods.png",
+    "needAttributes": {
+      "Money": 1.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Altamente veloz em descidas e com uma longevidade excepcional, este queijo robusto é amado não só por quem admite.",
+      "english": "Featuring great downhill speeds and exceptional longevity, this rugged cheese is loved not only by those that admit it.",
+      "french": "Célèbre pour sa capacité à dévaler les pentes et sa longévité hors pair, ce fromage rustique séduit même ceux qui s'en défendent.",
+      "german": "Dieser kräftige Käse, der gut bergab rollt und ewig hält, erfreut sich nicht nur bei denen, die es zugeben, an großer Beliebtheit.",
+      "italian": "In grado di rotolare velocemente e dall'estrema longevità, questo formaggio è amato anche da chi non lo ammette.",
+      "japanese": "​下り坂​を​転がる​速​さ​と​凄まじい​頑丈​さ​を​備え​た​この​チーズ​は、​それ​を​認める​人​だけ​で​なく、​多く​の​人々​に​愛​さ​れ​て​いる。",
+      "korean": "​투박한 ​외형의 ​치즈로 ​굴러내리는 ​속도와 ​보존성이 ​탁월하며, ​좋아한다고 ​인정하는 ​이들뿐만 ​아니라 ​모든 ​사람에게 ​사랑받는 ​음식입니다.",
+      "polish": "Ten rozwijający imponującą prędkość gdy toczy się ze zbocza wzgórza, a przy tym wyjątkowo trwały ser, jest uwielbiany nie tylko przez tych, którzy otwarcie to przyznają.",
+      "russian": "Этот твердый сыр отличается долговечностью и быстро катится по склону, а потому его ценят не только гурманы.",
+      "simplified_chinese": "​这​款​结实​的​奶​酪​尝​起来​极其​滑​润，​且​可​长久​保存，​就​连​非​奶​酪​爱好​者​也​无法​抗拒。",
+      "spanish": "Con una gran velocidad de descenso y una longevidad excepcional, este robusto queso es más popular de lo que admiten sus detractores.",
+      "traditional_chinese": "​這​款​結實​的​起​司​嚐​起來​極其​滑潤，​且​可​長久​保存，​就​連​非​起​司​愛好者​也​無法​抗拒。"
+    },
+    "needProduct": 2153,
+    "supplyWeight": 2.0
+  },
+  "6431": {
+    "guid": 6431,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_beer_goods.png",
+    "needAttributes": {
+      "Happiness": 2.0,
+      "Knowledge": -1.0,
+      "Money": 1.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Um barril de autêntica cerveja celta pode acabar com tristezas, incêndios e todas as memórias do dia anterior.",
+      "english": "A keg of authentic Celtic Beer can wash away sorrows, fires, and all memory of the previous day.",
+      "french": "Une barrique d'authentique bière celte suffit à noyer les peines, calmer les brasiers... et balayer les souvenirs de la veille.",
+      "german": "Ein Fass echtes keltisches Bier kann Sorgen, Brände und alle Erinnerungen an den vergangenen Tag wegspülen.",
+      "italian": "Un barile di autentica birra celtica in grado di cancellare il dolore, gli incendi e tutti i ricordi del giorno prima.",
+      "japanese": "​本物​の​ケルト​ビール​が​入​っ​た​樽​は、​悲しみ、​火事、​そして​前日​の​記憶​を​すべて​洗い流す​こと​が​できる。",
+      "korean": "​정통 ​켈트 ​맥주 ​한 ​통이면 ​슬픔도, ​화도, ​전날의 ​기억도 ​모두 ​씻어낼 ​수 ​있습니다.",
+      "polish": "Beczułka prawdziwego celtyckiego piwa potrafi obmywać smutki, gasić pożary i usuwać z pamięci wszystko, co wydarzyło się dzień wcześniej.",
+      "russian": "Бочка настоящего кельтского пива зальет печали, пожары и память о вчерашнем дне.",
+      "simplified_chinese": "​一桶​正宗​凯​尔​特​啤酒​能​洗去​悲伤、​火焰​和​所有​昨日​的​记忆。",
+      "spanish": "Un tonel de una buena cerveza celta puede ahogar las penas, los incendios... y el recuerdo del día anterior.",
+      "traditional_chinese": "​一桶​正宗​凱​爾​特​啤酒​能​洗去​悲傷、​火焰​與​昨日​記憶。"
+    },
+    "needProduct": 2154,
+    "supplyWeight": 2.0
+  },
+  "6432": {
+    "guid": 6432,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_roast_goods.png",
+    "needAttributes": {
+      "Money": 2.0,
+      "Population": 3.0
+    },
+    "needDescription": {
+      "brazilian": "A carne cozida lentamente se desprende fácil do osso, e a macia barrilha dá um toque salgado e suculento. ",
+      "english": "The slow-cooked meat falls right off the bone, the springy saltwort adding a juicy, briny note. ",
+      "french": "La viande, fondante à souhait, se détache de l'os sans effort, et la salicorne, vive et salée, vient ranimer le tout d'un trait d'écume. ",
+      "german": "Das langsam gegarte Fleisch fällt direkt vom Knochen, und das Salzkraut verleiht ihm eine saftige, salzige Note. ",
+      "italian": "La carne a cottura lenta si stacca dall'osso e la salicornia aggiunge una deliziosa nota salina. ",
+      "japanese": "​じっくり​煮​込​まれ​た​肉​は​骨​から​ホ​ロ​リ​と​崩れ、​弾力​の​ある​アッ​ケシ​ソウ​が​みずみずしい​塩味​を​加​えて​いる。 ",
+      "korean": "​천천히 ​익힌 ​고기는 ​뼈에서 ​술술 ​떨어지고, ​탄력 ​있는 ​함초는 ​풍부한 ​육즙과 ​짭조름한 ​맛을 ​더해줍니다. ",
+      "polish": "To mięso gotowane na wolnym ogniu samo odpada od kości, a sprężysta solanka nadaje mu soczystość i słonawy smak. ",
+      "russian": "Если приготовить на медленном огне, буквально тает во рту, а упругий солерос привносит в блюдо солоноватость моря. ",
+      "simplified_chinese": "​细​火​慢​炖​的​肉​能​轻易​烂​熟​脱​骨，​充满​嚼​劲​的​海​蓬​菜​又​带来​多汁​咸​香​的​风味。 ",
+      "spanish": "La carne, cocinada a fuego lento, se desprende sola del hueso y la sal marina le aporta un toque jugoso y sabroso. ",
+      "traditional_chinese": "​細​火​慢​燉​的​肉​能​輕易​爛熟​脫​骨，​充滿​嚼​勁​的​海​蓬​菜​又​帶來​多汁​鹹​香​的​風味。 "
+    },
+    "needProduct": 31768,
+    "supplyWeight": 4.0
+  },
+  "6434": {
+    "guid": 6434,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_bread_goods.png",
+    "needAttributes": {
+      "Money": 1.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "A imensa popularidade e praticidade do pão também o tornam altamente lucrativo para quem trabalha no ramo.",
+      "english": "Bread's immense popularity and convenience also make it highly lucrative to those in the trade.",
+      "french": "Sa grande popularité et sa commodité font du pain un produit fort lucratif pour ceux qui en maîtrisent le négoce.",
+      "german": "Die große Beliebtheit und Bequemlichkeit des Brotes machen es auch für den Handel sehr lukrativ.",
+      "italian": "L'immensa popolarità e convenienza del pane lo rendono anche molto redditizio per chi lavora nel settore.",
+      "japanese": "​パン​の​圧倒的​な​人気​と​利便​性​は、​それで​商売​する​者​にとって​は​まさに​金​の​なる​木​だ。",
+      "korean": "​빵은 ​대중적이고 ​편리할 ​뿐만 ​아니라 ​상인들에게 ​막대한 ​이윤을 ​안겨주는 ​품목이라 ​할 ​수 ​있습니다.",
+      "polish": "Niezwykła popularność oraz dostępność chleba czynią jego sprzedaż również nader opłacalną.",
+      "russian": "Хлеб – еда удобная и любимая народом, а значит, тех, кто ею торгует, ждет приличная прибыль.",
+      "simplified_chinese": "​面包​因为​其​极​高​的​人​气​和​便利​性，​对于​商人​来说​是​很​赚钱​的​商品。",
+      "spanish": "La inmensa popularidad y practicidad del pan lo convierten en un producto muy rentable para quienes se dedican a hacerlo.",
+      "traditional_chinese": "​麵包​因為​極​受歡迎​及其​便利​程度，​是​商人​獲取​高​利潤​的​來源。"
+    },
+    "needProduct": 2137,
+    "supplyWeight": 2.0
+  },
+  "6435": {
+    "guid": 6435,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_sausages_goods.png",
+    "needAttributes": {
+      "Happiness": 1.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Salsicha é o tipo de alimento romano saboroso que certamente alegrará as massas.",
+      "english": "Sausage is the type of tasty Roman convenience sure to bring cheer to the masses.",
+      "french": "La saucisse incarne ce plaisir simple et savoureux dont les Romains aiment à égayer les foules.",
+      "german": "Wurst ist der schmackhafte Komfort der Römer und erfreut das Volk.",
+      "italian": "La salsiccia è un gustoso piatto unico romano, che rallegrerà sicuramente il popolo.",
+      "japanese": "​ソーセージ​は​ローマ​の​美味しい​便利​食品​の​代表​格。​多く​の​人々​が​喜ぶ​こと​請け合い​だ。",
+      "korean": "​소시지는 ​로마인들이 ​즐기는 ​간편식으로, ​대중의 ​마음을 ​사로잡기에 ​충분한 ​맛있는 ​음식입니다.",
+      "polish": "Kiełbaski to rodzaj smacznej rzymskiej przekąski, która zawsze budzi zachwyt motłochu.",
+      "russian": "Колбаса – вкусная и удобная римская придумка, которая непременно порадует народ.",
+      "simplified_chinese": "​香肠​是​一种​可口​又​方便​的​罗马​食物，​绝对​能​让​人们​欢欣​鼓舞。",
+      "spanish": "Las salchichas son una sabrosa especialidad romana que alegra a las masas.",
+      "traditional_chinese": "​香腸​是​一種​可口​又​方便​的​羅馬​食物，​必定​能​讓​群眾​歡欣鼓舞。"
+    },
+    "needProduct": 8405,
+    "supplyWeight": 2.0
+  },
+  "6436": {
+    "guid": 6436,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_tongue_in_aspic_goods.png",
+    "needAttributes": {
+      "Happiness": -2.0,
+      "Money": 4.0,
+      "Prestige": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Quando estiver em dúvida, um nobre deve fazer como os romanos, mesmo que isso signifique pagar uma fortuna para engolir línguas de pássaros asquerosas. ",
+      "english": "If in doubt, a Noble must do as Romans do, even if it means paying through the nose to quaff repulsive bird tongues. ",
+      "french": "Dans le doute, un noble fait comme à Rome, quitte à payer le prix fort pour avaler d'infectes langues d'oiseau. ",
+      "german": "Im Zweifelsfall muss ein Edelmann tun, was ein Römer tun muss, auch wenn das bedeutet, dass er für den Genuss von widerlichen Vogelzungen tief in die Tasche greifen muss. ",
+      "italian": "In caso di dubbio, un nobile deve fare come i romani, anche se ciò significa pagare un occhio della testa per trangugiare ripugnanti lingue d'uccello. ",
+      "japanese": "​迷​っ​た​時、​ノビレス​は​ローマ​人​の​真似​を​すべ​きだ。​たとえ、​不快​な​鳥​舌​肉​を​飲み込む​ため​に​莫大​な​金​を​払​わな​け​れ​ば​なら​ない​として​も。 ",
+      "korean": "​망설일 ​땐 ​귀족이라도 ​로마법을 ​따라야 ​하는 ​법입니다. ​비록 ​그게 ​비싼 ​돈을 ​내고 ​역겨운 ​새 ​혀를 ​먹어야 ​하는 ​일일지라도 ​말입니다. ",
+      "polish": "Jeśli ktoś nie wie, to wielmoża musi zachowywać się jak Rzymianin, nawet jeśli oznacza to kupowanie za niebotyczną cenę odrażających ptasich języczków. ",
+      "russian": "Если знатный кельт хочет быть как римляне, придется заплатить втридорога за отвратительные птичьи язычки. ",
+      "simplified_chinese": "​即便​有​疑虑，​领​主​也​必须​学习​罗马​人，​哪怕​那​意味​着​得​花​大​钱​吞下​大量​恶心​的​鸟​舌。 ",
+      "spanish": "Ante la duda, los nobles siguen lo que hacen los romanos, incluido pagar un dineral por unas asquerosas lenguas de ave. ",
+      "traditional_chinese": "​若有​什麼​疑慮，​領主​就​該​學學​羅馬​人，​即便​得​花​大錢​吞下​大量​噁心​的​鳥​舌。 "
+    },
+    "needProduct": 2155,
+    "supplyWeight": 4.0
+  },
+  "6437": {
+    "guid": 6437,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_reed_shoes_goods.png",
+    "needAttributes": {
+      "Health": 1.0,
+      "Money": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Trançados minuciosamente com as hastes mais retas, estes calçados previnem contra a maior parte das doenças dos pés.",
+      "english": "Painstakingly woven from the straighter stalks, these shoes keep most of the foot rot away.",
+      "french": "Tissées avec soin à partir des tiges les plus droites, ces chaussures préservent les pieds de la gangrène.",
+      "german": "Sorgfältig aus den geradesten Halmen geflochten halten diese Schuhe die Fußfäule meist fern.",
+      "italian": "Realizzate con cura utilizzando gli steli più dritti, queste scarpe mantengono la maggior parte del piede lontano dai funghi e dalle verruche.",
+      "japanese": "​まっすぐ​な​茎​を​丹念​に​編み​込​んで​作​ら​れ​た​靴。​足​の​衛生​不良​を​ほぼ​防​い​で​くれる。",
+      "korean": "​곧은 ​줄기를 ​정성스레 ​엮어 ​만든 ​이 ​신발은 ​발에 ​나는 ​대부분의 ​병을 ​막아줍니다.",
+      "polish": "Pieczołowicie uplecione z jak najprostszych witek, te łapcie chronią większość stopy przed bagienną wilgocią.",
+      "russian": "Такая обувь, бережно сплетенная из гладких стеблей, предохраняет ноги от опревания.",
+      "simplified_chinese": "​这些​鞋子​由​较​直​的​茎​叶​精心​编织​而​成，​可以​有效​保护​双​脚，​避免​其​受伤​溃烂。",
+      "spanish": "Estos zapatos, tejidos con esmero con los tallos más recios, evitan que los pies se te acaben pudriendo.",
+      "traditional_chinese": "​這些​鞋子​是用​較​直​的​莖​葉​精心​編織​而​成，​可以​防止​接觸​大部分​讓​足部​腐爛​的​東西。"
+    },
+    "needProduct": 2159,
+    "supplyWeight": 1.0
+  },
+  "6438": {
+    "guid": 6438,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_tunics_goods.png",
+    "needAttributes": {
+      "Money": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Uma túnica em Roma também é uma túnica na distante Albion: seu valor como capa é evidente para todos.",
+      "english": "A tunic in Rome is a tunic in far-flung Albion: its value as a covering is plain to all.",
+      "french": "De Rome à la lointaine Albion, une tunique reste une tunique. Nul n'ignore sa valeur pour qui entend se vêtir.",
+      "german": "Eine Tunika in Rom ist eine Tunika im fernen Albion: Ihr Wert als Bekleidung ist für alle offensichtlich.",
+      "italian": "Una tunica a Roma è una tunica nella lontana Albion: il suo valore coprente è chiaro a tutti.",
+      "japanese": "​ローマ​の​チュニック​は​遠く​離れ​た​アルビオン​の​チュニック​と​変​わら​ない。​その​服​として​の​価値​は、​誰​も​が​認める​ところで​ある。",
+      "korean": "​로마의 ​튜닉이든 ​멀리 ​떨어진 ​알비온의 ​튜닉이든, ​옷으로서의 ​가치는 ​누구에게나 ​분명합니다.",
+      "polish": "Rzymska tunika spełnia swoją funkcję także w odległym Albionie: jej ochronne zalety są oczywiste dla wszystkich.",
+      "russian": "Туника – она и в Альбионе туника: достоинства такой одежды ясны всем.",
+      "simplified_chinese": "​罗马​的​丘​尼​卡​到了​遥远​的​阿​尔​比​恩​依然是​丘​尼​卡，​其​作为​遮​体​衣物​的​价值​显而易见。",
+      "spanish": "Una túnica vale lo mismo en Roma que en la lejana Albion; su valor como prenda de abrigo es por todos conocido.",
+      "traditional_chinese": "​羅馬​的​丘​尼​卡，​在​遙遠​的​阿​爾​比​恩​也是​丘​尼​卡，​作為​覆蓋​物​的​價值​顯而易見。"
+    },
+    "needProduct": 2141,
+    "supplyWeight": 1.0
+  },
+  "6439": {
+    "guid": 6439,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_trouser_goods.png",
+    "needAttributes": {
+      "Money": 2.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Se tem algo que um verdadeiro celta veste, é uma calça para se proteger do frio e dos carrapatos de ovelhas.",
+      "english": "If a true Celt wears anything at all, it'll be a pair of pants to keep out the sheep ticks and the chill.",
+      "french": "Qu'un véritable Celte consente à se vêtir, ce ne sera que d'un pantalon, pour se protéger autant des tiques que du froid.",
+      "german": "Wenn ein echter Kelte überhaupt etwas trägt, dann eine Hose, um sich gegen Kälte und Zecken zu schützen.",
+      "italian": "I vestiti del vero celto consistono in un paio di brache per tenere lontane le zecche e proteggersi dal freddo.",
+      "japanese": "​真​の​ケルト​人​が​何​か​を​身​につける​なら、​それ​は​羊​の​ダニ​と​寒さ​を​防ぐ​ため​の​ズボン​だ​ろう。",
+      "korean": "​진정한 ​켈트인이 ​입는 ​옷이라면, ​양 ​진드기와 ​추위를 ​막아주는 ​바지 ​한 ​벌일 ​것입니다.",
+      "polish": "Jeśli prawdziwy Celt w ogóle coś nosi, to jest to para spodni, chroniąca przed kleszczami i chłodem.",
+      "russian": "Предложи кельту любую одежду – он выберет пару штанов: так не будут кусать ни клещи, ни холод.",
+      "simplified_chinese": "​真正​的​凯​尔​特​人​如果​非要​穿点​什么​的话，​就​一定是​穿​一条​裤子，​用​来​防​蜱​虫​和​御​寒。",
+      "spanish": "Si alguna vestimenta caracteriza al pueblo celta, es un buen par de calzas para protegerse de las garrapatas de las ovejas y del frío.",
+      "traditional_chinese": "​真正​的​凱​爾​特​人​若要​穿衣​物，​就​肯定會​穿​一條​褲子，​用來​防止​蜱​蟲​和​寒冷。"
+    },
+    "needProduct": 2158,
+    "supplyWeight": 2.0
+  },
+  "6440": {
+    "guid": 6440,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_pelt_hat_goods.png",
+    "needAttributes": {
+      "Happiness": 2.0,
+      "Health": 1.0,
+      "Money": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Com sua pelagem espessa e à prova d'água, o castor praticamente nasceu para ser vestido. ",
+      "english": "With its thick, water-repellent fur, the beaver is practically born to be worn. ",
+      "french": "Pourvu d'une fourrure aussi épaisse qu'imperméable, le castor paraît presque né pour finir sur les épaules d'autrui. ",
+      "german": "Mit seinem dichten, wasserabweisenden Fell ist der Biber geradezu geboren, um getragen zu werden. ",
+      "italian": "Con la sua pelliccia folta e idrorepellente, il castoro è praticamente nato per essere indossato. ",
+      "japanese": "​防水​性​の​ある​厚い​毛皮​を​持つ​ビーバー​は、​まさに​服​に​なる​ため​に​生まれ​た​よう​な​存在​だ。 ",
+      "korean": "​두껍고 ​방수가 ​되는 ​모피를 ​가진 ​비버는 ​태어날 ​때부터 ​누군가에게 ​입혀질 ​운명인 ​듯합니다. ",
+      "polish": "Z uwagi na swoje grube, wodoodporne futro, bóbr w zasadzie jest stworzony do tego, żeby sprawiać zeń odzienie. ",
+      "russian": "Бобры из-за своего густого водоотталкивающего меха обречены становиться чьим-то шкурным интересом. ",
+      "simplified_chinese": "​河​狸​厚​实​又​防水​的​皮毛，​天生​就是​用​来​穿的。 ",
+      "spanish": "La piel del castor, gruesa y repelente al agua, pide a gritos que la conviertan en una prenda. ",
+      "traditional_chinese": "​河​狸​厚實​又​防水​的​皮毛，​天生​就是​用來​穿的。 "
+    },
+    "needProduct": 31707,
+    "supplyWeight": 4.0
+  },
+  "6441": {
+    "guid": 6441,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_cloak_goods.png",
+    "needAttributes": {
+      "Health": 2.0,
+      "Money": 2.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Os celtas são famosos por seus mantos, cuja trama fina os protege do frio e da chuva forte.",
+      "english": "The Celts are famed for their cloaks, producing a fine weave that keeps out the cold, side-sweeping rain.",
+      "french": "On loue chez les Celtes l'art du manteau : un fin tissage, capable de braver le froid et la pluie battante.",
+      "german": "Die Kelten sind berühmt für ihre Umhänge, deren feines Gewebe die Kälte und den peitschenden Regen abhält.",
+      "italian": "I Celti sono celebri per i loro mantelli, e producono una stoffa pregiata che protegge dalla gelida pioggia.",
+      "japanese": "​ケルト​人​の​象徴​でも​ある​外套​は、​冷たい​横殴り​の​雨​を​遮る​細やか​な​織り目​が​特徴​だ。",
+      "korean": "​켈트인은 ​차가운 ​공기와 ​옆으로 ​쏟아지는 ​비를 ​막아주는 ​섬세한 ​직조의 ​망토로 ​유명합니다.",
+      "polish": "Celtowie słyną ze swoich płaszczy, wytwarzanych z solidnej tkaniny, która chroni przed zimnym, zacinającym deszczem.",
+      "russian": "Кельты славятся своими добротными плащами, которые защищают от холодного проливного дождя.",
+      "simplified_chinese": "​凯​尔​特​人的​斗篷​闻名​天下，​他们​生产​的​织物​做工​细腻，​足以​抵挡​住​冷​冽​的​风​雨。",
+      "spanish": "Afamados son los mantos de los celtas, con sus exquisitos pespuntes que ahuyentan el frío y desvían la lluvia.",
+      "traditional_chinese": "​凱​爾​特​人​以​斗篷​聞​名，​他們​能​生產​出​足以​擋風​遮雨​的​細緻​織物。"
+    },
+    "needProduct": 2161,
+    "supplyWeight": 4.0
+  },
+  "6442": {
+    "guid": 6442,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_torcs_goods.png",
+    "needAttributes": {
+      "Money": 2.0,
+      "Prestige": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Muitas vezes confundidos pelos romanos como tendo importância espiritual, torques são, na verdade, usados como símbolo de status entre os celtas.",
+      "english": "Often mistaken by Romans for having spiritual importance, Torcs are in fact worn as symbols of status among Celts.",
+      "french": "Souvent pris à tort par les Romains pour des objets de grande spiritualité, les torques sont en vérité portés comme symboles de statut chez les Celtes.",
+      "german": "Von Römern oft fälschlicherweise für spirituell gehalten, sind Torques bei den Kelten eigentlich ein Zeichen des Ranges.",
+      "italian": "Spesso i Romani ritengono erroneamente che le torque abbiano un'importanza spirituale, ma in realtà per i Celti non sono altro che simboli di prestigio.",
+      "japanese": "​トル​ク​の​首飾り​は、​ローマ​人​は​しばしば​宗教​的​に​重要​な​もの​だ​と​誤解​し​て​いる​が、​実際は​ケルト​人​は​それ​を​地位​の​象徴​として​身​に​着ける。",
+      "korean": "​로마인들은 ​종종 ​영적인 ​의미가 ​있다고 ​오해하지만, ​토크는 ​사실 ​켈트인 ​사이에서 ​신분을 ​나타내기 ​위해 ​착용하는 ​상징입니다.",
+      "polish": "Często omyłkowo brane przez Rzymian za przedmioty o duchowej mocy, bransolety tak naprawdę są jedynie symbolami statusu wśród Celtów.",
+      "russian": "Римляне ошибочно считают, что у торков есть духовное значение, однако на самом деле это символы положения в обществе кельтов.",
+      "simplified_chinese": "​罗马​人​常​误以为​颈​环​有着​宗教​上​的​意义，​但​其实​凯​尔​特​人​视​它们​为​阶级​的​象征。",
+      "spanish": "Pese a la creencia romana de que los torques son instrumentos de importancia religiosa, en realidad solo denotan el estatus del celta que los porta.",
+      "traditional_chinese": "​羅馬​人​常​誤以為​頸​環​有​宗教​上​的​意義，​但​凱​爾​特​人​其實是​把​頸​環​當成​階級​的​象徵。"
+    },
+    "needProduct": 2157,
+    "supplyWeight": 2.0
+  },
+  "6443": {
+    "guid": 6443,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_brooch_goods.png",
+    "needAttributes": {
+      "Belief": 1.0,
+      "Money": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Artesanato celta, mas com o rosto de um deus romano. Um enfeite para os habitantes locais que usam toga ou para exportação.",
+      "english": "Celtic craftsmanship, but with the face of a Roman god. A trinket for toga-wearing locals and for export.",
+      "french": "De l'artisanat celte, qui arbore le visage d'un dieu romain : une breloque convoitée tant par les citoyens en toge que par l'étranger.",
+      "german": "Keltische Handwerkskunst, aber mit dem Gesicht eines römischen Gottes. Ein Schmuckstück für Togaträger und für den Export.",
+      "italian": "Di fattura celtica, ma con il volto di una divinità romana. Un ninnolo per la gente del posto che indossa la toga ed è adatto all'esportazione.",
+      "japanese": "​ケルト​の​職人​技​が、​ローマ​の​神​の​顔​を​描き出す。​ト​ガ​を​着​た​地元民​に​も、​輸出​する​に​も​適​した​小物。",
+      "korean": "​켈트의 ​장인 ​정신으로 ​만들었지만, ​로마 ​신의 ​얼굴을 ​한 ​물건입니다. ​토가를 ​입은 ​현지인과 ​수출을 ​위한 ​장신구입니다.",
+      "polish": "Produkt celtycki, ale z wyobrażonym obliczem rzymskiego boga. Ozdoba dla miejscowych wielbicieli tóg i na eksport.",
+      "russian": "Кельтское изделие, но с изображением римского божества. Безделушка для местных, которые носят тогу, и на вывоз.",
+      "simplified_chinese": "​凯​尔​特​工艺，​却​带有​罗马​神​祗​的​面容。​这种​小​饰品​不仅​深受​穿​托​加​的​当地​人​欢迎，​有些​还​远销​海外。",
+      "spanish": "Obra de artesanía céltica que presenta, no obstante, el rostro de un dios romano. Una baratija a ojos de los lugareños que han adoptado la toga y de los que se dedican a la exportación.",
+      "traditional_chinese": "​凱​爾​特​工藝，​卻​帶有​羅馬​神祇​的​面容。​是​穿​托​加​的​當地​人​與​出口​市場​都​愛​的​小​飾品。"
+    },
+    "needProduct": 2156,
+    "supplyWeight": 2.0
+  },
+  "6444": {
+    "guid": 6444,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_lavender_soap_goods.png",
+    "needAttributes": {
+      "Health": 2.0,
+      "Population": 1.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Quem diria que gordura e cinzas poderiam produzir um resultado tão limpinho?",
+      "english": "Who would have thought that fat drippings and ashes could produce such squeaky clean results?",
+      "french": "Qui aurait imaginé que le mélange de suint et de cendres puisse aboutir à une propreté aussi impeccable ?",
+      "german": "Wer hätte gedacht, dass Fettreste und Asche so gründlich reinigen können?",
+      "italian": "Chi avrebbe mai pensato che il grasso gocciolante e la cenere potessero pulire?",
+      "japanese": "​滴る​脂​と​灰​が​これほど​ピカピカ​に​なる​と​は、​誰​が​想像​した​だ​ろう​か？",
+      "korean": "​기름기와 ​재로 ​이렇게 ​깨끗한 ​결과물을 ​만들 ​수 ​있다니, ​누가 ​상상이나 ​했겠습니까?",
+      "polish": "Kto by pomyślał, że odrobina tłuszczu i popiołu może dać taki czysty efekt?",
+      "russian": "Кто бы мог подумать, что после жира и золы все будет скрипеть от чистоты?",
+      "simplified_chinese": "​谁能​想到​脂肪​与​灰烬​能​带来​这么​洁净​的​效果？",
+      "spanish": "¿Quién habría dicho que los restos de grasa y las cenizas podrían arrojar tan limpios resultados?",
+      "traditional_chinese": "​誰能​想到​脂肪​與​灰燼​能​帶來​這麼​潔淨​的​效果？"
+    },
+    "needProduct": 2143,
+    "supplyWeight": 2.0
+  },
+  "6445": {
+    "guid": 6445,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_handmirros_goods.png",
+    "needAttributes": {
+      "Health": 2.0,
+      "Knowledge": 2.0,
+      "Money": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Espelhos servem, acima de tudo, para autoconhecimento, mas seus donos frequentemente enxergam ecos de um futuro que está por vir.",
+      "english": "Mirrors are first and foremost for self-knowledge, but those who own them often see echoes of a future to come.",
+      "french": "Destinés avant tout à la connaissance de soi, les miroirs livrent, à ceux qui les contemplent assez longtemps, des reflets de ce qui pourrait advenir.",
+      "german": "Spiegel dienen in erster Linie der Selbsterkenntnis, doch manche sehen darin auch einen Blick in die Zukunft.",
+      "italian": "Gli specchi servono per riconoscere la propria immagine, ma chi li possiede vede il riflesso del futuro.",
+      "japanese": "​鏡​は​まず​第一​に​自己​認識​の​ため​の​もの​だが、​それ​を​所有​する​人々​は、​しばしば​未来​の​反響​を​目​に​する。",
+      "korean": "​거울은 ​무엇보다 ​자아를 ​아는 ​도구이나, ​거울을 ​소유한 ​자는 ​종종 ​다가올 ​미래의 ​메아리를 ​봅니다.",
+      "polish": "Zwierciadła są pierwszym i najważniejszym źródłem samopoznania, ale ich posiadacze często dostrzegają w odbiciach także zapowiedź przyszłości.",
+      "russian": "Зеркала нужны прежде всего для самопознания, однако их владельцы часто видят в них образы будущего.",
+      "simplified_chinese": "​镜子​本来是​用​来自​省，​但​拥有​镜子​的​人​却​常​能​从中​窥​见​未来​的​回响。",
+      "spanish": "Los espejos son sobre todo para conocerse a uno mismo, pero quienes los poseen ven a menudo en ellos ecos de un futuro no muy lejano.",
+      "traditional_chinese": "​鏡子​本來是​用​來自​省，​但​擁有​鏡子​的​人​卻​常看​見​未來​的​回響。"
+    },
+    "needProduct": 2162,
+    "supplyWeight": 4.0
+  },
+  "6446": {
+    "guid": 6446,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_togas_goods.png",
+    "needAttributes": {
+      "Population": 2.0,
+      "Prestige": 5.0
+    },
+    "needDescription": {
+      "brazilian": "A única vestimenta pela qual romanos são identificados. Até a mais fina faixa de púrpura tíria atrai uma multidão... e uma chama.",
+      "english": "The one garment by which Romans are identified. Even the slenderest strip of Tyrian purple will draw a crowd— and a flame.",
+      "french": "Le seul habit qui suffit à dire « Romain ». Un simple liseré de pourpre tyrienne suffit à attirer la foule... et parfois le feu.",
+      "german": "Das Kleidungsstück schlechthin, an dem man einen Römer erkennt. Schon ein Hauch von tyrischem Purpur zieht Blicke an – und Feuer.",
+      "italian": "L'unica veste con cui si identificano i romani. Anche la più sottile striscia di porpora di Tiro attirerà la folla... e le fiamme.",
+      "japanese": "​ローマ​人​を​特徴付ける​唯一​の​衣服。​貝​紫色​の​ほんの​小さな​帯​でも​群衆​を​引き​寄せ​——​そして​炎​を​引き寄せる。",
+      "korean": "​로마인을 ​구별 ​짓는 ​단 ​하나의 ​의복입니다. ​자색 ​천의 ​가느다란 ​띠 ​하나만으로도 ​군중이 ​모이고, ​불꽃이 ​일어날 ​것입니다.",
+      "polish": "Element odzieży charakterystyczny dla każdego Rzymianina. Nawet niewielka ilość tyryjskiej purpury może przyciągać spojrzenia — i ogień.",
+      "russian": "Одеяния, знаковые для римлян. Даже тончайшая лента пурпурной ткани привлечет целую толпу – следите, чтобы не было драк.",
+      "simplified_chinese": "​罗马​人的​标志​性​服饰。​即使是​最​细​的​蒂​尔​紫​丝带，​也能​吸引​众人​目光​——​甚至​招来​祸患。",
+      "spanish": "La prenda que más caracteriza a los romanos. Hasta el menor atisbo de púrpura imperial atraerá a las masas... y a las llamas.",
+      "traditional_chinese": "​象徵​羅馬​人​身分​的​服飾。​即使是​最​細​的​蒂​爾​紫​絲帶，​也能​吸引​眾人​目光​——​甚至​吸引​火焰​燒灼。"
+    },
+    "needProduct": 2145,
+    "supplyWeight": 4.0
+  },
+  "6449": {
+    "guid": 6449,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wig_goods.png",
+    "needAttributes": {
+      "FireSafety": -1.0,
+      "Money": 3.0,
+      "Prestige": 3.0
+    },
+    "needDescription": {
+      "brazilian": "O dinheiro pode comprar cabeleiras magníficas e uma aparência alta e imponente.",
+      "english": "Money can buy magnificent manes and a tall, towering look.",
+      "french": "Il suffit d'un peu d'or pour s'offrir chevelure splendide et prestance.",
+      "german": "Mit Geld kann man majestätische Mähnen und eine stattliche Erscheinung kaufen.",
+      "italian": "Il denaro può comprare magnifiche criniere e anche un aspetto alto e imponente.",
+      "japanese": "​見事​な​たてがみ​と​高​く​そびえる​よう​な​姿​は、​金​で​買える​もの​だ。",
+      "korean": "​돈이면 ​웅장한 ​갈기와 ​우뚝 ​선 ​위용을 ​살 ​수 ​있습니다.",
+      "polish": "Za pieniądze można kupić sobie wspaniałą fryzurę i przyćmić innych wyglądem.",
+      "russian": "За деньги можно купить шикарную шевелюру и возвыситься в глазах других.",
+      "simplified_chinese": "​金钱​能​买​来​华丽​的​发髻​与​高挑​的​身形。",
+      "spanish": "El dinero no traerá la felicidad, pero sí una buena cabellera y un aspecto imponente.",
+      "traditional_chinese": "​金錢​能​買來​華麗​的​髮髻​與​高挑​的​身形。"
+    },
+    "needProduct": 31708,
+    "supplyWeight": 4.0
+  },
+  "6452": {
+    "guid": 6452,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_fine_glass_goods.png",
+    "needAttributes": {
+      "Money": 5.0,
+      "Prestige": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Oferecer uma taça de vidro precioso a um convidado não é algo que qualquer romano pode fazer. ",
+      "english": "To offer a house guest a cup formed of precious glass, is not something just any Roman can do. ",
+      "french": "Présenter à un hôte une coupe de verre précieux n'est pas donné à tous les Romains. ",
+      "german": "Einem Hausgast einen Becher aus kostbarem Glas anzubieten, ist etwas, das nicht jeder Römer kann. ",
+      "italian": "Offrire a un ospite una coppa di vetro pregiato non è una cosa che tutti i romani possono permettersi. ",
+      "japanese": "​貴重​な​ガラス​で​でき​た​カップ​を​客人​に​出す​こと​は、​並み​の​ローマ​人​に​できる​こと​では​ない。 ",
+      "korean": "​귀한 ​유리잔으로 ​손님을 ​대접하는 ​것은 ​아무나 ​할 ​수 ​있는 ​일이 ​아닙니다. ",
+      "polish": "Serwowanie gościom napitków w naczyniach odlanych z cennego szkła, to luksus, na jaki stać mało którego Rzymianina. ",
+      "russian": "Не каждый римлянин может предложить гостю чашу из драгоценного стекла. ",
+      "simplified_chinese": "​用​贵重​玻璃​制成​的​杯​盏​招待​过夜​宾客，​可不是​一般​罗马​人​能​办到​的。 ",
+      "spanish": "No cualquier romano puede ofrecerles a sus invitados una copa hecha de este vidrio tan valioso. ",
+      "traditional_chinese": "​用​貴重​玻璃​製成​的​杯​盞​招待​過夜​賓客，​可不是​一般​羅馬​人​能​辦到​的。 "
+    },
+    "needProduct": 2151,
+    "supplyWeight": 4.0
+  },
+  "6453": {
+    "guid": 6453,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_clan_shields_goods.png",
+    "needAttributes": {
+      "Belief": 1.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Os escudos com seus padrões espiralados caem bem em qualquer chefe, ou sob qualquer chefe. ",
+      "english": "The shields with their swirling patterns look great on any chieftain, or below him. ",
+      "french": "Ces boucliers ornés de spirales flattent l'œil du chef qui les arbore... ou de quiconque se tient plus bas. ",
+      "german": "Die Schilde mit ihren wirbelnden Mustern sehen an jedem Häuptling großartig aus – oder an seinen Leuten. ",
+      "italian": "Gli scudi, con i loro disegni vorticosi, stanno benissimo su qualsiasi capo o anche sotto i suoi piedi. ",
+      "japanese": "​渦巻く​模様​が​施​さ​れ​た​盾​は、​どの​族長​に​も、​あるいは​その​部下​に​も​似合う。 ",
+      "korean": "​소용돌이무늬가 ​새겨진 ​방패는 ​족장이 ​들어도, ​그 ​아랫사람이 ​들어도 ​멋집니다. ",
+      "polish": "Tarcze opatrzone koncentrycznymi wzorami wyglądają wspaniale na lub pod plecami każdego wodza. ",
+      "russian": "Щиты со спиральными узорами отлично выглядят на любом вожде. Или под ним. ",
+      "simplified_chinese": "​带有​漩涡​花纹​的​盾牌，​无论​是​由​酋长​还是​属下​使用，​看起来​都很​威风。 ",
+      "spanish": "Los escudos con motivos arremolinados sientan de maravilla a cualquier jefe tribal... o a cualquiera de sus súbditos. ",
+      "traditional_chinese": "​帶有​漩渦​花紋​的​盾牌，​無論​是​由​酋長​還是​屬下​使用，​看起來​都很​威風。 "
+    },
+    "needProduct": 31706,
+    "supplyWeight": 2.0
+  },
+  "6454": {
+    "guid": 6454,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_chariot_goods.png",
+    "needAttributes": {
+      "Happiness": 1.0,
+      "Money": 3.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Os aurigas celtas pagam por pôneis ágeis e eixos bem lubrificados para deslizarem na lama com um ar majestoso.",
+      "english": "Celtic Charioteers will pay for sprightly ponies and well-oiled axles, so as to glide through the mud with a stately air.",
+      "french": "Les cochers des tribus celtiques offrent bon prix pour des poneys vifs et des essieux huilés, afin de fendre les ornières avec noblesse.",
+      "german": "Keltische Wagenlenker zahlen für flinke Ponys und gut geölte Achsen, damit sie stattlich durch den Schlamm gleiten.",
+      "italian": "Gli aurighi celtici pagherebbero qualsiasi cifra per cavallini vivaci e assi ben oliate, in modo da attraversare il fango in modo maestoso.",
+      "japanese": "​ケルト​の​戦車​乗り​たち​は、​泥​の​上​を​優雅​に​進む​ため、​軽快​な​ポニー​と​よく​手入れ​さ​れ​た​車軸​に​金​を​惜​しま​ない。",
+      "korean": "​진흙을 ​위풍당당하게 ​가로지를 ​수 ​있다면 ​켈트 ​전차병들은 ​활기찬 ​조랑말과 ​기름칠 ​잘 ​된 ​차축에 ​기꺼이 ​돈을 ​지불할 ​것입니다.",
+      "polish": "Celtyccy woźnice chętnie zapłacą za żwawe kucyki i dobrze naoliwione osie, żeby później mknąć przez błota z szybkością wichru.",
+      "russian": "Кельтские колесничие хорошо заплатят за резвых пони и смазку осей, дабы величаво скользить по грязи.",
+      "simplified_chinese": "​凯​尔​特​战车​手​愿意​高价​购买​精力充沛​的​马​匹​与​保养​良好​的​车​轴，​让​战车​可以​气宇不凡​地​驶​过​泥泞。",
+      "spanish": "Los carreteros celtas prefieren los ponis ágiles y los ejes bien engrasados para surcar el barro con ínfulas señoriales.",
+      "traditional_chinese": "​凱​爾​特​戰車​賽車​手​願意​付錢​換取​精力充沛​的​馬匹​與​保養​良好​的​車軸，​讓​戰車​可以​氣宇不凡​地​駛​過​泥濘。"
+    },
+    "needProduct": 2163,
+    "supplyWeight": 4.0
+  },
+  "6458": {
+    "guid": 6458,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_wonder_roman_bathhouse.png",
+    "needAttributes": {
+      "FireSafety": 3.0,
+      "Health": 2.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Casas de banho não são baratas de se manter, mas são imensamente populares, ostentando vastas reservas de água geralmente limpa.",
+      "english": "Bathhouses aren't cheap to run, but are immensely popular, boasting vast reserves of generally clean water.",
+      "french": "Leur entretien est dispendieux, certes, mais les thermes font l'unanimité. Et puis, on y vante les grandes réserves d'une eau... disons, convenablement claire.",
+      "german": "Der Betrieb von Badehäusern ist nicht billig, aber sie sind sehr beliebt und verfügen über große Reserven an normalerweise sauberem Wasser.",
+      "italian": "La gestione delle terme è piuttosto onerosa, ma sono immensamente popolari e vantano grosse riserve d'acqua, generalmente pulita.",
+      "japanese": "​浴場​の​運営​は​安​く​は​ない​が、​非常​に​人気​が​あり、​総合​的​に​清潔​な​水​を​たっぷり​蓄え​て​いる。",
+      "korean": "​목욕탕 ​운영 ​비용이 ​만만치 ​않지만, ​깨끗한 ​물을 ​풍부히 ​보유하여 ​큰 ​인기를 ​누리고 ​있습니다.",
+      "polish": "Prowadzenie łaźni nie jest tanie, ale cieszą się one ogromną popularnością, zużywając kolosalne zasoby na ogół czystej wody.",
+      "russian": "Термы недешевы в содержании, но весьма популярны у населения. А еще здесь хранятся большие запасы относительно чистой воды.",
+      "simplified_chinese": "​浴场​的​营运​成本​不低，​但​非常​受欢迎，​主​打​拥有​大量​“通常​算​干净”​的​水。",
+      "spanish": "Las termas salen bastante caras, pero gozan de mucha popularidad por sus amplias reservas de agua más o menos limpia.",
+      "traditional_chinese": "​浴場​的​營運​成本​不低，​但​非常​受歡迎，​主​打​大量​「通常​算​乾淨」​的​水。"
+    },
+    "needProduct": 2685,
+    "supplyWeight": 4.0
+  },
+  "6716": {
+    "guid": 6716,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_marketplace.png",
+    "needAttributes": {
+      "Money": 1.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "O mercado não serve só para alimentar e trocar cavalos. Ele é o único ponto de encontro em milhas e milhas.",
+      "english": "The Market isn't just there to feed and swap horses, it's the only place to meet for miles around.",
+      "french": "On ne vient pas au marché seulement pour le pain ou les chevaux... c'est l'unique lieu de rencontre à des lieues à la ronde.",
+      "german": "Der Markt ist nicht nur zum Füttern und Tauschen von Pferden da, er ist auch der einzige Treffpunkt im Umkreis.",
+      "italian": "Il mercato non serve solo per sfamare e scambiare cavalli, ma è l'unico luogo di ritrovo nei paraggi.",
+      "japanese": "​市場​は​単に​馬​を​飼​っ​たり​交換​した​り​する​ため​だけ​で​なく、​この​辺り​一帯​で​人々​が​集まる​唯一​の​場所​だ。",
+      "korean": "​시장은 ​단순히 ​식량을 ​구하고 ​말을 ​거래하는 ​곳이 ​아니라, ​수 ​마일 ​내에서 ​사람들이 ​만날 ​수 ​있는 ​유일한 ​장소입니다.",
+      "polish": "Targ nie służy tylko do kupowania żywności i wymiany koni, to także jedyne miejsce spotkań w promieniu wielu mil.",
+      "russian": "Рынок – не только для того, чтобы купить еды или сменить лошадь. Это еще и единственное место для встреч на многие мили вокруг.",
+      "simplified_chinese": "​市场​不仅​可以​供人​觅​食​与​换​马，​也是​方圆​数​里​唯一​的​会​面​处。",
+      "spanish": "El mercado no solo sirve para alimentar a los caballos y comerciar con ellos; también sirve de punto de encuentro para los habitantes de su alrededor.",
+      "traditional_chinese": "​市場​不僅​可以​供人​覓食​與​換​馬，​也是​方圓​數​里​唯一​的​會面​處。"
+    },
+    "needProduct": 2671,
+    "supplyWeight": 1.0
+  },
+  "6718": {
+    "guid": 6718,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_sportsfield.png",
+    "needAttributes": {
+      "Happiness": 1.0,
+      "Health": 1.0,
+      "Prestige": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Os tradicionais multieventos são uma ótima oportunidade para jovens celtas fortes provarem sua coragem.",
+      "english": "Traditional multi-eventing is a great opportunity for strapping young Celts to prove their mettle.",
+      "french": "Ces joutes traditionnelles sont autant d'épreuves où les jeunes Celtes, solides et ardents, peuvent démontrer leur bravoure.",
+      "german": "Der traditionelle Mehrkampf ist eine gute Gelegenheit für junge Kelten, ihr Können unter Beweis zu stellen.",
+      "italian": "I tradizionali eventi multipli sono una grande opportunità per convincere i giovani Celti a dimostrare di che pasta sono fatti.",
+      "japanese": "​伝統​的​な​多​種目​競技​は、​たくましい​ケルト​の​若者​たち​が​その​力量​を​証明​する​絶好​の​機会​だ。",
+      "korean": "​전통적인 ​복합 ​경기는 ​젊고 ​건장한 ​켈트인들이 ​자신의 ​용기를 ​증명할 ​좋은 ​기회입니다.",
+      "polish": "Tradycyjne zawodowy wielobojowe to dla młodych Celtów wspaniała okazja, na udowodnienie swojego męstwa.",
+      "russian": "Традиционное многоборье дает крепким молодым кельтам шанс показать свою удаль.",
+      "simplified_chinese": "​传统​的​多​项​竞技​是​年轻​壮​硕​的​凯​尔​特​人​展现​实力​的​好​机会。",
+      "spanish": "Este espacio multiusos tradicional da la oportunidad a los jóvenes celtas de demostrar su valía.",
+      "traditional_chinese": "​傳統​的​多項​競技​是​年輕​壯碩​的​凱​爾​特​人​展現​實力​的​好​機會。"
+    },
+    "needProduct": 6707,
+    "supplyWeight": 2.0
+  },
+  "6719": {
+    "guid": 6719,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_town_hall.png",
+    "needAttributes": {
+      "Belief": 1.0,
+      "Knowledge": 2.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Haverá muita discussão até que um veredito seja alcançado... mas, por outro lado, discussões são melhores do que brigas sangrentas.",
+      "english": "There will be much talk until a verdict can be reached - but then again, talk is preferable to blood feuds.",
+      "french": "On parlera longuement avant que justice ne tranche, mais la parole, si vaine soit-elle parfois, demeure préférable aux querelles sanglantes.",
+      "german": "Es wird viel Gerede geben, bis ein Urteil gefällt werden kann – andererseits ist Gerede besser als Blutfehden.",
+      "italian": "Si parlerà molto fino a quando non si giungerà a un verdetto, ma d'altronde le discussioni sono meglio delle faide.",
+      "japanese": "​判決​が​下る​まで、​多く​の​議論​が​交​わ​さ​れる​だ​ろう。​しかし、​血​の​復讐​に​比べ​れ​ば、​議論​の​方​が​まし​で​ある。",
+      "korean": "​평결이 ​나올 ​때까지 ​많은 ​논의가 ​있겠지만, ​피의 ​복수보다 ​대화가 ​더 ​나은 ​법입니다.",
+      "polish": "Rozmowy będą się ciągnęły, zanim zapadnie decyzja — ale zawsze lepsze to niż krwawa wróżda.",
+      "russian": "Обсуждение приговора займет немало времени… однако разговоры куда лучше, чем кровная вражда.",
+      "simplified_chinese": "​众人​会​激烈​讨论，​直到​判决​出炉​——​毕竟，​口舌之争​总比​结仇​见​血​来​得​好。",
+      "spanish": "Antes de llegar a un veredicto, hay que hablar, hablar y hablar, pero siempre es preferible el diálogo a que corra la sangre.",
+      "traditional_chinese": "​眾人​會​激烈​討論，​直到​判決​出爐​——​畢竟，​口舌之爭​總比​結仇​見​血​來得​好。"
+    },
+    "needProduct": 6708,
+    "supplyWeight": 4.0
+  },
+  "6720": {
+    "guid": 6720,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_bardic_hall.png",
+    "needAttributes": {
+      "Happiness": 1.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Um lugar comunitário ao redor do fogo, onde músicas, histórias e notícias são compartilhadas às custas do governador.",
+      "english": "A place of fireside community where songs, stories and news are shared at the Governor's expense.",
+      "french": "Un lieu de convivialité au coin du feu, où l'on partage chants, récits et nouvelles... aux frais du gouverneur.",
+      "german": "Am Feuer versammelt man sich, um Lieder, Geschichten und Neuigkeiten auszutauschen, auf Kosten des Praetors.",
+      "italian": "Un luogo accanto al fuoco dove vengono condivise canzoni, storie e notizie a spese del governatore.",
+      "japanese": "​暖炉​の​周り​で​歌​や​物語、​ニュース​が​共有​さ​れる​憩い​の​場。​総督​の​私費​で​運営​さ​れ​て​いる。",
+      "korean": "​총독의 ​비용으로 ​노래와 ​이야기, ​소식을 ​나누는 ​화롯가 ​공동체의 ​장소입니다.",
+      "polish": "Miejsce spotkań przy ognisku, podczas których śpiewa się pieśni i opowiada historie, a wszystko na koszt namiestnika.",
+      "russian": "Местные жители собираются здесь, чтобы послушать песни, рассказы и новости – и посплетничать о наместнике.",
+      "simplified_chinese": "​火炉​旁​的​聚会​处，​可以​在此​分享​歌谣、​故事​与​消息，​由​总督​出资​建设。",
+      "spanish": "Un lugar público en el que la comunidad se reúne en torno al fuego y comparte canciones, historias y noticias.",
+      "traditional_chinese": "​火爐​旁​的​聚會​處，​可以​在此​分享​歌謠、​故事​與​消息，​由​總督​出資。"
+    },
+    "needProduct": 6709,
+    "supplyWeight": 1.0
+  },
+  "6721": {
+    "guid": 6721,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_fanum.png",
+    "needAttributes": {
+      "Belief": 2.0,
+      "Knowledge": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Uma estrutura religiosa sincrética das províncias, o fano aceita todo tipo de sacrifício. ",
+      "english": "As a syncretic religious structure of the provinces, the Fanum accepts all sacrifices. ",
+      "french": "Lieu sacré des provinces et creuset des cultes, le fanum reçoit tous les sacrifices, quels qu'en soient les dieux. ",
+      "german": "Als synkretistische religiöse Struktur der Provinzen nimmt das Fanum alle Opfer an. ",
+      "italian": "Essendo una struttura religiosa sincretica delle province, il fanum accoglie tutti i sacrifici. ",
+      "japanese": "​属​州​の​混合​宗教​施設​として、​聖​所​は​すべて​の​犠牲​を​受け入れる。 ",
+      "korean": "​속주의 ​혼합 ​종교 ​건물인 ​파눔은 ​모든 ​제물을 ​받아들입니다. ",
+      "polish": "Synkretyczna struktura religijna prowincji sprawia, że w Fanum można złożyć każdą ofiarę. ",
+      "russian": "Поскольку фанум объединяет в себе элементы разных религий, распространенных в провинциях, сюда можно принести любое подношение. ",
+      "simplified_chinese": "​作为​行​省​中​融合​不同​宗教​的​建筑，​圣​域​接受​所有​信仰​的​献​祭。 ",
+      "spanish": "El fano, como estructura religiosa sincrética que es, acepta toda clase de sacrificios propios de cada provincia. ",
+      "traditional_chinese": "​作為​省​分​中​融合​不同​宗教​的​建築，​聖域​接受​所有​信仰​的​獻​祭。 "
+    },
+    "needProduct": 6710,
+    "supplyWeight": 2.0
+  },
+  "6722": {
+    "guid": 6722,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_temple.png",
+    "needAttributes": {
+      "Belief": 6.0,
+      "Population": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Grandes templos atraem multidões dispostas a perder todo o senso de si para comungar com o divino.",
+      "english": "Grand temples draw crowds willing to lose all sense of themselves to commune with the divine.",
+      "french": "Les vastes temples attirent les foules, prêtes à s'oublier tout entières pour mieux s'élever vers les dieux.",
+      "german": "Große Tempel ziehen Menschenmengen an, die sich ganz dem Göttlichen hingeben wollen.",
+      "italian": "I grandiosi templi attirano folle disposte a perdere la propria identità per entrare in comunione con il divino.",
+      "japanese": "​壮大​な​神殿​に​は、​神聖​な​存在​と​交わる​ため、​自分​自身​の​感覚​を​すべて​失う​覚悟​を​持​っ​た​人々​が​集まる。",
+      "korean": "​웅장한 ​신전은 ​신과 ​교감하기 ​위해 ​자아를 ​잃으려는 ​이들을 ​끌어들입니다.",
+      "polish": "Wielkie świątynie przyciągają tłumy tych, którzy pragną zatracić się w jedności z bogami.",
+      "russian": "Большие храмы привлекают толпы людей, жаждущих забыть невзгоды и приблизиться к божественному.",
+      "simplified_chinese": "​宏伟​的​神庙​吸引​着​愿意​彼​底​忘我，​只为​与​神灵​交流​的​民众。",
+      "spanish": "Los templos más grandes atraen a multitudes dispuestas a perder su propia conciencia con tal de comunicarse con lo divino.",
+      "traditional_chinese": "​宏偉​的​神廟​能​吸引​群眾​前來，​為了​與​神靈​交流，​甘願​失去​所有​感官。"
+    },
+    "needProduct": 2684,
+    "supplyWeight": 4.0
+  },
+  "6723": {
+    "guid": 6723,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_public_roman_grammaticus.png",
+    "needAttributes": {
+      "Knowledge": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Com a leitura de poesia e filosofia vem o risco real de se tornar \"inteligente demais\".",
+      "english": "With the reading of poetry and philosophy comes the real risk of becoming \"overly clever\".",
+      "french": "Qui s'adonne aux vers et aux spéculations s'expose à ce péril notoire : finir par faire preuve d'esprit.",
+      "german": "Wer sich in Poesie und Philosophie vertieft, riskiert, „zu klug“ zu werden.",
+      "italian": "Leggendo poesie e testi di filosofia, si rischia di diventare \"eccessivamente arguti\".",
+      "japanese": "​詩​や​哲学​を​読む​こと​は、​「過剰​に​知的​な」​人間​に​な​って​しまう​本物​の​リスク​を​伴う。",
+      "korean": "​시와 ​철학을 ​읽다 ​보면 ​\"지나치게 ​영리해질\" ​위험이 ​따르기 ​마련입니다.",
+      "polish": "Czytanie poetów i filozofów niesie ze sobą realne ryzyko pozyskania \"nadmiaru mądrości\".",
+      "russian": "Любители поэзии и философских трудов рискуют прослыть всезнайками.",
+      "simplified_chinese": "​研​读​诗歌​与​哲学​真的​会​有​变得​“聪明​过头”​的​风险。",
+      "spanish": "La poesía y la filosofía entrañan el riesgo de «pasarse de listo».",
+      "traditional_chinese": "​研讀​詩歌​與​哲學​會​帶來​變得​「過度​聰明」​的​風險。"
+    },
+    "needProduct": 2680,
+    "supplyWeight": 2.0
+  },
+  "68747": {
+    "guid": 68747,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_construction_category_aqueduct.png",
+    "needAttributes": {
+      "FireSafety": 3.0,
+      "Health": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Aquedutos transportam água das montanhas para as cidades e podem fornecer água para construções com cisternas próximas.",
+      "english": "Aqueducts transport water from the mountains into the cities and can supply water to buildings with nearby cisterns.",
+      "french": "Les aqueducs transportent l'eau depuis les montagnes jusqu'aux cités, et peuvent alimenter les bâtiments proches d'une citerne.",
+      "german": "Aquädukte transportieren Wasser aus den Bergen in die Städte und können Gebäude über Zisternen in der Nähe mit Wasser versorgen.",
+      "italian": "Gli acquedotti trasportano l'acqua dalle montagne alle città e possono fornire acqua agli edifici con cisterne vicine.",
+      "japanese": "​水道​は​山​から​街​に​水​を​運び、​貯水池​の​近く​に​ある​建物​に​水​を​供給​する​こと​が​できる。",
+      "korean": "​수도교를 ​이용해 ​산에서 ​도시로 ​물을 ​운반하고, ​근처의 ​저수조가 ​있는 ​건물에 ​물을 ​공급할 ​수 ​있습니다.",
+      "polish": "Akwedukty dostarczają wodę z gór do miast i mogą też zaopatrywać w wodę budynki, które mają dostęp do cystern.",
+      "russian": "Акведуки доставляют в города воду с гор и могут снабжать постройки из цистерн поблизости.",
+      "simplified_chinese": "​水道​能​从​山区​输水​至​城镇，​并且​能​为​附近​有​蓄水池​的​建筑​供水。",
+      "spanish": "Los acueductos llevan agua desde las montañas hasta las ciudades y pueden suministrarla a edificios cercanos con cisternas.",
+      "traditional_chinese": "​水道​將​水​從​山區​輸送​至​城內，​並能​藉由​蓄水池​為​鄰近​建築​供水。"
+    },
+    "needProduct": 30724,
+    "supplyWeight": 4.0
+  },
+  "68748": {
+    "guid": 68748,
+    "icon": "data/ui/fhd/base/icon_content/building/icon_3d_construction_category_aqueduct.png",
+    "needAttributes": {
+      "FireSafety": 3.0,
+      "Health": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Aquedutos transportam água das montanhas para as cidades e podem fornecer água para construções com cisternas próximas.",
+      "english": "Aqueducts transport water from the mountains into the cities and can supply water to buildings with nearby cisterns.",
+      "french": "Les aqueducs transportent l'eau depuis les montagnes jusqu'aux cités, et peuvent alimenter les bâtiments proches d'une citerne.",
+      "german": "Aquädukte transportieren Wasser aus den Bergen in die Städte und können Gebäude über Zisternen in der Nähe mit Wasser versorgen.",
+      "italian": "Gli acquedotti trasportano l'acqua dalle montagne alle città e possono fornire acqua agli edifici con cisterne vicine.",
+      "japanese": "​水道​は​山​から​街​に​水​を​運び、​貯水池​の​近く​に​ある​建物​に​水​を​供給​する​こと​が​できる。",
+      "korean": "​수도교를 ​이용해 ​산에서 ​도시로 ​물을 ​운반하고, ​근처의 ​저수조가 ​있는 ​건물에 ​물을 ​공급할 ​수 ​있습니다.",
+      "polish": "Akwedukty dostarczają wodę z gór do miast i mogą też zaopatrywać w wodę budynki, które mają dostęp do cystern.",
+      "russian": "Акведуки доставляют в города воду с гор и могут снабжать постройки из цистерн поблизости.",
+      "simplified_chinese": "​水道​能​从​山区​输水​至​城镇，​并且​能​为​附近​有​蓄水池​的​建筑​供水。",
+      "spanish": "Los acueductos llevan agua desde las montañas hasta las ciudades y pueden suministrarla a edificios cercanos con cisternas.",
+      "traditional_chinese": "​水道​將​水​從​山區​輸送​至​城內，​並能​藉由​蓄水池​為​鄰近​建築​供水。"
+    },
+    "needProduct": 30724,
+    "supplyWeight": 4.0
+  },
+  "71187": {
+    "guid": 71187,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_garum_goods.png",
+    "needAttributes": {
+      "Happiness": 1.0,
+      "Money": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Um condimento de peixe que sem dúvida coloca um sorriso no rosto das pessoas, o garum combina com pão, mingau... qualquer coisa!",
+      "english": "A fishy condiment sure to put a smile on people's faces, Garum pairs with bread, porridge— anything!",
+      "french": "Ce condiment au parfum marin met du cœur au ventre. Le garum se marie aussi bien avec le pain qu'avec la bouillie... ou tout autre mets !",
+      "german": "Das fischige Garum zaubert ein Lächeln auf die Gesichter der Menschen und passt zu Brot, Brei – oder allem anderen!",
+      "italian": "Un condimento a base di pesce farà sorridere la gente, il garum si abbina a pane, alla zuppa d'avena... a qualsiasi cosa!",
+      "japanese": "​魚の​風味​が​特徴​の​調味料​で、​人々​の​笑顔​を​引き出す​こと​間違い​なし。​ガルム​は​パン、​粥、​何​に​でも​合う！",
+      "korean": "​가룸은 ​사람들의 ​얼굴에 ​미소를 ​띠게 ​하는 ​생선 ​소스로, ​빵이나 ​죽 ​등 ​무엇과도 ​잘 ​어울립니다!",
+      "polish": "Ten rybny dodatek na pewno wywołuje uśmiech na niejednej twarzy, albowiem garum można łączyć z pieczywem czy owsianką — dosłownie ze wszystkim!",
+      "russian": "Рыбный соус, от одного аромата которого становишься счастливее. Хорош с хлебом, с кашей – да с чем угодно!",
+      "simplified_chinese": "​一种​人们​喜​闻​乐见​的​腥​香​调味​料，​可以​搭配​面包、​粥……​乃至​任何​东西​一起​食用！",
+      "spanish": "El garo, un condimento a base de pescado que no deja a nadie indiferente, se puede echar al pan, a las gachas... ¡a todo!",
+      "traditional_chinese": "​魚​醬​是能​讓人​露出​笑容​的​調味料，​搭配​麵包、​粥​或​其他​食物​都可以！"
+    },
+    "needProduct": 2139,
+    "supplyWeight": 2.0
+  },
+  "71188": {
+    "guid": 71188,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_beer_goods.png",
+    "needAttributes": {
+      "Happiness": 2.0,
+      "Knowledge": -1.0,
+      "Money": 1.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Um barril de autêntica cerveja celta pode acabar com tristezas, incêndios e todas as memórias do dia anterior.",
+      "english": "A keg of authentic Celtic Beer can wash away sorrows, fires, and all memory of the previous day.",
+      "french": "Une barrique d'authentique bière celte suffit à noyer les peines, calmer les brasiers... et balayer les souvenirs de la veille.",
+      "german": "Ein Fass echtes keltisches Bier kann Sorgen, Brände und alle Erinnerungen an den vergangenen Tag wegspülen.",
+      "italian": "Un barile di autentica birra celtica in grado di cancellare il dolore, gli incendi e tutti i ricordi del giorno prima.",
+      "japanese": "​本物​の​ケルト​ビール​が​入​っ​た​樽​は、​悲しみ、​火事、​そして​前日​の​記憶​を​すべて​洗い流す​こと​が​できる。",
+      "korean": "​정통 ​켈트 ​맥주 ​한 ​통이면 ​슬픔도, ​화도, ​전날의 ​기억도 ​모두 ​씻어낼 ​수 ​있습니다.",
+      "polish": "Beczułka prawdziwego celtyckiego piwa potrafi obmywać smutki, gasić pożary i usuwać z pamięci wszystko, co wydarzyło się dzień wcześniej.",
+      "russian": "Бочка настоящего кельтского пива зальет печали, пожары и память о вчерашнем дне.",
+      "simplified_chinese": "​一桶​正宗​凯​尔​特​啤酒​能​洗去​悲伤、​火焰​和​所有​昨日​的​记忆。",
+      "spanish": "Un tonel de una buena cerveza celta puede ahogar las penas, los incendios... y el recuerdo del día anterior.",
+      "traditional_chinese": "​一桶​正宗​凱​爾​特​啤酒​能​洗去​悲傷、​火焰​與​昨日​記憶。"
+    },
+    "needProduct": 2154,
+    "supplyWeight": 2.0
+  },
+  "8423": {
+    "guid": 8423,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wine_goods.png",
+    "needAttributes": {
+      "Belief": 2.0,
+      "Happiness": 3.0,
+      "Knowledge": -1.0,
+      "Money": 3.0
+    },
+    "needDescription": {
+      "brazilian": "Até o mais rabugento dos edis acredita que um fornecimento regular de vinho romano é culturalmente aceitável.",
+      "english": "Even the most curmudgeonly of Aldermen believes a steady supply of Roman wine to be culturally acceptable.",
+      "french": "Même l'Alderman le plus revêche s'accorde à dire qu'un flot constant de vin romain est un compromis culturel tout à fait convenable.",
+      "german": "Selbst der griesgrämigste Älteste erkennt einen steten Fluss römischen Weines als kulturkonform an.",
+      "italian": "Anche il più burbero degli aldermanni crede che una fornitura costante di vino romano sia culturalmente accettabile.",
+      "japanese": "​どんなに​頑固​な​アルダー​で​さえ、​ローマ​産​ワイン​の​安定​した​供給​は​文化​的​に​許容​できる​と​考え​て​いる。",
+      "korean": "​아무리 ​까다로운 ​장로라 ​해도 ​로마산 ​포도주의 ​꾸준한 ​공급은 ​문화적으로 ​용인할 ​만하다고 ​여깁니다.",
+      "polish": "Nawet najbardziej zrzędliwi Starsi uważają regularne dostawy rzymskiego wina za kulturowo dopuszczane.",
+      "russian": "Даже самые брюзгливые олдермены считают, что хороший запас римского вина – приемлемое культурное заимствование.",
+      "simplified_chinese": "​就​连​脾气​最​暴躁​的​长老，​也​认为​稳定​供应​罗马​葡萄酒​在​文化​上​可以​接受。",
+      "spanish": "Ni el álder más receloso de su cultura se opone a disponer de un suministro constante de vino romano.",
+      "traditional_chinese": "​就​連​脾氣​最​暴躁​的​長老，​也​認為​穩定​供應​羅馬​葡萄酒​在​文化​上​可以​接受。"
+    },
+    "needProduct": 2138,
+    "supplyWeight": 4.0
+  }
+}
