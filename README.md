@@ -2,6 +2,10 @@
 
 A tile-based layout planner for **Anno 117: Pax Romana**. Design city districts offline, experiment with production chains, visualise effect radii and street range, then export your finished layout as a PNG.
 
+![Thumbnail](thumbnail_en.jpg)
+
+-> Deutsches Readme findet ihr [hier](README_de.md)
+
 ---
 
 ## How to use:
@@ -239,3 +243,14 @@ The BFS graph is built from polygon adjacency; in very dense diamond-road layout
 
 **Production chain popups reflect base-game data only.**
 Modded or custom production chains are not shown. Although Obsidian input is shown as part of some production chains, clicking the icon does not open a placeable building in the canvas. This is because it can only be generated as an additional output in other buildings.
+
+### License:
+MIT
+
+### Credits:
+- DuxVitae for his incredible work on the Anno 117 [Asset Extractor](https://github.com/anno-mods/asset-extractor), which I used to generate the extractor scripts to extract all the data necessary for this project
+- Claude Code for making my vision of a layout tool for Anno come true
+
+---
+
+*For questions, bug reports, and contributions, please open an issue or pull request on the [GitHub repository](https://github.com/taludas/anno-117-layout-tool).*

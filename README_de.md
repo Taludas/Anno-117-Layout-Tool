@@ -2,6 +2,8 @@
 
 Ein kachelbasierter Layout-Planer für **Anno 117: Pax Romana**. Plane deine Stadtbezirke und Produktionsketten offline, visualisiere Wirkungsradien und Straßenreichweiten und exportiere dein fertiges Layout als PNG.
 
+![Thumbnail](thumbnail_de.jpg)
+
 ---
 
 ## Voraussetzungen
@@ -235,3 +237,14 @@ Der BFS-Graph basiert auf Polygon-Adjacency-Tests; in sehr dichten Straßennetze
 
 **Produktionsketten-Popups zeigen nur Basis-Spieldaten.**
 Modifizierte oder benutzerdefinierte Produktionsketten werden nicht angezeigt.
+
+### Lizenz:
+MIT
+
+### Credits:
+- DuxVitae für seine großartige Arbeit am Anno 117 [Asset Extractor](https://github.com/anno-mods/asset-extractor), mit dessen Hilfe ich die Skripte erstellt habe, um alle für dieses Projekt erforderlichen Daten zu extrahieren
+- Claude-Code zur Umsetzung meiner Vision eines Layout-Tools für Anno
+
+---
+
+*Bei Fragen, Fehlermeldungen und Beiträgen eröffnet bitte ein Issue oder einen Pull Request auf dem [GitHub repository](https://github.com/taludas/anno-117-layout-tool).*
