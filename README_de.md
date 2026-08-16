@@ -25,7 +25,7 @@ python main.py
 
 ## Features
 
-### Leinwand & Navigation
+### Benutzeroberfläche & Navigation
 
 - **Duales Raster** - 90°-Raster und optionales 45°-Diagonalraster wie im Spiel; 45° Grid einschaltbar über das Ansicht-Menü oder die Checkboxen unten rechts
 - **Schwenken** - mittlere Maustaste gedrückt halten und ziehen
@@ -43,7 +43,7 @@ python main.py
 
 ### Gebäudeplatzierung
 
-Klicke ein Gebäude im Baumenü an, um den Baumodus zu aktivieren (Gebäude hängen an einem Fadenkreuz-Cursor). Eine **Vorschau** folgt dem Mauszeiger; **rote Kollisionsfarbe** signalisiert eine blockierte Position. Ein Klick auf die Leinwand platziert das Gebäude an einer freien Stelle - der Baumodus bleibt für wiederholtes Setzen aktiv.
+Klicke ein Gebäude im Baumenü an, um den Baumodus zu aktivieren (Gebäude hängen an einem Fadenkreuz-Cursor). Eine **Vorschau** folgt dem Mauszeiger; **rote Kollisionsfarbe** signalisiert eine blockierte Position. Ein Klick auf die Benutzeroberfläche platziert das Gebäude an einer freien Stelle - der Baumodus bleibt für wiederholtes Setzen aktiv.
 
 - **Esc** oder **Rechtsklick** beendet den Baumodus
 - **Doppelklick** auf ein platziertes Gebäude kehrt in den Baumodus für denselben Typ in der selben Rotation zurück (Pipette)
@@ -56,7 +56,7 @@ Klicke ein Gebäude im Baumenü an, um den Baumodus zu aktivieren (Gebäude hän
 | `,` | 45° gegen den Uhrzeigersinn |
 | Mittlere Maustaste (kein Ziehen) | 45° im Uhrzeigersinn |
 
-Alle acht Orientierungen (0°–315°, in 45°-Schritte) werden unterstützt. Gebäude rasten automatisch in die korrekte Gitterfamilie ein.
+Alle acht Orientierungen (0°–315°, in 45°-Schritte) werden unterstützt. Gebäude rasten automatisch in die korrekte Grid-Familie ein.
 
 #### Komfort-Baumodi
 
@@ -76,7 +76,7 @@ Alle acht Orientierungen (0°–315°, in 45°-Schritte) werden unterstützt. Ge
 | Linksklick | Einzelnes Gebäude auswählen |
 | Strg+Klick | Gebäude zur Auswahl hinzufügen / daraus entfernen |
 | Shift+Klick | Gebäude zur Auswahl hinzufügen (Verkettung) |
-| Klick+Ziehen auf leerer Leinwand | Alle Gebäude im Rechteck auswählen |
+| Klick+Ziehen auf leerer Benutzeroberfläche | Alle Gebäude im Rechteck auswählen |
 | Strg+A | Alle auswählen |
 | Rechtsklick | Auswahl aufheben / Baumodus beenden |
 
@@ -127,16 +127,16 @@ Aktive **Tech-Effekte**, die die Reichweite eines Gebäudes erhöhen (z. B. *Att
 - **Klassen-Tabs** - Liberti, Plebejer, Equites, Patrizier (Römisch) / Wanderer, Schmiede, Älteste, Merkatoren, Adlige (Keltisch)
 - **Feste Tabs** - Materialien, Infrastruktur, Ornamente
 - **Schnellzugriff-Leiste** (je Region) - Straße, Gepflasterte Straße, Marmorstraße, Wohngebäude, Lagerhaus, Stadtwachen
-- **Produktionsketten-Popups** - zeigt den vollständigen Eingabe-→-Ausgabe-Baum; Klick auf ein Produkt wählt es zur Platzierung aus
-- **Kategorie-Popups** - verschachtelte Popups für Unterkategorien
+- **Produktionsketten-Popups** - zeigt den vollständigen Produktions-Baum; Klick auf ein Produkt wählt es zur Platzierung aus
+- **Kategorie-Popups** - verschachtelte Popups für Unterkategorien, z.B. bei Ornamenten
 
-Popups bleiben offen, während Gebäude platziert werden. Sie schließen sich bei Rechtsklick oder Klick auf die leere Leinwand.
+Popups bleiben offen, während Gebäude platziert werden. Sie schließen sich bei Rechtsklick oder Klick auf die leere Benutzeroberfläche.
 
 ---
 
 ### Gebäudeinformationspanel
 
-Sichtbar oben rechts auf der Leinwand, wenn ein Gebäude ausgewählt oder in der Vorschau ist:
+Sichtbar oben rechts auf der Benutzeroberfläche, wenn ein Gebäude ausgewählt oder in der Vorschau ist:
 
 - Name, Kategorie, Icon, Kachelabmessungen, Rotation
 - Anzahl betroffener Gebäude (für Effektradius-Gebäude, live aktualisiert beim Verschieben)
@@ -144,7 +144,7 @@ Sichtbar oben rechts auf der Leinwand, wenn ein Gebäude ausgewählt oder in der
 - **Upgrade-Schaltfläche** - ersetzt das Gebäude direkt durch die nächste Stufe (Wohnhäuser, Monumente, Infrastruktur)
 - **Modul bauen-Schaltfläche** - Wechselt in den Modulplatzierungsmodus für dieses Gebäude. Die Module werden dann dem ausgewählten Gebäude zugeordnet und auf dessen erforderliche Modulanzahl für die Basisproduktivität von 100 % angerechnet. Wenn zwei oder mehr Gebäude mit Modulen eine gemeinsame Grenze haben, ändern sich ihre Farben automatisch, sodass man besser erkennen kann, welche Module zu welchem Gebäude gehören.
 - **Tech-Effekte-Schaltfläche** (wird angezeigt, sofern verfügbar) – öffnet ein Popup-Fenster mit einer Liste der verfügbaren Forschungs-Upgrades für dieses Gebäude. Hier können einzelne Effekte ein- oder ausgeschaltet werden; aktive Effekte werden sofort in der Radius-Einschlagskarte, der Anzahl der Ziele im Wirkungsbereich und den Bonussummen angezeigt.
-- **Gegenstandseffekte-Schaltfläche** (wird angezeigt, sofern verfügbar) – öffnet ein Popup-Fenster mit einer Liste der verfügbaren Item-Upgrades für dieses Gebäude. Hier können einzelne Effekte ein- oder ausgeschaltet werden; aktive Effekte werden sofort im Informationsfeld des Gebäudes und in den Gesamtwerten angezeigt. Itemeffekte sind copy/paste beständig.
+- **Itemeffekte-Schaltfläche** (wird angezeigt, sofern verfügbar) – öffnet ein Popup-Fenster mit einer Liste der verfügbaren Item-Upgrades für dieses Gebäude. Hier können einzelne Effekte ein- oder ausgeschaltet werden; aktive Effekte werden sofort im Informationsfeld des Gebäudes und in den Gesamtwerten angezeigt. Itemeffekte sind copy/paste beständig.
 - Aufschlüsselung der Bau- und Unterhaltskosten
 
 ---
@@ -181,11 +181,62 @@ Jede größere Aktion - Platzieren, Löschen, Verschieben, Straßentausch, Einf�
 | Strg+O | Layout öffnen |
 | Strg+S | Speichern (Speichern unter, wenn noch kein Pfad festgelegt) |
 
-**Format**: `.a117l` (JSON intern). Speichert GUID, Gitterposition, Rotation und Modul-Verknüpfungen jedes Gebäudes.
+**Format**: `.a117l` (JSON intern). Speichert GUID, Rasterposition, Rotation und Modul-Verknüpfungen jedes Gebäudes.
 
 **PNG-Export** (Datei → *Als PNG exportieren…*):
-- Optionale Checkbox fügt das Statistik-Panel rechts neben der Leinwand ein
+- Optionale Checkbox fügt das Statistik-Panel rechts neben der Benutzeroberfläche ein
 - 90°-Raster mit fester Kachelgröße überlagert von den Gebäuden; Gebäudesymbole werden angezeigt
+
+---
+
+### Insel- & Spielstand-Import
+
+Das Tool kann eine Anno-117-Insel als Planungshintergrund auf die Benutzeroberfläche legen und optional alle Gebäude, die im Spielstand bereits vorhanden sind, übernehmen.
+
+#### Insel laden (Strg+I)
+
+*Datei → Insel laden…* öffnet eine Auswahlliste aller im Tool enthaltenen Inseln. Nach der Auswahl wird die Inselgeländeform als farbige Hintergrundebene auf der Benutzeroberfläche eingeblendet. Externe Werkzeuge oder eine Spielinstallation sind dafür nicht erforderlich. Diese Option eignet sich, wenn man ein Layout auf einer bekannten Inselform von Grund auf neu planen möchte.
+
+- Die Insel-Überlagerung bewegt sich und zoomt zusammen mit der Benutzeroberfläche.
+- **Datei → Insel entfernen** löscht sie, ohne platzierte Gebäude zu beeinflussen.
+- Die Insel wird als Teil der `.a117l`-Layoutdatei gespeichert und beim Laden wiederhergestellt.
+
+#### Kachelfarben der Insel
+
+Der Hintergrund nutzt fünf verschiedene Farben, um anzuzeigen, wie die jeweilige Kachel genutzt werden kann:
+
+| Farbe (Dunkel / Hell) | Kacheltyp | Bedeutung |
+|-----------------------|-----------|-----------|
+| Dunkles Marineblau / Sattblau | Meer | Offenes Meer - keine Bebauung möglich |
+| Dunkelbraun / Sandstein | Gelände | Nicht bebaubares Terrain (Klippen, Berge, Flüsse) |
+| Waldgrün / Grasgrün | Bebaubar | Normales bebaubares Land |
+| Tiefblau / Küstenblau | Hafen | Bebaubarer Küstenbereich (Hafen) |
+| Olivgelb / Gelbgrün | Sumpf | Sumpffläche (bebaubar) |
+
+Das Tool erzwingt diese Grenzen: Gebäude, die außerhalb von bebaubareren Kacheln platziert werden, erhalten eine rote Kollisionsfarbe und können nicht gesetzt werden.
+
+#### Spielstand importieren (Strg+G)
+
+*Datei → Spielstand importieren…* liest eine Anno-117-Speicherdatei (`.a8s`) ein und importiert sowohl die Inselgeländeform **als auch** alle dort bereits platzierten Gebäude direkt in die Benutzeroberfläche - praktisch, um eine bestehende Stadt zu dokumentieren oder rund um sie weiterzuplanen.
+
+**Voraussetzungen:** Für den Import werden zwei kleine Programme der Anno Community benötigt, die die App beim ersten Aufruf automatisch zum Download anbietet:
+
+- **RdaConsole** - entpackt Dateien aus dem `.a8s`-Archiv
+- **FileDBReader** - dekodiert die binären Inseldaten
+
+Auf dem Rechner muss **.NET 6 oder neuer** installiert sein. Werden die Tools beim ersten Start nicht gefunden, öffnet sich ein Einrichtungsdialog; ein Klick auf **Download** lädt sie automatisch von GitHub herunter und installiert sie.
+
+**Ablauf:**
+
+1. **Strg+G** drücken oder *Datei → Spielstand importieren…* aufrufen.
+2. Falls die Tools fehlen, den einmaligen Einrichtungsdialog abschließen.
+3. Die Anno-117-Speicherdatei auswählen (Standardpfad: `Dokumente\Anno 117 - Pax Romana\accounts\<Konto-ID>\`). Speicherdateien haben die Endung `.a8s`.
+4. Ein Fortschrittsdialog lädt den Spielstand im Hintergrund und listet alle spielereigenen Inseln auf.
+5. Die gewünschte Insel auswählen und auf **Import to Canvas** klicken.
+
+Nach einem Import lässt sich über *Datei → Spielstand-Insel wechseln…* ohne erneute Dateiauswahl zu einer anderen Insel desselben Spielstands wechseln.
+
+> **Hinweis:** Gebäude im Blaupausenzustand (noch nicht fertig gebaut) werden beim Import ausgelassen.
 
 ---
 
@@ -205,6 +256,8 @@ Jede größere Aktion - Platzieren, Löschen, Verschieben, Straßentausch, Einf�
 | Strg+N | Neues Layout |
 | Strg+O | Layout öffnen |
 | Strg+S | Speichern |
+| Strg+G | Spielstand importieren |
+| Strg+I | Insel laden |
 | Strg+Z | Rückgängig |
 | Strg+Y | Wiederholen |
 | Strg+A | Alle auswählen |
@@ -218,7 +271,7 @@ Jede größere Aktion - Platzieren, Löschen, Verschieben, Straßentausch, Einf�
 | Shift+U | Straßentausch (wenn eine Straßenkachel ausgewählt ist) |
 | Pos1 | Layout in Ansicht einpassen |
 | Mittlere Maustaste (kein Ziehen) | 45°-Drehung |
-| Mittlere Maustaste + Ziehen | Leinwand schwenken |
+| Mittlere Maustaste + Ziehen | Benutzeroberfläche schwenken |
 | Mausrad | Zoomen |
 | Shift+Mausrad (über Menüleiste) | Horizontal scrollen |
 
@@ -229,21 +282,25 @@ Jede größere Aktion - Platzieren, Löschen, Verschieben, Straßentausch, Einf�
 **Rotation mit Straßen in der Auswahl ist auf 90°-Schritte begrenzt.**
 Das Rotieren einer gemischten Gruppe aus Wohngebäuden und Straßenkacheln in 45°-Schritten würde die 90°/45°-Gitterfamiliengrenze überschreiten, was die Straßengeometrie nicht korrekt auflösen kann. Das Tool wandelt den Tastendrück automatisch in einen 90°-Schritt um, wenn Straßenkacheln in der Auswahl vorhanden sind. Auswahlen ohne Straßen rotieren weiterhin in 45°-Schritten.
 
-**Starres Gruppenverschieben kann sich in der Nähe von Hindernissen unresponsiv anfühlen.**
+**Gruppenverschieben kann sich in der Nähe von Hindernissen unresponsiv anfühlen.**
 Beim Ziehen mehrerer Gebäude bewegt sich die gesamte Gruppe nur, wenn alle Gebäude an der neuen Position kollisionsfrei platziert werden können. Blockiert ein Gebäude am Rand der Gruppe, bleibt die gesamte Gruppe stehen. In diesem Fall das blockierende Gebäude aus der Auswahl entfernen und den Rest separat verschieben.
 
 **Straßenreichweite ist in dichten 45°-Straßennetzen näherungsweise.**
 Der BFS-Graph basiert auf Polygon-Adjacency-Tests; in sehr dichten Straßennetzen kann die ermittelte Hop-Anzahl um ±1 vom Spielwert abweichen.
 
+**Performance ist bei großen, aus Spielständen importierten Inseln eingeschränkt.**
+Das Importieren einer voll ausgebauten Insel aus einem Spielstand im späten Spielverlauf kann 5.000–10.000 oder mehr platzierte Gebäude auf die Benutzeroberfläche laden. Schwenken, das Platzieren weiterer Gebäude und die Berechnung von Straßenreichweiten für öffentliche Gebäude (Märkte, Tavernen usw.) kann unter diesen Bedingungen langsamer sein als bei einem manuell erstellten kleinen Layout. Dies ist eine bekannte Einschränkung der Rendering-Pipeline bei dieser Skalierung; alle Daten bleiben erhalten und alle Funktionen sind weiterhin nutzbar.
+
 **Produktionsketten-Popups zeigen nur Basis-Spieldaten.**
-Modifizierte oder benutzerdefinierte Produktionsketten werden nicht angezeigt.
+Modifizierte oder gemoddete Produktionsketten werden nicht angezeigt.
 
 ### Lizenz:
 MIT
 
 ### Credits:
 - DuxVitae für seine großartige Arbeit am Anno 117 [Asset Extractor](https://github.com/anno-mods/asset-extractor), mit dessen Hilfe ich die Skripte erstellt habe, um alle für dieses Projekt erforderlichen Daten zu extrahieren
-- Claude-Code zur Umsetzung meiner Vision eines Layout-Tools für Anno
+- Oliver Saggau für seine ausführliche Dokumentation sowohl zu den [Savegames](https://github.com/oliversaggau/anno-designer/blob/Savegames/AnnoDesigner.Import/docs/Anno117_Savegames.md) als auch zu den [Insel-Dateien](https://github.com/oliversaggau/anno-designer/blob/Savegames/IslandOutlinesExtractor/README.md) in seinem Branch des aktualisierten Anno Designers. Sie haben enorm dabei geholfen, diese Funktionen in meiner App zu implementieren.
+- Claude-Code zur Umsetzung meiner Vision eines Layout-Tools für Anno 117
 
 ---
 

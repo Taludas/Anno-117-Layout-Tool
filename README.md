@@ -195,6 +195,57 @@ Each major action - place, delete, move, road-swap, paste - creates one undo ste
 
 ---
 
+### Island & Savegame Import
+
+The tool can overlay a Anno 117 island map on the canvas as a planning background, and optionally pre-populate it with every building that already exists in your savegame.
+
+#### Load Island (Ctrl+I)
+
+*File → Load Island…* opens a picker listing all island outlines bundled with the tool. Selecting one draws the island terrain on the canvas as a coloured background layer. No external tools or game installation are required. Use this when you want to plan a layout on a known island shape from scratch.
+
+- The island overlay moves and zooms with the canvas.
+- **File → Clear Island** removes it without affecting placed buildings.
+- The island is saved as part of the `.a117l` layout file and restored on load.
+
+#### Island tile colours
+
+The background uses five distinct colours to communicate what each tile can be used for:
+
+| Colour (dark / light) | Tile type | Meaning |
+|-----------------------|-----------|---------|
+| Dark navy / saturated blue | Sea | Open sea - no buildings |
+| Dark brown / sandy stone | Land | Non-buildable terrain (cliffs, mountains, rivers) |
+| Forest green / grass green | Buildable | Regular buildable land |
+| Deep blue / coastal blue | Harbour | Buildable coastal water (harbour zone) |
+| Olive-yellow / yellow-green | Marsh | Marsh area (buildable) |
+
+The tool enforces these boundaries: buildings placed outside buildable tiles are shown with a red collision tint and cannot be confirmed.
+
+#### Import Savegame (Ctrl+G)
+
+*File → Import Savegame…* reads a live Anno 117 save file (`.a8s`) and imports both the island terrain **and** all buildings that are already placed there directly into the canvas - useful for documenting an existing city or continuing to plan around it.
+
+**Prerequisites:** the import requires two free tools from the Anno Modding Community that the app will offer to download automatically on first use:
+
+- **RdaConsole** - extracts files from the `.a8s` archive
+- **FileDBReader** - decodes the binary island data
+
+.NET 6 or newer must be installed on your machine. If the tools are not found on first launch, a setup dialog opens; click **Download** to fetch them automatically from GitHub.
+
+**How to use:**
+
+1. Press **Ctrl+G** or go to *File → Import Savegame…*
+2. If the tools are missing, complete the one-time setup dialog.
+3. Browse to your Anno 117 save file (default location: `Documents\Anno 117 - Pax Romana\accounts\<account-id>\`). Save files use the `.a8s` extension.
+4. A progress dialog parses the savegame in the background and lists all playable islands it contains.
+5. Select the island you want and click **Import to Canvas**.
+
+After a savegame is imported, *File → Switch Savegame Island…* lets you switch to a different island from the same save without re-selecting the file.
+
+> **Note:** Blueprint buildings (not yet fully constructed) are excluded from the import.
+
+---
+
 ### Settings & Localisation
 
 - **12 languages**: English, Deutsch, Français, Español, Italiano, Polski, Русский, Português (BR), 日本語, 한국어, 简体中文, 繁體中文
@@ -211,6 +262,8 @@ Each major action - place, delete, move, road-swap, paste - creates one undo ste
 | Ctrl+N | New layout |
 | Ctrl+O | Open layout |
 | Ctrl+S | Save |
+| Ctrl+G | Import savegame |
+| Ctrl+I | Load island |
 | Ctrl+Z | Undo |
 | Ctrl+Y | Redo |
 | Ctrl+A | Select all |
@@ -241,6 +294,9 @@ When dragging multiple buildings, the entire group moves only if every building 
 **Street distance reach is approximate in dense 45° road networks.**
 The BFS graph is built from polygon adjacency; in very dense diamond-road layouts the reachable hop count may differ by ±1 from the in-game value.
 
+**Performance is reduced on large savegame-imported islands.**
+Importing a fully developed island from a late-game savegame can result in 5,000–10,000+ placed buildings on the canvas. Panning, placing additional buildings, and computing street-distance overlays for public buildings (markets, taverns, etc.) may feel slower under these conditions compared to a hand-built layout of smaller size. This is a known limitation of the rendering pipeline at this scale; no data is lost and all features remain functional.
+
 **Production chain popups reflect base-game data only.**
 Modded or custom production chains are not shown. Although Obsidian input is shown as part of some production chains, clicking the icon does not open a placeable building in the canvas. This is because it can only be generated as an additional output in other buildings.
 
@@ -249,7 +305,8 @@ MIT
 
 ### Credits:
 - DuxVitae for his incredible work on the Anno 117 [Asset Extractor](https://github.com/anno-mods/asset-extractor), which I used to generate the extractor scripts to extract all the data necessary for this project
-- Claude Code for making my vision of a layout tool for Anno come true
+- Oliver Saggau for his detailed documentation on both Anno 117 [savegame files](https://github.com/oliversaggau/anno-designer/blob/Savegames/AnnoDesigner.Import/docs/Anno117_Savegames.md) and [island files](https://github.com/oliversaggau/anno-designer/blob/Savegames/IslandOutlinesExtractor/README.md) in his branch of the updated Anno Designer. They helped immensely with setting up these functions in the app.
+- Claude Code for making my vision of a layout tool for Anno 117 come true
 
 ---
 

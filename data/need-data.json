@@ -10,7 +10,7 @@
     "needDescription": {
       "brazilian": "Estas pequenas divindades dão um toque de luxo ao conjunto de qualquer altar doméstico. ",
       "english": "These small gods add a touch of luxury to the ensemble at any household shrine. ",
-      "french": "Ces petits dieux ajoutent une touche de luxe à tout sanctuaire domestique. ",
+      "french": "Ces petits dieux ajoutent une touche de luxe à tout autel domestique. ",
       "german": "Diese kleinen Götter verleihen jedem Hausschrein einen Hauch Luxus. ",
       "italian": "Queste piccole divinità aggiungono un po' di prestigio in ogni sacrario domestico. ",
       "japanese": "​小さな​神像。​家々​に​ある​祭壇​に​厳​かな​雰囲気​を​もたらす。 ",
@@ -35,7 +35,7 @@
     "needDescription": {
       "brazilian": "Estas pequenas divindades dão um toque de luxo ao conjunto de qualquer altar doméstico. ",
       "english": "These small gods add a touch of luxury to the ensemble at any household shrine. ",
-      "french": "Ces petits dieux ajoutent une touche de luxe à tout sanctuaire domestique. ",
+      "french": "Ces petits dieux ajoutent une touche de luxe à tout autel domestique. ",
       "german": "Diese kleinen Götter verleihen jedem Hausschrein einen Hauch Luxus. ",
       "italian": "Queste piccole divinità aggiungono un po' di prestigio in ogni sacrario domestico. ",
       "japanese": "​小さな​神像。​家々​に​ある​祭壇​に​厳​かな​雰囲気​を​もたらす。 ",
@@ -99,6 +99,183 @@
     "needProduct": 145221,
     "supplyWeight": 4.0
   },
+  "152717": {
+    "guid": 152717,
+    "icon": "data/ui/fhd/dlc02/icon_content/hippodrome/icon_3d_construction_category_hippodrome.png",
+    "needAttributes": {
+      "Belief": 1.0,
+      "Happiness": 1.0,
+      "Money": 1.0,
+      "Population": 4.0,
+      "Prestige": 8.0
+    },
+    "needDescription": {
+      "brazilian": "A poeira nunca baixa nesta pista de corrida monumental, onde destemidos aurigas competem pela vitória e a adoração do público.",
+      "english": "The dust never settles on this monumental racing track, where fearless charioteers vie for victory and the adoration of the crowd.",
+      "french": "La poussière ne retombe jamais sur cette monumentale piste de course, où d'intrépides auriges se disputent la victoire et l'adoration des foules.",
+      "german": "Auf dieser monumentalen Rennbahn legt sich der Staub nie und furchtlose Wagenlenker wetteifern um den Sieg und die Bewunderung der Menge.",
+      "italian": "Su questo monumentale ippodromo, in cui aurighi coraggiosi gareggiano per la vittoria e l'adorazione del pubblico, non si posa mai la polvere.",
+      "japanese": "​この​壮大​な​競馬​場​では、​絶えず​砂埃​が​巻き​あ​がり、​恐れ​知らず​の​御​者​たち​が​勝利​と​観客​の​喝采​を​求め​て​競い合う。",
+      "korean": "​두려움 ​모르는 ​전차 ​기수들이 ​승리와 ​관중의 ​환호를 ​위해 ​다투는 ​이 ​웅장한 ​경주 ​트랙에는 ​먼지가 ​가라앉을 ​틈이 ​없습니다.",
+      "polish": "Kurz nigdy nie opada na tym monumentalnym torze wyścigowym, gdzie nieustraszeni woźnice walczą o zwycięstwo i uwielbienie tłumu.",
+      "russian": "На дорожках монументального ипподрома никогда не оседает пыль: бесстрашные колесничие борются за победу и обожание толпы.",
+      "simplified_chinese": "​这​条​宏伟​的​赛​道上​飞扬​着​永不​止息​的​烟​尘。​无​畏​的​车​手​们​全力​争斗，​争夺​着​胜利​的​荣耀​与​万​众​的​欢呼。",
+      "spanish": "En esta monumental pista de carreras, en la que valerosos aurigas se juegan la vida por la gloria y la adoración del público, nunca se acumula el polvo.",
+      "traditional_chinese": "​這​座​宏偉​賽​道上​的​塵土​從未​安歇，​無畏​戰車​騎手​在此​爭奪​勝利​與​群眾​的​愛戴。"
+    },
+    "needProduct": 152719,
+    "supplyWeight": 8.0
+  },
+  "173168": {
+    "guid": 173168,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_lounger_goods.png",
+    "needAttributes": {
+      "FireSafety": -1.0,
+      "Happiness": 1.0,
+      "Money": 5.0,
+      "Population": 1.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Dê a aparência de um estilo de vida descontraído e autenticamente romano com valiosos lecti, desde que não sejam expostos à luz, é claro...",
+      "english": "Give the appearance of a laid-back, authentically Roman lifestyle with expensive lecti, provided they don't catch light, of course...",
+      "french": "Offrez à votre demeure le visage d'un confort résolument romain en l'agrémentant de somptueux lecti... pourvu qu'ils ne s'embrasent pas, naturellement.",
+      "german": "Vermittelt das Flair des authentisch-römischen Lifestyles mit teuren Lecti – solange kein Licht darauffällt ...",
+      "italian": "Danno l'impressione dell'autentico e rilassato stile di vita romano con i loro lecti costosi. A patto che non entri la luce, ovviamente...",
+      "japanese": "​高価​な​寝​椅子​で​のんびり​と​した​本格​的​な​ローマ​の​ライフスタイル​を​演出​しよう。​もちろん、​火事​で​台無し​に​なら​ない​限り​だが…",
+      "korean": "​값비싼 ​침대를 ​배치해 ​여유로운 ​로마식 ​생활을 ​연출해 ​보세요. ​물론 ​불만 ​붙지 ​않는다면 ​말이죠...",
+      "polish": "Możesz wygodnie wylegiwać w prawdziwie rzymskiej i kosztownej lektyce, przynajmniej dopóki nie zaprószysz w niej ognia...",
+      "russian": "Почувствуйте себя вальяжным римлянином и вздремните на роскошной клинии… при условии, что блики света не будут вам мешать.",
+      "simplified_chinese": "​用​昂贵​的​躺椅​营​造​慵​懒​地道​的​罗马​生活​情调，​当然​前提​是​确保​它们​别​着火……",
+      "spanish": "Crea la impresión de un estilo de vida relajado y tradicionalmente romano con lechos caros. Pero cuidado con el fuego...",
+      "traditional_chinese": "​營造​出​一種​悠閒、​道地​的​羅馬​生活​氛圍，​配​上​昂貴​的​躺椅​——​當然，​前提​是​它們​別​著​火……"
+    },
+    "needProduct": 2147,
+    "supplyWeight": 8.0
+  },
+  "173169": {
+    "guid": 173169,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_wig_goods.png",
+    "needAttributes": {
+      "FireSafety": -1.0,
+      "Money": 3.0,
+      "Prestige": 3.0
+    },
+    "needDescription": {
+      "brazilian": "O dinheiro pode comprar cabeleiras magníficas e uma aparência alta e imponente.",
+      "english": "Money can buy magnificent manes and a tall, towering look.",
+      "french": "Il suffit d'un peu d'or pour s'offrir chevelure splendide et prestance.",
+      "german": "Mit Geld kann man majestätische Mähnen und eine stattliche Erscheinung kaufen.",
+      "italian": "Il denaro può comprare magnifiche criniere e anche un aspetto alto e imponente.",
+      "japanese": "​見事​な​たてがみ​と​高​く​そびえる​よう​な​姿​は、​金​で​買える​もの​だ。",
+      "korean": "​돈이면 ​웅장한 ​갈기와 ​우뚝 ​선 ​위용을 ​살 ​수 ​있습니다.",
+      "polish": "Za pieniądze można kupić sobie wspaniałą fryzurę i przyćmić innych wyglądem.",
+      "russian": "За деньги можно купить шикарную шевелюру и возвыситься в глазах других.",
+      "simplified_chinese": "​金钱​能​买​来​华丽​的​发髻​与​高挑​的​身形。",
+      "spanish": "El dinero no traerá la felicidad, pero sí una buena cabellera y un aspecto imponente.",
+      "traditional_chinese": "​金錢​能​買來​華麗​的​髮髻​與​高挑​的​身形。"
+    },
+    "needProduct": 31708,
+    "supplyWeight": 4.0
+  },
+  "173172": {
+    "guid": 173172,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_roast_goods.png",
+    "needAttributes": {
+      "Money": 2.0,
+      "Population": 3.0
+    },
+    "needDescription": {
+      "brazilian": "A carne cozida lentamente se desprende fácil do osso, e a macia barrilha dá um toque salgado e suculento. ",
+      "english": "The slow-cooked meat falls right off the bone, the springy saltwort adding a juicy, briny note. ",
+      "french": "La viande, fondante à souhait, se détache de l'os sans effort, et la salicorne, vive et salée, vient ranimer le tout d'un trait d'écume. ",
+      "german": "Das langsam gegarte Fleisch fällt direkt vom Knochen, und das Salzkraut verleiht ihm eine saftige, salzige Note. ",
+      "italian": "La carne a cottura lenta si stacca dall'osso e la salicornia aggiunge una deliziosa nota salina. ",
+      "japanese": "​じっくり​煮​込​まれ​た​肉​は​骨​から​ホ​ロ​リ​と​崩れ、​弾力​の​ある​アッ​ケシ​ソウ​が​みずみずしい​塩味​を​加​えて​いる。 ",
+      "korean": "​천천히 ​익힌 ​고기는 ​뼈에서 ​술술 ​떨어지고, ​탄력 ​있는 ​함초는 ​풍부한 ​육즙과 ​짭조름한 ​맛을 ​더해줍니다. ",
+      "polish": "To mięso gotowane na wolnym ogniu samo odpada od kości, a sprężysta solanka nadaje mu soczystość i słonawy smak. ",
+      "russian": "Если приготовить на медленном огне, буквально тает во рту, а упругий солерос привносит в блюдо солоноватость моря. ",
+      "simplified_chinese": "​细​火​慢​炖​的​肉​能​轻易​烂​熟​脱​骨，​充满​嚼​劲​的​海​蓬​菜​又​带来​多汁​咸​香​的​风味。 ",
+      "spanish": "La carne, cocinada a fuego lento, se desprende sola del hueso y la sal marina le aporta un toque jugoso y sabroso. ",
+      "traditional_chinese": "​細​火​慢​燉​的​肉​能​輕易​爛熟​脫​骨，​充滿​嚼​勁​的​海​蓬​菜​又​帶來​多汁​鹹​香​的​風味。 "
+    },
+    "needProduct": 31768,
+    "supplyWeight": 4.0
+  },
+  "173173": {
+    "guid": 173173,
+    "icon": "data/ui/fhd/dlc01/icon_content/production_goods/icon_3d_idol_goods.png",
+    "needAttributes": {
+      "Belief": 2.0,
+      "Money": 3.0,
+      "Population": 1.0
+    },
+    "needDescription": {
+      "brazilian": "Estas pequenas divindades dão um toque de luxo ao conjunto de qualquer altar doméstico. ",
+      "english": "These small gods add a touch of luxury to the ensemble at any household shrine. ",
+      "french": "Ces petits dieux ajoutent une touche de luxe à tout autel domestique. ",
+      "german": "Diese kleinen Götter verleihen jedem Hausschrein einen Hauch Luxus. ",
+      "italian": "Queste piccole divinità aggiungono un po' di prestigio in ogni sacrario domestico. ",
+      "japanese": "​小さな​神像。​家々​に​ある​祭壇​に​厳​かな​雰囲気​を​もたらす。 ",
+      "korean": "​어느 ​가정의 ​제단에서도 ​한층 ​고급스러운 ​분위기를 ​더해줍니다. ",
+      "polish": "Te pomniejsze bóstwa wprowadzają powiew luksusu do wystroju każdej domowej kapliczki. ",
+      "russian": "Маленькие изображения богов и капелька роскоши для каждой домашней святыни. ",
+      "simplified_chinese": "​这些​小小​神像，​无论​安​放在​谁家​的​神​龛​之中，​都能​增添​一抹​奢华​之​色。 ",
+      "spanish": "Estos pequeños dioses añaden un toque lujoso a cualquier altar casero. ",
+      "traditional_chinese": "​這些​小型​神像​為​各個​家庭​小​聖壇​增添​一絲​奢華​氣息。 "
+    },
+    "needProduct": 145220,
+    "supplyWeight": 4.0
+  },
+  "174425": {
+    "guid": 174425,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_necklaces_goods.png",
+    "needAttributes": {
+      "Money": 6.0,
+      "Prestige": 2.0
+    },
+    "needDescription": {
+      "brazilian": "Colares são sofisticados e caros.",
+      "english": "Necklaces are both sophisticated, and expensive.",
+      "french": "Les colliers sont à la fois raffinés... et coûteux.",
+      "german": "Halsketten sind sowohl kultiviert als auch teuer.",
+      "italian": "Le collane sono sofisticate e costose.",
+      "japanese": "​ネックレス​は​おしゃれ​度​は​もちろん​値段​も​高い。",
+      "korean": "​목걸이는 ​우아하면서도 ​값비싼 ​장신구입니다.",
+      "polish": "Naszyjniki są zarówno eleganckie, jak i kosztowne.",
+      "russian": "Ожерелья и изысканны, и дороги.",
+      "simplified_chinese": "​项链​既​精致​又​昂贵。",
+      "spanish": "Los collares son sofisticados a la vez que costosos.",
+      "traditional_chinese": "​項鍊​既​精緻​又​昂貴。"
+    },
+    "needProduct": 2146,
+    "supplyWeight": 8.0
+  },
+  "174983": {
+    "guid": 174983,
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_horses_goods.png",
+    "needAttributes": {
+      "Happiness": 1.0,
+      "Population": 2.0,
+      "Prestige": 3.0
+    },
+    "needDescription": {
+      "brazilian": "O uso de um cavalo público é um privilégio: ele define a patente de eques e oferece um passatempo agradável aos patrícios.",
+      "english": "The use of a public horse is a privilege: it defines the rank of Eques, and presents a pleasant pastime to patricians.",
+      "french": "L'usage d'un equus publicus, un cheval public, est un privilège : il distingue le rang d'Eques et offre aux Patriciens un agréable divertissement.",
+      "german": "Die Nutzung eines staatlichen Pferdes ist ein Privileg: Sie kennzeichnet den Rang eines Eques und ist ein angenehmer Zeitvertreib für die Patrizier.",
+      "italian": "Poter utilizzare un cavallo pubblico è un privilegio. Definisce il rango di un equite e offre un ottimo passatempo ai patrizi.",
+      "japanese": "​公​有馬​に​乗る​こと​は​特権​で​ある。​それ​は​エクィテス​の​身分​を​示す​もの​で​あり、​パトリキ​たち​にとって​は​愉快​な​娯楽​と​な​って​いる。",
+      "korean": "​공용 ​말을 ​사용하는 ​건 ​특권입니다. ​이는 ​기사의 ​지위를 ​나타내며, ​파트리키에게는 ​즐거운 ​여가 ​활동이 ​됩니다.",
+      "polish": "Korzystanie z państwowego rumaka to przywilej: świadczy o statusie ekwity i umożliwia patrycjuszom przyjemne spędzanie czasu.",
+      "russian": "Возможность ездить на общественном коне – привилегия. Она определяет ранг эквита и приятно развлекает патрициев.",
+      "simplified_chinese": "​使用​公用​马​匹​是​一种​特权：​它​不仅是​骑士​阶层​的​身份​象征，​也​为​贵族​提供​了​一种​愉悦​的​消遣​方式。",
+      "spanish": "El uso de un corcel público es todo un privilegio, pues es el rasgo más característico de los équites y un pasatiempo para los patricios.",
+      "traditional_chinese": "​使用​公用​馬匹​是​一項​特權，​它​象徵著​騎士​階級​的​身分，​也​為​貴族​提供​了​一項​愉悅​的​消遣。"
+    },
+    "needProduct": 2075,
+    "supplyWeight": 4.0
+  },
   "2665": {
     "guid": 2665,
     "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_sardines_goods.png",
@@ -151,7 +328,7 @@
     "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_bread_goods.png",
     "needAttributes": {
       "Money": 1.0,
-      "Population": 2.0
+      "Population": 3.0
     },
     "needDescription": {
       "brazilian": "A imensa popularidade e praticidade do pão também o tornam altamente lucrativo para quem trabalha no ramo.",
@@ -866,18 +1043,18 @@
       "Prestige": 7.0
     },
     "needDescription": {
-      "brazilian": "Um local de espetáculo ostentoso cujo ritual sangrento pode beirar o sobrenatural aos olhos de muitos romanos. Jogos do Anfiteatro fornecem efeitos de Esplendor globais.",
+      "brazilian": "Um local de espetáculo ostentoso, cujo ritual sangrento pode beirar o sobrenatural aos olhos de muitos romanos. ",
       "english": "A place of ostentatious spectacle whose bloody ritual may verge on the supernatural in the eyes of many Romans. ",
-      "french": "Un théâtre de faste et de sang, où le rituel meurtrier frôle parfois le surnaturel pour nombre de citoyens romains. Les jeux de l'amphithéâtre confèrent des effets de Splendeur.",
-      "german": "Ein Ort des prunkvollen Spektakels, dessen blutige Rituale in den Augen vieler Römer an die Grenze des Übernatürlichen reichen. Spiele im Amphitheater bieten globale Pracht-Effekte.",
-      "italian": "Un appariscente luogo di spettacolo il cui rituale sanguinoso potrebbe rasentare il soprannaturale agli occhi di molti romani. I giochi dell'anfiteatro conferiscono Splendore.",
-      "japanese": "​派手​な​見せ物​の​場​で​あり。​血​生臭い​儀式​は、​多く​の​ローマ​人​にとって​ほとんど​超自然​的​な​もの​として​映る​の​かも​し​れ​ない。​円形​闘技​場​の​試合​は​世界​全体​に​輝き​の​効果​を​与える。",
-      "korean": "​화려한 ​구경거리가 ​펼쳐지는 ​이곳에서, ​피로 ​물든 ​의식은 ​많은 ​로마인의 ​눈에 ​초자연적으로 ​비칠 ​것입니다. ​원형 ​극장 ​경기가 ​전역에 ​영광 ​효과를 ​제공합니다.",
-      "polish": "Miejsce wspaniałych widowisk, które w oczach wielu Rzymian przybierają kształt krwawego rytuału o nadprzyrodzonej mocy. Rozrywki w amfiteatrze zapewniają efekty związane z globalnym splendorem.",
-      "russian": "Место грандиозных зрелищ – эти кровавые ритуалы в глазах многих римлян граничат со сверхъестественным. Проведение игр в амфитеатре влияет на глобальные эффекты размаха.",
-      "simplified_chinese": "​一个​极​尽​奢华​的​表演​场地，​在​这里​上演​的​血腥​仪式​在​许多​罗马​人​眼中​已​近乎​于​超自然​神迹。​圆形​剧场​角​斗​的​辉煌​效果​将​惠​及​全​岛。",
-      "spanish": "Un lugar en el que se celebran sangrientos espectáculos que, en ocasiones, rayan lo sobrenatural a ojos de muchos romanos. Los juegos del anfiteatro proporcionan efectos de esplendor globales.",
-      "traditional_chinese": "​這是​一座​奢華​的​表演​場地，​其中​血腥​的​儀式​在​許多​羅馬​人​眼中​已經​接近​超自然​了。​圓形​劇場​比賽​能​提供​全域​輝煌​效果。"
+      "french": "Un lieu de spectacle ostentatoire dont les rituels sanglants peuvent sembler relever du surnaturel aux yeux de nombreux Romains. ",
+      "german": "Ein Ort des prunkvollen Spektakels, dessen blutige Rituale in den Augen vieler Römer an die Grenze des Übernatürlichen reichen. ",
+      "italian": "Un appariscente luogo di spettacolo il cui sanguinoso rituale, agli occhi di un romano, potrebbe rasentare il sovrannaturale. ",
+      "japanese": "​派手​な​見せ物​の​場​で​あり、​その​血​生臭い​儀式​は、​多く​の​ローマ​人​にとって​ほとんど​超自然​的​な​もの​として​映る​の​かも​し​れ​ない。 ",
+      "korean": "​화려한 ​구경거리가 ​펼쳐지는 ​이곳에서, ​피로 ​물든 ​의식은 ​로마인의 ​눈에 ​초자연적으로 ​비칠 ​것입니다. ",
+      "polish": "Miejsce wspaniałych widowisk, które w oczach wielu Rzymian przybierają kształt krwawego rytuału o nadprzyrodzonej mocy. ",
+      "russian": "Место грандиозных зрелищ – эти кровавые ритуалы в глазах многих римлян граничат со сверхъестественным. ",
+      "simplified_chinese": "​一个​极​尽​奢华​的​表演​场地，​在​这里​上演​的​血腥​仪式​在​许多​罗马​人​眼中​已​近乎​于​超自然​神迹。 ",
+      "spanish": "Un lugar en el que se celebran sangrientos espectáculos que, en ocasiones, rayan lo sobrenatural a ojos de muchos romanos. ",
+      "traditional_chinese": "​這是​一座​奢華​的​表演​場地，​其中​血腥​的​儀式​在​許多​羅馬​人​眼中​已經​接近​超自然​了。 "
     },
     "needProduct": 2686,
     "supplyWeight": 8.0
@@ -910,7 +1087,7 @@
   },
   "2785": {
     "guid": 2785,
-    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_lye_goods.png",
+    "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_string_instrument_goods.png",
     "needAttributes": {
       "Belief": 2.0,
       "Knowledge": 2.0,
@@ -1257,7 +1434,7 @@
     "icon": "data/ui/fhd/base/icon_content/production_goods/icon_3d_bread_goods.png",
     "needAttributes": {
       "Money": 1.0,
-      "Population": 2.0
+      "Population": 3.0
     },
     "needDescription": {
       "brazilian": "A imensa popularidade e praticidade do pão também o tornam altamente lucrativo para quem trabalha no ramo.",

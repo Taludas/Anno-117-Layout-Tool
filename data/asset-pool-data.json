@@ -29,7 +29,7 @@
       "spanish": "Barcos esclavistas de bandidos",
       "traditional_chinese": "​劫掠​者​奴隸​船"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "106420": {
     "assets": [
@@ -41,7 +41,7 @@
     ],
     "guid": 106420,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "106626": {
     "assets": [
@@ -63,7 +63,7 @@
       "spanish": "Granjas de ovejas y de cerdos en el Latium",
       "traditional_chinese": "​拉丁​姆​的​羊​隻​農場​和​養豬場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "106627": {
     "assets": [
@@ -85,7 +85,7 @@
       "spanish": "Granjas de ovejas y de cerdos en Albion",
       "traditional_chinese": "​阿​爾​比​恩​的​羊​隻​農場​和​養豬場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "106662": {
     "assets": [
@@ -108,7 +108,7 @@
       "spanish": "Almacenes en el Latium",
       "traditional_chinese": "​在​拉丁​姆​的​倉庫"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "106663": {
     "assets": [
@@ -131,7 +131,7 @@
       "spanish": "Torres en el Latium",
       "traditional_chinese": "​在​拉丁​姆​的​防禦​塔"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "106664": {
     "assets": [
@@ -154,7 +154,7 @@
       "spanish": "Almacenes en Albion",
       "traditional_chinese": "​在​阿​爾​比​恩​的​倉庫"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "106665": {
     "assets": [
@@ -177,7 +177,7 @@
       "spanish": "Torres en Albion",
       "traditional_chinese": "​在​阿​爾​比​恩​的​防禦​塔"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "107521": {
     "assets": [
@@ -254,7 +254,7 @@
       "spanish": "Edificios de producción agrícola",
       "traditional_chinese": "​農業​生產​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "107834": {
     "assets": [
@@ -278,7 +278,7 @@
       "spanish": "Edificios de producción de pantano",
       "traditional_chinese": "​沼澤地​生產​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "108697": {
     "assets": [
@@ -295,7 +295,7 @@
     "name": {
       "brazilian": "Sacrários",
       "english": "Shrines",
-      "french": "Sanctuaires",
+      "french": "Autels",
       "german": "Schreine",
       "italian": "Sacrari",
       "japanese": "​祭壇",
@@ -306,7 +306,7 @@
       "spanish": "Altares",
       "traditional_chinese": "​聖壇"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "108868": {
     "assets": [
@@ -372,7 +372,7 @@
       "spanish": "Residencias y edificios de producción romanos\n",
       "traditional_chinese": "​羅馬​住所​與​生產​建築\n"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "109519": {
     "assets": [
@@ -533,7 +533,7 @@
     ],
     "guid": 110135,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "111485": {
     "assets": [
@@ -585,93 +585,39 @@
       "spanish": "Residencias romanas\n",
       "traditional_chinese": "​羅馬​住所\n"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "113059": {
     "assets": [
-      71527,
-      71585,
-      71550,
-      71593,
-      71577,
-      79636,
-      80490,
-      51286,
-      107337,
-      51280,
-      96821,
-      42625,
-      96815,
-      94555,
-      79958,
-      106979,
-      42617,
-      71564,
-      71535,
-      91419,
-      94541,
-      41351,
-      50890,
-      42049,
-      41353,
-      91415,
-      41360,
-      42050,
       41350,
-      41352,
-      41355,
-      41354,
-      106416,
-      51282,
-      80179,
-      51288,
-      106841,
-      80189,
-      80513,
-      80510,
-      107338,
-      79947,
-      79927,
-      80221,
-      106974,
-      51284,
-      80677,
-      79629,
-      80192,
-      107596,
-      107554,
-      51278,
-      42623,
-      91421,
-      106956,
-      80686,
-      80494,
-      80225,
-      80502,
-      71548,
-      71521,
-      91417,
-      80176,
-      107339,
-      79631,
-      54025,
-      54034,
-      54041,
-      42619,
+      106708,
+      41351,
       44191,
-      44179,
+      71523,
+      41352,
+      41353,
+      41354,
+      41355,
+      41360,
       42043,
+      71529,
       42044,
       42045,
       42046,
       42047,
       42048,
+      42049,
+      42050,
       42051,
       42052,
+      71583,
       42053,
+      71538,
+      71575,
       42054,
       42055,
       42056,
+      71531,
       42592,
       42598,
       43677,
@@ -684,7 +630,9 @@
       44081,
       44082,
       44083,
+      71599,
       44084,
+      71591,
       44085,
       44086,
       44087,
@@ -698,14 +646,17 @@
       44117,
       44118,
       44119,
+      71552,
+      71540,
       44120,
       44121,
+      106702,
       44122,
-      44178,
       44139,
       44140,
       44141,
       44142,
+      71554,
       44143,
       44144,
       44145,
@@ -713,13 +664,22 @@
       44147,
       44148,
       44149,
+      44431,
       50287,
       50289,
       50291,
       50665,
+      50890,
+      51278,
+      51280,
+      51282,
+      51286,
+      51288,
       51292,
+      71533,
       51316,
       51321,
+      71560,
       51324,
       51326,
       51328,
@@ -738,9 +698,11 @@
       51370,
       51374,
       51378,
+      71562,
       51382,
       51386,
       51390,
+      106706,
       51394,
       51398,
       51402,
@@ -749,6 +711,7 @@
       51414,
       51418,
       51422,
+      106712,
       51426,
       51430,
       51434,
@@ -756,6 +719,9 @@
       51446,
       51450,
       51454,
+      121725,
+      71571,
+      96815,
       51458,
       51462,
       51466,
@@ -766,6 +732,7 @@
       51486,
       51490,
       51494,
+      71546,
       51498,
       51502,
       51506,
@@ -777,15 +744,18 @@
       51531,
       51535,
       51539,
+      71595,
       51543,
       51547,
       51551,
       51555,
+      71519,
       51559,
       51563,
       51567,
       51571,
       51575,
+      71587,
       51579,
       51587,
       51591,
@@ -793,11 +763,13 @@
       51599,
       51603,
       51607,
+      44178,
       51611,
       51615,
       51619,
       51623,
       51627,
+      71579,
       51631,
       51635,
       51639,
@@ -821,7 +793,6 @@
       51861,
       51863,
       51865,
-      42618,
       51867,
       51869,
       51871,
@@ -837,176 +808,267 @@
       51891,
       51893,
       54009,
+      107338,
       54011,
+      106979,
       54015,
+      106716,
       54017,
       54021,
       54023,
+      54025,
+      54034,
+      54041,
+      54048,
+      71593,
+      71585,
+      42619,
+      54050,
+      79629,
+      54052,
+      54054,
+      42617,
+      71548,
+      79631,
+      42623,
+      71521,
+      54056,
+      54058,
+      54060,
       64944,
+      64945,
       64949,
       64950,
       64951,
       64952,
+      71535,
       64953,
+      71527,
       64954,
-      64945,
       64961,
       64962,
+      71577,
       64963,
+      51284,
       64964,
+      42625,
       64965,
       64966,
+      71550,
       71438,
       71441,
-      106410,
-      106412,
-      106414,
-      106397,
+      79636,
+      79927,
+      79947,
+      79958,
+      80176,
+      94555,
+      80179,
+      71564,
+      80189,
+      80192,
+      80221,
+      80225,
+      80490,
+      80494,
+      80502,
+      80510,
+      80513,
+      80677,
+      80686,
+      82419,
+      82777,
+      88062,
+      90573,
+      149281,
+      91415,
+      91417,
+      91419,
+      91421,
       92874,
       92876,
       92878,
       92880,
+      106714,
       92882,
       92884,
       92886,
       92888,
       92890,
+      93989,
+      94541,
+      94567,
       95403,
-      96819,
       96817,
-      71517,
-      71571,
-      71573,
-      71538,
-      71540,
-      71575,
-      71519,
-      71542,
-      71523,
-      71579,
-      71581,
-      71544,
-      71546,
-      71583,
-      71552,
-      71569,
-      71525,
-      71554,
-      71556,
-      71529,
-      71587,
-      71589,
-      71558,
-      71560,
-      71591,
-      71562,
-      71531,
-      71533,
-      71595,
-      71597,
-      71599,
-      106702,
+      96819,
+      96821,
+      106397,
       106704,
-      106706,
-      106716,
-      106708,
-      106710,
-      106712,
-      106714,
-      106731,
-      106736,
-      106738,
-      106740,
-      106742,
-      106631,
-      106634,
-      106636,
-      106638,
-      106640,
-      106642,
-      106644,
-      106646,
-      106648,
-      106650,
-      106652,
-      106654,
+      106410,
+      106412,
+      106414,
+      106416,
       106537,
       106539,
       106541,
       106543,
       106545,
       106547,
+      42618,
       106549,
       106551,
-      44431,
-      94567,
-      88062,
-      93989,
-      90573,
-      82419,
-      82777,
-      83553,
-      121725,
-      121727,
-      125560,
+      106631,
+      71569,
+      106634,
+      106636,
+      106638,
+      106640,
+      71597,
+      106642,
+      106644,
+      106646,
+      71517,
+      71589,
+      106648,
+      106650,
+      106652,
+      106654,
+      106731,
+      106736,
+      106710,
+      106738,
+      106740,
+      71556,
+      106742,
+      106841,
+      44179,
+      106956,
+      106974,
+      107337,
+      107339,
+      107554,
+      71544,
+      107596,
       109532,
+      125560,
       140338,
+      71525,
       140344,
       140355,
       140388,
       140403,
+      83553,
       140405,
       140407,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
+      144840,
+      144842,
+      144844,
+      144846,
+      144848,
+      144850,
+      144852,
+      144854,
+      144856,
+      144858,
+      144860,
+      144862,
+      144864,
+      71581,
+      144866,
+      144868,
+      144870,
+      144872,
+      144874,
+      144876,
+      144878,
+      121727,
+      144900,
+      145236,
+      145238,
+      145240,
+      145242,
+      145244,
+      145246,
+      145248,
+      71542,
+      145250,
+      145252,
+      145254,
+      71573,
+      145256,
+      145258,
+      145260,
+      145262,
+      71558,
+      145265,
+      145268,
+      145271,
+      147974,
+      147976,
+      147978,
+      149292,
+      156675,
+      156677,
+      156679,
+      156683,
+      156685,
+      156688,
+      156690,
+      156692,
+      156696,
+      156698,
+      156701,
+      156704,
+      156706,
+      156710,
+      156712,
+      156714,
+      156717,
+      156720,
+      156726,
+      156729,
+      157289,
+      157290,
+      157291,
+      157292,
+      157293,
+      157294,
+      157295,
+      159270,
+      159042,
+      159046,
+      159050,
+      159054,
+      160048,
+      160051,
+      160054,
+      160057,
+      160060,
+      160063,
+      160066,
+      160072,
+      160075,
+      160078,
+      160081,
+      160084,
+      160087,
+      160090,
+      160093,
+      160488,
+      160491,
+      160494,
+      160497,
+      160500,
+      160507,
+      160510,
+      160513,
+      160516,
+      160519,
+      160522,
+      160525,
+      160528,
+      160531,
+      160534
     ],
     "guid": 113059,
     "name": null,
@@ -1021,7 +1083,7 @@
     ],
     "guid": 113815,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "114477": {
     "assets": [
@@ -1045,7 +1107,7 @@
       "spanish": "Trirremes y quinquerremes",
       "traditional_chinese": "​三​列​槳​船​與​五​列​槳​船"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "115031": {
     "assets": [
@@ -1057,7 +1119,7 @@
     ],
     "guid": 115031,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "115280": {
     "assets": [
@@ -1068,7 +1130,7 @@
     ],
     "guid": 115280,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "116820": {
     "assets": [
@@ -1114,7 +1176,7 @@
       "spanish": "Adornos",
       "traditional_chinese": "​裝飾"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "116827": {
     "assets": [
@@ -1173,7 +1235,7 @@
       "spanish": "Adornos",
       "traditional_chinese": "​裝飾"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "117962": {
     "assets": [
@@ -1184,7 +1246,7 @@
     ],
     "guid": 117962,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "119768": {
     "assets": [
@@ -1275,7 +1337,7 @@
     ],
     "guid": 119768,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "120911": {
     "assets": [
@@ -1299,7 +1361,7 @@
       "spanish": "Residencias romanas",
       "traditional_chinese": "​羅馬​住所"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "121245": {
     "assets": [
@@ -1327,7 +1389,20 @@
       2749
     ],
     "guid": 121317,
-    "name": null,
+    "name": {
+      "brazilian": "Línguas de pássaros em gelatina",
+      "english": "Bird Tongues in Aspic",
+      "french": "Langues d'oiseau en aspic",
+      "german": "Vogelzungen in Aspik",
+      "italian": "Lingue di uccello in gelatina",
+      "japanese": "​鳥​舌​肉​アスピック",
+      "korean": "​젤리에 ​담근 ​새의 ​혀",
+      "polish": "Ptasie języki w galarecie",
+      "russian": "Птичьи язычки в желе",
+      "simplified_chinese": "​鸟​舌​肉冻",
+      "spanish": "Áspic de lenguas de ave",
+      "traditional_chinese": "​鳥​舌​肉​凍"
+    },
     "template": "AssetPool"
   },
   "121318": {
@@ -1336,7 +1411,20 @@
       71188
     ],
     "guid": 121318,
-    "name": null,
+    "name": {
+      "brazilian": "Cerveja",
+      "english": "Beer",
+      "french": "Bière",
+      "german": "Bier",
+      "italian": "Birra",
+      "japanese": "​ビール",
+      "korean": "​맥주",
+      "polish": "Piwo",
+      "russian": "Пиво",
+      "simplified_chinese": "​啤酒",
+      "spanish": "Cerveza",
+      "traditional_chinese": "​啤酒"
+    },
     "template": "AssetPool"
   },
   "121352": {
@@ -1385,22 +1473,28 @@
       "spanish": "Tropas",
       "traditional_chinese": "​部隊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "121353": {
     "assets": [
-      31099,
-      31100,
-      31101,
-      31102,
-      31103,
-      31104,
-      31105,
-      37494,
-      37495
+      89071,
+      154548
     ],
     "guid": 121353,
-    "name": null,
+    "name": {
+      "brazilian": "Todos os rivais e saqueadores",
+      "english": "All Rivals and Raiders",
+      "french": "Tous les rivaux et pillards",
+      "german": "Alle Rivalen und Räuber",
+      "italian": "Tutti i predoni e i rivali",
+      "japanese": "​すべて​の​ライバル​と​侵略者",
+      "korean": "​모든 ​경쟁자 ​및 ​약탈자",
+      "polish": "Wszyscy rywale i łupieżcy",
+      "russian": "Все соперники и разбойники",
+      "simplified_chinese": "​所有​对手​和​劫掠​者",
+      "spanish": "Todos los rivales y bandidos",
+      "traditional_chinese": "​所有​對手​與​劫掠​者"
+    },
     "template": "AssetPool"
   },
   "121354": {
@@ -1431,7 +1525,7 @@
       "spanish": "Barcos",
       "traditional_chinese": "​船隻"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "121460": {
     "assets": [
@@ -1468,7 +1562,7 @@
     ],
     "guid": 121525,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "121583": {
     "assets": [
@@ -1498,7 +1592,7 @@
       "spanish": "Barcos\n",
       "traditional_chinese": "​船隻\n"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "125697": {
     "assets": [
@@ -1512,7 +1606,7 @@
     ],
     "guid": 125697,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "126145": {
     "assets": [
@@ -1538,7 +1632,7 @@
       "spanish": "Muros y setos",
       "traditional_chinese": "​牆面​與​圍​籬"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "130659": {
     "assets": [
@@ -1667,7 +1761,7 @@
       "spanish": "Todos los productos",
       "traditional_chinese": "​所有​貨物"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "131971": {
     "assets": [
@@ -1900,7 +1994,7 @@
       "spanish": "Mercado",
       "traditional_chinese": "​市場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "140426": {
     "assets": [
@@ -1921,7 +2015,7 @@
       "spanish": "Termas",
       "traditional_chinese": "​浴場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "140451": {
     "assets": [
@@ -1942,7 +2036,7 @@
       "spanish": "Teatro",
       "traditional_chinese": "​劇場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "140478": {
     "assets": [
@@ -1966,7 +2060,7 @@
       "spanish": "Puertas",
       "traditional_chinese": "​大門"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "140722": {
     "assets": [
@@ -2011,7 +2105,7 @@
       "spanish": "Templo",
       "traditional_chinese": "​神廟"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "141632": {
     "assets": [
@@ -2048,7 +2142,7 @@
       "spanish": "Comida",
       "traditional_chinese": "​食物"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "142729": {
     "assets": [
@@ -2060,7 +2154,11 @@
       37737,
       94976,
       81222,
-      145068
+      145068,
+      157959,
+      151462,
+      151474,
+      151475
     ],
     "guid": 142729,
     "name": null,
@@ -2102,7 +2200,7 @@
       "spanish": "Facilidades",
       "traditional_chinese": "​基礎​設施"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "144801": {
     "assets": [
@@ -2113,7 +2211,20 @@
       5977
     ],
     "guid": 144801,
-    "name": null,
+    "name": {
+      "brazilian": "Todas as correntes abençoadas por Vulcano",
+      "english": "All Chains blessed by Vulcan",
+      "french": "Toutes les chaînes bénies par Vulcain",
+      "german": "Alle von Vulcanus gesegneten Ketten",
+      "italian": "Tutte le catene benedette da Vulcano",
+      "japanese": "​ウルカヌス​の​祝福​を​受け​た​すべて​の​チェーン",
+      "korean": "​불카누스의 ​축복을 ​받은 ​모든 ​사슬",
+      "polish": "Wszystkie łańcuchy produkcyjne pobłogosławione przez Wulkana",
+      "russian": "Все цепочки, благословленные Вулканом",
+      "simplified_chinese": "​所有​受​火神​祝福​的​生产​链",
+      "spanish": "Todas las cadenas bendecidas por Vulcano",
+      "traditional_chinese": "​所有​生產​鏈​都​受到​火神​的​祝福。"
+    },
     "template": "AssetPool"
   },
   "144814": {
@@ -2136,7 +2247,7 @@
       "spanish": "Altar de Vulcano",
       "traditional_chinese": "​火神​聖壇"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "144815": {
     "assets": [
@@ -2158,7 +2269,7 @@
       "spanish": "Mina de carbón",
       "traditional_chinese": "​煤礦"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "145067": {
     "assets": [
@@ -2281,7 +2392,7 @@
       "spanish": "Estatuillas",
       "traditional_chinese": "​小​雕像"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "145235": {
     "assets": [
@@ -2305,7 +2416,7 @@
       "spanish": "Juegos de latrunculi",
       "traditional_chinese": "​兵​棋​套​組"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "145330": {
     "assets": [
@@ -2358,7 +2469,7 @@
       "spanish": "Exportación de estatuillas",
       "traditional_chinese": "​小​雕像​出口"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "145387": {
     "assets": [
@@ -2379,7 +2490,7 @@
       "spanish": "Exportación de juegos de latrunculi",
       "traditional_chinese": "​兵​棋​套​組​出口"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "145441": {
     "assets": [
@@ -2422,7 +2533,7 @@
       "spanish": "Necesidades de comida",
       "traditional_chinese": "​食物​需求"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "145676": {
     "assets": [
@@ -2453,7 +2564,7 @@
       "spanish": "Material primario obtenido de ranuras de montaña, minerales o carbón",
       "traditional_chinese": "​從​山脈​欄位、​礦石​和​／​或​煤炭​中​提取​的​原料"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "147069": {
     "assets": [
@@ -2476,7 +2587,7 @@
       "spanish": "Minas",
       "traditional_chinese": "​礦場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "147072": {
     "assets": [
@@ -2499,7 +2610,7 @@
       "spanish": "Canteras",
       "traditional_chinese": "​採石場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "147073": {
     "assets": [
@@ -2522,7 +2633,7 @@
       "spanish": "Terreros",
       "traditional_chinese": "​礦坑"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "147074": {
     "assets": [
@@ -2546,7 +2657,7 @@
       "spanish": "Granjas agrícolas",
       "traditional_chinese": "​耕地"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "147075": {
     "assets": [
@@ -2569,7 +2680,53 @@
       "spanish": "Plantaciones",
       "traditional_chinese": "​農園"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
+  },
+  "147357": {
+    "assets": [
+      2135,
+      2132,
+      2143,
+      2150,
+      31694,
+      2085,
+      31695,
+      31708,
+      31702
+    ],
+    "guid": 147357,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "147515": {
+    "assets": [
+      13810,
+      2173,
+      2075,
+      2172,
+      2171
+    ],
+    "guid": 147515,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "147524": {
+    "assets": [
+      30456,
+      37475
+    ],
+    "guid": 147524,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "147598": {
+    "assets": [
+      147595,
+      147597
+    ],
+    "guid": 147598,
+    "name": null,
+    "template": "AssetPool"
   },
   "147983": {
     "assets": [
@@ -2591,7 +2748,7 @@
       "spanish": "Estatuillas",
       "traditional_chinese": "​小​雕像"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "147984": {
     "assets": [
@@ -2617,7 +2774,7 @@
       "spanish": "Juegos de latrunculi",
       "traditional_chinese": "​兵​棋​套​組"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "147989": {
     "assets": [
@@ -2663,7 +2820,7 @@
       "spanish": "Producción de comida y ropa",
       "traditional_chinese": "​食物​和​時尚​生產"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "147990": {
     "assets": [
@@ -2690,7 +2847,7 @@
       "spanish": "Producción de materiales de construcción",
       "traditional_chinese": "​建築​材料​生產"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "147991": {
     "assets": [
@@ -2717,7 +2874,7 @@
       "spanish": "Producción de productos militares",
       "traditional_chinese": "​軍用​物品​生產"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "148087": {
     "assets": [
@@ -2794,7 +2951,7 @@
       "spanish": "Todos los templos y santuarios",
       "traditional_chinese": "​所有​神廟​和​聖地"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "148125": {
     "assets": [
@@ -2822,7 +2979,7 @@
       "spanish": "Producción de comida romana",
       "traditional_chinese": "​羅馬​食物​生產"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "148134": {
     "assets": [
@@ -2848,7 +3005,7 @@
       "spanish": "Todos los productos de viviendas romanas",
       "traditional_chinese": "​所有​羅馬​家用​貨物"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "149304": {
     "assets": [
@@ -2881,7 +3038,7 @@
       "spanish": "Productos vegetales agrícolas",
       "traditional_chinese": "​農業​產品"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "149412": {
     "assets": [
@@ -2962,7 +3119,7 @@
       "spanish": "Residencias libertas",
       "traditional_chinese": "​自由​民​住所"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "150361": {
     "assets": [
@@ -2983,7 +3140,7 @@
       "spanish": "Residencias plebeyas",
       "traditional_chinese": "​平民​住所"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "150362": {
     "assets": [
@@ -3004,7 +3161,7 @@
       "spanish": "Residencias équites",
       "traditional_chinese": "​騎士​住所"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "150363": {
     "assets": [
@@ -3025,7 +3182,7 @@
       "spanish": "Residencias patricias",
       "traditional_chinese": "​貴族​住所"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "150550": {
     "assets": [
@@ -3049,7 +3206,7 @@
       "spanish": "Granjas de ganado",
       "traditional_chinese": "​牲畜​農場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "151278": {
     "assets": [
@@ -3060,7 +3217,8 @@
       80574,
       80575,
       80576,
-      90960,
+      149836,
+      149861,
       80621
     ],
     "guid": 151278,
@@ -3167,7 +3325,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "151903": {
     "assets": [
@@ -3203,7 +3361,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "151904": {
     "assets": [
@@ -3237,7 +3395,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "151905": {
     "assets": [
@@ -3271,7 +3429,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "151912": {
     "assets": [
@@ -3296,7 +3454,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "151913": {
     "assets": [
@@ -3321,7 +3479,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "151915": {
     "assets": [
@@ -3344,7 +3502,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "151916": {
     "assets": [
@@ -3367,7 +3525,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "152306": {
     "assets": [
@@ -3376,7 +3534,29 @@
     ],
     "guid": 152306,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
+  },
+  "153453": {
+    "assets": [
+      2137,
+      2138,
+      2139,
+      2140,
+      2136,
+      2088
+    ],
+    "guid": 153453,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "153454": {
+    "assets": [
+      92904,
+      31818
+    ],
+    "guid": 153454,
+    "name": null,
+    "template": "AssetPool"
   },
   "153472": {
     "assets": [
@@ -3398,7 +3578,7 @@
       "spanish": "Vasijería",
       "traditional_chinese": "​陶藝​工​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "153473": {
     "assets": [
@@ -3420,7 +3600,7 @@
       "spanish": "Curtiduría",
       "traditional_chinese": "​皮革​工​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "153869": {
     "assets": [
@@ -3442,7 +3622,127 @@
       "spanish": "Armaduría",
       "traditional_chinese": "​盔甲​工​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
+  },
+  "153874": {
+    "assets": [
+      152719
+    ],
+    "guid": 153874,
+    "name": {
+      "brazilian": "Hipódromo",
+      "english": "Hippodrome",
+      "french": "Hippodrome",
+      "german": "Hippodrom",
+      "italian": "L'ippodromo",
+      "japanese": "​競馬​場",
+      "korean": "​히포드롬",
+      "polish": "Hipodrom",
+      "russian": "Ипподром",
+      "simplified_chinese": "​赛马​场",
+      "spanish": "Hipódromo",
+      "traditional_chinese": "​賽馬​場"
+    },
+    "template": "AssetPool"
+  },
+  "153907": {
+    "assets": [
+      2161,
+      31707,
+      2158,
+      55954,
+      2157,
+      2154
+    ],
+    "guid": 153907,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "154547": {
+    "assets": [
+      32777,
+      32778,
+      27124,
+      27079,
+      153067,
+      153068
+    ],
+    "guid": 154547,
+    "name": {
+      "brazilian": "Todos os comerciantes",
+      "english": "All Traders",
+      "french": "Tous les marchands",
+      "german": "Alle Händler",
+      "italian": "Tutti i mercanti",
+      "japanese": "​すべて​の​商人",
+      "korean": "​모든 ​상인",
+      "polish": "Wszyscy kupcy",
+      "russian": "Все торговцы",
+      "simplified_chinese": "​所有​商人",
+      "spanish": "Todos los comerciantes",
+      "traditional_chinese": "​所有​商人"
+    },
+    "template": "AssetPool"
+  },
+  "154548": {
+    "assets": [
+      37495,
+      37494,
+      153069
+    ],
+    "guid": 154548,
+    "name": {
+      "brazilian": "Todos os saqueadores",
+      "english": "All Raiders",
+      "french": "Tous les pillards",
+      "german": "Alle Räuber",
+      "italian": "Tutti i predoni",
+      "japanese": "​すべて​の​侵略者",
+      "korean": "​모든 ​약탈자",
+      "polish": "Wszyscy Łupieżcy",
+      "russian": "Все разбойники",
+      "simplified_chinese": "​所有​劫掠​者",
+      "spanish": "Todos los bandidos",
+      "traditional_chinese": "​所有​劫掠​者"
+    },
+    "template": "AssetPool"
+  },
+  "154550": {
+    "assets": [
+      31637,
+      31722
+    ],
+    "guid": 154550,
+    "name": {
+      "brazilian": "Todos os imperadores",
+      "english": "All Emperors",
+      "french": "Tous les empereurs",
+      "german": "Alle Kaiser",
+      "italian": "Tutti gli imperatori",
+      "japanese": "​すべて​の​皇帝",
+      "korean": "​모든 ​황제",
+      "polish": "Wszyscy władcy",
+      "russian": "Все императоры",
+      "simplified_chinese": "​所有​皇帝",
+      "spanish": "Todos los emperadores",
+      "traditional_chinese": "​所有​皇帝"
+    },
+    "template": "AssetPool"
+  },
+  "154713": {
+    "assets": [
+      157464,
+      157465,
+      157466,
+      157467,
+      159864,
+      159865,
+      159866,
+      159867
+    ],
+    "guid": 154713,
+    "name": null,
+    "template": "AssetPool"
   },
   "15511": {
     "assets": [
@@ -3461,6 +3761,661 @@
       15514
     ],
     "guid": 15516,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "156755": {
+    "assets": [
+      157464,
+      157465,
+      157466,
+      157467,
+      159864,
+      159865,
+      159866,
+      159867
+    ],
+    "guid": 156755,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "156756": {
+    "assets": [
+      157464,
+      157465,
+      157466,
+      157467,
+      159864,
+      159865,
+      159866,
+      159867
+    ],
+    "guid": 156756,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "157082": {
+    "assets": [
+      40562,
+      40563,
+      40564
+    ],
+    "guid": 157082,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "157414": {
+    "assets": [
+      41355,
+      41350,
+      41352,
+      41351,
+      41353,
+      41354,
+      41360,
+      155327
+    ],
+    "guid": 157414,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "157464": {
+    "assets": [
+      64944,
+      51334,
+      44146,
+      44142,
+      51446,
+      44141,
+      51344,
+      51826,
+      44080,
+      64954,
+      51398,
+      106731,
+      51330,
+      51853,
+      51829,
+      51316,
+      44139,
+      51382,
+      106410,
+      51386,
+      51338,
+      44115,
+      44144,
+      44077,
+      44075,
+      44076,
+      44117,
+      64951,
+      64953,
+      44085,
+      44140,
+      54056,
+      54015,
+      64949,
+      64952,
+      106636,
+      51855,
+      51579,
+      106634,
+      106638,
+      106631,
+      51506,
+      44078,
+      51851,
+      64950,
+      44083,
+      44145,
+      51831,
+      44086,
+      44079,
+      106539,
+      51328,
+      54009,
+      106549,
+      54021,
+      144850,
+      144854,
+      144858,
+      144862,
+      144866,
+      145236,
+      145238,
+      145240
+    ],
+    "guid": 157464,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "157465": {
+    "assets": [
+      106412,
+      106738,
+      51502,
+      54011,
+      51498,
+      51402,
+      44120,
+      140388,
+      44088,
+      51835,
+      51861,
+      51865,
+      51877,
+      51486,
+      44119,
+      51539,
+      51543,
+      54023,
+      51639,
+      106736,
+      51362,
+      51510,
+      140338,
+      106644,
+      51619,
+      106397,
+      92878,
+      106740,
+      51422,
+      51857,
+      51599,
+      51627,
+      51346,
+      51336,
+      51833,
+      140344,
+      106646,
+      140407,
+      51519,
+      51567,
+      51555,
+      50289,
+      50291,
+      51366,
+      51859,
+      51466,
+      92882,
+      106537,
+      51454,
+      51324,
+      51563,
+      140405,
+      54048,
+      54050,
+      54052,
+      54054,
+      54058,
+      54060,
+      92876,
+      51551,
+      44121,
+      51603,
+      44081,
+      50665,
+      44118,
+      51406,
+      106650,
+      51839,
+      51490,
+      106648,
+      140403,
+      51837,
+      44113,
+      54017,
+      44148,
+      51494,
+      106551,
+      92888,
+      51370,
+      44143,
+      44082,
+      51378,
+      44087,
+      106541,
+      51414,
+      51523,
+      51863,
+      51514,
+      51531,
+      51450,
+      51571,
+      51442,
+      51292,
+      106547,
+      51879,
+      51635,
+      44112,
+      106545,
+      140355,
+      144868,
+      144870,
+      144872,
+      144876,
+      145242,
+      145244,
+      145246,
+      145248,
+      145250,
+      145252,
+      145254
+    ],
+    "guid": 157465,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "157466": {
+    "assets": [
+      42044,
+      92890,
+      64961,
+      51410,
+      51891,
+      51547,
+      51474,
+      51883,
+      51595,
+      51889,
+      64945,
+      51559,
+      51470,
+      92884,
+      44147,
+      51875,
+      42047,
+      51611,
+      106642,
+      51847,
+      51607,
+      51871,
+      80494,
+      42056,
+      106654,
+      42598,
+      64963,
+      51615,
+      51332,
+      51426,
+      42592,
+      51873,
+      51587,
+      51482,
+      106414,
+      51869,
+      106742,
+      51845,
+      51535,
+      92880,
+      51881,
+      44122,
+      64966,
+      51841,
+      51591,
+      64962,
+      51893,
+      51278,
+      51430,
+      51575,
+      42043,
+      51867,
+      44116,
+      44149,
+      51885,
+      51394,
+      51623,
+      51631,
+      106640,
+      44084,
+      51458,
+      64965,
+      42045,
+      51342,
+      51527,
+      51418,
+      51434,
+      51390,
+      51887,
+      106652,
+      42052,
+      51326,
+      51849,
+      64964,
+      51357,
+      51478,
+      42055,
+      51374,
+      44114,
+      44089,
+      51462,
+      51340,
+      92874,
+      51321,
+      92886,
+      51843,
+      43677,
+      42051,
+      50287,
+      144840,
+      144852,
+      144856,
+      144860,
+      144864,
+      144900,
+      145256,
+      145258,
+      145260
+    ],
+    "guid": 157466,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "157467": {
+    "assets": [
+      107596,
+      42048,
+      106956,
+      80189,
+      42054,
+      107339,
+      42053,
+      80179,
+      80192,
+      51282,
+      80502,
+      51288,
+      51286,
+      106416,
+      106543,
+      79636,
+      54034,
+      80513,
+      79958,
+      107554,
+      80221,
+      54041,
+      79947,
+      106841,
+      80686,
+      79927,
+      80677,
+      51280,
+      80176,
+      80225,
+      106974,
+      107337,
+      54025,
+      80490,
+      42046,
+      80510,
+      144842,
+      144844,
+      144846,
+      144848,
+      144874,
+      144878,
+      145262,
+      145265
+    ],
+    "guid": 157467,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "157950": {
+    "assets": [
+      157954,
+      158506
+    ],
+    "guid": 157950,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "157958": {
+    "assets": [
+      157959
+    ],
+    "guid": 157958,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "157966": {
+    "assets": [
+      157969,
+      157960,
+      157962,
+      157964,
+      157968,
+      159795
+    ],
+    "guid": 157966,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "158508": {
+    "assets": [
+      159796,
+      157971
+    ],
+    "guid": 158508,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "159632": {
+    "assets": [
+      153790
+    ],
+    "guid": 159632,
+    "name": {
+      "brazilian": "Hipódromo",
+      "english": "Hippodrome",
+      "french": "Hippodrome",
+      "german": "Hippodrom",
+      "italian": "L'ippodromo",
+      "japanese": "​競馬​場",
+      "korean": "​히포드롬",
+      "polish": "Hipodrom",
+      "russian": "Ипподром",
+      "simplified_chinese": "​赛马​场",
+      "spanish": "Hipódromo",
+      "traditional_chinese": "​賽馬​場"
+    },
+    "template": "AssetPool"
+  },
+  "159705": {
+    "assets": [
+      145229,
+      3138
+    ],
+    "guid": 159705,
+    "name": {
+      "brazilian": "Cadeia de estatuetas",
+      "english": "Statuettes Chain",
+      "french": "Chaîne des statuettes",
+      "german": "Figuren-Kette",
+      "italian": "Catena di statuette",
+      "japanese": "​小​像​の​生産​チェーン",
+      "korean": "​조각상 ​체인",
+      "polish": "Łańcuch posążków",
+      "russian": "Цепочка (статуэтки)",
+      "simplified_chinese": "​小​雕像​生产​链",
+      "spanish": "Cadena de estatuillas",
+      "traditional_chinese": "​小​雕像​生產​鏈"
+    },
+    "template": "AssetPool"
+  },
+  "159706": {
+    "assets": [
+      145230,
+      3081,
+      8579,
+      31755,
+      50280,
+      31753
+    ],
+    "guid": 159706,
+    "name": {
+      "brazilian": "Cadeia de Conjuntos de Latrunculi",
+      "english": "Latrunculi Sets Chain",
+      "french": "Chaîne des plateaux de Latrunculi",
+      "german": "Latrunculi-Sets-Kette",
+      "italian": "Catena di componenti di Latrunculi",
+      "japanese": "​ラ​トル​ン​クリ​一式​の​生産​チェーン",
+      "korean": "​라트룬쿨리 ​세트 ​체인",
+      "polish": "Łańcuch zestawów Latrunculi",
+      "russian": "Цепочка (наборы для латрункули)",
+      "simplified_chinese": "​强盗​棋​棋​具​生产​链",
+      "spanish": "Cadena de juegos de latrunculi",
+      "traditional_chinese": "​兵​棋​套​組​生產​鏈"
+    },
+    "template": "AssetPool"
+  },
+  "159708": {
+    "assets": [
+      156677,
+      156690,
+      156704
+    ],
+    "guid": 159708,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "159710": {
+    "assets": [
+      41811,
+      152790
+    ],
+    "guid": 159710,
+    "name": {
+      "brazilian": "Cortadores de Granito",
+      "english": "Granite Cutters",
+      "french": "Découpeurs de granite",
+      "german": "Granitschneider",
+      "italian": "Tagliapietre",
+      "japanese": "​花崗岩​の​切断​工",
+      "korean": "​화강암 ​절단소",
+      "polish": "Kamieniarze (granit)",
+      "russian": "Мастерские по резке гранита",
+      "simplified_chinese": "​花岗岩​凿​石匠",
+      "spanish": "Cortaderos de granito",
+      "traditional_chinese": "​花崗岩​切割​場"
+    },
+    "template": "AssetPool"
+  },
+  "159864": {
+    "assets": [
+      156675,
+      156677,
+      156679,
+      156683,
+      156685,
+      159042
+    ],
+    "guid": 159864,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "159865": {
+    "assets": [
+      156688,
+      156690,
+      156692,
+      156696,
+      156698,
+      159046
+    ],
+    "guid": 159865,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "159866": {
+    "assets": [
+      156701,
+      156704,
+      156706,
+      156710,
+      156712,
+      159050
+    ],
+    "guid": 159866,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "159867": {
+    "assets": [
+      156714,
+      156717,
+      156720,
+      156726,
+      156729,
+      159054
+    ],
+    "guid": 159867,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "160144": {
+    "assets": [
+      152311,
+      152316,
+      152317,
+      152320,
+      152321,
+      152322,
+      152323,
+      152324,
+      152325,
+      152326
+    ],
+    "guid": 160144,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "160145": {
+    "assets": [
+      144820,
+      144965,
+      144967,
+      144931
+    ],
+    "guid": 160145,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "172138": {
+    "assets": [
+      154437,
+      154438,
+      154439
+    ],
+    "guid": 172138,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "174723": {
+    "assets": [
+      160081,
+      160494,
+      160528,
+      160531
+    ],
+    "guid": 174723,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "174725": {
+    "assets": [
+      160525
+    ],
+    "guid": 174725,
+    "name": null,
+    "template": "AssetPool"
+  },
+  "174727": {
+    "assets": [
+      156688
+    ],
+    "guid": 174727,
     "name": null,
     "template": "AssetPool"
   },
@@ -3511,7 +4466,7 @@
       "spanish": "Murallas",
       "traditional_chinese": "​城牆"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "29318": {
     "assets": [
@@ -3537,7 +4492,7 @@
       "spanish": "Torres",
       "traditional_chinese": "​防禦​塔"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "29341": {
     "assets": [
@@ -3591,7 +4546,14 @@
       77570,
       77568,
       139441,
-      144780
+      144780,
+      150441,
+      150442,
+      150443,
+      154038,
+      157051,
+      150440,
+      150439
     ],
     "guid": 30827,
     "name": null,
@@ -3639,7 +4601,20 @@
       3186
     ],
     "guid": 30947,
-    "name": null,
+    "name": {
+      "brazilian": "Todas as Correntes abençoadas por Netuno",
+      "english": "All Chains blessed by Neptune",
+      "french": "Toutes les chaînes bénies par Neptune",
+      "german": "Alle von Neptun gesegneten Ketten",
+      "italian": "Tutte le catene benedette da Nettuno",
+      "japanese": "​ネプトゥーヌス​の​祝福​を​受け​た​すべて​の​チェーン",
+      "korean": "​넵튠의 ​축복을 ​받은 ​모든 ​연계",
+      "polish": "Wszystkie łańcuchy produkcyjne pobłogosławione przez Neptuna",
+      "russian": "Все цепочки, благословленные Нептуном",
+      "simplified_chinese": "​所有​受​涅​普​顿​祝福​的​生产​链",
+      "spanish": "Todas las cadenas bendecidas por Neptuno",
+      "traditional_chinese": "​所有​生產​鏈​都​受到​海神​的​祝福。"
+    },
     "template": "AssetPool"
   },
   "30948": {
@@ -3663,7 +4638,20 @@
       5469
     ],
     "guid": 30948,
-    "name": null,
+    "name": {
+      "brazilian": "Todas as Correntes abençoadas por Minerva",
+      "english": "All Chains blessed by Minerva",
+      "french": "Toutes les chaînes bénies par Minerve",
+      "german": "Alle von Minerva gesegneten Ketten",
+      "italian": "Tutte le catene benedette da Minerva",
+      "japanese": "​ミネルヴァ​の​祝福​を​受け​た​すべて​の​チェーン",
+      "korean": "​미네르바의 ​축복을 ​받은 ​모든 ​연계",
+      "polish": "Wszystkie łańcuchy produkcyjne pobłogosławione przez Minerwę",
+      "russian": "Все цепочки, благословленные Минервой",
+      "simplified_chinese": "​所有​受​密​涅​瓦​祝福​的​生产​链",
+      "spanish": "Todas las cadenas bendecidas por Minerva",
+      "traditional_chinese": "​所有​生產​鏈​都​受到​智慧​女神​的​祝福。"
+    },
     "template": "AssetPool"
   },
   "31045": {
@@ -3688,13 +4676,14 @@
       "spanish": "Residencias romanas",
       "traditional_chinese": "​羅馬​住所"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "31046": {
     "assets": [
       31045,
       31047,
-      31048
+      31048,
+      152041
     ],
     "guid": 31046,
     "name": {
@@ -3711,7 +4700,7 @@
       "spanish": "Residencias",
       "traditional_chinese": "​住所"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "31047": {
     "assets": [
@@ -3777,7 +4766,7 @@
       "spanish": "Mercados",
       "traditional_chinese": "​市場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "31666": {
     "assets": [
@@ -3799,7 +4788,7 @@
       "spanish": "Muelle comercial",
       "traditional_chinese": "​貿易​棧橋"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "31905": {
     "assets": [
@@ -4076,7 +5065,7 @@
       "spanish": "Astillero",
       "traditional_chinese": "​造船廠"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "32502": {
     "assets": [
@@ -4107,7 +5096,7 @@
       "spanish": "Forjeros o mercadores",
       "traditional_chinese": "​鐵匠​或​商人"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "32742": {
     "assets": [
@@ -4146,7 +5135,7 @@
     ],
     "guid": 33081,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "3541": {
     "assets": [
@@ -4232,7 +5221,7 @@
       "spanish": "Túnicas o zapatos de junco",
       "traditional_chinese": "​丘​尼​卡​或​蘆葦​鞋"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "37131": {
     "assets": [
@@ -4254,7 +5243,7 @@
       "spanish": "Salón bárdico o mercado",
       "traditional_chinese": "​吟遊詩人​殿堂​或​市場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "37179": {
     "assets": [
@@ -4298,7 +5287,7 @@
       "spanish": "Puestos comerciales",
       "traditional_chinese": "​貿易​站"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "37246": {
     "assets": [
@@ -4679,7 +5668,7 @@
       "spanish": "Puesto comercial mejorado",
       "traditional_chinese": "​升級​貿易​站"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "3745": {
     "assets": [
@@ -4913,7 +5902,7 @@
     ],
     "guid": 38362,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38370": {
     "assets": [
@@ -5077,12 +6066,13 @@
       "spanish": "Edificios de producción",
       "traditional_chinese": "​生產​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38552": {
     "assets": [
       4115,
-      29663
+      29663,
+      159123
     ],
     "guid": 38552,
     "name": {
@@ -5099,7 +6089,7 @@
       "spanish": "Depósito",
       "traditional_chinese": "​小​倉庫"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38559": {
     "assets": [
@@ -5121,7 +6111,7 @@
       "spanish": "Vigiles",
       "traditional_chinese": "​警備隊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38560": {
     "assets": [
@@ -5143,7 +6133,7 @@
       "spanish": "Custodios",
       "traditional_chinese": "​城​衛隊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38561": {
     "assets": [
@@ -5165,7 +6155,7 @@
       "spanish": "Médicos",
       "traditional_chinese": "​醫生"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38564": {
     "assets": [
@@ -5175,7 +6165,10 @@
       3313,
       7055,
       7056,
-      7057
+      7057,
+      149842,
+      149848,
+      149849
     ],
     "guid": 38564,
     "name": {
@@ -5192,7 +6185,7 @@
       "spanish": "Almacenes",
       "traditional_chinese": "​倉庫"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "3872": {
     "assets": [
@@ -5475,7 +6468,8 @@
   "38990": {
     "assets": [
       38985,
-      38986
+      38986,
+      158258
     ],
     "guid": 38990,
     "name": {
@@ -5492,12 +6486,13 @@
       "spanish": "Mejora de puestos comerciales",
       "traditional_chinese": "​貿易​站​升級"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38991": {
     "assets": [
       38987,
-      38988
+      38988,
+      158260
     ],
     "guid": 38991,
     "name": {
@@ -5514,7 +6509,7 @@
       "spanish": "Mejora de almacenes",
       "traditional_chinese": "​倉庫​升級"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38992": {
     "assets": [
@@ -5524,7 +6519,11 @@
       81161,
       28602,
       28602,
-      77927
+      77927,
+      153325,
+      153326,
+      153329,
+      153330
     ],
     "guid": 38992,
     "name": {
@@ -5541,7 +6540,7 @@
       "spanish": "Calzadas pavimentadas",
       "traditional_chinese": "​鋪砌​道路"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38993": {
     "assets": [
@@ -5564,7 +6563,7 @@
       "spanish": "Puentes de piedra",
       "traditional_chinese": "​石橋"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38994": {
     "assets": [
@@ -5620,7 +6619,7 @@
       "spanish": "Tropas",
       "traditional_chinese": "​部隊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "38995": {
     "assets": [
@@ -5654,7 +6653,7 @@
       "spanish": "Barcos",
       "traditional_chinese": "​船隻"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "3900": {
     "assets": [
@@ -5714,7 +6713,7 @@
       "spanish": "Puesto comercial grande",
       "traditional_chinese": "​大型​貿易​站"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "3953": {
     "assets": [
@@ -5807,7 +6806,7 @@
       "spanish": "Puesto comercial enorme",
       "traditional_chinese": "​豪華​貿易​站"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "40237": {
     "assets": [
@@ -5833,7 +6832,7 @@
       "spanish": "Minas albionesas",
       "traditional_chinese": "​阿​爾​比​恩​礦場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "40517": {
     "assets": [
@@ -5872,7 +6871,7 @@
       "spanish": "Puesto comercial mejorado",
       "traditional_chinese": "​升級​貿易​站"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "41582": {
     "assets": [
@@ -5894,7 +6893,7 @@
       "spanish": "Grúa de reparación",
       "traditional_chinese": "​維修​起重機"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "41724": {
     "assets": [
@@ -5945,7 +6944,7 @@
       "spanish": "Cisternas de acueductos",
       "traditional_chinese": "​水道​蓄水池"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "42569": {
     "assets": [
@@ -5969,7 +6968,7 @@
       "spanish": "Segmentos de acueductos",
       "traditional_chinese": "​水道​區段"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "42602": {
     "assets": [
@@ -5997,7 +6996,7 @@
       "spanish": "Granjas agrícolas",
       "traditional_chinese": "​耕地"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "42605": {
     "assets": [
@@ -6019,7 +7018,7 @@
       "spanish": "Gramático",
       "traditional_chinese": "​文法​學院"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "42717": {
     "assets": [
@@ -6088,7 +7087,8 @@
       43102,
       50228,
       53358,
-      50226
+      50226,
+      151971
     ],
     "guid": 43097,
     "name": {
@@ -6105,7 +7105,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "43098": {
     "assets": [
@@ -6116,7 +7116,8 @@
       3618,
       31367,
       3619,
-      31368
+      31368,
+      152714
     ],
     "guid": 43098,
     "name": {
@@ -6133,7 +7134,7 @@
       "spanish": "Servicios públicos",
       "traditional_chinese": "​公共​服務"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "43099": {
     "assets": [
@@ -6156,7 +7157,7 @@
       "spanish": "Servicios públicos",
       "traditional_chinese": "​公共​服務"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "43100": {
     "assets": [
@@ -6179,7 +7180,7 @@
       "spanish": "Mercados",
       "traditional_chinese": "​市場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "43101": {
     "assets": [
@@ -6204,7 +7205,7 @@
       "spanish": "Mercados",
       "traditional_chinese": "​市場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "43102": {
     "assets": [
@@ -6230,7 +7231,7 @@
       "spanish": "Vigías urbanas",
       "traditional_chinese": "​城防​崗哨"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "43602": {
     "assets": [
@@ -6255,7 +7256,20 @@
       8427
     ],
     "guid": 43602,
-    "name": null,
+    "name": {
+      "brazilian": "Todas as Correntes abençoadas por Ceres",
+      "english": "All Chains blessed by Ceres",
+      "french": "Toutes les chaînes bénies par Cérès",
+      "german": "Alle von Ceres gesegneten Ketten",
+      "italian": "Tutte le catene benedette da Cerere",
+      "japanese": "​ケレース​の​祝福​を​受け​た​すべて​の​チェーン",
+      "korean": "​세레스의 ​축복을 ​받은 ​모든 ​연계",
+      "polish": "Wszystkie łańcuchy produkcyjne pobłogosławione przez Ceres",
+      "russian": "Все цепочки, благословленные Церерой",
+      "simplified_chinese": "​所有​受​刻​瑞​斯​祝福​的​生产​链",
+      "spanish": "Todas las cadenas bendecidas por Ceres",
+      "traditional_chinese": "​所有​生產​鏈​都​受到​豐收​女神​的​祝福。"
+    },
     "template": "AssetPool"
   },
   "43649": {
@@ -6288,7 +7302,10 @@
       50242,
       80861,
       50311,
-      144800
+      144800,
+      153578,
+      153802,
+      153803
     ],
     "guid": 44348,
     "name": null,
@@ -6314,7 +7331,7 @@
       "spanish": "Villa de gobernador",
       "traditional_chinese": "​總督​別墅"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "4833": {
     "assets": [
@@ -6346,7 +7363,7 @@
       "spanish": "Trirreme",
       "traditional_chinese": "​三​列​槳​船"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "49878": {
     "assets": [
@@ -6370,7 +7387,7 @@
       "spanish": "Quinquerreme",
       "traditional_chinese": "​五​列​槳​船"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50159": {
     "assets": [
@@ -6413,7 +7430,7 @@
       "spanish": "Granjas de ganado",
       "traditional_chinese": "​牲畜​農場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50225": {
     "assets": [
@@ -6441,7 +7458,7 @@
       "spanish": "Minas",
       "traditional_chinese": "​礦場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50226": {
     "assets": [
@@ -6451,7 +7468,8 @@
       3617,
       8062,
       55980,
-      55981
+      55981,
+      152714
     ],
     "guid": 50226,
     "name": {
@@ -6468,7 +7486,7 @@
       "spanish": "Maravillas",
       "traditional_chinese": "​奇跡"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50228": {
     "assets": [
@@ -6490,7 +7508,7 @@
       "spanish": "Cisternas de acueductos",
       "traditional_chinese": "​水道​蓄水池"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50229": {
     "assets": [
@@ -6512,7 +7530,7 @@
       "spanish": "Granjas de cerdos",
       "traditional_chinese": "​養豬場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50230": {
     "assets": [
@@ -6534,12 +7552,13 @@
       "spanish": "Criaderos de caballos",
       "traditional_chinese": "​牧​馬場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50231": {
     "assets": [
       3091,
-      5947
+      5947,
+      152795
     ],
     "guid": 50231,
     "name": {
@@ -6556,7 +7575,7 @@
       "spanish": "Tejerías",
       "traditional_chinese": "​瓦片​廠"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50232": {
     "assets": [
@@ -6578,7 +7597,7 @@
       "spanish": "Tejedurías",
       "traditional_chinese": "​紡織​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50234": {
     "assets": [
@@ -6600,7 +7619,7 @@
       "spanish": "Viticultorías",
       "traditional_chinese": "​釀酒​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50235": {
     "assets": [
@@ -6622,7 +7641,7 @@
       "spanish": "Panaderías",
       "traditional_chinese": "​麵包​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50236": {
     "assets": [
@@ -6644,7 +7663,7 @@
       "spanish": "Quemaderos de carbón",
       "traditional_chinese": "​木炭​焚燒​爐"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50237": {
     "assets": [
@@ -6666,7 +7685,7 @@
       "spanish": "Minas de hierro",
       "traditional_chinese": "​鐵礦"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50238": {
     "assets": [
@@ -6688,7 +7707,7 @@
       "spanish": "Aspiquerías",
       "traditional_chinese": "​美食​煉製​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50239": {
     "assets": [
@@ -6710,7 +7729,7 @@
       "spanish": "Forjerías de armas",
       "traditional_chinese": "​武器​工​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50243": {
     "assets": [
@@ -6728,7 +7747,20 @@
       5935
     ],
     "guid": 50243,
-    "name": null,
+    "name": {
+      "brazilian": "Todas as Correntes abençoadas por Cernunnos",
+      "english": "All Chains blessed by Cernunnos",
+      "french": "Toutes les chaînes bénies par Cernunnos",
+      "german": "Alle von Cernunnos gesegneten Ketten",
+      "italian": "Tutte le catene benedette da Cernunnos",
+      "japanese": "​ケルヌンノス​の​祝福​を​受け​た​すべて​の​チェーン",
+      "korean": "​케르눈노스의 ​축복을 ​받은 ​모든 ​연계",
+      "polish": "Wszystkie łańcuchy produkcyjne pobłogosławione przez Cernunnosa",
+      "russian": "Все цепочки, благословленные Цернунном",
+      "simplified_chinese": "​所有​受​科尔​努​诺​斯​祝福​的​生产​链",
+      "spanish": "Todas las cadenas bendecidas por Cernunnos",
+      "traditional_chinese": "​所有​生產​鏈​都​受到​自然​之​神​的​祝福。"
+    },
     "template": "AssetPool"
   },
   "50251": {
@@ -6756,7 +7788,7 @@
       "spanish": "Estaciones silvestres",
       "traditional_chinese": "​森林​營地"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50293": {
     "assets": [
@@ -6778,7 +7810,7 @@
       "spanish": "Granjas de ovejas",
       "traditional_chinese": "​羊​隻​農場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50312": {
     "assets": [
@@ -6789,7 +7821,20 @@
       50280
     ],
     "guid": 50312,
-    "name": null,
+    "name": {
+      "brazilian": "Todas as Correntes abençoadas por Mercúrio-Lugus",
+      "english": "All Chains blessed by Mercury-Lugus",
+      "french": "Toutes les chaînes bénies par Mercure-Lug",
+      "german": "Alle von Merkur-Lugus gesegneten Ketten",
+      "italian": "Tutte le catene benedette da Mercurio-Lugus",
+      "japanese": "​メルクリウス・​ルグス​の​祝福​を​受け​た​すべて​の​チェーン",
+      "korean": "​메르쿠리우스-​루구스의 ​축복을 ​받은 ​모든 ​연계",
+      "polish": "Wszystkie łańcuchy produkcyjne pobłogosławione przez Merkurego-Lugusa",
+      "russian": "Все цепочки, благословленные Меркурием-Лугом",
+      "simplified_chinese": "​所有​受​墨​丘​利/​卢​格​斯​祝福​的​生产​链",
+      "spanish": "Todas las cadenas bendecidas por Mercurio-Lugo",
+      "traditional_chinese": "​所有​生產​鏈​都​受到​商​智之​神​的​祝福。"
+    },
     "template": "AssetPool"
   },
   "50564": {
@@ -6811,7 +7856,7 @@
       "spanish": "Cadena de sardinas",
       "traditional_chinese": "​沙丁魚​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50565": {
     "assets": [
@@ -6833,7 +7878,7 @@
       "spanish": "Cadena de gachas",
       "traditional_chinese": "​清​粥​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50566": {
     "assets": [
@@ -6854,7 +7899,7 @@
       "spanish": "Cadena de anguilas",
       "traditional_chinese": "​鰻魚​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50567": {
     "assets": [
@@ -6878,7 +7923,7 @@
       "spanish": "Cadena de velas",
       "traditional_chinese": "​船​帆​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50568": {
     "assets": [
@@ -6902,7 +7947,7 @@
       "spanish": "Cadena de cuerdas",
       "traditional_chinese": "​繩索​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50569": {
     "assets": [
@@ -6928,7 +7973,7 @@
       "spanish": "Cadena de pan",
       "traditional_chinese": "​麵包​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50570": {
     "assets": [
@@ -6951,7 +7996,7 @@
       "spanish": "Cadena de ternera asada",
       "traditional_chinese": "​烤牛肉​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50571": {
     "assets": [
@@ -6973,7 +8018,7 @@
       "spanish": "Cadena de queso",
       "traditional_chinese": "​起​司​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50572": {
     "assets": [
@@ -6997,7 +8042,7 @@
       "spanish": "Cadena de túnicas",
       "traditional_chinese": "​丘​尼​卡​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50573": {
     "assets": [
@@ -7020,7 +8065,7 @@
       "spanish": "Cadena de garo",
       "traditional_chinese": "​魚​醬​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50574": {
     "assets": [
@@ -7043,7 +8088,7 @@
       "spanish": "Cadena de sandalias",
       "traditional_chinese": "​涼鞋​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50575": {
     "assets": [
@@ -7066,7 +8111,7 @@
       "spanish": "Cadena de calzas",
       "traditional_chinese": "​褲子​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50576": {
     "assets": [
@@ -7091,7 +8136,7 @@
       "spanish": "Cadena de carros",
       "traditional_chinese": "​戰車​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50577": {
     "assets": [
@@ -7116,7 +8161,7 @@
       "spanish": "Cadena de collares",
       "traditional_chinese": "​項鍊​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50578": {
     "assets": [
@@ -7142,7 +8187,7 @@
       "spanish": "Cadena de vino",
       "traditional_chinese": "​酒​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50579": {
     "assets": [
@@ -7165,7 +8210,7 @@
       "spanish": "Cadena de broches",
       "traditional_chinese": "​胸針​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50580": {
     "assets": [
@@ -7193,7 +8238,7 @@
       "spanish": "Cadena de liras",
       "traditional_chinese": "​里拉​琴​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50581": {
     "assets": [
@@ -7216,7 +8261,7 @@
       "spanish": "Cadena de tablillas de escritura",
       "traditional_chinese": "​書寫​蠟​板​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50582": {
     "assets": [
@@ -7240,7 +8285,7 @@
       "spanish": "Cadena de espejos",
       "traditional_chinese": "​鏡子​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50583": {
     "assets": [
@@ -7263,7 +8308,7 @@
       "spanish": "Cadena de torques",
       "traditional_chinese": "​頸​環​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50584": {
     "assets": [
@@ -7289,7 +8334,7 @@
       "spanish": "Cadena de togas",
       "traditional_chinese": "​托​加​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50585": {
     "assets": [
@@ -7313,7 +8358,7 @@
       "spanish": "Cadena de pelucas",
       "traditional_chinese": "​假髮​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50586": {
     "assets": [
@@ -7339,7 +8384,7 @@
       "spanish": "Cadena de cálices",
       "traditional_chinese": "​精緻​玻璃​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50587": {
     "assets": [
@@ -7363,7 +8408,7 @@
       "spanish": "Cadena de escudos de clan",
       "traditional_chinese": "​家族​盾牌​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50588": {
     "assets": [
@@ -7390,7 +8435,7 @@
       "spanish": "Cadena de lenguas de ave",
       "traditional_chinese": "​鳥​舌​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50589": {
     "assets": [
@@ -7416,7 +8461,7 @@
       "spanish": "Cadena de ánforas",
       "traditional_chinese": "​雙耳瓶​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50590": {
     "assets": [
@@ -7438,7 +8483,7 @@
       "spanish": "Cadena de caballos",
       "traditional_chinese": "​馬匹​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50591": {
     "assets": [
@@ -7460,7 +8505,7 @@
       "spanish": "Cadena de aceite de oliva",
       "traditional_chinese": "​橄欖油​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50592": {
     "assets": [
@@ -7486,7 +8531,7 @@
       "spanish": "Cadena de jabón",
       "traditional_chinese": "​肥皂​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50593": {
     "assets": [
@@ -7510,7 +8555,7 @@
       "spanish": "Cadena de ostras con caviar",
       "traditional_chinese": "​牡蠣​魚子醬​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50594": {
     "assets": [
@@ -7532,7 +8577,7 @@
       "spanish": "Cadena de pileos",
       "traditional_chinese": "​自由​帽​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50595": {
     "assets": [
@@ -7553,7 +8598,7 @@
       "spanish": "Cadena de berberechos",
       "traditional_chinese": "​鳥​蛤​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50596": {
     "assets": [
@@ -7576,7 +8621,7 @@
       "spanish": "Cadena de cerveza",
       "traditional_chinese": "​啤酒​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50597": {
     "assets": [
@@ -7599,7 +8644,7 @@
       "spanish": "Cadena de salchichas",
       "traditional_chinese": "​香腸​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50598": {
     "assets": [
@@ -7623,7 +8668,7 @@
       "spanish": "Cadena de gorros de piel",
       "traditional_chinese": "​皮毛​帽​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50599": {
     "assets": [
@@ -7650,7 +8695,7 @@
       "spanish": "Cadena de divanes",
       "traditional_chinese": "​躺椅​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50601": {
     "assets": [
@@ -7675,7 +8720,7 @@
       "spanish": "Pesquerías",
       "traditional_chinese": "​漁場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50602": {
     "assets": [
@@ -7701,7 +8746,7 @@
       "spanish": "Recolectorías",
       "traditional_chinese": "​採集​場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50604": {
     "assets": [
@@ -7731,7 +8776,7 @@
       "spanish": "Obradores de artesanía",
       "traditional_chinese": "​工匠​工作​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50605": {
     "assets": [
@@ -7756,7 +8801,7 @@
       "spanish": "Terreros",
       "traditional_chinese": "​礦坑"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50606": {
     "assets": [
@@ -7785,7 +8830,7 @@
       "spanish": "Vituallerías",
       "traditional_chinese": "​供​糧​處"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50607": {
     "assets": [
@@ -7816,7 +8861,7 @@
       "spanish": "Extractorías",
       "traditional_chinese": "​提取​廠"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50608": {
     "assets": [
@@ -7841,7 +8886,7 @@
       "spanish": "Canteras",
       "traditional_chinese": "​採石場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50609": {
     "assets": [
@@ -7867,7 +8912,7 @@
       "spanish": "Fundiciones",
       "traditional_chinese": "​冶煉​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50610": {
     "assets": [
@@ -7895,7 +8940,7 @@
       "spanish": "Cocinas",
       "traditional_chinese": "​廚房"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50611": {
     "assets": [
@@ -7922,7 +8967,7 @@
       "spanish": "Sastrerías",
       "traditional_chinese": "​裁縫​店"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50612": {
     "assets": [
@@ -7950,7 +8995,7 @@
       "spanish": "Talleres",
       "traditional_chinese": "​工作​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50613": {
     "assets": [
@@ -7980,7 +9025,7 @@
       "spanish": "Refinerías",
       "traditional_chinese": "​精煉​場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50614": {
     "assets": [
@@ -8004,7 +9049,7 @@
       "spanish": "Armerías",
       "traditional_chinese": "​盔甲​工​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50620": {
     "assets": [
@@ -8030,7 +9075,7 @@
       "spanish": "Cadena de armas",
       "traditional_chinese": "​武器​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50621": {
     "assets": [
@@ -8047,7 +9092,14 @@
       5974,
       2994,
       80612,
-      2957
+      2957,
+      152794,
+      152777,
+      152334,
+      152257,
+      152270,
+      152353,
+      152243
     ],
     "guid": 50621,
     "name": {
@@ -8064,7 +9116,7 @@
       "spanish": "Cotas de malla",
       "traditional_chinese": "​盔甲​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50622": {
     "assets": [
@@ -8086,7 +9138,7 @@
       "spanish": "Cadena de zapatos de junco",
       "traditional_chinese": "​蘆葦​鞋​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50626": {
     "assets": [
@@ -8110,7 +9162,7 @@
       "spanish": "Cadena de tablones",
       "traditional_chinese": "​木材​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50627": {
     "assets": [
@@ -8136,7 +9188,7 @@
       "spanish": "Cadena de hormigón",
       "traditional_chinese": "​混凝土​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50628": {
     "assets": [
@@ -8160,7 +9212,7 @@
       "spanish": "Cadena de tejas",
       "traditional_chinese": "​瓦片​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50629": {
     "assets": [
@@ -8182,7 +9234,7 @@
       "spanish": "Cadena de mármol",
       "traditional_chinese": "​大理石​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50630": {
     "assets": [
@@ -8208,7 +9260,7 @@
       "spanish": "Cadena de mosaicos",
       "traditional_chinese": "​馬賽克​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50631": {
     "assets": [
@@ -8234,7 +9286,7 @@
       "spanish": "Cadena de mantos",
       "traditional_chinese": "​斗篷​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50632": {
     "assets": [
@@ -8257,7 +9309,7 @@
       "spanish": "Cadena de zarzo y argamasa",
       "traditional_chinese": "​編​竹​夾​泥​牆​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "50633": {
     "assets": [
@@ -8279,7 +9331,7 @@
       "spanish": "Cadena de granito",
       "traditional_chinese": "​花崗岩​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "51250": {
     "assets": [
@@ -8289,7 +9341,7 @@
     ],
     "guid": 51250,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "51905": {
     "assets": [
@@ -8315,7 +9367,7 @@
       "spanish": "Plantaciones",
       "traditional_chinese": "​農園"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "51906": {
     "assets": [
@@ -8338,7 +9390,7 @@
       "spanish": "Cabañas de caza",
       "traditional_chinese": "​狩獵​小屋"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "51929": {
     "assets": [
@@ -8368,7 +9420,7 @@
       "spanish": "Tapicerías",
       "traditional_chinese": "​傢俱​工匠"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "51941": {
     "assets": [
@@ -8390,7 +9442,7 @@
       "spanish": "Calle de embarcadero",
       "traditional_chinese": "​泊岸​街"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "51976": {
     "assets": [
@@ -8412,7 +9464,7 @@
       "spanish": "Taladores",
       "traditional_chinese": "​伐木​場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "51977": {
     "assets": [
@@ -8434,7 +9486,7 @@
       "spanish": "Granjas de lino",
       "traditional_chinese": "​亞麻​農場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "52644": {
     "assets": [
@@ -8522,7 +9574,7 @@
       "spanish": "Edificio de reclutamiento",
       "traditional_chinese": "​招募​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "53359": {
     "assets": [
@@ -8544,7 +9596,7 @@
       "spanish": "Edificios portuarios",
       "traditional_chinese": "​港口​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "54259": {
     "assets": [
@@ -8627,7 +9679,7 @@
       "spanish": "Murallas y torres",
       "traditional_chinese": "​城牆​與​防禦​塔"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "55905": {
     "assets": [
@@ -8649,7 +9701,7 @@
       "spanish": "Torres de madera",
       "traditional_chinese": "​木造​防禦​塔"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "55906": {
     "assets": [
@@ -8671,7 +9723,7 @@
       "spanish": "Torres de piedra",
       "traditional_chinese": "​石造​防禦​塔"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "55976": {
     "assets": [
@@ -8743,7 +9795,7 @@
       "spanish": "Cascos acorazados",
       "traditional_chinese": "​裝甲​船體"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "58120": {
     "assets": [
@@ -8765,7 +9817,7 @@
       "spanish": "Escorpiones navales",
       "traditional_chinese": "​船​載​蠍​式​弩​砲"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "58121": {
     "assets": [
@@ -8787,7 +9839,7 @@
       "spanish": "Catapultas navales",
       "traditional_chinese": "​船用​投石機"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "6057": {
     "assets": [
@@ -8853,7 +9905,7 @@
       "spanish": "Barracón",
       "traditional_chinese": "​軍營"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "64413": {
     "assets": [
@@ -9747,11 +10799,14 @@
       50311,
       27900,
       27899,
-      144800
+      144800,
+      153578,
+      153802,
+      153803
     ],
     "guid": 67666,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "67936": {
     "assets": [
@@ -9783,7 +10838,7 @@
     ],
     "guid": 68016,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68019": {
     "assets": [
@@ -9792,7 +10847,7 @@
     ],
     "guid": 68019,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68020": {
     "assets": [
@@ -9811,7 +10866,7 @@
     ],
     "guid": 68020,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68109": {
     "assets": [
@@ -9833,7 +10888,7 @@
       "spanish": "Minas de oro y lavanderías",
       "traditional_chinese": "​金礦​與​淘金​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68191": {
     "assets": [
@@ -9855,7 +10910,7 @@
       "spanish": "Reclutamiento de honderos en la villa de gobernador",
       "traditional_chinese": "​可在​總督​別墅​招募​甩​石​兵"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68361": {
     "assets": [
@@ -9877,7 +10932,7 @@
       "spanish": "Taller de asedio",
       "traditional_chinese": "​攻城​工作​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68472": {
     "assets": [
@@ -9907,7 +10962,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68474": {
     "assets": [
@@ -9945,7 +11000,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68475": {
     "assets": [
@@ -9980,7 +11035,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68476": {
     "assets": [
@@ -10012,7 +11067,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68477": {
     "assets": [
@@ -10041,7 +11096,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68478": {
     "assets": [
@@ -10068,7 +11123,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68479": {
     "assets": [
@@ -10092,7 +11147,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68480": {
     "assets": [
@@ -10113,7 +11168,7 @@
       "spanish": "Todos los edificios",
       "traditional_chinese": "​所有​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "68720": {
     "assets": [
@@ -10135,7 +11190,7 @@
       "spanish": "Apiarios",
       "traditional_chinese": "​養蜂場​（養蜂​人）"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "70002": {
     "assets": [
@@ -10179,7 +11234,7 @@
       "spanish": "Termas",
       "traditional_chinese": "​浴場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "70715": {
     "assets": [
@@ -10203,7 +11258,7 @@
       "spanish": "Auxiliares",
       "traditional_chinese": "​後備​兵"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "70716": {
     "assets": [
@@ -10227,7 +11282,7 @@
       "spanish": "Hondero",
       "traditional_chinese": "​甩​石​兵"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71112": {
     "assets": [
@@ -10257,7 +11312,7 @@
       "spanish": "Murallas de piedra",
       "traditional_chinese": "​石造​牆"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71113": {
     "assets": [
@@ -10287,7 +11342,7 @@
       "spanish": "Murallas de madera",
       "traditional_chinese": "​木​牆"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71114": {
     "assets": [
@@ -10309,7 +11364,7 @@
       "spanish": "Balistas torreras",
       "traditional_chinese": "​塔​樓​投石​弩"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71161": {
     "assets": [
@@ -10335,7 +11390,7 @@
       "spanish": "Emplazamientos",
       "traditional_chinese": "​紮營"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71162": {
     "assets": [
@@ -10381,7 +11436,7 @@
       "spanish": "Infantería",
       "traditional_chinese": "​步兵"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71163": {
     "assets": [
@@ -10407,7 +11462,7 @@
       "spanish": "Caballería",
       "traditional_chinese": "​騎兵"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71164": {
     "assets": [
@@ -10431,7 +11486,7 @@
       "spanish": "Armas de asedio",
       "traditional_chinese": "​攻城​武器"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71165": {
     "assets": [
@@ -10454,7 +11509,7 @@
       "spanish": "Caballería équite",
       "traditional_chinese": "​輕騎兵"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71166": {
     "assets": [
@@ -10476,7 +11531,7 @@
       "spanish": "Onagro",
       "traditional_chinese": "​野​驢​砲"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71167": {
     "assets": [
@@ -10498,7 +11553,7 @@
       "spanish": "Escorpiones",
       "traditional_chinese": "​蠍​式​弩​砲"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71182": {
     "assets": [
@@ -10520,7 +11575,7 @@
       "spanish": "Barco insignia",
       "traditional_chinese": "​指揮​艦"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71197": {
     "assets": [
@@ -10568,7 +11623,7 @@
       "spanish": "Edificios dependientes de carbón",
       "traditional_chinese": "​需要​煤礦​的​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71198": {
     "assets": [
@@ -10590,7 +11645,7 @@
       "spanish": "Edificios dependientes de agua",
       "traditional_chinese": "​需要​水源​的​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71199": {
     "assets": [
@@ -10615,7 +11670,7 @@
       "spanish": "Servicios públicos dependientes de agua",
       "traditional_chinese": "​需要​水源​的​公共​服務"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71200": {
     "assets": [
@@ -10660,7 +11715,7 @@
       "spanish": "Edificios de producción mejorables con agua",
       "traditional_chinese": "​受​水利​加成​的​生產​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71237": {
     "assets": [
@@ -10703,7 +11758,7 @@
       "spanish": "Pozos",
       "traditional_chinese": "​水井"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71277": {
     "assets": [
@@ -10725,7 +11780,7 @@
       "spanish": "Torres de vigilancia",
       "traditional_chinese": "​瞭望塔"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71278": {
     "assets": [
@@ -10747,7 +11802,7 @@
       "spanish": "Letrinas",
       "traditional_chinese": "​茅廁"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71671": {
     "assets": [
@@ -10785,7 +11840,7 @@
       "spanish": "Hornos",
       "traditional_chinese": "​熔爐"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "71988": {
     "assets": [
@@ -10807,7 +11862,7 @@
       "spanish": "Canteras de caliza",
       "traditional_chinese": "​石灰岩​採石場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "77325": {
     "assets": [
@@ -10863,7 +11918,7 @@
       "spanish": "Prensas de aceitunas",
       "traditional_chinese": "​橄欖​榨汁​坊"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "77680": {
     "assets": [
@@ -10885,7 +11940,7 @@
       "spanish": "Puertas de piedra",
       "traditional_chinese": "​石造​大門"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "77949": {
     "assets": [
@@ -10912,7 +11967,7 @@
       "spanish": "Calzada de mármol",
       "traditional_chinese": "​大理石​道路"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "77964": {
     "assets": [
@@ -10935,7 +11990,7 @@
       "spanish": "Pastos de pradera latinos",
       "traditional_chinese": "​拉丁​姆​草地​牧場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "77965": {
     "assets": [
@@ -10958,7 +12013,7 @@
       "spanish": "Pastos de pradera albioneses",
       "traditional_chinese": "​阿​爾​比​恩​草地​牧場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "7916": {
     "assets": [
@@ -11194,7 +12249,7 @@
       "spanish": "Puesto comercial mejorado",
       "traditional_chinese": "​升級​貿易​站"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "8047": {
     "assets": [
@@ -11225,30 +12280,29 @@
       "spanish": "Puesto comercial grande",
       "traditional_chinese": "​大型​貿易​站"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "80493": {
     "assets": [
-      36908,
-      36911,
-      36912
+      3621,
+      152714
     ],
     "guid": 80493,
     "name": {
-      "brazilian": "Canteiros de obras",
-      "english": "Construction Sites",
-      "french": "Chantiers",
-      "german": "Bauplätze",
-      "italian": "Cantieri",
-      "japanese": "​建設​現場",
-      "korean": "​건설 ​현장",
-      "polish": "Place budowy",
-      "russian": "Зоны строительства",
-      "simplified_chinese": "​建筑​工地",
-      "spanish": "Zonas de construcción",
-      "traditional_chinese": "​工地"
+      "brazilian": "Todos os Monumentos",
+      "english": "All Monuments",
+      "french": "Tous les monuments",
+      "german": "Alle Monumente",
+      "italian": "Tutti i monumenti",
+      "japanese": "​すべて​の​モニュメント",
+      "korean": "​모든 ​기념물",
+      "polish": "Wszystkie monumenty",
+      "russian": "Все монументы",
+      "simplified_chinese": "​所有​纪念​碑",
+      "spanish": "Todos los monumentos",
+      "traditional_chinese": "​所有​紀念​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "8050": {
     "assets": [
@@ -11335,7 +12389,20 @@
       144811
     ],
     "guid": 80564,
-    "name": null,
+    "name": {
+      "brazilian": "Todas as Correntes abençoadas por Marte",
+      "english": "All Chains blessed by Mars",
+      "french": "Toutes les chaînes bénies par Mars",
+      "german": "Alle von Mars gesegneten Ketten",
+      "italian": "Tutte le catene benedette da Marte",
+      "japanese": "​マルス​の​祝福​を​受け​た​すべて​の​チェーン",
+      "korean": "​마르스의 ​축복을 ​받은 ​모든 ​연계",
+      "polish": "Wszystkie łańcuchy produkcyjne pobłogosławione przez Marsa",
+      "russian": "Все цепочки, благословленные Марсом",
+      "simplified_chinese": "​所有​受​玛​尔​斯​祝福​的​生产​链",
+      "spanish": "Todas las cadenas bendecidas por Marte",
+      "traditional_chinese": "​所有​生產​鏈​都​受到​戰神​的​祝福。"
+    },
     "template": "AssetPool"
   },
   "8060": {
@@ -11370,7 +12437,7 @@
       "spanish": "Edificios de decoración",
       "traditional_chinese": "​浴室​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "80862": {
     "assets": [
@@ -11384,7 +12451,20 @@
       5847
     ],
     "guid": 80862,
-    "name": null,
+    "name": {
+      "brazilian": "Todas as correntes abençoadas por Epona",
+      "english": "All Chains blessed by Epona",
+      "french": "Toutes les chaînes bénies par Epona",
+      "german": "Alle von Epona gesegneten Ketten",
+      "italian": "Tutte le catene benedette da Epona",
+      "japanese": "​エポナ​の​祝福​を​受け​た​すべて​の​チェーン",
+      "korean": "​에포나의 ​축복을 ​받은 ​모든 ​연계",
+      "polish": "Wszystkie łańcuchy produkcyjne pobłogosławione przez Eponę",
+      "russian": "Все цепочки, благословленные Эпоной",
+      "simplified_chinese": "​所有​受​艾​波​娜​祝福​的​生产​链",
+      "spanish": "Todas las cadenas bendecidas por Epona",
+      "traditional_chinese": "​所有​生產​鏈​都​受到​馬​之​女神​的​祝福。"
+    },
     "template": "AssetPool"
   },
   "80869": {
@@ -11409,7 +12489,7 @@
       "spanish": "Criadores y domadores de caballos",
       "traditional_chinese": "​牧​馬場​和​捕​馬場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "81125": {
     "assets": [
@@ -11432,7 +12512,7 @@
       "spanish": "Puentes de mármol",
       "traditional_chinese": "​大理石​橋梁"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "81167": {
     "assets": [
@@ -11514,7 +12594,7 @@
       "spanish": "Minas",
       "traditional_chinese": "​礦場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "81271": {
     "assets": [
@@ -11554,7 +12634,7 @@
       "spanish": "Foros",
       "traditional_chinese": "​廣場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "81274": {
     "assets": [
@@ -11570,7 +12650,7 @@
     ],
     "guid": 81274,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "81423": {
     "assets": [
@@ -11598,7 +12678,7 @@
       "spanish": "Cotas de malla",
       "traditional_chinese": "​盔甲​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "81424": {
     "assets": [
@@ -11625,7 +12705,7 @@
       "spanish": "Cotas de malla",
       "traditional_chinese": "​盔甲​生產​鏈"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "81446": {
     "assets": [
@@ -11647,7 +12727,7 @@
       "spanish": "Teatros",
       "traditional_chinese": "​劇場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "81447": {
     "assets": [
@@ -11668,7 +12748,7 @@
       "spanish": "Campo recreativo",
       "traditional_chinese": "​休閒​運動場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "81558": {
     "assets": [
@@ -11738,7 +12818,7 @@
       "spanish": "Casa de apuestas",
       "traditional_chinese": "​賭場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82157": {
     "assets": [
@@ -11760,12 +12840,13 @@
       "spanish": "Recinto ecuestre",
       "traditional_chinese": "​騎兵​訓練​場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82170": {
     "assets": [
       3089,
-      5945
+      5945,
+      152803
     ],
     "guid": 82170,
     "name": {
@@ -11782,7 +12863,7 @@
       "spanish": "Aserraderos",
       "traditional_chinese": "​鋸木廠"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82305": {
     "assets": [
@@ -11803,7 +12884,7 @@
       "spanish": "Trampería de castores",
       "traditional_chinese": "​河​狸​捕​獵場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82306": {
     "assets": [
@@ -11824,7 +12905,7 @@
       "spanish": "Cautiverio de aves",
       "traditional_chinese": "​馴​鳥屋"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82311": {
     "assets": [
@@ -11846,7 +12927,7 @@
       "spanish": "Exprimidero de resina",
       "traditional_chinese": "​樹脂​採集​場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82459": {
     "assets": [
@@ -11928,7 +13009,7 @@
     "name": {
       "brazilian": "Sacrário de Netuno",
       "english": "Shrine of Neptune",
-      "french": "Sanctuaire de Neptune",
+      "french": "Autel de Neptune",
       "german": "Neptuns Schrein",
       "italian": "Sacrario di Nettuno",
       "japanese": "​ネプトゥーヌス​の​祭壇",
@@ -11939,7 +13020,7 @@
       "spanish": "Altar de Neptuno",
       "traditional_chinese": "​海神​聖壇"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82494": {
     "assets": [
@@ -11950,7 +13031,7 @@
     "name": {
       "brazilian": "Sacrário de Ceres",
       "english": "Shrine of Ceres",
-      "french": "Sanctuaire de Cérès",
+      "french": "Autel de Cérès",
       "german": "Ceres‘ Schrein",
       "italian": "Sacrario di Cerere",
       "japanese": "​ケレース​の​祭壇",
@@ -11961,7 +13042,7 @@
       "spanish": "Altar de Ceres",
       "traditional_chinese": "​豐收​女神​聖壇"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82495": {
     "assets": [
@@ -11972,7 +13053,7 @@
     "name": {
       "brazilian": "Sacrário de Marte",
       "english": "Shrine of Mars",
-      "french": "Sanctuaire de Mars",
+      "french": "Autel de Mars",
       "german": "Mars‘ Schrein",
       "italian": "Sacrario di Marte",
       "japanese": "​マルス​の​祭壇",
@@ -11983,7 +13064,7 @@
       "spanish": "Altar de Marte",
       "traditional_chinese": "​戰神​聖壇"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82496": {
     "assets": [
@@ -11994,7 +13075,7 @@
     "name": {
       "brazilian": "Sacrário de Mercúrio-Lugus",
       "english": "Shrine of Mercury-Lugus",
-      "french": "Sanctuaire de Mercure-Lug",
+      "french": "Autel de Mercure-Lug",
       "german": "Merkur-Lugus‘ Schrein",
       "italian": "Sacrario di Mercurio-Lugus",
       "japanese": "​メルクリウス・​ルグス​の​祭壇",
@@ -12005,7 +13086,7 @@
       "spanish": "Altar de Mercurio-Lugo",
       "traditional_chinese": "​商​智之​神聖​壇"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82497": {
     "assets": [
@@ -12016,7 +13097,7 @@
     "name": {
       "brazilian": "Sacrário de Epona",
       "english": "Shrine of Epona",
-      "french": "Sanctuaire d'Epona",
+      "french": "Autel d'Epona",
       "german": "Eponas Schrein",
       "italian": "Sacrario di Epona",
       "japanese": "​エポナ​の​祭壇",
@@ -12027,7 +13108,7 @@
       "spanish": "Altar de Epona",
       "traditional_chinese": "​馬​之​女神​聖壇"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82498": {
     "assets": [
@@ -12038,7 +13119,7 @@
     "name": {
       "brazilian": "Sacrário de Cernunnos",
       "english": "Shrine of Cernunnos",
-      "french": "Sanctuaire de Cernunnos",
+      "french": "Autel de Cernunnos",
       "german": "Cernunnos‘ Schrein",
       "italian": "Sacrario di Cernunnos",
       "japanese": "​ケルヌンノス​の​祭壇",
@@ -12049,7 +13130,7 @@
       "spanish": "Altar de Cernunnos",
       "traditional_chinese": "​自然​之​神聖​壇"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82499": {
     "assets": [
@@ -12060,7 +13141,7 @@
     "name": {
       "brazilian": "Sacrário de Minerva",
       "english": "Shrine of Minerva",
-      "french": "Sanctuaire de Minerve",
+      "french": "Autel de Minerve",
       "german": "Minervas Schrein",
       "italian": "Sacrario di Minerva",
       "japanese": "​ミネルヴァ​の​祭壇",
@@ -12071,7 +13152,7 @@
       "spanish": "Altar de Minerva",
       "traditional_chinese": "​智慧​女神​聖壇"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82513": {
     "assets": [
@@ -12093,7 +13174,7 @@
       "spanish": "Viñedos ",
       "traditional_chinese": "​葡萄園 "
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82518": {
     "assets": [
@@ -12117,7 +13198,7 @@
       "spanish": "Casa de apuestas",
       "traditional_chinese": "​賭場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82583": {
     "assets": [
@@ -12126,12 +13207,14 @@
     ],
     "guid": 82583,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82585": {
     "assets": [
       116827,
-      116820
+      116820,
+      160145,
+      160144
     ],
     "guid": 82585,
     "name": {
@@ -12148,7 +13231,7 @@
       "spanish": "Adornos",
       "traditional_chinese": "​裝飾"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "82615": {
     "assets": [
@@ -12259,7 +13342,7 @@
       "spanish": "Silo",
       "traditional_chinese": "​筒​倉"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "83858": {
     "assets": [
@@ -12523,10 +13606,24 @@
       31102,
       31103,
       31104,
-      31105
+      31105,
+      153066
     ],
     "guid": 89071,
-    "name": null,
+    "name": {
+      "brazilian": "Todos os rivais",
+      "english": "All Rivals",
+      "french": "Tous les rivaux",
+      "german": "Alle Rivalen",
+      "italian": "Tutti i rivali",
+      "japanese": "​すべて​の​ライバル",
+      "korean": "​모든 ​경쟁자",
+      "polish": "Wszyscy rywale",
+      "russian": "Все соперники",
+      "simplified_chinese": "​所有​对手",
+      "spanish": "Todos los rivales",
+      "traditional_chinese": "​所有​對手"
+    },
     "template": "AssetPool"
   },
   "89122": {
@@ -12649,20 +13746,20 @@
     ],
     "guid": 90247,
     "name": {
-      "brazilian": "Fazendas de auroques",
-      "english": "Ochs Farms",
-      "french": "Fermes à bœufs",
-      "german": "Ochsenhöfe",
-      "italian": "Allevamenti di uri",
-      "japanese": "​牛​牧場",
-      "korean": "​소 ​농장",
-      "polish": "Hodowle wołów",
+      "brazilian": "Fazendas de Auroques",
+      "english": "Auroch Farms",
+      "french": "Élevages d'aurochs",
+      "german": "Auerochsenhöfe",
+      "italian": "Fattorie degli uri",
+      "japanese": "​オーロックス​牧場",
+      "korean": "​들소 ​목장",
+      "polish": "Hodowle turów",
       "russian": "Хозяйства (коровы)",
-      "simplified_chinese": "​牛​农场",
-      "spanish": "Granjas de bueyes",
-      "traditional_chinese": "​牛隻​農場"
+      "simplified_chinese": "​野牛​农场",
+      "spanish": "Granjas de uros",
+      "traditional_chinese": "​原​牛​農場"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "9036": {
     "assets": [
@@ -12685,7 +13782,7 @@
       "spanish": "Canal de drenaje y compuerta de esclusa",
       "traditional_chinese": "​排水​渠道​與​水門"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "90539": {
     "assets": [
@@ -12821,7 +13918,7 @@
       "spanish": "Follaje y horticultura",
       "traditional_chinese": "​植物​與​園藝"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "91098": {
     "assets": [
@@ -12867,7 +13964,7 @@
       "spanish": "Esculturas y estatuas",
       "traditional_chinese": "​雕塑​與​雕像"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "91099": {
     "assets": [
@@ -12900,7 +13997,7 @@
       "spanish": "Estructuras y edificios",
       "traditional_chinese": "​結構​與​建築"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "91326": {
     "assets": [
@@ -13029,7 +14126,7 @@
       "spanish": "Todos los productos",
       "traditional_chinese": "​所有​貨物"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "91346": {
     "assets": [
@@ -13044,7 +14141,7 @@
     ],
     "guid": 91346,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "92731": {
     "assets": [
@@ -13068,7 +14165,7 @@
       "spanish": "Villas y oficinas",
       "traditional_chinese": "​別墅​與​公務​所"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "92732": {
     "assets": [
@@ -13090,7 +14187,7 @@
       "spanish": "Residencias libertas y légamas",
       "traditional_chinese": "​自由​民​與​沼​人​住所"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "92794": {
     "assets": [
@@ -13246,7 +14343,7 @@
       "spanish": "Productos que disfrutan los forjeros de Albion",
       "traditional_chinese": "​阿​爾​比​恩​鐵匠​喜愛​的​貨物"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "93827": {
     "assets": [
@@ -13270,7 +14367,7 @@
       "spanish": "Productos del Latium (equites)",
       "traditional_chinese": "​拉丁​姆​（騎士）​貨物"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "93896": {
     "assets": [
@@ -13282,7 +14379,7 @@
     ],
     "guid": 93896,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "94282": {
     "assets": [
@@ -13304,7 +14401,7 @@
       "spanish": "Oficinas",
       "traditional_chinese": "​公務​所"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "94612": {
     "assets": [
@@ -13327,7 +14424,7 @@
       "spanish": "Vigías urbanas en el Latium",
       "traditional_chinese": "​在​拉丁​姆​的​城防​崗哨"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "94616": {
     "assets": [
@@ -13350,7 +14447,7 @@
       "spanish": "Vigías urbanas en Albion",
       "traditional_chinese": "​在​阿​爾​比​恩​的​城防​崗哨"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "94977": {
     "assets": [
@@ -13372,7 +14469,7 @@
       "spanish": "Hondero",
       "traditional_chinese": "​甩​石​兵"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "94982": {
     "assets": [
@@ -13395,7 +14492,7 @@
       "spanish": "Arqueros",
       "traditional_chinese": "​弓箭​手"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "95016": {
     "assets": [
@@ -13417,7 +14514,7 @@
       "spanish": "Añade a los arqueros a la guarnición de tu villa",
       "traditional_chinese": "​新增​弓箭​手​至​你的​別墅​駐軍"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "95017": {
     "assets": [
@@ -13439,7 +14536,7 @@
       "spanish": "Añade a los auxiliares a la guarnición de tu villa",
       "traditional_chinese": "​新增​後備​兵​至​你的​別墅​駐軍"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "95018": {
     "assets": [
@@ -13461,7 +14558,7 @@
       "spanish": "Añade a la caballería équite a la guarnición de tu villa",
       "traditional_chinese": "​新增​輕騎兵​至​你的​別墅​駐軍"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "95420": {
     "assets": [
@@ -13491,7 +14588,7 @@
       "spanish": "Fábricas costeras",
       "traditional_chinese": "​臨海​工廠"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "95432": {
     "assets": [
@@ -13506,7 +14603,7 @@
     ],
     "guid": 95432,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "95476": {
     "assets": [
@@ -13515,7 +14612,7 @@
     ],
     "guid": 95476,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "96695": {
     "assets": [
@@ -13542,7 +14639,7 @@
     ],
     "guid": 96964,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "97249": {
     "assets": [
@@ -13565,14 +14662,16 @@
       "spanish": "Almacenes",
       "traditional_chinese": "​倉庫"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "97410": {
     "assets": [
       38731,
       38745,
       38740,
-      145330
+      145330,
+      157950,
+      151494
     ],
     "guid": 97410,
     "name": null,
@@ -13586,7 +14685,7 @@
     ],
     "guid": 97655,
     "name": null,
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "99540": {
     "assets": [
@@ -13616,7 +14715,7 @@
       "spanish": "Comida",
       "traditional_chinese": "​食物"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "99541": {
     "assets": [
@@ -13638,7 +14737,7 @@
       "spanish": "Bebidas",
       "traditional_chinese": "​飲​品"
     },
-    "template": "AssetPoolNamed"
+    "template": "AssetPool"
   },
   "99580": {
     "assets": [

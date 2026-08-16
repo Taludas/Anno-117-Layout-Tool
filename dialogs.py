@@ -181,6 +181,124 @@ class LanguageDialog(tk.Toplevel):
         return dlg.get_result()
 
 
+class IslandPickerDialog(tk.Toplevel):
+    """Scrollable island selector. Returns a cleaned display name mapped back to the raw key."""
+
+    def __init__(self, parent, island_names: list, **kwargs):
+        super().__init__(parent, **kwargs)
+        self.title("Load Island")
+        self.resizable(False, False)
+        self.configure(bg=BG_MAIN)
+        self.grab_set()
+        self.focus_set()
+
+        self._names = island_names   # raw keys from data_manager
+        self._result: str | None = None
+
+        self._build_ui()
+        self._center()
+
+    # ── name formatting ────────────────────────────────────────────────────────
+    @staticmethod
+    def _fmt(raw: str) -> str:
+        """'l_anno117_colony01_moderate_01' → 'Colony01 Moderate 01'"""
+        name = raw
+        for prefix in ('l_anno117_', 'l_anno1800_', 'l_'):
+            if name.lower().startswith(prefix):
+                name = name[len(prefix):]
+                break
+        return name.replace('_', ' ').title()
+
+    # ── UI ─────────────────────────────────────────────────────────────────────
+    def _build_ui(self):
+        tk.Frame(self, bg=BORDER_GOLD, height=3).pack(fill=tk.X)
+
+        tk.Label(self, text="Select Island", bg=BG_MAIN, fg=FG_GOLD,
+                 font=FONT_TITLE, pady=8).pack()
+        tk.Frame(self, height=1, bg=BORDER_COLOR).pack(fill=tk.X, padx=20)
+
+        # Search bar
+        search_frame = tk.Frame(self, bg=BG_MAIN)
+        search_frame.pack(fill=tk.X, padx=16, pady=(8, 4))
+        tk.Label(search_frame, text="Filter:", bg=BG_MAIN, fg=FG_DIM,
+                 font=FONT_SMALL).pack(side=tk.LEFT, padx=(0, 6))
+        self._search_var = tk.StringVar()
+        entry = tk.Entry(search_frame, textvariable=self._search_var,
+                         bg=BG_SECTION, fg=FG_MAIN, insertbackground=FG_MAIN,
+                         relief=tk.FLAT, font=FONT_SMALL, width=28)
+        entry.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        entry.focus_set()
+        self._search_var.trace_add('write', lambda *_: self._refresh_list())
+
+        # List + scrollbar
+        list_frame = tk.Frame(self, bg=BG_SECTION,
+                              highlightbackground=BORDER_COLOR, highlightthickness=1)
+        list_frame.pack(padx=16, pady=4)
+        sb = tk.Scrollbar(list_frame, orient=tk.VERTICAL)
+        self._listbox = tk.Listbox(
+            list_frame, yscrollcommand=sb.set,
+            bg=BG_SECTION, fg=FG_MAIN, selectbackground=BG_HOVER,
+            selectforeground=FG_GOLD, activestyle='none',
+            font=FONT_SMALL, width=40, height=18,
+            relief=tk.FLAT, highlightthickness=0,
+        )
+        sb.config(command=self._listbox.yview)
+        sb.pack(side=tk.RIGHT, fill=tk.Y)
+        self._listbox.pack(side=tk.LEFT, fill=tk.BOTH)
+        self._listbox.bind('<Double-Button-1>', lambda _e: self._on_ok())
+        self._listbox.bind('<Return>', lambda _e: self._on_ok())
+        self._refresh_list()
+
+        # Buttons
+        btn_row = tk.Frame(self, bg=BG_MAIN)
+        btn_row.pack(pady=(6, 14))
+        tk.Button(btn_row, text="Load", command=self._on_ok,
+                  bg=BG_SECTION, fg=FG_GOLD, activebackground=BG_HOVER,
+                  activeforeground=FG_GOLD, font=FONT_BOLD_SMALL,
+                  relief=tk.FLAT, padx=20, pady=5,
+                  highlightbackground=BORDER_GOLD).pack(side=tk.LEFT, padx=6)
+        tk.Button(btn_row, text="Cancel", command=self.destroy,
+                  bg=BG_SECTION, fg=FG_DIM, activebackground=BG_HOVER,
+                  font=FONT_BOLD_SMALL, relief=tk.FLAT, padx=20, pady=5,
+                  highlightbackground=BORDER_COLOR).pack(side=tk.LEFT, padx=6)
+
+        tk.Frame(self, bg=BORDER_GOLD, height=3).pack(fill=tk.X, side=tk.BOTTOM)
+
+    def _refresh_list(self):
+        q = self._search_var.get().lower()
+        self._filtered = [n for n in self._names
+                          if not q or q in n.lower() or q in self._fmt(n).lower()]
+        self._listbox.delete(0, tk.END)
+        for n in self._filtered:
+            self._listbox.insert(tk.END, '  ' + self._fmt(n))
+        if self._filtered:
+            self._listbox.selection_set(0)
+
+    def _on_ok(self):
+        sel = self._listbox.curselection()
+        if not sel:
+            return
+        self._result = self._filtered[sel[0]]
+        self.destroy()
+
+    def _center(self):
+        self.update_idletasks()
+        w  = self.winfo_reqwidth()
+        h  = self.winfo_reqheight()
+        sw = self.winfo_screenwidth()
+        sh = self.winfo_screenheight()
+        self.geometry(f"+{(sw - w) // 2}+{(sh - h) // 2}")
+
+    def get_result(self) -> str | None:
+        return self._result
+
+    @classmethod
+    def ask(cls, parent, island_names: list) -> str | None:
+        dlg = cls(parent, island_names)
+        parent.wait_window(dlg)
+        return dlg.get_result()
+
+
 def ask_save_layout(parent) -> str:
     """Show save file dialog; return path or empty string."""
     path = filedialog.asksaveasfilename(

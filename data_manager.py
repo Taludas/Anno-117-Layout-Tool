@@ -40,6 +40,7 @@ class BuildingData:
         'module_guid', 'module_limit', 'module_build_radius',
         'additional_module_guid', 'radius', 'free_area_productivity',
         'upgrade_guid', 'functional_effects', 'public_service_effect',
+        'water_building', 'river_building', 'mountain_building', 'build_blocker',
     )
 
     def __init__(self, raw: dict):
@@ -61,6 +62,20 @@ class BuildingData:
         self.upgrade_guid: Optional[int] = raw.get('upgradeGUID')
         self.functional_effects: list = raw.get('functionalEffects') or []
         self.public_service_effect: Optional[int] = raw.get('publicServiceEffect')
+        # True → strict water/harbour building (anchor at water-facing edge)
+        # "optional" → can be placed on land or harbour (same anchor convention)
+        # None → regular land building
+        self.water_building = raw.get('waterBuilding')
+        # True → river slot building (anchor has z0 from river-facing NW edge,
+        # x0 = w/2 centred along the bank; short side z−z0 points toward land)
+        self.river_building = raw.get('riverBuilding')
+        # True → mountain/cliff building placed at 45° (mines, quarries, aqueduct
+        # sources); must snap to the 45° grid on import.
+        self.mountain_building = raw.get('mountainBuilding')
+        # Offset from NW corner to game anchor: x0/z0 in building-local coords.
+        # Water buildings: x0 ≈ 1 (from water-facing edge, so rc_x = bb_w−x0).
+        # River buildings: z0 from river-facing NW edge (rc_y = z0 directly).
+        self.build_blocker: Optional[dict] = raw.get('buildBlocker')
 
     def get_name(self, lang: str = 'english') -> str:
         if isinstance(self.name, dict):
@@ -130,13 +145,34 @@ def _snap_to_half_sqrt2_count(n: float) -> int:
     return max(1, steps)
 
 
+def _snap_45_anchor(gx_raw: float, gy_raw: float, nw: int, nh: int) -> tuple:
+    """Snap a 45°-building anchor (NW corner of bbox) so all edges fall on diagonal
+    grid lines. Mirrors the identical static method in CanvasWidget."""
+    offset_u = 0.5 if nw % 2 == 1 else 0.0
+    offset_v = 0.5 if nh % 2 == 1 else 0.0
+    bbox_half = (nw + nh) * 0.25
+    u_raw = gx_raw + gy_raw + 2 * bbox_half   # = Cx + Cy
+    v_raw = gx_raw - gy_raw                    # = Cx - Cy
+    u_snap = round(u_raw - offset_u) + offset_u
+    v_snap = round(v_raw - offset_v) + offset_v
+    cx_snap = (u_snap + v_snap) / 2
+    cy_snap = (u_snap - v_snap) / 2
+    return cx_snap - bbox_half, cy_snap - bbox_half
+
+
+_ROAD_LIKE_INFRA_NAMES = frozenset({'Aqueduct', 'Drainage Channel'})
+
 def _get_45_grid_counts(bd: 'BuildingData', rotation: int) -> tuple:
     """
     Return (nw, nh) in 45°-grid tile units for a 45°-family rotation.
-    Roads are always 2×2 in the 45° grid (special game rule).
+    Roads and road-like infrastructure (Aqueduct, Drainage Channel) are always
+    2×2 in the 45° grid so consecutive diagonal tiles share an edge.
     For other buildings: 45°/225° uses (width, height); 135°/315° swaps them.
     """
-    if 'Road' in bd.get_category_english():
+    cat = bd.get_category_english()
+    if 'Road' in cat:
+        return (2, 2)
+    if cat == 'Infrastructure Building' and bd.get_name('english') in _ROAD_LIKE_INFRA_NAMES:
         return (2, 2)
     rot = rotation % 360
     if rot in (45, 225):
@@ -177,6 +213,8 @@ class DataManager:
         self.items: dict[str, dict] = {}           # GUID str -> item dict
         self.item_buffs: dict[str, dict] = {}      # GUID str -> buff dict (items)
         self._items_by_building: dict = {}         # building GUID -> [item dicts]
+        self._island_data: dict = {}               # name -> {width, height, playable_area, tiles}
+        self._island_version: int = 2              # tile encoding version
         self._loaded = False
 
         # User-customized colours (persisted in settings.json by the app)
@@ -193,6 +231,7 @@ class DataManager:
         self._load_asset_pools()
         self._load_needs()
         self._load_items()
+        self._load_island_data()
         self._apply_menu_overrides()
         self._loaded = True
 
@@ -322,6 +361,28 @@ class DataManager:
     def get_available_items(self, building_guid: int) -> list:
         """Return items applicable to this building, sorted rarest-first."""
         return self._items_by_building.get(building_guid, [])
+
+    # ------------------------------------------------------------------ #
+    #  Island data
+    # ------------------------------------------------------------------ #
+
+    def _load_island_data(self):
+        path = resource_path('data/island_data.json')
+        if not os.path.exists(path):
+            return
+        with open(path, encoding='utf-8') as f:
+            raw = json.load(f)
+        self._island_version = raw.get('version', 2)
+        self._island_data = raw.get('islands', {})
+
+    def get_island_names(self) -> list:
+        return sorted(self._island_data.keys())
+
+    def get_island(self, name: str) -> dict | None:
+        return self._island_data.get(name)
+
+    def get_island_version(self) -> int:
+        return self._island_version
 
     def _extract_buff_bonuses(self, buff_guids: list, icon_fallback: str) -> dict:
         """Extract attribute bonuses from a list of item buff GUIDs into a bonus dict.

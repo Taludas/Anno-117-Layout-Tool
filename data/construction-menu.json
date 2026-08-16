@@ -878,18 +878,18 @@
                 "tier": 1,
                 "guid": 5847,
                 "name": {
-                  "english": "Ochs Farm",
-                  "german": "Ochsenhof",
-                  "spanish": "Granja de bueyes",
-                  "french": "Ferme à bœufs",
-                  "italian": "Allevamento di uri",
-                  "japanese": "​牛​牧場",
-                  "korean": "​소 ​농장",
-                  "polish": "Hodowla wołów",
+                  "english": "Auroch Farm",
+                  "german": "Auerochsenhof",
+                  "spanish": "Granja de uros",
+                  "french": "Élevage d'aurochs",
+                  "italian": "Fattoria uri",
+                  "japanese": "​オーロックス​牧場",
+                  "korean": "​들소 ​목장",
+                  "polish": "Hodowla turów",
                   "brazilian": "Fazenda de Auroques",
                   "russian": "Хозяйство (коровы)",
-                  "simplified_chinese": "​牛​农场",
-                  "traditional_chinese": "​牛隻​農場"
+                  "simplified_chinese": "​野牛​农场",
+                  "traditional_chinese": "​原​牛​農場"
                 }
               },
               {
@@ -1538,6 +1538,24 @@
               "russian": "Амфитеатр: фундамент",
               "simplified_chinese": "​圆形​剧场：​地基",
               "traditional_chinese": "​圓形​劇場：​地基"
+            }
+          },
+          {
+            "type": "building",
+            "guid": 153790,
+            "name": {
+              "english": "Hippodrome: Foundation",
+              "german": "Hippodrom: Fundament",
+              "spanish": "Hipódromo: Cimientos",
+              "french": "Hippodrome : fondations",
+              "italian": "Ippodromo: Fondazione",
+              "japanese": "​競馬​場：​基礎",
+              "korean": "​히포드롬: ​기초",
+              "polish": "Hipodrom: Fundamenty",
+              "brazilian": "Hipódromo: Fundação",
+              "russian": "Ипподром: фундамент",
+              "simplified_chinese": "​赛马​场：​奠基",
+              "traditional_chinese": "​賽馬​場：​地基"
             }
           },
           {
@@ -2348,6 +2366,116 @@
           },
           {
             "type": "production_chain",
+            "guid": 8898,
+            "name": {
+              "english": "Chariots",
+              "german": "Streitwagen",
+              "spanish": "Carros",
+              "french": "Chars",
+              "italian": "Carri",
+              "japanese": "​戦車",
+              "korean": "​전차",
+              "polish": "Rydwany",
+              "brazilian": "Bigas",
+              "russian": "Колесницы",
+              "simplified_chinese": "​战车",
+              "traditional_chinese": "​戰車"
+            },
+            "buildings": [
+              {
+                "tier": 1,
+                "guid": 5975,
+                "name": {
+                  "english": "Horsecatcher",
+                  "german": "Pferdefänger",
+                  "spanish": "Cerrada equina",
+                  "french": "Attrapeur de chevaux",
+                  "italian": "Accalappia cavalli",
+                  "japanese": "​馬追​い",
+                  "korean": "​말 ​사육장",
+                  "polish": "Łapacz koni",
+                  "brazilian": "Caçador de Cavalos",
+                  "russian": "Хижина ловцов лошадей",
+                  "simplified_chinese": "​养​马​场",
+                  "traditional_chinese": "​馴​馬場"
+                }
+              },
+              {
+                "tier": 2,
+                "guid": 2878,
+                "name": {
+                  "english": "Woodcutter",
+                  "german": "Holzfäller",
+                  "spanish": "Talador",
+                  "french": "Bûcheron",
+                  "italian": "Taglialegna",
+                  "japanese": "​木こり",
+                  "korean": "​벌목장",
+                  "polish": "Drwal",
+                  "brazilian": "Lenhador",
+                  "russian": "Лесорубы",
+                  "simplified_chinese": "​伐木​场",
+                  "traditional_chinese": "​伐木​場"
+                }
+              },
+              {
+                "tier": 2,
+                "guid": 5849,
+                "name": {
+                  "english": "Reed Gatherer",
+                  "german": "Schilfsammler",
+                  "spanish": "Recolectoría de junco",
+                  "french": "Cueilleur de roseaux",
+                  "italian": "Raccoglitore di canne",
+                  "japanese": "​葦​採集​者",
+                  "korean": "​갈대 ​채집장",
+                  "polish": "Zbieracz trzcin",
+                  "brazilian": "Cata-juncos",
+                  "russian": "Собиратели тростника",
+                  "simplified_chinese": "​芦苇​采集​点",
+                  "traditional_chinese": "​蘆葦​採集​場"
+                }
+              },
+              {
+                "tier": 1,
+                "guid": 5611,
+                "name": {
+                  "english": "Chassis Builder",
+                  "german": "Gestellbauer",
+                  "spanish": "Manufactura de carrocerías",
+                  "french": "Constructeur de châssis",
+                  "italian": "Costruttore di telai",
+                  "japanese": "​シャー​シ​の​組立​工",
+                  "korean": "​차체 ​제작소",
+                  "polish": "Konstruktor podwozi",
+                  "brazilian": "Construtor de chassis",
+                  "russian": "Мастерская по изготовлению рам",
+                  "simplified_chinese": "​底盘​制造​厂",
+                  "traditional_chinese": "​底盤​製造廠"
+                }
+              },
+              {
+                "tier": 0,
+                "guid": 5616,
+                "name": {
+                  "english": "Chariot Workshop",
+                  "german": "Wagenbauer",
+                  "spanish": "Taller de carros",
+                  "french": "Atelier de chars",
+                  "italian": "Officina dei carri",
+                  "japanese": "​戦車​工房",
+                  "korean": "​전차 ​작업장",
+                  "polish": "Warsztat budowniczego rydwanów",
+                  "brazilian": "Oficina de Bigas",
+                  "russian": "Мастерская по изготовлению колесниц",
+                  "simplified_chinese": "​战车​工​坊",
+                  "traditional_chinese": "​戰車​工作​坊"
+                }
+              }
+            ]
+          },
+          {
+            "type": "production_chain",
             "guid": 145232,
             "name": {
               "english": "Latrunculi Sets",
@@ -2470,116 +2598,6 @@
                   "russian": "Мастерская латрункули",
                   "simplified_chinese": "​强盗​棋​工​坊",
                   "traditional_chinese": "​兵​棋​工​坊"
-                }
-              }
-            ]
-          },
-          {
-            "type": "production_chain",
-            "guid": 8898,
-            "name": {
-              "english": "Chariots",
-              "german": "Streitwagen",
-              "spanish": "Carros",
-              "french": "Chars",
-              "italian": "Carri",
-              "japanese": "​戦車",
-              "korean": "​전차",
-              "polish": "Rydwany",
-              "brazilian": "Bigas",
-              "russian": "Колесницы",
-              "simplified_chinese": "​战车",
-              "traditional_chinese": "​戰車"
-            },
-            "buildings": [
-              {
-                "tier": 1,
-                "guid": 5975,
-                "name": {
-                  "english": "Horsecatcher",
-                  "german": "Pferdefänger",
-                  "spanish": "Cerrada equina",
-                  "french": "Attrapeur de chevaux",
-                  "italian": "Accalappia cavalli",
-                  "japanese": "​馬追​い",
-                  "korean": "​말 ​사육장",
-                  "polish": "Łapacz koni",
-                  "brazilian": "Caçador de Cavalos",
-                  "russian": "Хижина ловцов лошадей",
-                  "simplified_chinese": "​养​马​场",
-                  "traditional_chinese": "​馴​馬場"
-                }
-              },
-              {
-                "tier": 2,
-                "guid": 2878,
-                "name": {
-                  "english": "Woodcutter",
-                  "german": "Holzfäller",
-                  "spanish": "Talador",
-                  "french": "Bûcheron",
-                  "italian": "Taglialegna",
-                  "japanese": "​木こり",
-                  "korean": "​벌목장",
-                  "polish": "Drwal",
-                  "brazilian": "Lenhador",
-                  "russian": "Лесорубы",
-                  "simplified_chinese": "​伐木​场",
-                  "traditional_chinese": "​伐木​場"
-                }
-              },
-              {
-                "tier": 2,
-                "guid": 5849,
-                "name": {
-                  "english": "Reed Gatherer",
-                  "german": "Schilfsammler",
-                  "spanish": "Recolectoría de junco",
-                  "french": "Cueilleur de roseaux",
-                  "italian": "Raccoglitore di canne",
-                  "japanese": "​葦​採集​者",
-                  "korean": "​갈대 ​채집장",
-                  "polish": "Zbieracz trzcin",
-                  "brazilian": "Cata-juncos",
-                  "russian": "Собиратели тростника",
-                  "simplified_chinese": "​芦苇​采集​点",
-                  "traditional_chinese": "​蘆葦​採集​場"
-                }
-              },
-              {
-                "tier": 1,
-                "guid": 5611,
-                "name": {
-                  "english": "Chassis Builder",
-                  "german": "Gestellbauer",
-                  "spanish": "Manufactura de carrocerías",
-                  "french": "Constructeur de châssis",
-                  "italian": "Costruttore di telai",
-                  "japanese": "​シャー​シ​の​組立​工",
-                  "korean": "​차체 ​제작소",
-                  "polish": "Konstruktor podwozi",
-                  "brazilian": "Construtor de chassis",
-                  "russian": "Мастерская по изготовлению рам",
-                  "simplified_chinese": "​底盘​制造​厂",
-                  "traditional_chinese": "​底盤​製造廠"
-                }
-              },
-              {
-                "tier": 0,
-                "guid": 5616,
-                "name": {
-                  "english": "Chariot Workshop",
-                  "german": "Wagenbauer",
-                  "spanish": "Taller de carros",
-                  "french": "Atelier de chars",
-                  "italian": "Officina dei carri",
-                  "japanese": "​戦車​工房",
-                  "korean": "​전차 ​작업장",
-                  "polish": "Warsztat budowniczego rydwanów",
-                  "brazilian": "Oficina de Bigas",
-                  "russian": "Мастерская по изготовлению колесниц",
-                  "simplified_chinese": "​战车​工​坊",
-                  "traditional_chinese": "​戰車​工作​坊"
                 }
               }
             ]
@@ -3551,7 +3569,7 @@
             "english": "Shrines",
             "german": "Schreine",
             "spanish": "Altares",
-            "french": "Sanctuaires",
+            "french": "Autels",
             "italian": "Sacrari",
             "japanese": "​祭壇",
             "korean": "​제단",
@@ -3570,7 +3588,7 @@
                 "english": "Shrine of Mars",
                 "german": "Mars‘ Schrein",
                 "spanish": "Altar de Marte",
-                "french": "Sanctuaire de Mars",
+                "french": "Autel de Mars",
                 "italian": "Sacrario di Marte",
                 "japanese": "​マルス​の​祭壇",
                 "korean": "​마르스의 ​제단",
@@ -3588,7 +3606,7 @@
                 "english": "Shrine of Ceres",
                 "german": "Ceres‘ Schrein",
                 "spanish": "Altar de Ceres",
-                "french": "Sanctuaire de Cérès",
+                "french": "Autel de Cérès",
                 "italian": "Sacrario di Cerere",
                 "japanese": "​ケレース​の​祭壇",
                 "korean": "​세레스의 ​제단",
@@ -3606,7 +3624,7 @@
                 "english": "Shrine of Neptune",
                 "german": "Neptuns Schrein",
                 "spanish": "Altar de Neptuno",
-                "french": "Sanctuaire de Neptune",
+                "french": "Autel de Neptune",
                 "italian": "Sacrario di Nettuno",
                 "japanese": "​ネプトゥーヌス​の​祭壇",
                 "korean": "​넵튠의 ​제단",
@@ -3624,7 +3642,7 @@
                 "english": "Shrine of Minerva",
                 "german": "Minervas Schrein",
                 "spanish": "Altar de Minerva",
-                "french": "Sanctuaire de Minerve",
+                "french": "Autel de Minerve",
                 "italian": "Sacrario di Minerva",
                 "japanese": "​ミネルヴァ​の​祭壇",
                 "korean": "​미네르바의 ​제단",
@@ -3642,7 +3660,7 @@
                 "english": "Shrine of Mercury-Lugus",
                 "german": "Merkur-Lugus‘ Schrein",
                 "spanish": "Altar de Mercurio-Lugo",
-                "french": "Sanctuaire de Mercure-Lug",
+                "french": "Autel de Mercure-Lug",
                 "italian": "Sacrario di Mercurio-Lugus",
                 "japanese": "​メルクリウス・​ルグス​の​祭壇",
                 "korean": "​메르쿠리우스-​루구스의 ​제단",
@@ -3660,7 +3678,7 @@
                 "english": "Shrine of Epona",
                 "german": "Eponas Schrein",
                 "spanish": "Altar de Epona",
-                "french": "Sanctuaire d'Epona",
+                "french": "Autel d'Epona",
                 "italian": "Sacrario di Epona",
                 "japanese": "​エポナ​の​祭壇",
                 "korean": "​에포나의 ​제단",
@@ -3678,7 +3696,7 @@
                 "english": "Shrine of Cernunnos",
                 "german": "Cernunnos‘ Schrein",
                 "spanish": "Altar de Cernunnos",
-                "french": "Sanctuaire de Cernunnos",
+                "french": "Autel de Cernunnos",
                 "italian": "Sacrario di Cernunnos",
                 "japanese": "​ケルヌンノス​の​祭壇",
                 "korean": "​케르눈노스의 ​제단",
@@ -5820,6 +5838,60 @@
                     "simplified_chinese": "​塞​尔​维​乌​斯​皇帝​雕像",
                     "traditional_chinese": "​塞​爾​維​烏​斯​皇帝​雕像"
                   }
+                },
+                {
+                  "type": "building",
+                  "guid": 172255,
+                  "name": {
+                    "english": "Salmon of Knowledge",
+                    "german": "Lachs des Wissens",
+                    "spanish": "Salmón del saber",
+                    "french": "Saumon de la Connaissance",
+                    "italian": "Salmone della conoscenza",
+                    "japanese": "​知識​の​サーモン",
+                    "korean": "​지식의 ​연어",
+                    "polish": "Łosoś Wiedzy",
+                    "brazilian": "Salmão de Conhecimento",
+                    "russian": "Лосось Знаний",
+                    "simplified_chinese": "​智慧​鲑鱼",
+                    "traditional_chinese": "​智慧​鮭魚"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 172256,
+                  "name": {
+                    "english": "The Muse",
+                    "german": "Die Muse",
+                    "spanish": "La musa",
+                    "french": "La Muse",
+                    "italian": "La Musa",
+                    "japanese": "​ミューズ",
+                    "korean": "​뮤즈",
+                    "polish": "Muza",
+                    "brazilian": "A Musa",
+                    "russian": "Муза",
+                    "simplified_chinese": "​女神​缪​斯",
+                    "traditional_chinese": "​繆​思​女神"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 172257,
+                  "name": {
+                    "english": "Veritas",
+                    "german": "Veritas",
+                    "spanish": "Veritas",
+                    "french": "Veritas",
+                    "italian": "Veritas",
+                    "japanese": "​ヴェリタス",
+                    "korean": "​진리",
+                    "polish": "Prawda",
+                    "brazilian": "Veritas",
+                    "russian": "Veritas",
+                    "simplified_chinese": "​维​里​塔​斯",
+                    "traditional_chinese": "​真相​之地"
+                  }
                 }
               ]
             },
@@ -6080,18 +6152,18 @@
                   "type": "building",
                   "guid": 149836,
                   "name": {
-                    "english": "Marble Benches",
-                    "german": "Marmorbänke",
-                    "spanish": "Bancos de mármol",
-                    "french": "Bancs de marbre",
-                    "italian": "Panchine di marmo",
-                    "japanese": "​大理石​の​ベンチ",
-                    "korean": "​대리석 ​벤치",
-                    "polish": "Marmurowe ławki",
-                    "brazilian": "Bancos de Mármore",
-                    "russian": "Мраморные скамьи",
-                    "simplified_chinese": "​大理石​长椅",
-                    "traditional_chinese": "​大理石​長椅"
+                    "english": "Game Table",
+                    "german": "Spieltisch",
+                    "spanish": "Mesa de juegos",
+                    "french": "Table de jeu",
+                    "italian": "Tavolo da gioco",
+                    "japanese": "​ゲーム​テーブル",
+                    "korean": "​게임 ​테이블",
+                    "polish": "Stół do gry",
+                    "brazilian": "Mesa de Jogos",
+                    "russian": "Столик для игр",
+                    "simplified_chinese": "​游戏​桌",
+                    "traditional_chinese": "​遊戲​桌"
                   }
                 },
                 {
@@ -6182,6 +6254,24 @@
                     "russian": "Глашатай",
                     "simplified_chinese": "​传​令​官",
                     "traditional_chinese": "​公告​員"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 174502,
+                  "name": {
+                    "english": "Builder's Obelisk",
+                    "german": "Baumeister-Obelisk",
+                    "spanish": "Obelisco del constructor",
+                    "french": "Obélisque de constructeur",
+                    "italian": "Obelisco del costruttore",
+                    "japanese": "​建築​者​の​オベリスク",
+                    "korean": "​건설자의 ​오벨리스크",
+                    "polish": "Obelisk budowniczego",
+                    "brazilian": "Obelisco do Construtor",
+                    "russian": "Обелиск строителя",
+                    "simplified_chinese": "​建造​者​方尖碑",
+                    "traditional_chinese": "​建築​工人​方尖碑"
                   }
                 }
               ]
@@ -7681,6 +7771,21 @@
         },
         {
           "type": "category",
+          "guid": 172238,
+          "name": null,
+          "icon": "",
+          "items": [
+            {
+              "type": "category",
+              "guid": 172239,
+              "name": null,
+              "icon": "",
+              "items": []
+            }
+          ]
+        },
+        {
+          "type": "category",
           "guid": 80966,
           "name": {
             "english": "Special",
@@ -8171,18 +8276,18 @@
                   "type": "building",
                   "guid": 149836,
                   "name": {
-                    "english": "Marble Benches",
-                    "german": "Marmorbänke",
-                    "spanish": "Bancos de mármol",
-                    "french": "Bancs de marbre",
-                    "italian": "Panchine di marmo",
-                    "japanese": "​大理石​の​ベンチ",
-                    "korean": "​대리석 ​벤치",
-                    "polish": "Marmurowe ławki",
-                    "brazilian": "Bancos de Mármore",
-                    "russian": "Мраморные скамьи",
-                    "simplified_chinese": "​大理石​长椅",
-                    "traditional_chinese": "​大理石​長椅"
+                    "english": "Game Table",
+                    "german": "Spieltisch",
+                    "spanish": "Mesa de juegos",
+                    "french": "Table de jeu",
+                    "italian": "Tavolo da gioco",
+                    "japanese": "​ゲーム​テーブル",
+                    "korean": "​게임 ​테이블",
+                    "polish": "Stół do gry",
+                    "brazilian": "Mesa de Jogos",
+                    "russian": "Столик для игр",
+                    "simplified_chinese": "​游戏​桌",
+                    "traditional_chinese": "​遊戲​桌"
                   }
                 },
                 {
@@ -8511,6 +8616,78 @@
                     "simplified_chinese": "​传​令​官",
                     "traditional_chinese": "​公告​員"
                   }
+                },
+                {
+                  "type": "building",
+                  "guid": 172255,
+                  "name": {
+                    "english": "Salmon of Knowledge",
+                    "german": "Lachs des Wissens",
+                    "spanish": "Salmón del saber",
+                    "french": "Saumon de la Connaissance",
+                    "italian": "Salmone della conoscenza",
+                    "japanese": "​知識​の​サーモン",
+                    "korean": "​지식의 ​연어",
+                    "polish": "Łosoś Wiedzy",
+                    "brazilian": "Salmão de Conhecimento",
+                    "russian": "Лосось Знаний",
+                    "simplified_chinese": "​智慧​鲑鱼",
+                    "traditional_chinese": "​智慧​鮭魚"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 172256,
+                  "name": {
+                    "english": "The Muse",
+                    "german": "Die Muse",
+                    "spanish": "La musa",
+                    "french": "La Muse",
+                    "italian": "La Musa",
+                    "japanese": "​ミューズ",
+                    "korean": "​뮤즈",
+                    "polish": "Muza",
+                    "brazilian": "A Musa",
+                    "russian": "Муза",
+                    "simplified_chinese": "​女神​缪​斯",
+                    "traditional_chinese": "​繆​思​女神"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 172257,
+                  "name": {
+                    "english": "Veritas",
+                    "german": "Veritas",
+                    "spanish": "Veritas",
+                    "french": "Veritas",
+                    "italian": "Veritas",
+                    "japanese": "​ヴェリタス",
+                    "korean": "​진리",
+                    "polish": "Prawda",
+                    "brazilian": "Veritas",
+                    "russian": "Veritas",
+                    "simplified_chinese": "​维​里​塔​斯",
+                    "traditional_chinese": "​真相​之地"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 174502,
+                  "name": {
+                    "english": "Builder's Obelisk",
+                    "german": "Baumeister-Obelisk",
+                    "spanish": "Obelisco del constructor",
+                    "french": "Obélisque de constructeur",
+                    "italian": "Obelisco del costruttore",
+                    "japanese": "​建築​者​の​オベリスク",
+                    "korean": "​건설자의 ​오벨리스크",
+                    "polish": "Obelisk budowniczego",
+                    "brazilian": "Obelisco do Construtor",
+                    "russian": "Обелиск строителя",
+                    "simplified_chinese": "​建造​者​方尖碑",
+                    "traditional_chinese": "​建築​工人​方尖碑"
+                  }
                 }
               ]
             }
@@ -8767,18 +8944,18 @@
                 "tier": 1,
                 "guid": 5847,
                 "name": {
-                  "english": "Ochs Farm",
-                  "german": "Ochsenhof",
-                  "spanish": "Granja de bueyes",
-                  "french": "Ferme à bœufs",
-                  "italian": "Allevamento di uri",
-                  "japanese": "​牛​牧場",
-                  "korean": "​소 ​농장",
-                  "polish": "Hodowla wołów",
+                  "english": "Auroch Farm",
+                  "german": "Auerochsenhof",
+                  "spanish": "Granja de uros",
+                  "french": "Élevage d'aurochs",
+                  "italian": "Fattoria uri",
+                  "japanese": "​オーロックス​牧場",
+                  "korean": "​들소 ​목장",
+                  "polish": "Hodowla turów",
                   "brazilian": "Fazenda de Auroques",
                   "russian": "Хозяйство (коровы)",
-                  "simplified_chinese": "​牛​农场",
-                  "traditional_chinese": "​牛隻​農場"
+                  "simplified_chinese": "​野牛​农场",
+                  "traditional_chinese": "​原​牛​農場"
                 }
               },
               {
@@ -8906,7 +9083,7 @@
               "korean": "​파눔",
               "polish": "Fanum",
               "brazilian": "Fano",
-              "russian": "фанум",
+              "russian": "Фанум",
               "simplified_chinese": "​圣​域",
               "traditional_chinese": "​聖域"
             }
@@ -9063,18 +9240,18 @@
                 "tier": 1,
                 "guid": 5847,
                 "name": {
-                  "english": "Ochs Farm",
-                  "german": "Ochsenhof",
-                  "spanish": "Granja de bueyes",
-                  "french": "Ferme à bœufs",
-                  "italian": "Allevamento di uri",
-                  "japanese": "​牛​牧場",
-                  "korean": "​소 ​농장",
-                  "polish": "Hodowla wołów",
+                  "english": "Auroch Farm",
+                  "german": "Auerochsenhof",
+                  "spanish": "Granja de uros",
+                  "french": "Élevage d'aurochs",
+                  "italian": "Fattoria uri",
+                  "japanese": "​オーロックス​牧場",
+                  "korean": "​들소 ​목장",
+                  "polish": "Hodowla turów",
                   "brazilian": "Fazenda de Auroques",
                   "russian": "Хозяйство (коровы)",
-                  "simplified_chinese": "​牛​农场",
-                  "traditional_chinese": "​牛隻​農場"
+                  "simplified_chinese": "​野牛​农场",
+                  "traditional_chinese": "​原​牛​農場"
                 }
               },
               {
@@ -9268,18 +9445,18 @@
                 "tier": 1,
                 "guid": 5847,
                 "name": {
-                  "english": "Ochs Farm",
-                  "german": "Ochsenhof",
-                  "spanish": "Granja de bueyes",
-                  "french": "Ferme à bœufs",
-                  "italian": "Allevamento di uri",
-                  "japanese": "​牛​牧場",
-                  "korean": "​소 ​농장",
-                  "polish": "Hodowla wołów",
+                  "english": "Auroch Farm",
+                  "german": "Auerochsenhof",
+                  "spanish": "Granja de uros",
+                  "french": "Élevage d'aurochs",
+                  "italian": "Fattoria uri",
+                  "japanese": "​オーロックス​牧場",
+                  "korean": "​들소 ​목장",
+                  "polish": "Hodowla turów",
                   "brazilian": "Fazenda de Auroques",
                   "russian": "Хозяйство (коровы)",
-                  "simplified_chinese": "​牛​农场",
-                  "traditional_chinese": "​牛隻​農場"
+                  "simplified_chinese": "​野牛​农场",
+                  "traditional_chinese": "​原​牛​農場"
                 }
               },
               {
@@ -10234,7 +10411,7 @@
               "korean": "​파눔",
               "polish": "Fanum",
               "brazilian": "Fano",
-              "russian": "фанум",
+              "russian": "Фанум",
               "simplified_chinese": "​圣​域",
               "traditional_chinese": "​聖域"
             }
@@ -12407,7 +12584,7 @@
             "english": "Shrines",
             "german": "Schreine",
             "spanish": "Altares",
-            "french": "Sanctuaires",
+            "french": "Autels",
             "italian": "Sacrari",
             "japanese": "​祭壇",
             "korean": "​제단",
@@ -12426,7 +12603,7 @@
                 "english": "Shrine of Mars",
                 "german": "Mars‘ Schrein",
                 "spanish": "Altar de Marte",
-                "french": "Sanctuaire de Mars",
+                "french": "Autel de Mars",
                 "italian": "Sacrario di Marte",
                 "japanese": "​マルス​の​祭壇",
                 "korean": "​마르스의 ​제단",
@@ -12444,7 +12621,7 @@
                 "english": "Shrine of Ceres",
                 "german": "Ceres‘ Schrein",
                 "spanish": "Altar de Ceres",
-                "french": "Sanctuaire de Cérès",
+                "french": "Autel de Cérès",
                 "italian": "Sacrario di Cerere",
                 "japanese": "​ケレース​の​祭壇",
                 "korean": "​세레스의 ​제단",
@@ -12462,7 +12639,7 @@
                 "english": "Shrine of Neptune",
                 "german": "Neptuns Schrein",
                 "spanish": "Altar de Neptuno",
-                "french": "Sanctuaire de Neptune",
+                "french": "Autel de Neptune",
                 "italian": "Sacrario di Nettuno",
                 "japanese": "​ネプトゥーヌス​の​祭壇",
                 "korean": "​넵튠의 ​제단",
@@ -12480,7 +12657,7 @@
                 "english": "Shrine of Mercury-Lugus",
                 "german": "Merkur-Lugus‘ Schrein",
                 "spanish": "Altar de Mercurio-Lugo",
-                "french": "Sanctuaire de Mercure-Lug",
+                "french": "Autel de Mercure-Lug",
                 "italian": "Sacrario di Mercurio-Lugus",
                 "japanese": "​メルクリウス・​ルグス​の​祭壇",
                 "korean": "​메르쿠리우스-​루구스의 ​제단",
@@ -12498,7 +12675,7 @@
                 "english": "Shrine of Epona",
                 "german": "Eponas Schrein",
                 "spanish": "Altar de Epona",
-                "french": "Sanctuaire d'Epona",
+                "french": "Autel d'Epona",
                 "italian": "Sacrario di Epona",
                 "japanese": "​エポナ​の​祭壇",
                 "korean": "​에포나의 ​제단",
@@ -12516,7 +12693,7 @@
                 "english": "Shrine of Cernunnos",
                 "german": "Cernunnos‘ Schrein",
                 "spanish": "Altar de Cernunnos",
-                "french": "Sanctuaire de Cernunnos",
+                "french": "Autel de Cernunnos",
                 "italian": "Sacrario di Cernunnos",
                 "japanese": "​ケルヌンノス​の​祭壇",
                 "korean": "​케르눈노스의 ​제단",
@@ -12534,7 +12711,7 @@
                 "english": "Shrine of Minerva",
                 "german": "Minervas Schrein",
                 "spanish": "Altar de Minerva",
-                "french": "Sanctuaire de Minerve",
+                "french": "Autel de Minerve",
                 "italian": "Sacrario di Minerva",
                 "japanese": "​ミネルヴァ​の​祭壇",
                 "korean": "​미네르바의 ​제단",
@@ -14640,6 +14817,60 @@
                     "simplified_chinese": "​塞​尔​维​乌​斯​皇帝​雕像",
                     "traditional_chinese": "​塞​爾​維​烏​斯​皇帝​雕像"
                   }
+                },
+                {
+                  "type": "building",
+                  "guid": 172255,
+                  "name": {
+                    "english": "Salmon of Knowledge",
+                    "german": "Lachs des Wissens",
+                    "spanish": "Salmón del saber",
+                    "french": "Saumon de la Connaissance",
+                    "italian": "Salmone della conoscenza",
+                    "japanese": "​知識​の​サーモン",
+                    "korean": "​지식의 ​연어",
+                    "polish": "Łosoś Wiedzy",
+                    "brazilian": "Salmão de Conhecimento",
+                    "russian": "Лосось Знаний",
+                    "simplified_chinese": "​智慧​鲑鱼",
+                    "traditional_chinese": "​智慧​鮭魚"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 172256,
+                  "name": {
+                    "english": "The Muse",
+                    "german": "Die Muse",
+                    "spanish": "La musa",
+                    "french": "La Muse",
+                    "italian": "La Musa",
+                    "japanese": "​ミューズ",
+                    "korean": "​뮤즈",
+                    "polish": "Muza",
+                    "brazilian": "A Musa",
+                    "russian": "Муза",
+                    "simplified_chinese": "​女神​缪​斯",
+                    "traditional_chinese": "​繆​思​女神"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 172257,
+                  "name": {
+                    "english": "Veritas",
+                    "german": "Veritas",
+                    "spanish": "Veritas",
+                    "french": "Veritas",
+                    "italian": "Veritas",
+                    "japanese": "​ヴェリタス",
+                    "korean": "​진리",
+                    "polish": "Prawda",
+                    "brazilian": "Veritas",
+                    "russian": "Veritas",
+                    "simplified_chinese": "​维​里​塔​斯",
+                    "traditional_chinese": "​真相​之地"
+                  }
                 }
               ]
             },
@@ -14900,18 +15131,18 @@
                   "type": "building",
                   "guid": 149836,
                   "name": {
-                    "english": "Marble Benches",
-                    "german": "Marmorbänke",
-                    "spanish": "Bancos de mármol",
-                    "french": "Bancs de marbre",
-                    "italian": "Panchine di marmo",
-                    "japanese": "​大理石​の​ベンチ",
-                    "korean": "​대리석 ​벤치",
-                    "polish": "Marmurowe ławki",
-                    "brazilian": "Bancos de Mármore",
-                    "russian": "Мраморные скамьи",
-                    "simplified_chinese": "​大理石​长椅",
-                    "traditional_chinese": "​大理石​長椅"
+                    "english": "Game Table",
+                    "german": "Spieltisch",
+                    "spanish": "Mesa de juegos",
+                    "french": "Table de jeu",
+                    "italian": "Tavolo da gioco",
+                    "japanese": "​ゲーム​テーブル",
+                    "korean": "​게임 ​테이블",
+                    "polish": "Stół do gry",
+                    "brazilian": "Mesa de Jogos",
+                    "russian": "Столик для игр",
+                    "simplified_chinese": "​游戏​桌",
+                    "traditional_chinese": "​遊戲​桌"
                   }
                 },
                 {
@@ -15002,6 +15233,24 @@
                     "russian": "Глашатай",
                     "simplified_chinese": "​传​令​官",
                     "traditional_chinese": "​公告​員"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 174502,
+                  "name": {
+                    "english": "Builder's Obelisk",
+                    "german": "Baumeister-Obelisk",
+                    "spanish": "Obelisco del constructor",
+                    "french": "Obélisque de constructeur",
+                    "italian": "Obelisco del costruttore",
+                    "japanese": "​建築​者​の​オベリスク",
+                    "korean": "​건설자의 ​오벨리스크",
+                    "polish": "Obelisk budowniczego",
+                    "brazilian": "Obelisco do Construtor",
+                    "russian": "Обелиск строителя",
+                    "simplified_chinese": "​建造​者​方尖碑",
+                    "traditional_chinese": "​建築​工人​方尖碑"
                   }
                 }
               ]
@@ -16501,6 +16750,21 @@
         },
         {
           "type": "category",
+          "guid": 172240,
+          "name": null,
+          "icon": "",
+          "items": [
+            {
+              "type": "category",
+              "guid": 172239,
+              "name": null,
+              "icon": "",
+              "items": []
+            }
+          ]
+        },
+        {
+          "type": "category",
           "guid": 96843,
           "name": {
             "english": "Special",
@@ -16516,7 +16780,7 @@
             "simplified_chinese": "​特殊",
             "traditional_chinese": "​特殊"
           },
-          "icon": "",
+          "icon": "data/ui/fhd/base/icon_content/infrastructure/icon_3d_construction_category_ornament_special.png",
           "items": [
             {
               "type": "category",
@@ -16991,18 +17255,18 @@
                   "type": "building",
                   "guid": 149836,
                   "name": {
-                    "english": "Marble Benches",
-                    "german": "Marmorbänke",
-                    "spanish": "Bancos de mármol",
-                    "french": "Bancs de marbre",
-                    "italian": "Panchine di marmo",
-                    "japanese": "​大理石​の​ベンチ",
-                    "korean": "​대리석 ​벤치",
-                    "polish": "Marmurowe ławki",
-                    "brazilian": "Bancos de Mármore",
-                    "russian": "Мраморные скамьи",
-                    "simplified_chinese": "​大理石​长椅",
-                    "traditional_chinese": "​大理石​長椅"
+                    "english": "Game Table",
+                    "german": "Spieltisch",
+                    "spanish": "Mesa de juegos",
+                    "french": "Table de jeu",
+                    "italian": "Tavolo da gioco",
+                    "japanese": "​ゲーム​テーブル",
+                    "korean": "​게임 ​테이블",
+                    "polish": "Stół do gry",
+                    "brazilian": "Mesa de Jogos",
+                    "russian": "Столик для игр",
+                    "simplified_chinese": "​游戏​桌",
+                    "traditional_chinese": "​遊戲​桌"
                   }
                 },
                 {
@@ -17330,6 +17594,78 @@
                     "russian": "Глашатай",
                     "simplified_chinese": "​传​令​官",
                     "traditional_chinese": "​公告​員"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 172255,
+                  "name": {
+                    "english": "Salmon of Knowledge",
+                    "german": "Lachs des Wissens",
+                    "spanish": "Salmón del saber",
+                    "french": "Saumon de la Connaissance",
+                    "italian": "Salmone della conoscenza",
+                    "japanese": "​知識​の​サーモン",
+                    "korean": "​지식의 ​연어",
+                    "polish": "Łosoś Wiedzy",
+                    "brazilian": "Salmão de Conhecimento",
+                    "russian": "Лосось Знаний",
+                    "simplified_chinese": "​智慧​鲑鱼",
+                    "traditional_chinese": "​智慧​鮭魚"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 172256,
+                  "name": {
+                    "english": "The Muse",
+                    "german": "Die Muse",
+                    "spanish": "La musa",
+                    "french": "La Muse",
+                    "italian": "La Musa",
+                    "japanese": "​ミューズ",
+                    "korean": "​뮤즈",
+                    "polish": "Muza",
+                    "brazilian": "A Musa",
+                    "russian": "Муза",
+                    "simplified_chinese": "​女神​缪​斯",
+                    "traditional_chinese": "​繆​思​女神"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 172257,
+                  "name": {
+                    "english": "Veritas",
+                    "german": "Veritas",
+                    "spanish": "Veritas",
+                    "french": "Veritas",
+                    "italian": "Veritas",
+                    "japanese": "​ヴェリタス",
+                    "korean": "​진리",
+                    "polish": "Prawda",
+                    "brazilian": "Veritas",
+                    "russian": "Veritas",
+                    "simplified_chinese": "​维​里​塔​斯",
+                    "traditional_chinese": "​真相​之地"
+                  }
+                },
+                {
+                  "type": "building",
+                  "guid": 174502,
+                  "name": {
+                    "english": "Builder's Obelisk",
+                    "german": "Baumeister-Obelisk",
+                    "spanish": "Obelisco del constructor",
+                    "french": "Obélisque de constructeur",
+                    "italian": "Obelisco del costruttore",
+                    "japanese": "​建築​者​の​オベリスク",
+                    "korean": "​건설자의 ​오벨리스크",
+                    "polish": "Obelisk budowniczego",
+                    "brazilian": "Obelisco do Construtor",
+                    "russian": "Обелиск строителя",
+                    "simplified_chinese": "​建造​者​方尖碑",
+                    "traditional_chinese": "​建築​工人​方尖碑"
                   }
                 }
               ]

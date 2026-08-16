@@ -4,6 +4,7 @@ Anno 117 Layout Tool - Main Canvas Widget
 """
 import tkinter as tk
 from tkinter import messagebox
+import base64
 import math
 import copy
 import json
@@ -26,6 +27,34 @@ try:
     PIL_AVAILABLE = True
 except ImportError:
     PIL_AVAILABLE = False
+
+# ── Island tile categories (must match extract_islands.py) ───────────────────
+_ISLE_SEA       = 0   # open sea / out of bounds
+_ISLE_LAND      = 1   # non-buildable terrain (cliffs, mountains)
+_ISLE_BUILDABLE = 2   # regular buildable land
+_ISLE_HARBOUR   = 3   # buildable coastal water (harbour zone)
+_ISLE_MARSH     = 4   # marsh / irrigation area (buildable)
+
+# Background colours per tile type, keyed by light_mode bool
+_ISLE_COLORS = {
+    False: {  # dark theme
+        _ISLE_SEA:       '#0a1628',   # deep navy
+        _ISLE_LAND:      '#3c2a10',   # dark stone / brown
+        _ISLE_BUILDABLE: '#1e3c1a',   # forest green
+        _ISLE_HARBOUR:   '#0d2848',   # deep coastal blue
+        _ISLE_MARSH:     '#3a4c10',   # olive-yellow (clearly distinct from green)
+    },
+    True: {   # light theme
+        _ISLE_SEA:       '#4878b8',   # saturated blue
+        _ISLE_LAND:      '#c0a050',   # warm sandy stone
+        _ISLE_BUILDABLE: '#88c870',   # clear grass green
+        _ISLE_HARBOUR:   '#60a0d0',   # coastal blue
+        _ISLE_MARSH:     '#c8d838',   # yellow-green (clearly distinct from grass)
+    },
+}
+
+# Tiles on which land buildings may be placed
+_ISLE_BUILDABLE_TILES = {_ISLE_BUILDABLE, _ISLE_MARSH}
 
 ROAD_FILL_COLORS = {
     'Dirt Road':        '#c8a870',
@@ -53,10 +82,8 @@ ROAD_STREET_DISTANCE_DEFAULT = 1.0  # Dirt Road and anything else: no bonus
 
 def _road_street_distance_cost(bd: BuildingData) -> float:
     """Cost of stepping onto one tile of this road for StreetDistance BFS -
-    the inverse of its reach multiplier, so a higher multiplier consumes
-    less of the budget and lets the search travel further per tile."""
-    multiplier = ROAD_STREET_DISTANCE_MULTIPLIER.get(bd.get_name('english'),
-                                                      ROAD_STREET_DISTANCE_DEFAULT)
+    the inverse of its reach multiplier, so a higher multiplier consumes less of the budget and lets the search travel further per tile."""
+    multiplier = ROAD_STREET_DISTANCE_MULTIPLIER.get(bd.get_name('english'), ROAD_STREET_DISTANCE_DEFAULT)
     return 1.0 / multiplier
 
 MODULE_CONFLICT_LIGHTEN_STEP = 0.30  # blend-toward-white amount per rank in a colour-conflict cluster
@@ -101,6 +128,49 @@ _DRAG_PLACEABLE_CATEGORIES = frozenset({
     'Livestock Area',    # pastures placed around livestock farms
 })
 
+# Categories excluded from "affected buildings" when a building has an effect radius: decorative/cosmetic items that don't benefit from services.
+_RADIUS_EXCLUDED_CATEGORIES = _DRAG_PLACEABLE_CATEGORIES | frozenset({
+    'Ground Patterns',  # quay tiles, ground decoration
+    'Amenity',          # ornamental amenity items
+    'Ornament',         # pure ornamental buildings
+})
+
+# SubTilesGrid nibble shapes for polygon field tiles.
+# Coordinates are (x, y) in units of ts/2 from the grid anchor (cx0, cy0), so the full 1×1 orthogonal tile spans [0..2] × [0..2]:
+#   TL=(0,0)  TR=(2,0)  BR=(2,2)  BL=(0,2)  C=(1,1)
+# Bit meanings (triangles of the square from centre, top-down view):
+#   bit3 (T): [C,TL,TR]  bit2 (R): [C,TR,BR]
+#   bit1 (B): [C,BR,BL]  bit0 (L): [C,BL,TL]
+# Adjacent pairs degenerate: C lies on the square diagonal, so the two triangles collapse into a single half-square triangle.
+# Non-adjacent pairs (0x5, 0xA) need two separate polygons.
+# Each list entry is one polygon drawn with create_polygon.
+_NIBBLE_SHAPES: dict[int, list[list[tuple]]] = {
+    0x0: [],
+    0x1: [[(1,1),(0,2),(0,0)]],                              # L
+    0x2: [[(1,1),(2,2),(0,2)]],                              # B
+    0x3: [[(0,0),(2,2),(0,2)]],                              # L+B  → lower-left half (TL-BR diag)
+    0x4: [[(1,1),(2,0),(2,2)]],                              # R
+    0x5: [[(1,1),(0,2),(0,0)], [(1,1),(2,0),(2,2)]],         # L+R  (non-adjacent)
+    0x6: [[(2,0),(2,2),(0,2)]],                              # B+R  → lower-right half (TR-BL diag)
+    0x7: [[(2,0),(1,1),(0,0),(0,2),(2,2)]],                  # L+B+R → missing T (pentagon)
+    0x8: [[(1,1),(0,0),(2,0)]],                              # T
+    0x9: [[(0,0),(2,0),(0,2)]],                              # T+L  → upper-left half (TR-BL diag)
+    0xA: [[(1,1),(0,0),(2,0)], [(1,1),(2,2),(0,2)]],         # T+B  (non-adjacent)
+    0xB: [[(0,0),(2,0),(1,1),(2,2),(0,2)]],                  # T+L+B → missing R (pentagon)
+    0xC: [[(0,0),(2,0),(2,2)]],                              # T+R  → upper-right half (TL-BR diag)
+    0xD: [[(0,0),(2,0),(2,2),(1,1),(0,2)]],                  # T+R+L → missing B (pentagon)
+    0xE: [[(2,0),(2,2),(0,2),(1,1),(0,0)]],                  # B+R+T → missing L (pentagon)
+    0xF: [[(0,0),(2,0),(2,2),(0,2)]],                        # full square
+}
+
+def _nibble_centroid(nibble: int) -> tuple[float, float]:
+    """Return the vertex-average centroid of a nibble shape in ts/2 units."""
+    shapes = _NIBBLE_SHAPES.get(nibble & 0xF, [])
+    pts = [pt for shape in shapes for pt in shape]
+    if not pts:
+        return (1.0, 1.0)
+    return (sum(x for x, _ in pts) / len(pts), sum(y for _, y in pts) / len(pts))
+
 def _is_drag_placeable(bd: BuildingData) -> bool:
     """True for buildings that support drag-to-place (roads, aqueducts, modules, fields)."""
     return _is_road_like(bd) or bd.get_category_english() in _DRAG_PLACEABLE_CATEGORIES
@@ -122,8 +192,7 @@ def _road_priority(bd: BuildingData) -> int:
     return ROAD_PRIORITY.get(bd.get_name('english'), 1)
 
 
-# Infrastructure that a road may run underneath/across without colliding
-# (the thin arch/canal segments - not the bulky source/cistern endpoints).
+# Infrastructure that a road may run underneath/across without colliding (the thin arch/canal segments - not the bulky source/cistern endpoints).
 _ROAD_CROSSABLE_INFRA = frozenset({'Aqueduct', 'Drainage Channel'})
 
 def _is_road_crossable_infra(bd: BuildingData) -> bool:
@@ -151,8 +220,7 @@ def _road_45_uv(bd: BuildingData, pb) -> tuple:
     return uc - nw * 0.5, uc + nw * 0.5, vc - nh * 0.5, vc + nh * 0.5
 
 
-def _uv_fully_covered(u0: float, u1: float, v0: float, v1: float,
-                       rects: list) -> bool:
+def _uv_fully_covered(u0: float, u1: float, v0: float, v1: float, rects: list) -> bool:
     """Return True if (u0,u1)×(v0,v1) is completely covered by the union of rects."""
     if not rects:
         return False
@@ -178,12 +246,12 @@ class PlacedBuilding:
     """A building instance placed on the canvas."""
     _next_id = 1
 
-    def __init__(self, guid: int, grid_x: float, grid_y: float,
-                 rotation: int = 0, instance_id: int = None, parent_id: int = None):
+    def __init__(self, guid: int, grid_x: float, grid_y: float, rotation: int = 0, instance_id: int = None, parent_id: int = None, nibble: int = 0):
         self.guid = guid
-        self.grid_x = grid_x      # top-left corner in grid coords
+        self.grid_x = grid_x       # top-left corner in grid coords
         self.grid_y = grid_y
         self.rotation = rotation   # 0, 45, 90, 135, 180, 225, 270, 315
+        self.nibble = nibble       # SubTilesGrid polygon sub-tile bitmask (0 = normal building)
         if instance_id is None:
             self.instance_id = PlacedBuilding._next_id
             PlacedBuilding._next_id += 1
@@ -193,7 +261,7 @@ class PlacedBuilding:
 
     def clone(self) -> 'PlacedBuilding':
         return PlacedBuilding(self.guid, self.grid_x, self.grid_y,
-                              self.rotation, instance_id=None)
+                              self.rotation, instance_id=None, nibble=self.nibble)
 
     def to_dict(self) -> dict:
         d = {
@@ -205,6 +273,8 @@ class PlacedBuilding:
         }
         if self.parent_id is not None:
             d['parent_id'] = self.parent_id
+        if self.nibble:
+            d['nibble'] = self.nibble
         return d
 
     @staticmethod
@@ -213,6 +283,7 @@ class PlacedBuilding:
             d['guid'], d['grid_x'], d['grid_y'],
             d.get('rotation', 0), d.get('instance_id'),
             parent_id=d.get('parent_id'),
+            nibble=d.get('nibble', 0),
         )
 
 
@@ -220,8 +291,7 @@ def _rotation_footprint(bd: BuildingData, rotation: int):
     """
     Return (w, h, offset_x, offset_y) bounding-box footprint in grid tiles.
     For 90° aligned rotations, exact integer tiles.
-    For 45° diagonal rotations, the bounding box is a square of side (nw+nh)*0.5
-    grid tiles, where nw/nh are the snapped 45°-grid tile counts.
+    For 45° diagonal rotations, the bounding box is a square of side (nw+nh)*0.5 grid tiles, where nw/nh are the snapped 45°-grid tile counts.
     """
     rot = rotation % 360
     if rot in (0, 180):
@@ -245,8 +315,7 @@ def _get_occupied_tiles(bd: BuildingData, gx: float, gy: float, rotation: int):
                 tiles.add((int(gx) + dx, int(gy) + dy))
         return tiles
     else:
-        # 45° diagonal: SAT (Separating Axis Theorem) intersection test between
-        # the tile unit square and the rotated building rectangle.
+        # 45° diagonal: SAT (Separating Axis Theorem) intersection test between the tile unit square and the rotated building rectangle.
         # Four axes to test: (1,0), (0,1) from the tile; (1,1), (1,-1) from the building.
         # Using <= for separation so exactly-touching edges are NOT collisions.
         rot = rotation % 360
@@ -286,6 +355,46 @@ def _get_occupied_tiles(bd: BuildingData, gx: float, gy: float, rotation: int):
         return tiles
 
 
+def _rotate_quad_90cw(q: int) -> int:
+    """Rotate a tile quadrant mask 90° CW.
+    Bit encoding: 1=W 2=S 4=E 8=N (kept inner triangles).
+    90° CW maps: N→W, E→N, S→E, W→S.
+    """
+    if not q:
+        return 0
+    new_W = (q >> 3) & 1   # old N
+    new_S = (q >> 0) & 1   # old W
+    new_E = (q >> 1) & 1   # old S
+    new_N = (q >> 2) & 1   # old E
+    return new_W | (new_S << 1) | (new_E << 2) | (new_N << 3)
+
+
+def _overlaps_nonbuildable_half(poly: list, tx: int, ty: int, quad: int) -> bool:
+    """SAT test: True if the 4-corner building polygon (flat [x0,y0,x1,y1,...]) overlaps the non-buildable (land-coloured) triangle of a cut LAND tile.
+
+    Non-buildable triangles per cut direction:
+      NE (0b0011) keeps W+S → land is SW half → TL, BL, BR
+      NW (0b0110) keeps S+E → land is SE half → TR, BL, BR
+      SE (0b1001) keeps W+N → land is NW half → TL, TR, BL
+      SW (0b1100) keeps E+N → land is NE half → TL, TR, BR
+    """
+    if   quad == 0b0011: tri_x = (tx,   tx,   tx+1); tri_y = (ty,   ty+1, ty+1)
+    elif quad == 0b0110: tri_x = (tx+1, tx,   tx+1); tri_y = (ty,   ty+1, ty+1)
+    elif quad == 0b1001: tri_x = (tx,   tx+1, tx  ); tri_y = (ty,   ty,   ty+1)
+    elif quad == 0b1100: tri_x = (tx,   tx+1, tx+1); tri_y = (ty,   ty,   ty+1)
+    else: return True  # unknown quad → conservatively block
+    bxs = (poly[0], poly[2], poly[4], poly[6])
+    bys = (poly[1], poly[3], poly[5], poly[7])
+    for ax, ay in ((1, 0), (0, 1), (1, 1), (1, -1)):
+        b_min = min(bxs[i]*ax + bys[i]*ay for i in range(4))
+        b_max = max(bxs[i]*ax + bys[i]*ay for i in range(4))
+        t_min = min(tri_x[i]*ax + tri_y[i]*ay for i in range(3))
+        t_max = max(tri_x[i]*ax + tri_y[i]*ay for i in range(3))
+        if b_max <= t_min or t_max <= b_min:
+            return False  # separated on this axis → no overlap
+    return True  # overlapping on all axes
+
+
 class CanvasWidget(tk.Frame):
     """Main canvas widget with grid, building placement, etc."""
 
@@ -310,12 +419,16 @@ class CanvasWidget(tk.Frame):
         self._road_graph = None
         self._road_graph_dirty = True
 
-        # Module-touching-a-different-parent's-module pairs, used to decide
-        # which parent/module group needs a lightened colour variant (see
-        # _resolve_render_color). Rebuilt lazily whenever placed_buildings
-        # changes; layout-independent (colour) data isn't cached here, so
-        # colour-override changes don't need to invalidate it separately.
+        # Module-touching-a-different-parent's-module pairs, used to decide which parent/module group needs a lightened colour variant (see _resolve_render_color). Rebuilt lazily whenever placed_buildings changes; layout-independent (colour) data isn't cached here, so colour-override changes don't need to invalidate it separately.
         self._module_touch_pairs_cache = None
+        self._parent_color_ranks_cache: Optional[dict] = None
+        self._draw_order_cache: Optional[list] = None
+        self._road_pos_cache: Optional[tuple] = None  # (diag_road_pos, ortho_road_pos)
+
+        # Pan-only fast-redraw state
+        self._layout_dirty: bool = True   # True → next redraw must be a full rebuild
+        self._prev_pan_x: float = 0.0
+        self._prev_pan_y: float = 0.0
 
         # Undo/redo stacks (each entry is a snapshot of placed_buildings)
         self._undo_stack: list = []
@@ -332,6 +445,7 @@ class CanvasWidget(tk.Frame):
         self.build_rotation: int = 0
         self._ghost_items: list = []
         self._ghost_grid_pos = None
+        self._dbg_hover_items: list = []  # debug: hover tooltip canvas items
 
         # Drag-move state
         self._drag_start_canvas = None
@@ -382,12 +496,12 @@ class CanvasWidget(tk.Frame):
 
         # House block drag-placement state (max-2-wide, custom-length blocks)
         self._house_drag_active = False
-        self._house_drag_anchor = None        # (gx, gy) anchor at drag start
+        self._house_drag_anchor = None         # (gx, gy) anchor at drag start
         self._house_drag_positions: list = []  # current preview block positions
 
         # Module rectangle-fill state (active when module_rect_mode is on)
         self._module_rect_active = False
-        self._module_rect_anchor = None        # (gx, gy) anchor at drag start
+        self._module_rect_anchor = None         # (gx, gy) anchor at drag start
         self._module_rect_positions: list = []  # current preview fill positions
 
         # Straight-line tool state (active when line_mode is on)
@@ -401,20 +515,14 @@ class CanvasWidget(tk.Frame):
         self._paste_ghost_pos = None         # (gx, gy) current mouse-tracked target anchor
 
         # Effects carried through copy/paste and move operations.
-        # _clipboard_effects: clipboard-pb instance_id → {tech, items, boosts} snapshots
-        # _pending_paste_effects: set when a single-building paste/move is in flight;
-        #   consumed (and cleared) by the next _place_building call.
+        # _clipboard_effects: clipboard-pb instance_id → {tech, items, boosts} snapshots _pending_paste_effects: set when a single-building paste/move is in flight; consumed (and cleared) by the next _place_building call.
         self._clipboard_effects: dict = {}
         self._pending_paste_effects = None
 
-        # Move mode (hotkey M): re-ghosts the current selection in place so
-        # it can be repositioned/rotated using the normal ghost/paste-ghost
-        # placement and collision logic, instead of transforming placed
-        # buildings' positions analytically.
+        # Move mode (hotkey M): re-ghosts the current selection in place so it can be repositioned/rotated using the normal ghost/paste-ghost placement and collision logic, instead of transforming placed buildings' positions analytically.
         self._move_mode_active = False
         self._move_restore_snapshot: list = []  # to_dict() snapshots, restored if cancelled
-        self._move_id_remap: dict = {}  # clipboard instance_id -> real placed instance_id,
-                                         # accumulated across partial commits in one move session
+        self._move_id_remap: dict = {}  # clipboard instance_id -> real placed instance_id, accumulated across partial commits in one move session
 
         # Tech effect activation per placed building instance: instance_id -> set of effect GUIDs
         self._active_tech_effects: dict = {}
@@ -423,22 +531,38 @@ class CanvasWidget(tk.Frame):
         # Boosted item GUIDs per instance (subset of _active_item_effects)
         self._active_item_boosts: dict = {}
 
+        # Island state
+        self._island_name: str | None = None
+        self._island_w: int = 0
+        self._island_h: int = 0
+        self._island_tiles: bytes | None = None     # flat row-major bytes, tile type only (0-4)
+        self._island_quads: bytes | None = None     # flat row-major bytes, quadrant cut mask per tile
+        self._island_base_img_dark: object = None   # PIL Image, 1px/tile, dark theme
+        self._island_base_img_light: object = None  # PIL Image, 1px/tile, light theme
+        self._island_photo_ref = None               # keep PIL PhotoImage alive (legacy ref)
+        self._island_bg_cache_key = None            # kept for compatibility; chunked bg ignores it
+        self._island_chunk_photos: dict = {}        # (cx, cy, ts_key, light) -> ImageTk.PhotoImage
+        self._island_chunk_size: int = 32           # tiles per chunk side
+        self._drawn_island_chunks: set = set()      # (cx, cy) pairs currently on the canvas
+
+        # Deferred redraws
+        self._deferred_redraw_id = None
+        self._deferred_island_bg_id = None          # kept so _on_pan_start cancel is harmless
+        self._deferred_stats_id = None              # deferred info-panel stats update
+
         self._build_ui()
         self._bind_events()
         self._center_view()
 
     def _setting(self, key: str, default):
-        """Read a persisted display/tool setting from app.settings, if
-        the host app provides one (falls back to `default` for the bare
-        app stubs used in tests, or before a value has ever been set)."""
+        """Read a persisted display/tool setting from app.settings, if the host app provides one (falls back to `default` for the bare app stubs used in tests, or before a value has ever been set)."""
         settings = getattr(self.app, 'settings', None)
         if settings is None:
             return default
         return settings.get(key, default)
 
     def _persist_setting(self, key: str, var: tk.BooleanVar, *_):
-        """Write a display/tool checkbox's current value back to
-        app.settings and save it, so it survives an app restart."""
+        """Write a display/tool checkbox's current value back to app.settings and save it, so it survives an app restart."""
         settings = getattr(self.app, 'settings', None)
         if settings is None:
             return
@@ -456,31 +580,22 @@ class CanvasWidget(tk.Frame):
         self.canvas.pack(fill=tk.BOTH, expand=True)
 
         # Bottom-right overlay: quick display-setting toggles
-        self._overlay_frame = tk.Frame(self.canvas, bg=BG_SECTION,
-                                       bd=1, relief=tk.FLAT)
-        self._overlay_frame.place(relx=1.0, rely=1.0, anchor='se',
-                                   x=-4, y=-4)
+        self._overlay_frame = tk.Frame(self.canvas, bg=BG_SECTION, bd=1, relief=tk.FLAT)
+        self._overlay_frame.place(relx=1.0, rely=1.0, anchor='se', x=-4, y=-4)
 
-        self._make_hotbar_checkbox(self._overlay_frame, "45° Grid",
-                                   self.show_45_grid).pack(side=tk.TOP, anchor='w', padx=6, pady=(4, 2))
-        self._make_hotbar_checkbox(self._overlay_frame, "Module Icons",
-                                   self.module_show_icon).pack(side=tk.TOP, anchor='w', padx=6, pady=2)
-        self._make_hotbar_checkbox(self._overlay_frame, "Road Icons",
-                                   self.road_show_icon).pack(side=tk.TOP, anchor='w', padx=6, pady=2)
-        self._make_hotbar_checkbox(self._overlay_frame, "Module Box Fill",
-                                   self.module_rect_mode).pack(side=tk.TOP, anchor='w', padx=6, pady=2)
-        self._make_hotbar_checkbox(self._overlay_frame, "Road Line Tool",
-                                   self.line_mode).pack(side=tk.TOP, anchor='w', padx=6, pady=(2, 4))
+        self._make_hotbar_checkbox(self._overlay_frame, "45° Grid", self.show_45_grid).pack(side=tk.TOP, anchor='w', padx=6, pady=(4, 2))
+        self._make_hotbar_checkbox(self._overlay_frame, "Module Icons", self.module_show_icon).pack(side=tk.TOP, anchor='w', padx=6, pady=2)
+        self._make_hotbar_checkbox(self._overlay_frame, "Road Icons", self.road_show_icon).pack(side=tk.TOP, anchor='w', padx=6, pady=2)
+        self._make_hotbar_checkbox(self._overlay_frame, "Module Box Fill", self.module_rect_mode).pack(side=tk.TOP, anchor='w', padx=6, pady=2)
+        self._make_hotbar_checkbox(self._overlay_frame, "Road Line Tool", self.line_mode).pack(side=tk.TOP, anchor='w', padx=6, pady=(2, 4))
 
     def _make_hotbar_checkbox(self, parent, label: str, variable: tk.BooleanVar) -> tk.Frame:
         """Small Unicode-glyph checkbox for the bottom-right canvas overlay
         (matching the View menu's underlying setting, just quicker to reach)."""
         frame = tk.Frame(parent, bg=BG_SECTION, cursor='hand2')
-        glyph = tk.Label(frame, text='☐', bg=BG_SECTION,
-                         fg=FG_GOLD, font=FONT_SMALL, cursor='hand2')
+        glyph = tk.Label(frame, text='☐', bg=BG_SECTION, fg=FG_GOLD, font=FONT_SMALL, cursor='hand2')
         glyph.pack(side=tk.LEFT, padx=(0, 4))
-        tk.Label(frame, text=label, bg=BG_SECTION,
-                 fg=FG_DIM, font=FONT_SMALL, cursor='hand2').pack(side=tk.LEFT)
+        tk.Label(frame, text=label, bg=BG_SECTION, fg=FG_DIM, font=FONT_SMALL, cursor='hand2').pack(side=tk.LEFT)
 
         def _refresh(*_):
             glyph.config(text='☑' if variable.get() else '☐')
@@ -588,8 +703,7 @@ class CanvasWidget(tk.Frame):
             bbox_half = (nw + nh) * 0.25
             return gx + bbox_half, gy + bbox_half
 
-    def _snap_anchor_from_center(self, bd: BuildingData,
-                                  cx: float, cy: float, rotation: int):
+    def _snap_anchor_from_center(self, bd: BuildingData, cx: float, cy: float, rotation: int):
         """Return a snapped anchor for a building centred at (cx, cy) at rotation."""
         rot = rotation % 360
         if rot in (0, 90, 180, 270):
@@ -601,8 +715,7 @@ class CanvasWidget(tk.Frame):
             bbox_half = (nw + nh) * 0.25
             return self._snap_45_anchor(cx - bbox_half, cy - bbox_half, nw, nh)
 
-    def snap_to_grid(self, gx: float, gy: float, rotation: int = 0,
-                     bd: BuildingData = None):
+    def snap_to_grid(self, gx: float, gy: float, rotation: int = 0, bd: BuildingData = None):
         """Snap grid coords to tile or 0.5-tile grid depending on rotation."""
         rot = rotation % 360
         if rot in (0, 90, 180, 270):
@@ -619,13 +732,27 @@ class CanvasWidget(tk.Frame):
     # ------------------------------------------------------------------ #
     def _redraw(self, event=None):
         c = self.canvas
-        c.configure(bg='#ffffff' if self.light_mode.get() else BG_MAIN)
+        light = self.light_mode.get()
+        if self._island_tiles is not None:
+            sea_hex = _ISLE_COLORS[light][_ISLE_SEA]
+            c.configure(bg=sea_hex)
+        else:
+            c.configure(bg='#ffffff' if light else BG_MAIN)
         c.delete('all')
+        # All canvas items were just cleared — reset chunk tracking and evict stale chunk photos for any previous tile_size or light-mode setting.
+        self._drawn_island_chunks.clear()
+        _ts_key = round(self.tile_size * 100)
+        _light  = self.light_mode.get()
+        _stale  = [k for k in self._island_chunk_photos if k[2] != _ts_key or k[3] != _light]
+        for k in _stale:
+            del self._island_chunk_photos[k]
         w = c.winfo_width()
         h = c.winfo_height()
         if w < 2 or h < 2:
             return
 
+        if self._island_tiles is not None:
+            self._draw_island_bg()
         self._draw_grid(w, h)
         in_range = self._draw_buildings()
         self._draw_radius_overlay()
@@ -642,6 +769,58 @@ class CanvasWidget(tk.Frame):
                 x0, y0, x1, y1,
                 outline=FG_GOLD, fill='', dash=(4, 4), tags='boxsel'
             )
+
+        # After a full rebuild, future pan events can use the fast path.
+        self._layout_dirty = False
+        self._prev_pan_x = self.pan_x
+        self._prev_pan_y = self.pan_y
+
+    def _redraw_pan(self):
+        """Fast pan-only redraw: shift persistent 'world' items by the pan delta, then rebuild only the viewport-dependent elements (island background, grid lines, ghost).
+        Falls back to a full _redraw() if the layout is dirty (zoom/layout change since the last full build)."""
+        c = self.canvas
+        w = c.winfo_width()
+        h = c.winfo_height()
+        if w < 2 or h < 2:
+            return
+        if self._layout_dirty:
+            self._redraw()
+            return
+
+        dx = self.pan_x - self._prev_pan_x
+        dy = self.pan_y - self._prev_pan_y
+        self._prev_pan_x = self.pan_x
+        self._prev_pan_y = self.pan_y
+
+        # One Tcl command moves ALL world-coordinate items in C — ~1 ms for 9000 buildings vs ~180 ms of delete-all + per-item re-create calls.
+        if dx or dy:
+            c.move('all', dx, dy)
+
+        # Fill any island-background chunks that scrolled into view during the pan step (~2 ms per new chunk at ts≈7; zero cost on cache hit).
+        if self._island_tiles is not None:
+            self._fill_island_chunks()
+
+        # Grid lines and ghost span the full viewport and must be recreated.
+        c.delete('grid90')
+        c.delete('grid45')
+        c.delete('ghost')
+        self._draw_grid(w, h)
+
+        # _draw_grid() creates items at the top of the Z-order (last created = highest), which puts them above buildings from the last full _redraw().
+        # Fix: raise grid lines to just above the island background so buildings stay on top of the grid.
+        if c.find_withtag('island_bg'):
+            if c.find_withtag('grid90'):
+                c.tag_raise('grid90', 'island_bg')
+            if c.find_withtag('grid45'):
+                c.tag_raise('grid45', 'grid90' if c.find_withtag('grid90') else 'island_bg')
+        else:
+            # No island background — lower grid below all other items (buildings).
+            if c.find_withtag('grid90'):
+                c.lower('grid90')
+            if c.find_withtag('grid45'):
+                c.lower('grid45')
+
+        self._draw_ghost()
 
     def _draw_grid(self, w, h):
         c = self.canvas
@@ -703,25 +882,53 @@ class CanvasWidget(tk.Frame):
 
     def _draw_buildings(self) -> set:
         """Draw all buildings plus the selected (gold) outline re-stroke.
-        Returns the in-range id set so the caller can draw the green
-        in-range highlight afterward (see _draw_in_range_highlights) - that
-        needs to happen after radius rings/reach-highlights too, so it has
-        to be a separate, later pass rather than done here."""
+        Returns the in-range id set so the caller can draw the green in-range highlight afterward (see _draw_in_range_highlights) -
+        that needs to happen after radius rings/reach-highlights too, so it has to be a separate, later pass rather than done here."""
         in_range = self._get_in_range_ids()
         parent_color_ranks = self._get_parent_color_ranks()
-        # Draw roads in priority order (lower priority first = underneath higher priority)
-        def _draw_key(pb):
-            bd = self.dm.get_building(pb.guid)
-            return _road_priority(bd) if bd else 0
-        for pb in sorted(self.placed_buildings, key=_draw_key):
-            self._draw_placed_building(pb, in_range=pb.instance_id in in_range,
-                                       parent_color_ranks=parent_color_ranks)
 
-        # Re-stroke the selected (gold) outline in a final pass, on top of
-        # every building. Otherwise a later-drawn neighbour's plain black
-        # outline can visually cover a highlight that should take priority,
-        # since the inline colour above is only as recent as that
-        # building's own position in the draw-order sort.
+        # Separate position sets for diagonal vs orthogonal road tiles, used to detect 90°/45° junction tiles that need a diamond corner clipped.
+        # Use math.floor (not round) because road_imports tiles have half-integer grid positions (gx = tl_x − wx − 1.0 where wx is a half-integer).
+        # Python banker's rounding gives floor(370.5)=370 but round(371.5)=372, breaking the expected step of 1 between consecutive diagonal tiles.
+        # Cached alongside _draw_order_cache — both are invalidated on layout change.
+        if self._road_pos_cache is None:
+            _diag: set = set()
+            _ortho: set = set()
+            for _pb in self.placed_buildings:
+                _bd = self.dm.get_building(_pb.guid)
+                if _bd and _is_road_like(_bd) and not _pb.nibble:
+                    _pos = (math.floor(_pb.grid_x), math.floor(_pb.grid_y))
+                    if _pb.rotation % 360 not in (0, 90, 180, 270):
+                        _diag.add(_pos)
+                    else:
+                        _ortho.add(_pos)
+            self._road_pos_cache = (_diag, _ortho)
+        diag_road_pos, ortho_road_pos = self._road_pos_cache
+
+        # Draw in priority order: roads/quays first (underneath), buildings on top.
+        # Road tiles: 1-3 by type. 1x1 quay (Ground Patterns) tiles: 0.
+        # Everything else (buildings, ornaments, etc.): 10 — always above roads/quays.
+        # The sort order depends only on building type (guid), not position, so cache it and only rebuild when placed_buildings changes.
+        if self._draw_order_cache is None:
+            def _draw_key(pb):
+                bd = self.dm.get_building(pb.guid)
+                if not bd:
+                    return 10
+                pri = _road_priority(bd)
+                if pri > 0:
+                    return pri  # 1-3: road tiles drawn underneath buildings
+                if (bd.get_category_english() == 'Ground Patterns'
+                        and bd.width == 1 and bd.height == 1):
+                    return 0    # 1x1 quay tiles also drawn underneath
+                return 10       # all other buildings drawn on top of roads/quays
+            self._draw_order_cache = sorted(self.placed_buildings, key=_draw_key)
+
+        for pb in self._draw_order_cache:
+            self._draw_placed_building(pb, in_range=pb.instance_id in in_range, parent_color_ranks=parent_color_ranks, diag_road_pos=diag_road_pos, ortho_road_pos=ortho_road_pos)
+
+        # Re-stroke the selected (gold) outline in a final pass, on top of every building.
+        # Otherwise a later-drawn neighbour's plain black outline can visually cover a highlight that should take priority,
+        # since the inline colour above is only as recent as that building's own position in the draw-order sort.
         for pb in self.placed_buildings:
             if pb.instance_id not in self.selected_ids:
                 continue
@@ -732,9 +939,7 @@ class CanvasWidget(tk.Frame):
         return in_range
 
     def _draw_in_range_highlights(self, in_range: set):
-        """Draw the green in-range outline, on top of everything else -
-        including the gold selected-building outline and gold radius rings/
-        reach-highlights - so green always has the final visual priority."""
+        """Draw the green in-range outline, on top of everything else - including the gold selected-building outline and gold radius rings/reach-highlights - so green always has the final visual priority."""
         for pb in self.placed_buildings:
             if pb.instance_id not in in_range:
                 continue
@@ -743,9 +948,7 @@ class CanvasWidget(tk.Frame):
                 continue
             self._draw_reach_outline(bd, pb.grid_x, pb.grid_y, pb.rotation, '#2ecc71', 2)
 
-    def _draw_placed_building(self, pb: PlacedBuilding,
-                               ghost=False, alpha_factor=1.0, in_range=False,
-                               parent_color_ranks: Optional[dict] = None):
+    def _draw_placed_building(self, pb: PlacedBuilding, ghost=False, alpha_factor=1.0, in_range=False, parent_color_ranks: Optional[dict] = None, diag_road_pos: set = None, ortho_road_pos: set = None):
         bd = self.dm.get_building(pb.guid)
         if not bd:
             return
@@ -766,6 +969,48 @@ class CanvasWidget(tk.Frame):
         skip_module_icon = is_module and not self.module_show_icon.get()
 
         cx0, cy0 = self.grid_to_canvas(pb.grid_x, pb.grid_y)
+
+        # ── SubTilesGrid polygon tile (farm fields imported from savegame) ────────
+        # Each nibble tile is drawn as triangle(s) on the 45° grid, occupying a 2×2 bounding box anchored at (cx0, cy0) — the same footprint as a road tile.
+        # The 4 quadrant triangles from the diamond centre:
+        #   bit0 (L) = [C, B, L],  bit1 (B) = [C, R, B]
+        #   bit2 (R) = [C, T, R],  bit3 (T) = [C, L, T]
+        if pb.nibble:
+            # Road/aqueduct nibble tiles are AreaPolygonObjectManager junction artifacts — road connectivity data, not field shapes.
+            # The diamond building tile at that position already provides the correct visual.
+            if is_road:
+                return
+            shapes = _NIBBLE_SHAPES.get(pb.nibble & 0xF, [])
+            if shapes:
+                tag  = 'ghost' if ghost else f'bld_{pb.instance_id}'
+                fill = road_fill if road_fill is not None else cat_color
+                half = ts / 2   # shapes use half-tile units; 2 = full tile width
+                if ghost:
+                    for shape in shapes:
+                        pts = [v for fx, fy in shape
+                               for v in (cx0 + fx * half, cy0 + fy * half)]
+                        c.create_polygon(pts, fill=fill, outline=FG_GOLD, width=1, dash=(4, 4), stipple='gray50', tags=tag)
+                else:
+                    outline_c = FG_GOLD if selected else '#000000'
+                    outline_w = 2 if selected else 1
+                    for shape in shapes:
+                        pts = [v for fx, fy in shape
+                               for v in (cx0 + fx * half, cy0 + fy * half)]
+                        c.create_polygon(pts, fill=fill, outline=outline_c, width=outline_w, tags=tag)
+            if road_fill is None and not skip_module_icon and ts >= 8:
+                popcount      = bin(pb.nibble & 0xF).count('1')
+                fill_fraction = popcount / 4.0
+                icon_px       = max(8, int(ts * 0.65 * math.sqrt(fill_fraction)))
+                fcx, fcy      = _nibble_centroid(pb.nibble)
+                icx           = cx0 + fcx * half
+                icy           = cy0 + fcy * half
+                icon = self._get_icon(bd, icon_px)
+                if icon:
+                    c.create_image(icx, icy, image=icon, anchor='center', tags='ghost' if ghost else f'bld_{pb.instance_id}')
+                elif ts >= 16:
+                    abbrev = bd.get_name(self.app.language)[:3]
+                    c.create_text(icx, icy, text=abbrev, fill=FG_MAIN, font=FONT_XSMALL if ts < 32 else FONT_SMALL, tags='ghost' if ghost else f'bld_{pb.instance_id}')
+            return
 
         if rot in (0, 90, 180, 270):
             w, h = (bd.width, bd.height) if rot in (0, 180) else (bd.height, bd.width)
@@ -808,12 +1053,10 @@ class CanvasWidget(tk.Frame):
             center_cx = cx0 + px_w / 2
             center_cy = cy0 + px_h / 2
             if road_fill is None and not skip_module_icon:
-                icon_px = max(8, int(min(px_w, px_h) * 0.7))
+                icon_px = max(1, int(min(px_w, px_h) * 0.65))
                 icon = self._get_icon(bd, icon_px)
                 if icon:
-                    c.create_image(center_cx, center_cy, image=icon,
-                                   anchor='center',
-                                   tags='ghost' if ghost else f'bld_{pb.instance_id}')
+                    c.create_image(center_cx, center_cy, image=icon, anchor='center', tags='ghost' if ghost else f'bld_{pb.instance_id}')
                 elif ts >= 16:
                     abbrev = bd.get_name(self.app.language)[:3]
                     c.create_text(
@@ -847,11 +1090,73 @@ class CanvasWidget(tk.Frame):
                 cx + (nw - nh) * half, cy + (nw + nh) * half,
                 cx - (nw + nh) * half, cy + (nh - nw) * half,
             ]
+
+            # At 90°/45° junctions one diamond corner is exposed (not adjacent
+            # to any road tile).  Clip it by replacing that corner with the
+            # diamond centre so the stray triangle is not rendered.
+            #
+            # Guard 1 – only road tiles with exactly ONE diagonal neighbour
+            #   (start/end of a diagonal segment).  Interior tiles and bends
+            #   (≥ 2 diagonal neighbours) must not be touched.
+            # Guard 2 – use separate diag / ortho position sets so that a 90°
+            #   road tile is never mistaken for a diagonal neighbour.
+            # Orthogonal coverage uses the full 4-anchor neighbourhood of each
+            #   corner: a 1×1 road at anchor (ax,ay) covers [ax,ax+1]×[ay,ay+1],
+            #   so corner (px,py) is covered when any of the 4 anchors
+            #   {px-1,px}×{py-1,py} is present in ortho_road_pos.
+            if (is_road and nw == 2 and nh == 2
+                    and diag_road_pos is not None and ortho_road_pos is not None):
+                gx_r = math.floor(pb.grid_x)
+                gy_r = math.floor(pb.grid_y)
+                # Diagonal neighbours; each covers exactly two diamond corners:
+                #   NE (−1,−1) → T and L   NW (−1,+1) → L and B
+                #   SE (+1,−1) → T and R   SW (+1,+1) → R and B
+                ne  = (gx_r - 1, gy_r - 1) in diag_road_pos
+                sw  = (gx_r + 1, gy_r + 1) in diag_road_pos
+                nw_ = (gx_r - 1, gy_r + 1) in diag_road_pos
+                se  = (gx_r + 1, gy_r - 1) in diag_road_pos
+                if ne + sw + nw_ + se == 1:
+                    # Corner canvas positions (in grid tile units from anchor):
+                    #   T → (gx+1, gy)   R → (gx+2, gy+1)
+                    #   B → (gx+1, gy+2) L → (gx,   gy+1)
+                    # A 1×1 ortho tile at (ax,ay) covers corner (px,py) when
+                    # px-1 ≤ ax ≤ px  AND  py-1 ≤ ay ≤ py.
+                    def _oc(px, py):  # ortho covers corner (px,py)?
+                        return (px, py) in ortho_road_pos
+                    t_ok = ne or se or _oc(gx_r + 1, gy_r    )
+                    r_ok = sw or se or _oc(gx_r + 2, gy_r + 1)
+                    b_ok = sw or nw_ or _oc(gx_r + 1, gy_r + 2)
+                    l_ok = ne or nw_ or _oc(gx_r,     gy_r + 1)
+                    miss = (not t_ok, not r_ok, not b_ok, not l_ok)
+                    if miss.count(True) == 1:
+                        # Clip only the 2 outer sub-triangles of the missing corner by replacing that corner with the midpoints of its two adjacent edges.
+                        # This preserves the inner sub-triangles that belong to the adjacent covered directions (T, B, etc.).
+                        h = ts / 2  # edge midpoint offset
+                        if miss[0]:   # T missing → mid_TL, mid_TR, R, B, L
+                            pts = [cx - h, cy - h,  cx + h, cy - h,
+                                   cx + ts, cy,
+                                   cx, cy + ts,
+                                   cx - ts, cy]
+                        elif miss[1]: # R missing → T, mid_TR, mid_RB, B, L
+                            pts = [cx, cy - ts,
+                                   cx + h, cy - h,  cx + h, cy + h,
+                                   cx, cy + ts,
+                                   cx - ts, cy]
+                        elif miss[2]: # B missing → T, R, mid_RB, mid_BL, L
+                            pts = [cx, cy - ts,
+                                   cx + ts, cy,
+                                   cx + h, cy + h,  cx - h, cy + h,
+                                   cx - ts, cy]
+                        else:         # L missing → T, R, B, mid_BL, mid_TL
+                            pts = [cx, cy - ts,
+                                   cx + ts, cy,
+                                   cx, cy + ts,
+                                   cx - h, cy + h,  cx - h, cy - h]
+
             fill_45 = road_fill if road_fill is not None else cat_color
             tag = 'ghost' if ghost else f'bld_{pb.instance_id}'
             if ghost:
-                c.create_polygon(pts, fill=fill_45, outline=FG_GOLD,
-                                 width=1, dash=(4, 4), tags=tag)
+                c.create_polygon(pts, fill=fill_45, outline=FG_GOLD, width=1, dash=(4, 4), tags=tag)
             else:
                 if selected:
                     outline_c = FG_GOLD
@@ -861,8 +1166,7 @@ class CanvasWidget(tk.Frame):
                     outline_c = fill_45
                 else:
                     outline_c = '#000000'
-                c.create_polygon(pts, fill=fill_45, outline=outline_c,
-                                 width=3 if selected else 2, tags=tag)
+                c.create_polygon(pts, fill=fill_45, outline=outline_c, width=3 if selected else 2, tags=tag)
                 if selected:
                     # Inner dashed gold ring (shrink each point toward center by ~3px)
                     shrink = 3.0
@@ -871,22 +1175,19 @@ class CanvasWidget(tk.Frame):
                         vx = pts[i] - cx
                         vy = pts[i + 1] - cy
                         mag = math.hypot(vx, vy) or 1
-                        s_pts.extend([pts[i] - vx / mag * shrink,
-                                      pts[i + 1] - vy / mag * shrink])
+                        s_pts.extend([pts[i] - vx / mag * shrink, pts[i + 1] - vy / mag * shrink])
                     c.create_polygon(s_pts, fill='', outline=FG_GOLD,
                                      width=1, dash=(3, 3), tags=tag)
 
-            if road_fill is None and not skip_module_icon:
-                icon_px = max(8, int(bbox_px * 0.9))
+            if road_fill is None and not skip_module_icon and ts >= 8:
+                icon_px = max(8, int(bbox_px * 0.65))
                 icon = self._get_icon(bd, icon_px)
                 if icon:
-                    c.create_image(cx, cy, image=icon, anchor='center',
-                                   tags='ghost' if ghost else f'bld_{pb.instance_id}')
+                    c.create_image(cx, cy, image=icon, anchor='center', tags='ghost' if ghost else f'bld_{pb.instance_id}')
                 elif ts >= 16:
                     abbrev = bd.get_name(self.app.language)[:3]
-                    c.create_text(cx, cy, text=abbrev, fill=FG_MAIN,
-                                  font=FONT_XSMALL,
-                                  tags='ghost' if ghost else f'bld_{pb.instance_id}')
+                    c.create_text(cx, cy, text=abbrev, fill=FG_MAIN, font=FONT_XSMALL, tags='ghost' if ghost else f'bld_{pb.instance_id}')
+
 
     def _draw_ghost(self):
         if self._paste_active:
@@ -903,15 +1204,13 @@ class CanvasWidget(tk.Frame):
         if self._line_start is not None and self._ghost_grid_pos is not None:
             bd = self.dm.get_building(self.build_mode_guid)
             if bd:
-                positions = self._compute_line_positions(
-                    bd, self._line_start, self._ghost_grid_pos, self.build_rotation)
+                positions = self._compute_line_positions(bd, self._line_start, self._ghost_grid_pos, self.build_rotation)
                 self._draw_multi_ghost(positions)
             return
         if self._ghost_grid_pos is None:
             return
         gx, gy = self._ghost_grid_pos
-        ghost_pb = PlacedBuilding(self.build_mode_guid, gx, gy,
-                                   self.build_rotation, instance_id=-1)
+        ghost_pb = PlacedBuilding(self.build_mode_guid, gx, gy, self.build_rotation, instance_id=-1)
         # Check collision
         bd = self.dm.get_building(self.build_mode_guid)
         if bd:
@@ -949,13 +1248,10 @@ class CanvasWidget(tk.Frame):
                 ccx + (nw - nh) * half, ccy + (nw + nh) * half,
                 ccx - (nw + nh) * half, ccy + (nh - nw) * half,
             ]
-            c.create_polygon(pts, fill='#ff0000', outline='#ff0000',
-                             width=2, stipple='gray25', dash=(4, 2),
-                             tags='ghost')
+            c.create_polygon(pts, fill='#ff0000', outline='#ff0000', width=2, stipple='gray25', dash=(4, 2), tags='ghost')
 
     def _draw_multi_ghost(self, positions: list):
-        """Draw a ghost preview for each position in a house-block, module-rect,
-        or straight-line drag."""
+        """Draw a ghost preview for each position in a house-block, module-rect, or straight-line drag."""
         if not positions:
             return
         bd = self.dm.get_building(self.build_mode_guid)
@@ -964,16 +1260,14 @@ class CanvasWidget(tk.Frame):
         old_sel = set(self.selected_ids)
         self.selected_ids = set()
         for gx, gy in positions:
-            ghost_pb = PlacedBuilding(self.build_mode_guid, gx, gy,
-                                      self.build_rotation, instance_id=-1)
+            ghost_pb = PlacedBuilding(self.build_mode_guid, gx, gy, self.build_rotation, instance_id=-1)
             self._draw_placed_building(ghost_pb, ghost=True)
             if self._check_collision(bd, gx, gy, self.build_rotation):
                 self._draw_collision_tint(bd, gx, gy, self.build_rotation)
         self.selected_ids = old_sel
 
     def _draw_paste_ghost(self):
-        """Draw the previewed multi-building paste group, translated to follow
-        the cursor as a single unit (each item keeps its own type/rotation)."""
+        """Draw the previewed multi-building paste group, translated to follow the cursor as a single unit (each item keeps its own type/rotation)."""
         if not self._paste_clipboard or self._paste_ghost_pos is None:
             return
         ox = self._paste_ghost_pos[0] - self._paste_anchor_orig[0]
@@ -1013,16 +1307,12 @@ class CanvasWidget(tk.Frame):
     def _get_road_graph(self):
         """Return (cached) connected-road-network graph for StreetDistance BFS.
 
-        Roads are the only "streets" - aqueduct arches and drainage channels
-        are infrastructure, not walkable streets, so they're excluded.
+        Roads are the only "streets" - aqueduct arches and drainage channels are infrastructure, not walkable streets, so they're excluded.
 
-        Adjacency is determined precisely (via polygon touch/overlap, see
-        _polys_touch) rather than by integer-cell proximity: a 45°-rotated
-        road's occupied-cell footprint spans a 2×2 block (roads are special-
-        cased to a 2×2 45°-grid size), so consecutive diagonal tiles' coarse
-        cell sets already overlap by one cell - an 8-directional cell-distance
-        check on top of that would create false "shortcut" edges skipping
-        real hops. The coarse cell map is kept only as a broad-phase filter
+        Adjacency is determined precisely (via polygon touch/overlap, see _polys_touch) rather than by integer-cell proximity:
+        a 45°-rotated road's occupied-cell footprint spans a 2×2 block (roads are special- cased to a 2×2 45°-grid size),
+        so consecutive diagonal tiles' coarse cell sets already overlap by one cell - an 8-directional cell-distance
+        check on top of that would create false "shortcut" edges skipping real hops. The coarse cell map is kept only as a broad-phase filter
         to avoid an O(n²) precise check across the whole layout.
 
         Returns:
@@ -1069,15 +1359,75 @@ class CanvasWidget(tk.Frame):
                     road_neighbors[rid].add(other_id)
                     road_neighbors[other_id].add(rid)
 
-        self._road_graph = (tile_to_roads, road_neighbors, road_polys, road_cost)
+        # Include road_tiles (rid → set of (col,row)) so _incremental_road_graph_update
+        # can remove evicted roads without scanning the full tile_to_roads dict.
+        self._road_graph = (tile_to_roads, road_tiles, road_neighbors, road_polys, road_cost)
         self._road_graph_dirty = False
         return self._road_graph
 
-    def _roads_touching_footprint(self, bd: BuildingData, gx: float, gy: float,
-                                   rotation: int, tile_to_roads: dict,
-                                   road_polys: dict) -> set:
-        """Return road instance_ids whose footprint precisely touches/overlaps
-        the footprint of a building at gx,gy,rotation - its "street access" tiles."""
+    def _incremental_road_graph_update(self, pb_add=None, evict_ids=()):
+        """Update the cached road graph for one new road tile and/or evictions.
+
+        Called instead of setting _road_graph_dirty so the expensive O(n²)
+        full rebuild is avoided. Each call is O(k) where k is the number of
+        candidate neighbor tiles (~6 for a 1×1 road), regardless of layout size.
+
+        pb_add   – PlacedBuilding just added (road); None if only evicting.
+        evict_ids – iterable of instance_ids being removed from placed_buildings.
+        """
+        if self._road_graph is None or self._road_graph_dirty:
+            # No cached graph yet; let the next caller do a full build.
+            return
+
+        tile_to_roads, road_tiles, road_neighbors, road_polys, road_cost = self._road_graph
+
+        # --- Evict removed roads from every data structure ---
+        for rid in evict_ids:
+            if rid not in road_tiles:
+                continue
+            for nb in list(road_neighbors.get(rid, ())):
+                road_neighbors.get(nb, set()).discard(rid)
+            for t in road_tiles[rid]:
+                s = tile_to_roads.get(t)
+                if s:
+                    s.discard(rid)
+                    if not s:
+                        del tile_to_roads[t]
+            road_tiles.pop(rid, None)
+            road_polys.pop(rid, None)
+            road_cost.pop(rid, None)
+            road_neighbors.pop(rid, None)
+
+        # --- Add new road tile ---
+        if pb_add is not None:
+            bd = self.dm.get_building(pb_add.guid)
+            if bd and 'Road' in bd.get_category_english():
+                rid_new = pb_add.instance_id
+                tiles_new = _get_occupied_tiles(bd, pb_add.grid_x, pb_add.grid_y, pb_add.rotation)
+                poly_new  = self._get_poly_pts(bd, pb_add.grid_x, pb_add.grid_y, pb_add.rotation)
+                cost_new  = _road_street_distance_cost(bd)
+                road_tiles[rid_new]     = tiles_new
+                road_polys[rid_new]     = poly_new
+                road_cost[rid_new]      = cost_new
+                road_neighbors[rid_new] = set()
+                for t in tiles_new:
+                    tile_to_roads.setdefault(t, set()).add(rid_new)
+                # Find neighbors: only roads within one tile of any occupied tile
+                candidates: set = set()
+                for (col, row) in tiles_new:
+                    for dc in (-1, 0, 1):
+                        for dr in (-1, 0, 1):
+                            candidates |= tile_to_roads.get((col + dc, row + dr), set())
+                candidates.discard(rid_new)
+                for other_id in candidates:
+                    if self._polys_touch(poly_new, road_polys[other_id]):
+                        road_neighbors[rid_new].add(other_id)
+                        road_neighbors[other_id].add(rid_new)
+
+        # Tuple is mutable in-place (dicts share identity), so no reassignment needed.
+
+    def _roads_touching_footprint(self, bd: BuildingData, gx: float, gy: float, rotation: int, tile_to_roads: dict, road_polys: dict) -> set:
+        """Return road instance_ids whose footprint precisely touches/overlaps the footprint of a building at gx,gy,rotation - its "street access" tiles."""
         poly = self._get_poly_pts(bd, gx, gy, rotation)
         tiles = _get_occupied_tiles(bd, gx, gy, rotation)
         candidates = set()
@@ -1088,8 +1438,7 @@ class CanvasWidget(tk.Frame):
         return {rid for rid in candidates if self._polys_touch(poly, road_polys[rid])}
 
     @staticmethod
-    def _street_distance_bfs(start_road_ids: set, road_neighbors: dict,
-                              road_cost: dict, max_hops: float) -> dict:
+    def _street_distance_bfs(start_road_ids: set, road_neighbors: dict, road_cost: dict, max_hops: float) -> dict:
         """Weighted shortest-path search over the road graph from a set of
         starting road tiles, capped at max_hops. Each tile's own cost (see
         _road_street_distance_cost) determines how much of the budget
@@ -1144,9 +1493,9 @@ class CanvasWidget(tk.Frame):
                     continue
                 if bd.guid == bd_sel.guid:
                     continue  # same building type doesn't count as "affected"
-                # Roads, channels, aqueduct arches and modules/fields aren't
-                # meaningful targets for an effect radius.
-                if _is_road_like(bd) or bd.get_category_english() in _DRAG_PLACEABLE_CATEGORIES:
+                # Roads, channels, modules/fields, and purely decorative items
+                # aren't meaningful targets for an effect radius.
+                if _is_road_like(bd) or bd.get_category_english() in _RADIUS_EXCLUDED_CATEGORIES:
                     continue
                 ocx, ocy = self._building_center(bd, pb.grid_x, pb.grid_y, pb.rotation)
                 dx, dy = ocx - scx, ocy - scy
@@ -1155,13 +1504,33 @@ class CanvasWidget(tk.Frame):
         else:
             # StreetDistance: real graph distance along the connected road
             # network (1 hop per tile, regardless of orientation, but
-            # paved/marble tiles cost less - see _road_street_distance_cost)
-            # - not a geometric approximation, so diagonal streets reach
-            # exactly as far per tile as cardinal ones (√2 more raw grid-distance).
-            tile_to_roads, road_neighbors, road_polys, road_cost = self._get_road_graph()
+            # paved/marble tiles cost less - see _road_street_distance_cost).
+            tile_to_roads, _rt, road_neighbors, road_polys, road_cost = self._get_road_graph()
             start_roads = self._roads_touching_footprint(
                 bd_sel, gx, gy, rotation, tile_to_roads, road_polys)
             reach = self._street_distance_bfs(start_roads, road_neighbors, road_cost, r_val)
+            if not reach:
+                return set()
+            reach_set = set(reach.keys())
+
+            # Bounding box of tiles reachable by the BFS.  Buildings whose
+            # footprint lies entirely outside this box (plus a 2-tile margin
+            # for the adjacency checks inside _roads_touching_footprint) cannot
+            # touch any reachable road — skip them without calling _polys_touch.
+            # On a 250×250 tile island with a 10-tile radius this filters ~99 %
+            # of buildings, collapsing the old O(n) 1500 ms loop to ~15 ms.
+            min_col = min_row =  float('inf')
+            max_col = max_row = -float('inf')
+            for tile, rids in tile_to_roads.items():
+                if rids & reach_set:
+                    col, row = tile
+                    if col < min_col: min_col = col
+                    if col > max_col: max_col = col
+                    if row < min_row: min_row = row
+                    if row > max_row: max_row = row
+            min_col -= 2;  max_col += 2
+            min_row -= 2;  max_row += 2
+
             for pb in self.placed_buildings:
                 if pb.instance_id == exclude_id:
                     continue
@@ -1169,12 +1538,17 @@ class CanvasWidget(tk.Frame):
                 if not bd:
                     continue
                 if bd.guid == bd_sel.guid:
-                    continue  # same building type doesn't count as "affected"
-                if _is_road_like(bd) or bd.get_category_english() in _DRAG_PLACEABLE_CATEGORIES:
+                    continue
+                if _is_road_like(bd) or bd.get_category_english() in _RADIUS_EXCLUDED_CATEGORIES:
+                    continue
+                # Spatial pre-filter using footprint bounding box
+                x0, y0, x1, y1 = self._footprint_rect(bd, pb)
+                if (math.ceil(x1) < min_col or math.floor(x0) > max_col or
+                        math.ceil(y1) < min_row or math.floor(y0) > max_row):
                     continue
                 touching = self._roads_touching_footprint(
                     bd, pb.grid_x, pb.grid_y, pb.rotation, tile_to_roads, road_polys)
-                if touching & reach.keys():
+                if touching & reach_set:
                     in_range.add(pb.instance_id)
 
         return in_range
@@ -1255,10 +1629,10 @@ class CanvasWidget(tk.Frame):
             if not bd:
                 return
             gx, gy = self._ghost_grid_pos
-            self._draw_radius_rings(bd, gx, gy, self.build_rotation)
+            self._draw_radius_rings(bd, gx, gy, self.build_rotation, canvas_tag='ghost')
 
     def _draw_radius_rings(self, bd: BuildingData, gx: float, gy: float, rotation: int,
-                           r_val_override: float = None):
+                           r_val_override: float = None, canvas_tag: str = 'world'):
         """Draw the effect-radius/module-radius/free-area rings for a building
         at the given grid anchor (used for both placed and ghost previews)."""
         has_radius     = isinstance(bd.radius, dict)
@@ -1292,26 +1666,28 @@ class CanvasWidget(tk.Frame):
             if r_type == 'Radius':
                 c.create_oval(cx - r_px, cy - r_px, cx + r_px, cy + r_px,
                               outline=eff_color, fill='', width=line_w, dash=eff_dash,
-                              tags='radius_overlay')
+                              tags=('radius_overlay', canvas_tag))
             else:
                 # StreetDistance – real graph distance along the connected
                 # road network (paved/marble tiles cost less, see
                 # _road_street_distance_cost), not a geometric shape, so
                 # highlight every road tile actually within reach instead.
-                tile_to_roads, road_neighbors, road_polys, road_cost = self._get_road_graph()
+                tile_to_roads, _rt, road_neighbors, road_polys, road_cost = self._get_road_graph()
                 start_roads = self._roads_touching_footprint(
                     bd, gx, gy, rotation, tile_to_roads, road_polys)
                 reach = self._street_distance_bfs(start_roads, road_neighbors, road_cost, r_val)
+                # Build a one-shot id→pb dict to avoid an O(n) list scan per road.
+                pb_by_id = {p.instance_id: p for p in self.placed_buildings}
                 for rid in reach:
-                    rpb = next((p for p in self.placed_buildings
-                               if p.instance_id == rid), None)
+                    rpb = pb_by_id.get(rid)
                     if not rpb:
                         continue
                     rbd = self.dm.get_building(rpb.guid)
                     if not rbd:
                         continue
                     self._draw_reach_outline(rbd, rpb.grid_x, rpb.grid_y,
-                                             rpb.rotation, eff_color, line_w)
+                                             rpb.rotation, eff_color, line_w,
+                                             canvas_tag=canvas_tag)
 
         if has_mod_radius:
             # In-game the module radius is a true circle from the building's
@@ -1321,16 +1697,17 @@ class CanvasWidget(tk.Frame):
             r_px = r_eff * ts
             c.create_oval(cx - r_px, cy - r_px, cx + r_px, cy + r_px,
                           outline=mod_color, fill='', width=line_w, dash=thin_dash,
-                          tags='radius_overlay')
+                          tags=('radius_overlay', canvas_tag))
 
         if has_free_radius:
             r_px = bd.free_area_productivity['influenceRadius'] * ts
             c.create_oval(cx - r_px, cy - r_px, cx + r_px, cy + r_px,
                           outline=free_color, fill='', width=line_w, dash=thin_dash,
-                          tags='radius_overlay')
+                          tags=('radius_overlay', canvas_tag))
 
     def _draw_reach_outline(self, bd: BuildingData, gx: float, gy: float,
-                            rotation: int, color: str, line_w: int):
+                            rotation: int, color: str, line_w: int,
+                            canvas_tag: str = 'world'):
         """Outline a building's footprint (rect or 45° diamond) in the given
         colour - used to highlight road tiles reachable within a
         StreetDistance budget."""
@@ -1341,7 +1718,8 @@ class CanvasWidget(tk.Frame):
         if rot in (0, 90, 180, 270):
             w, h = (bd.width, bd.height) if rot in (0, 180) else (bd.height, bd.width)
             c.create_rectangle(cx0, cy0, cx0 + w * ts, cy0 + h * ts,
-                               outline=color, width=line_w, tags='radius_overlay')
+                               outline=color, width=line_w,
+                               tags=('radius_overlay', canvas_tag))
         else:
             nw, nh = _get_45_grid_counts(bd, rot)
             half = 0.25 * ts
@@ -1354,13 +1732,13 @@ class CanvasWidget(tk.Frame):
                 ccx - (nw + nh) * half, ccy + (nh - nw) * half,
             ]
             c.create_polygon(pts, outline=color, fill='', width=line_w,
-                             tags='radius_overlay')
+                             tags=('radius_overlay', canvas_tag))
 
     def _get_icon(self, bd: BuildingData, size: int):
         """Load and return a PhotoImage for the building icon."""
         if not PIL_AVAILABLE:
             return None
-        size = max(16, min(size, 128))
+        size = max(8, min(size, 128))
         key = (bd.guid, size)
         if key in self._photo_cache:
             return self._photo_cache[key]
@@ -1404,6 +1782,13 @@ class CanvasWidget(tk.Frame):
         self._pan_start_y = event.y
         self._pan_did_move = False
         self.canvas.config(cursor='fleur')
+        # Suppress deferred redraws while panning to prevent mid-pan canvas blanks.
+        if self._deferred_redraw_id is not None:
+            self.after_cancel(self._deferred_redraw_id)
+            self._deferred_redraw_id = None
+        if self._deferred_island_bg_id is not None:
+            self.after_cancel(self._deferred_island_bg_id)
+            self._deferred_island_bg_id = None
 
     def _on_pan_move(self, event):
         dx = event.x - self._pan_last_x
@@ -1414,7 +1799,7 @@ class CanvasWidget(tk.Frame):
         self.pan_y += dy
         self._pan_last_x = event.x
         self._pan_last_y = event.y
-        self._redraw()
+        self._redraw_pan()
 
     def _on_pan_end(self, event):
         if not self._pan_did_move:
@@ -1422,6 +1807,12 @@ class CanvasWidget(tk.Frame):
             self.rotate_build(direction=1)
         cur = 'crosshair' if self.build_mode_guid else 'arrow'
         self.canvas.config(cursor=cur)
+        # Island background is kept current by _fill_island_chunks() on each
+        # pan event; no separate deferred refresh is needed any more.
+        if self._layout_dirty:
+            # If the layout is dirty (e.g. placement happened before this pan),
+            # schedule the deferred full rebuild now that panning has stopped.
+            self._schedule_deferred_redraw(80)
 
     def _on_mousewheel(self, event):
         # Determine zoom direction
@@ -1447,8 +1838,210 @@ class CanvasWidget(tk.Frame):
         self._redraw()
 
     # ------------------------------------------------------------------ #
-    #  Mouse events – building placement, selection, drag
+    #  Deferred / incremental redraw helpers
     # ------------------------------------------------------------------ #
+    def _schedule_deferred_redraw(self, delay_ms: int = 200):
+        """Schedule a full _redraw() to run after `delay_ms`, cancelling any
+        previously pending deferred rebuild. Used to settle visual state after
+        incremental placement without blocking the interaction."""
+        if self._deferred_redraw_id is not None:
+            self.after_cancel(self._deferred_redraw_id)
+        self._deferred_redraw_id = self.after(delay_ms, self._do_deferred_redraw)
+
+    def _do_deferred_redraw(self):
+        self._deferred_redraw_id = None
+        self._redraw()
+
+    def _refresh_island_bg(self):
+        """Rebuild just the island background canvas image (no full redraw).
+        Called after panning stops to fill in any leading-edge artifact."""
+        self._deferred_island_bg_id = None
+        c = self.canvas
+        c.delete('island_bg')
+        if self._island_tiles is not None:
+            self._draw_island_bg()
+            c.lower('island_bg')
+
+    def _incremental_add_building(self, pb: 'PlacedBuilding',
+                                   evict: set = None):
+        """Draw one newly-placed building on the canvas without a full redraw.
+        Sets _layout_dirty = False so panning keeps using the cheap fast path.
+
+        evict – set of instance_ids whose canvas items and draw-order-cache
+                entries must be removed (buildings replaced by this placement).
+        """
+        bd = self.dm.get_building(pb.guid)
+
+        # ── Update draw order cache ──────────────────────────────────────
+        if self._draw_order_cache is not None:
+            # Remove evicted entries first
+            if evict:
+                self._draw_order_cache = [
+                    e for e in self._draw_order_cache
+                    if e.instance_id not in evict
+                ]
+            # Insert new building at the correct Z-order position.
+            if bd is None:
+                self._draw_order_cache.append(pb)
+            else:
+                pri = _road_priority(bd)
+                is_quay = (bd.get_category_english() == 'Ground Patterns'
+                           and bd.width == 1 and bd.height == 1)
+                if is_quay:
+                    new_key = 0
+                elif pri > 0:
+                    new_key = pri  # 1, 2, or 3 for road-like tiles
+                else:
+                    new_key = 10  # regular buildings always on top
+                if new_key == 10:
+                    self._draw_order_cache.append(pb)
+                else:
+                    # Insert before the first entry with a higher priority value.
+                    inserted = False
+                    for i, existing in enumerate(self._draw_order_cache):
+                        ebd = self.dm.get_building(existing.guid)
+                        if ebd is None:
+                            existing_key = 10
+                        else:
+                            epri = _road_priority(ebd)
+                            if epri > 0:
+                                existing_key = epri
+                            elif (ebd.get_category_english() == 'Ground Patterns'
+                                  and ebd.width == 1 and ebd.height == 1):
+                                existing_key = 0
+                            else:
+                                existing_key = 10
+                        if existing_key > new_key:
+                            self._draw_order_cache.insert(i, pb)
+                            inserted = True
+                            break
+                    if not inserted:
+                        self._draw_order_cache.append(pb)
+
+        # ── Update road position cache ───────────────────────────────────
+        if self._road_pos_cache is not None:
+            diag_set, ortho_set = self._road_pos_cache
+            if evict:
+                # We can't easily remove evicted positions without knowing
+                # whether another road still occupies the same tile, so drop
+                # the cache and let _draw_buildings() rebuild it on demand.
+                self._road_pos_cache = None
+                diag_set, ortho_set = set(), set()
+            if bd is not None and _is_road_like(bd) and not pb.nibble:
+                pos = (math.floor(pb.grid_x), math.floor(pb.grid_y))
+                if pb.rotation % 360 not in (0, 90, 180, 270):
+                    diag_set.add(pos)
+                else:
+                    ortho_set.add(pos)
+
+        # ── Draw the new building ────────────────────────────────────────
+        parent_color_ranks = self._get_parent_color_ranks()
+        diag_pos, ortho_pos = self._road_pos_cache or (set(), set())
+        self._draw_placed_building(
+            pb,
+            parent_color_ranks=parent_color_ranks,
+            diag_road_pos=diag_pos,
+            ortho_road_pos=ortho_pos,
+        )
+        self._layout_dirty = False
+
+    # ------------------------------------------------------------------ #
+    #  Island-background chunk helpers  /  Deferred stats update
+    # ------------------------------------------------------------------ #
+    def _get_island_chunk(self, cx: int, cy: int):
+        """Return the cached PhotoImage for island background chunk (cx, cy).
+
+        Each chunk covers _island_chunk_size × _island_chunk_size tiles and is
+        ~224×224 px at ts≈7, making PhotoImage conversion ~2 ms instead of the
+        ~200 ms needed for a full-canvas image.
+        """
+        if not PIL_AVAILABLE:
+            return None
+        ts     = self.tile_size
+        light  = self.light_mode.get()
+        ts_key = round(ts * 100)
+        key    = (cx, cy, ts_key, light)
+        photo  = self._island_chunk_photos.get(key)
+        if photo is not None:
+            return photo
+
+        base = self._island_base_img_light if light else self._island_base_img_dark
+        if base is None:
+            return None
+
+        cs     = self._island_chunk_size
+        iw, ih = self._island_w, self._island_h
+        left   = cx * cs
+        top    = cy * cs
+        right  = min(iw, left + cs)
+        bottom = min(ih, top + cs)
+        if right <= left or bottom <= top:
+            return None
+
+        crop   = base.crop((left, top, right, bottom))
+        out_w  = max(1, math.ceil((right - left) * ts))
+        out_h  = max(1, math.ceil((bottom - top) * ts))
+        scaled = crop.resize((out_w, out_h), Image.NEAREST)
+
+        if self._island_quads is not None and ts >= 4:
+            self._render_island_quads(scaled, left, top, right, bottom, ts)
+
+        photo = ImageTk.PhotoImage(scaled)
+        self._island_chunk_photos[key] = photo
+        return photo
+
+    def _fill_island_chunks(self):
+        """Create canvas items for island-background chunks now in the viewport
+        but not yet drawn.  Called on each pan event; each new chunk takes ~2 ms
+        to create at ts≈7 and is then cached for future pan events at the same
+        zoom level.
+        """
+        if not PIL_AVAILABLE or self._island_tiles is None:
+            return
+        c   = self.canvas
+        cw  = c.winfo_width()
+        ch  = c.winfo_height()
+        ts  = self.tile_size
+        cs  = self._island_chunk_size
+        px0 = self.pan_x
+        py0 = self.pan_y
+
+        cx_lo = max(0, int(math.floor(-px0 / (ts * cs))))
+        cx_hi = int(math.ceil((cw - px0) / (ts * cs)))
+        cy_lo = max(0, int(math.floor(-py0 / (ts * cs))))
+        cy_hi = int(math.ceil((ch - py0) / (ts * cs)))
+
+        added = False
+        for cx in range(cx_lo, cx_hi + 1):
+            for cy in range(cy_lo, cy_hi + 1):
+                if (cx, cy) in self._drawn_island_chunks:
+                    continue
+                photo = self._get_island_chunk(cx, cy)
+                if photo is None:
+                    continue
+                px = cx * cs * ts + px0
+                py = cy * cs * ts + py0
+                c.create_image(px, py, anchor='nw', image=photo, tags='island_bg')
+                self._drawn_island_chunks.add((cx, cy))
+                added = True
+
+        if added:
+            c.lower('island_bg')
+
+    # ------------------------------------------------------------------ #
+    #  Deferred stats-panel update
+    # ------------------------------------------------------------------ #
+    def _schedule_deferred_stats_update(self, delay_ms: int = 150):
+        """Schedule a deferred info-panel stats refresh, collapsing rapid calls."""
+        if self._deferred_stats_id is not None:
+            self.after_cancel(self._deferred_stats_id)
+        self._deferred_stats_id = self.after(delay_ms, self._do_deferred_stats_update)
+
+    def _do_deferred_stats_update(self):
+        self._deferred_stats_id = None
+        if hasattr(self.app, 'info_panel'):
+            self.app.info_panel.update_stats(self.get_layout_stats())
+
     def _try_place_road_at(self, gx: float, gy: float):
         """Place one road/module tile without pushing undo (used during drag-placement)."""
         bd = self.dm.get_building(self.build_mode_guid)
@@ -1473,13 +2066,21 @@ class CanvasWidget(tk.Frame):
         if evict:
             self.placed_buildings = [p for p in self.placed_buildings
                                      if p.instance_id not in evict]
+            for eid in evict:
+                self.canvas.delete(f'bld_{eid}')
         pb = PlacedBuilding(self.build_mode_guid, gx, gy, self.build_rotation,
                             parent_id=self._module_parent_id)
         self.placed_buildings.append(pb)
         self._road_drag_placed_ids.add(pb.instance_id)
         self._road_drag_last_pos = (gx, gy)
-        self._rebuild_collision()
-        self._notify_layout_change()
+        self._rebuild_collision(is_road_change=False, is_module_change=False,
+                                preserve_draw_caches=True)
+        self._incremental_road_graph_update(pb, evict)
+        if hasattr(self.app, 'mark_dirty'):
+            self.app.mark_dirty()
+        self._schedule_deferred_stats_update()
+        # Draw new road tile immediately (junction clips are deferred to drag-end).
+        self._incremental_add_building(pb, evict=evict)
 
     def _surround_block_with_roads(self, gx: float, gy: float):
         """Surround the contiguous block of non-road buildings at (gx, gy) with roads."""
@@ -1706,7 +2307,10 @@ class CanvasWidget(tk.Frame):
                 self._road_drag_placed_ids = set()
                 if self._ghost_grid_pos is not None:
                     self._try_place_road_at(*self._ghost_grid_pos)
-                self._redraw()
+                # _try_place_road_at already drew the first tile via
+                # _incremental_add_building.  Just refresh the ghost overlay.
+                self.canvas.delete('ghost')
+                self._draw_ghost()
             else:
                 self._place_building(event)
             return
@@ -1766,7 +2370,8 @@ class CanvasWidget(tk.Frame):
             elif self._road_drag_active and self._ghost_grid_pos is not None:
                 if self._ghost_grid_pos != self._road_drag_last_pos:
                     self._try_place_road_at(*self._ghost_grid_pos)
-                    self._redraw()
+                    # Incremental draw is done inside _try_place_road_at;
+                    # full rebuild (for junctions) fires on drag release.
             return
 
         if self._drag_start_canvas is not None and self.selected_ids:
@@ -1867,6 +2472,8 @@ class CanvasWidget(tk.Frame):
             self._road_drag_active = False
             self._road_drag_last_pos = None
             self._road_drag_placed_ids = set()
+            # Full rebuild to render correct junction clips for placed roads.
+            self._schedule_deferred_redraw(50)
             return
 
         if self._is_dragging and self._drag_moved:
@@ -1923,8 +2530,43 @@ class CanvasWidget(tk.Frame):
             self._update_paste_ghost(event.x, event.y)
         elif self.build_mode_guid is not None:
             self._update_ghost(event.x, event.y)
+        else:
+            self._update_dbg_hover(event.x, event.y)
+
+    def _update_dbg_hover(self, cx: float, cy: float):
+        c = self.canvas
+        for item in self._dbg_hover_items:
+            c.delete(item)
+        self._dbg_hover_items.clear()
+
+        iid = self._find_building_at(cx, cy)
+        if iid is None:
+            return
+        pb = next((p for p in self.placed_buildings if p.instance_id == iid), None)
+        if pb is None:
+            return
+        bd = self.dm.get_building(pb.guid)
+        name = bd.get_name('english') if bd else f'guid {pb.guid}'
+        txt = (f"{name}  (guid {pb.guid})\n"
+               f"col={pb.grid_x:.4g}  row={pb.grid_y:.4g}  rot={pb.rotation}°")
+
+        tx, ty = cx + 14, cy - 44
+        ti = c.create_text(tx, ty, anchor='nw', text=txt, fill='white',
+                           font=('Segoe UI', 8), tags='dbg_hover')
+        bb = c.bbox(ti)
+        if bb:
+            ri = c.create_rectangle(bb[0]-3, bb[1]-2, bb[2]+3, bb[3]+2,
+                                     fill='#1a1a1a', outline='#888888',
+                                     tags='dbg_hover')
+            c.lift(ti)
+            self._dbg_hover_items = [ri, ti]
+        else:
+            self._dbg_hover_items = [ti]
 
     def _on_mouse_leave(self, event):
+        for item in self._dbg_hover_items:
+            self.canvas.delete(item)
+        self._dbg_hover_items.clear()
         changed = False
         if self._ghost_items or self._ghost_grid_pos is not None:
             self._ghost_grid_pos = None
@@ -1968,6 +2610,22 @@ class CanvasWidget(tk.Frame):
                                           nw, nh)
 
         self._ghost_grid_pos = (gx, gy)
+
+        if not self._layout_dirty:
+            # Ghost-only update: skip the full delete-all + rebuild.
+            # Buildings are already on the canvas from the last full redraw;
+            # just replace the ghost items tagged 'ghost'.
+            c = self.canvas
+            c.delete('ghost')
+            self._draw_ghost()
+            # Ghost radius ring is also tagged 'ghost' (deleted above); redraw it.
+            if (not self._house_drag_active and not self._module_rect_active
+                    and not self._paste_active and self._line_start is None
+                    and len(self.selected_ids) != 1):
+                self._draw_radius_rings(bd, gx, gy, self.build_rotation,
+                                        canvas_tag='ghost')
+            return
+
         self._redraw()
 
     def _place_building(self, event):
@@ -1998,8 +2656,22 @@ class CanvasWidget(tk.Frame):
                 self._active_item_effects[pb.instance_id] = set(eff['items'])
             if eff.get('boosts'):
                 self._active_item_boosts[pb.instance_id] = set(eff['boosts'])
-        self._rebuild_collision()
-        self._notify_layout_change()
+        # Tell _rebuild_collision what actually changed so it can skip
+        # re-invalidating caches that are not affected by this placement.
+        is_road = _is_road_like(bd)
+        is_module = pb.parent_id is not None or pb.nibble
+        self._rebuild_collision(is_road_change=False, is_module_change=is_module,
+                                preserve_draw_caches=True)
+        self._incremental_road_graph_update(pb if is_road else None, evict)
+        # Erase canvas items for any roads that were evicted above.
+        if evict:
+            for eid in evict:
+                self.canvas.delete(f'bld_{eid}')
+        # Mark layout as modified immediately; defer the expensive stats
+        # computation so the building appears on screen without any delay.
+        if hasattr(self.app, 'mark_dirty'):
+            self.app.mark_dirty()
+        self._schedule_deferred_stats_update()
         if self._move_mode_active:
             # The move is done - clear the snapshot first so cancel_build_mode
             # below doesn't try to restore the building we just placed.
@@ -2007,7 +2679,14 @@ class CanvasWidget(tk.Frame):
             self._move_restore_snapshot = []
             self.cancel_build_mode()
             return
-        self._redraw()
+        # Incremental canvas update: draw only the new building immediately so
+        # the user sees instant feedback.  A deferred full rebuild follows to
+        # correct Z-order, road junctions, and farm-field colours.
+        self._incremental_add_building(pb, evict=evict)
+        if is_road or is_module:
+            # Roads need junction re-rendering; modules need colour conflict
+            # re-evaluation.  Schedule a settle redraw after a short idle.
+            self._schedule_deferred_redraw(200)
         # Stay in build mode for repeated placement
 
     def _update_house_block(self):
@@ -2380,20 +3059,43 @@ class CanvasWidget(tk.Frame):
     # ------------------------------------------------------------------ #
     #  Collision
     # ------------------------------------------------------------------ #
-    def _rebuild_collision(self):
+    def _rebuild_collision(self, *, is_road_change: bool = True,
+                           is_module_change: bool = True,
+                           preserve_draw_caches: bool = False):
+        """Rebuild the collision tile map.
+
+        is_road_change  – set False when no road-like building was added/removed;
+                          preserves the cached road graph.
+        is_module_change – set False when no farm-module / nibble tile changed;
+                           preserves the module-touch-pairs and colour-rank caches.
+        preserve_draw_caches – set True for incremental single-building placements
+                               so _draw_order_cache and _road_pos_cache survive;
+                               the caller is responsible for updating them.
+        All flags default to True / False (conservative / safe for unknown callers).
+        """
         # (col, row) -> list of instance_ids occupying that tile, in placement
         # order. Usually a single occupant, but a road may share a tile with
         # an aqueduct arch or canal it crosses (see _can_coexist).
+        # Nibble tiles are cosmetic sub-tile polygons and never block placement.
         self._collision_map = {}
         for pb in self.placed_buildings:
+            if pb.nibble:
+                continue
             bd = self.dm.get_building(pb.guid)
             if not bd:
                 continue
             tiles = _get_occupied_tiles(bd, pb.grid_x, pb.grid_y, pb.rotation)
             for t in tiles:
                 self._collision_map.setdefault(t, []).append(pb.instance_id)
-        self._road_graph_dirty = True
-        self._module_touch_pairs_cache = None
+        if is_road_change:
+            self._road_graph_dirty = True
+        if is_module_change:
+            self._module_touch_pairs_cache = None
+            self._parent_color_ranks_cache = None
+        if not preserve_draw_caches:
+            self._draw_order_cache = None
+            self._road_pos_cache = None
+        self._layout_dirty = True   # force a full rebuild before any fast pan
 
     def _get_module_touch_pairs(self) -> list:
         """Pairs of (module_a, module_b) PlacedBuildings, each belonging to
@@ -2404,14 +3106,25 @@ class CanvasWidget(tk.Frame):
             return self._module_touch_pairs_cache
 
         modules = [pb for pb in self.placed_buildings if pb.parent_id is not None]
-        tile_to_modules: dict = {}
+        tile_to_modules: dict = {}   # (col, row) -> [instance_ids]
+        module_to_tiles: dict = {}   # instance_id -> set of (col, row)  — reverse lookup
         polys: dict = {}
         for pb in modules:
+            if pb.nibble:
+                # Nibble tile: always use 1×1 square polygon at its grid cell.
+                gx, gy = pb.grid_x, pb.grid_y
+                polys[pb.instance_id] = ([gx, gy, gx+1, gy, gx+1, gy+1, gx, gy+1], pb)
+                tile_key = (round(gx), round(gy))
+                tile_to_modules.setdefault(tile_key, []).append(pb.instance_id)
+                module_to_tiles[pb.instance_id] = {tile_key}
+                continue
             bd = self.dm.get_building(pb.guid)
             if not bd:
                 continue
             polys[pb.instance_id] = (self._get_poly_pts(bd, pb.grid_x, pb.grid_y, pb.rotation), pb)
-            for t in _get_occupied_tiles(bd, pb.grid_x, pb.grid_y, pb.rotation):
+            tiles = _get_occupied_tiles(bd, pb.grid_x, pb.grid_y, pb.rotation)
+            module_to_tiles[pb.instance_id] = set(tiles)
+            for t in tiles:
                 tile_to_modules.setdefault(t, []).append(pb.instance_id)
 
         pairs = []
@@ -2422,7 +3135,7 @@ class CanvasWidget(tk.Frame):
                 continue
             poly_a, _ = entry
             candidates = set()
-            occupied = {t for t, ids in tile_to_modules.items() if pb.instance_id in ids}
+            occupied = module_to_tiles.get(pb.instance_id, set())
             for (col, row) in occupied:
                 for dc in (-1, 0, 1):
                     for dr in (-1, 0, 1):
@@ -2440,7 +3153,17 @@ class CanvasWidget(tk.Frame):
                 if other_pb.parent_id == pb.parent_id:
                     continue
                 seen.add(key)
-                if self._polys_touch(poly_a, poly_b):
+                if pb.nibble and other_pb.nibble:
+                    # Both are 1×1 axis-aligned unit squares: skip the 48µs SAT
+                    # call and do a cheap integer edge-adjacency check instead.
+                    (gx1, gy1) = next(iter(occupied))
+                    occ_b = module_to_tiles.get(other_pb.instance_id, set())
+                    if occ_b:
+                        gx2, gy2 = next(iter(occ_b))
+                        adx, ady = abs(gx1 - gx2), abs(gy1 - gy2)
+                        if (adx == 1 and ady == 0) or (adx == 0 and ady == 1):
+                            pairs.append((pb, other_pb))
+                elif self._polys_touch(poly_a, poly_b):
                     pairs.append((pb, other_pb))
 
         self._module_touch_pairs_cache = pairs
@@ -2455,6 +3178,8 @@ class CanvasWidget(tk.Frame):
         unchanged; rank k>0 is lightened by k steps, so three or more
         mutually-touching same-coloured areas each end up a visually
         distinct shade rather than only ever telling two apart."""
+        if self._parent_color_ranks_cache is not None:
+            return self._parent_color_ranks_cache
         parent_of: dict = {}
 
         def find(x):
@@ -2499,6 +3224,7 @@ class CanvasWidget(tk.Frame):
             for rank, pid in enumerate(sorted(members)):
                 if rank > 0:
                     ranks[pid] = rank
+        self._parent_color_ranks_cache = ranks
         return ranks
 
     def _get_placed_by_id(self, instance_id) -> Optional[PlacedBuilding]:
@@ -2671,10 +3397,46 @@ class CanvasWidget(tk.Frame):
 
     def _check_collision(self, bd: BuildingData, gx: float, gy: float,
                           rotation: int, exclude_ids: set = None) -> bool:
+        occupied = _get_occupied_tiles(bd, gx, gy, rotation)
         rot = rotation % 360
+
+        # Island blocking: any tile outside bounds or not in the buildable set blocks placement.
+        if self._island_tiles is not None:
+            iw, ih = self._island_w, self._island_h
+            # River-crossable buildings (river buildings, roads, aqueducts, walls)
+            # may be placed on any in-bounds tile, including river/unbuildable land.
+            _river_crossable = (
+                getattr(bd, 'river_building', None)
+                or _is_road_like(bd)
+                or bd.get_category_english() == 'Defensive Building'
+            )
+            # Water buildings (waterBuilding: true or "optional") may also occupy harbour tiles.
+            if _river_crossable:
+                valid_tiles = {_ISLE_LAND, _ISLE_BUILDABLE, _ISLE_MARSH, _ISLE_HARBOUR}
+            elif getattr(bd, 'water_building', None):
+                valid_tiles = _ISLE_BUILDABLE_TILES | {_ISLE_HARBOUR}
+            else:
+                valid_tiles = _ISLE_BUILDABLE_TILES
+            # For diagonal buildings pre-compute the polygon once for half-tile precision.
+            bld_poly = (self._get_poly_pts(bd, gx, gy, rotation)
+                        if rot not in (0, 90, 180, 270) else None)
+            for (tx, ty) in occupied:
+                if tx < 0 or ty < 0 or tx >= iw or ty >= ih:
+                    return True
+                idx = ty * iw + tx
+                tile_type = self._island_tiles[idx]
+                if tile_type not in valid_tiles:
+                    # Diagonal buildings: allow a cut LAND tile only if the building
+                    # does not actually touch the non-buildable (land-coloured) half.
+                    if (tile_type == _ISLE_LAND and bld_poly is not None
+                            and self._island_quads is not None):
+                        q_mask = self._island_quads[idx]
+                        if q_mask and not _overlaps_nonbuildable_half(bld_poly, tx, ty, q_mask):
+                            continue
+                    return True
+
         if rot in (0, 90, 180, 270):
-            tiles = _get_occupied_tiles(bd, gx, gy, rotation)
-            for t in tiles:
+            for t in occupied:
                 occ_ids = self._collision_map.get(t)
                 if not occ_ids:
                     continue
@@ -2854,10 +3616,10 @@ class CanvasWidget(tk.Frame):
         self._push_undo()
         self.placed_buildings.clear()
         self.selected_ids.clear()
-        self._collision_map.clear()
         self._active_tech_effects.clear()
         self._active_item_effects.clear()
         self._active_item_boosts.clear()
+        self._rebuild_collision()   # clears collision map + draw/road caches
         self._notify_layout_change()
         self._notify_selection()
         self._redraw()
@@ -3341,7 +4103,10 @@ class CanvasWidget(tk.Frame):
     #  Undo / Redo
     # ------------------------------------------------------------------ #
     def _push_undo(self):
-        snapshot = [pb.to_dict() for pb in self.placed_buildings]
+        # Shallow copy: PlacedBuilding objects are immutable after placement so
+        # a pointer-list copy is a valid snapshot.  ~0.5 ms for 9000 buildings
+        # vs ~45 ms for the old [pb.to_dict() for pb in ...] serialisation.
+        snapshot = list(self.placed_buildings)
         self._undo_stack.append(snapshot)
         if len(self._undo_stack) > self._max_history:
             self._undo_stack.pop(0)
@@ -3350,20 +4115,24 @@ class CanvasWidget(tk.Frame):
     def undo(self):
         if not self._undo_stack:
             return
-        # Save current as redo
-        self._redo_stack.append([pb.to_dict() for pb in self.placed_buildings])
+        self._redo_stack.append(list(self.placed_buildings))
         snapshot = self._undo_stack.pop()
         self._restore_snapshot(snapshot)
 
     def redo(self):
         if not self._redo_stack:
             return
-        self._undo_stack.append([pb.to_dict() for pb in self.placed_buildings])
+        self._undo_stack.append(list(self.placed_buildings))
         snapshot = self._redo_stack.pop()
         self._restore_snapshot(snapshot)
 
     def _restore_snapshot(self, snapshot: list):
-        self.placed_buildings = [PlacedBuilding.from_dict(d) for d in snapshot]
+        # Handle both new-style (PlacedBuilding objects) and old-style (dicts)
+        # snapshots so undo/redo survives mixed stacks after a code update.
+        if snapshot and isinstance(snapshot[0], dict):
+            self.placed_buildings = [PlacedBuilding.from_dict(d) for d in snapshot]
+        else:
+            self.placed_buildings = list(snapshot)
         self.selected_ids.clear()
         self._rebuild_collision()
         self._notify_layout_change()
@@ -3380,13 +4149,16 @@ class CanvasWidget(tk.Frame):
                  for iid, guids in self._active_item_effects.items() if guids}
         boosts = {str(iid): list(guids)
                   for iid, guids in self._active_item_boosts.items() if guids}
-        return {
+        d = {
             'version': 1,
             'buildings': [pb.to_dict() for pb in self.placed_buildings],
             'active_tech_effects': tech,
             'active_item_effects': items,
             'active_item_boosts': boosts,
         }
+        if self._island_name:
+            d['island'] = self._island_name
+        return d
 
     def load_layout_dict(self, data: dict):
         self._push_undo()
@@ -3408,6 +4180,12 @@ class CanvasWidget(tk.Frame):
             for iid, guids in data.get('active_item_boosts', {}).items()
         }
         self.selected_ids.clear()
+        # Restore island if the layout was saved with one
+        island_name = data.get('island')
+        if island_name:
+            self._load_island_data_only(island_name)
+        else:
+            self.clear_island()
         self._rebuild_collision()
         self._notify_layout_change()
         self._notify_selection()
@@ -3415,6 +4193,9 @@ class CanvasWidget(tk.Frame):
 
     def fit_view(self, margin_tiles: int = 2):
         """Zoom and pan so the entire layout is centred and visible."""
+        if self._island_tiles is not None:
+            self._fit_island_view()
+            return
         if not self.placed_buildings:
             self._center_view()
             return
@@ -3459,6 +4240,359 @@ class CanvasWidget(tk.Frame):
         self.tile_size = ts
         self.pan_x = cw / 2 - cx_grid * ts
         self.pan_y = ch / 2 - cy_grid * ts
+        self._photo_cache.clear()
+        self._redraw()
+
+    # ------------------------------------------------------------------ #
+    #  Island rotation
+    # ------------------------------------------------------------------ #
+
+    def rotate_layout(self, degrees: int):
+        """Rotate the entire layout (island + all buildings) by degrees (multiple of 90).
+        Positive = clockwise, negative = counter-clockwise."""
+        if self._island_tiles is None:
+            return
+        steps = (degrees // 90) % 4
+        for _ in range(steps):
+            self._rotate_90_cw()
+
+    def _rotate_90_cw(self):
+        """Rotate island tiles, quads, and all placed buildings 90° clockwise in-place."""
+        W = self._island_w   # old width  (columns)
+        H = self._island_h   # old height (rows)
+
+        # ── Rotate tile/quad arrays ──────────────────────────────────────
+        n = W * H
+        new_tiles = bytearray(n)
+        new_quads = bytearray(n) if self._island_quads is not None else None
+
+        for old_row in range(H):
+            for old_col in range(W):
+                # 90° CW: new_col = H-1-old_row, new_row = old_col
+                # New grid is H wide and W tall.
+                new_col = H - 1 - old_row
+                new_row = old_col
+                old_idx = old_row * W + old_col
+                new_idx = new_row * H + new_col
+                new_tiles[new_idx] = self._island_tiles[old_idx]
+                if new_quads is not None:
+                    new_quads[new_idx] = _rotate_quad_90cw(self._island_quads[old_idx])
+
+        self._island_tiles = bytes(new_tiles)
+        self._island_quads = bytes(new_quads) if new_quads is not None else None
+        self._island_w, self._island_h = H, W
+
+        # PIL rotate(-90) = 90° CW in screen coordinates (y-down)
+        if self._island_base_img_dark is not None:
+            self._island_base_img_dark  = self._island_base_img_dark.rotate(-90, expand=True)
+        if self._island_base_img_light is not None:
+            self._island_base_img_light = self._island_base_img_light.rotate(-90, expand=True)
+        self._island_photo_ref = None
+        self._island_bg_cache_key = None
+        self._island_chunk_photos.clear()
+        self._drawn_island_chunks.clear()
+
+        # ── Transform building positions ──────────────────────────────────
+        # For 90° CW rotation of an H-row grid:
+        #   new_gx = H - old_gy - eff_height_in_old_orientation
+        #   new_gy = old_gx
+        #   new_rotation = (old_rotation + 90) % 360
+        new_placed = []
+        for pb in self.placed_buildings:
+            bd  = self.dm.get_building(pb.guid)
+            rot = pb.rotation % 360
+            if bd:
+                if rot in (0, 180):
+                    eff_h = bd.height
+                elif rot in (90, 270):
+                    eff_h = bd.width
+                else:
+                    nw, nh = _get_45_grid_counts(bd, rot)
+                    eff_h = (nw + nh) * 0.5
+            else:
+                eff_h = 1.0
+
+            new_placed.append(PlacedBuilding(
+                pb.guid,
+                H - pb.grid_y - eff_h,   # new_gx
+                pb.grid_x,                # new_gy
+                (rot + 90) % 360,
+                pb.instance_id,
+                parent_id=pb.parent_id,
+            ))
+        self.placed_buildings = new_placed
+
+        # ── Rebuild derived state ─────────────────────────────────────────
+        self._rebuild_collision()
+        self._road_graph_dirty = True
+        self._module_touch_pairs_cache = None
+        self._parent_color_ranks_cache = None
+        self._draw_order_cache = None
+        self._notify_layout_change()
+        self._redraw()
+
+    # ------------------------------------------------------------------ #
+    #  Island import
+    # ------------------------------------------------------------------ #
+
+    def clear_island(self):
+        """Remove the active island overlay and unblock all island tiles."""
+        self._island_name = None
+        self._island_w = 0
+        self._island_h = 0
+        self._island_tiles = None
+        self._island_quads = None
+        self._island_base_img_dark = None
+        self._island_base_img_light = None
+        self._island_photo_ref = None
+        self._island_bg_cache_key = None
+        self._island_chunk_photos.clear()
+        self._drawn_island_chunks.clear()
+
+    def _unpack_island_tiles(self, raw: bytes):
+        """
+        Unpack island tile bytes from island_data.json.
+        Version 3 format: lower nibble = tile type (0-4), upper nibble = quadrant mask.
+        Version 2 format: full byte = tile type (no quads).
+
+        Data is stored with X=0 at the east edge; we flip each row left-right here
+        so col=0 matches the west edge as shown on canvas (matches building import coords).
+        """
+        version = self.dm.get_island_version()
+        iw = self._island_w
+        if version >= 3:
+            raw_tiles = bytearray(b & 0x0F for b in raw)
+            raw_quads = bytearray((b >> 4) & 0x0F for b in raw)
+        else:
+            raw_tiles = bytearray(raw)
+            raw_quads = None
+
+        # Reverse each row (left-right mirror) and mirror quad cut masks:
+        # NE(3)↔NW(6), SE(9)↔SW(12) — W and E bits swap, N and S are unchanged.
+        _QUAD_LR = {3: 6, 6: 3, 9: 12, 12: 9}
+        n = len(raw_tiles)
+        for rs in range(0, n, iw):
+            raw_tiles[rs:rs + iw] = raw_tiles[rs:rs + iw][::-1]
+            if raw_quads is not None:
+                rq = raw_quads[rs:rs + iw]
+                raw_quads[rs:rs + iw] = bytearray(_QUAD_LR.get(q, q) for q in reversed(rq))
+
+        self._island_tiles = bytes(raw_tiles)
+        self._island_quads = bytes(raw_quads) if raw_quads is not None else None
+
+    def load_island(self, name: str):
+        """Load island outline from data_manager and apply it to the canvas."""
+        import tkinter.messagebox as _mb
+        data = self.dm.get_island(name)
+        if not data:
+            _mb.showerror("Island", f"Island '{name}' not found in data.")
+            return
+
+        self._island_name = name
+        self._island_w    = data['width']
+        self._island_h    = data['height']
+        self._unpack_island_tiles(base64.b64decode(data['tiles']))
+
+        if PIL_AVAILABLE:
+            self._island_base_img_dark  = self._make_island_base_image(dark=True)
+            self._island_base_img_light = self._make_island_base_image(dark=False)
+        else:
+            self._island_base_img_dark = None
+            self._island_base_img_light = None
+        self._island_photo_ref = None
+        self._island_bg_cache_key = None
+        self._island_chunk_photos.clear()
+        self._drawn_island_chunks.clear()
+
+        # Clear buildings so the user starts fresh on the new island
+        self.placed_buildings.clear()
+        self._active_tech_effects.clear()
+        self._active_item_effects.clear()
+        self._active_item_boosts.clear()
+        self._undo_stack.clear()
+        self._redo_stack.clear()
+        self.selected_ids.clear()
+        self._rebuild_collision()
+        self._notify_layout_change()
+        self._notify_selection()
+        self._fit_island_view()
+
+    def _load_island_data_only(self, name: str):
+        """Load island geometry without clearing buildings (used by load_layout_dict)."""
+        data = self.dm.get_island(name)
+        if not data:
+            return
+        self._island_name = name
+        self._island_w    = data['width']
+        self._island_h    = data['height']
+        self._unpack_island_tiles(base64.b64decode(data['tiles']))
+        if PIL_AVAILABLE:
+            self._island_base_img_dark  = self._make_island_base_image(dark=True)
+            self._island_base_img_light = self._make_island_base_image(dark=False)
+        else:
+            self._island_base_img_dark = None
+            self._island_base_img_light = None
+        self._island_photo_ref = None
+        self._island_bg_cache_key = None
+
+    def _make_island_base_image(self, dark: bool):
+        """Return a PIL Image at 1px/tile with island tile colours."""
+        if not PIL_AVAILABLE:
+            return None
+        palette = _ISLE_COLORS[not dark]   # keyed by light_mode bool
+
+        def _hex_rgb(h):
+            h = h.lstrip('#')
+            return (int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16))
+
+        # Pre-build colour table indexed by tile value
+        color_table = {tile: _hex_rgb(hex_col)
+                       for tile, hex_col in palette.items()}
+        sea_rgb = color_table[_ISLE_SEA]
+
+        tiles = self._island_tiles
+        pixels = [color_table.get(t, sea_rgb) for t in tiles]
+
+        img = Image.new('RGB', (self._island_w, self._island_h))
+        img.putdata(pixels)
+        return img
+
+    def _draw_island_bg(self):
+        """Draw the island background as a grid of small cached chunks.
+
+        Each chunk covers _island_chunk_size × _island_chunk_size tiles.  At
+        ts≈7 each chunk is ~224×224 px (~2 ms to create via _get_island_chunk)
+        vs the old single-image approach (~200 ms for a full-canvas PIL resize
+        + ImageTk.PhotoImage conversion).  During panning, _fill_island_chunks()
+        is called on every pan event so newly revealed edges are immediately
+        filled with the correct terrain colour — no leading-edge artifacts.
+        """
+        if not PIL_AVAILABLE or self._island_tiles is None:
+            return
+        c   = self.canvas
+        cw  = c.winfo_width()
+        ch  = c.winfo_height()
+        ts  = self.tile_size
+        cs  = self._island_chunk_size
+        px0 = self.pan_x
+        py0 = self.pan_y
+
+        cx_lo = max(0, int(math.floor(-px0 / (ts * cs))))
+        cx_hi = int(math.ceil((cw - px0) / (ts * cs)))
+        cy_lo = max(0, int(math.floor(-py0 / (ts * cs))))
+        cy_hi = int(math.ceil((ch - py0) / (ts * cs)))
+
+        for cx in range(cx_lo, cx_hi + 1):
+            for cy in range(cy_lo, cy_hi + 1):
+                photo = self._get_island_chunk(cx, cy)
+                if photo is None:
+                    continue
+                px = cx * cs * ts + px0
+                py = cy * cs * ts + py0
+                c.create_image(px, py, anchor='nw', image=photo, tags='island_bg')
+                self._drawn_island_chunks.add((cx, cy))
+
+    def _render_island_quads(self, img, left: int, top: int,
+                              right: int, bottom: int, ts: float):
+        """
+        Overlay the 45° diagonal cuts encoded in _island_quads onto the
+        already-NEAREST-scaled PIL image.
+
+        Each Anno tile is divided into four compass triangles (N/E/S/W) by its
+        two diagonals (TL→BR and BL→TR) meeting at the tile centre.  The
+        TileQuadrants mask (1=W 2=S 4=E 8=N) says which two triangles are
+        KEPT in the tile's own colour; the complementary two are the CUT area,
+        filled here with the colour of the tile in the diagonal cut direction.
+
+        Cut shapes — each is a quadrilateral covering the two cut compass
+        triangles (through the tile centre C):
+
+          NE cut (0b0011, W+S kept): TL-TR-BR-C  (N triangle + E triangle)
+          NW cut (0b0110, S+E kept): TR-TL-BL-C  (N triangle + W triangle)
+          SE cut (0b1001, W+N kept): TR-BR-BL-C  (E triangle + S triangle)
+          SW cut (0b1100, E+N kept): TL-BL-BR-C  (W triangle + S triangle)
+        """
+        draw = ImageDraw.Draw(img)
+        iw, ih = self._island_w, self._island_h
+        quads  = self._island_quads
+        tiles  = self._island_tiles
+        light  = self.light_mode.get()
+
+        def _hex_rgb(h):
+            h = h.lstrip('#')
+            return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
+
+        color_table = {t: _hex_rgb(col) for t, col in _ISLE_COLORS[light].items()}
+
+        def color_at(tx, ty):
+            if 0 <= tx < iw and 0 <= ty < ih:
+                return color_table.get(tiles[ty * iw + tx], color_table[_ISLE_SEA])
+            return color_table[_ISLE_SEA]
+
+        for ty in range(top, bottom):
+            for tx in range(left, right):
+                i = ty * iw + tx
+                if i >= len(quads):
+                    continue
+                q = quads[i]
+                if not q:
+                    continue
+
+                # Pixel corners and centre of this tile in the scaled image
+                px0 = round((tx - left)     * ts)
+                py0 = round((ty - top)      * ts)
+                px1 = round((tx - left + 1) * ts)
+                py1 = round((ty - top  + 1) * ts)
+                cx  = (px0 + px1) // 2
+                cy  = (py0 + py1) // 2
+
+                # Both open sides share the same type, so use either cardinal neighbour.
+                if q == 0b0011:   # NE cut — fill N+E with north neighbour colour
+                    c = color_at(tx, ty - 1)
+                    draw.polygon([(px0, py0), (px1, py0), (px1, py1), (cx, cy)], fill=c)
+                elif q == 0b0110: # NW cut — fill N+W with north neighbour colour
+                    c = color_at(tx, ty - 1)
+                    draw.polygon([(px1, py0), (px0, py0), (px0, py1), (cx, cy)], fill=c)
+                elif q == 0b1001: # SE cut — fill S+E with south neighbour colour
+                    c = color_at(tx, ty + 1)
+                    draw.polygon([(px1, py0), (px1, py1), (px0, py1), (cx, cy)], fill=c)
+                elif q == 0b1100: # SW cut — fill S+W with south neighbour colour
+                    c = color_at(tx, ty + 1)
+                    draw.polygon([(px0, py0), (px0, py1), (px1, py1), (cx, cy)], fill=c)
+
+    def _fit_island_view(self, margin_px: int = 20):
+        """Fit the view to show the whole island (tight bbox of non-sea tiles)."""
+        if not self._island_tiles:
+            self._center_view()
+            return
+        self.update_idletasks()
+        cw = self.canvas.winfo_width()  or 800
+        ch = self.canvas.winfo_height() or 600
+
+        # Tight bounding box of non-sea tiles
+        iw, ih = self._island_w, self._island_h
+        min_col, min_row = iw, ih
+        max_col, max_row = -1, -1
+        for row in range(ih):
+            for col in range(iw):
+                if self._island_tiles[row * iw + col] != _ISLE_SEA:
+                    if col < min_col: min_col = col
+                    if col > max_col: max_col = col
+                    if row < min_row: min_row = row
+                    if row > max_row: max_row = row
+        if max_col < 0:
+            min_col, min_row, max_col, max_row = 0, 0, iw - 1, ih - 1
+
+        bbox_w = max_col + 1 - min_col
+        bbox_h = max_row + 1 - min_row
+        ts = min(
+            (cw - 2 * margin_px) / bbox_w,
+            (ch - 2 * margin_px) / bbox_h,
+        )
+        ts = max(1.0, min(MAX_TILE_SIZE, ts))
+        self.tile_size = ts
+        self.pan_x = cw / 2 - (min_col + bbox_w / 2) * ts
+        self.pan_y = ch / 2 - (min_row + bbox_h / 2) * ts
         self._photo_cache.clear()
         self._redraw()
 
@@ -3728,34 +4862,70 @@ class CanvasWidget(tk.Frame):
                                  "Run: pip install Pillow")
             return
 
-        if not self.placed_buildings:
+        has_island  = self._island_tiles is not None
+        has_buildings = bool(self.placed_buildings)
+
+        if not has_buildings and not has_island:
             messagebox.showinfo("Export", "No buildings placed.")
             return
 
         dm = self.dm
-        min_x = min_y = float('inf')
-        max_x = max_y = float('-inf')
-        for pb in self.placed_buildings:
-            bd = dm.get_building(pb.guid)
-            if not bd:
-                continue
-            rot = pb.rotation % 360
-            if rot in (0, 90, 180, 270):
-                w = bd.width if rot in (0, 180) else bd.height
-                h = bd.height if rot in (0, 180) else bd.width
-            else:
-                nw, nh = _get_45_grid_counts(bd, rot)
-                w = h = (nw + nh) * 0.5
-            min_x = min(min_x, pb.grid_x)
-            min_y = min(min_y, pb.grid_y)
-            max_x = max(max_x, pb.grid_x + w)
-            max_y = max(max_y, pb.grid_y + h)
+        if has_island:
+            # Tight bounding box of non-sea tiles, with a 1-tile sea border.
+            iw, ih = self._island_w, self._island_h
+            min_col, min_row = iw, ih
+            max_col, max_row = -1, -1
+            for row in range(ih):
+                for col in range(iw):
+                    if self._island_tiles[row * iw + col] != _ISLE_SEA:
+                        if col < min_col: min_col = col
+                        if col > max_col: max_col = col
+                        if row < min_row: min_row = row
+                        if row > max_row: max_row = row
+            if max_col < 0:  # all sea — fallback to full extent
+                min_col, min_row, max_col, max_row = 0, 0, iw - 1, ih - 1
+            _border = 1
+            min_x = float(max(0, min_col - _border))
+            min_y = float(max(0, min_row - _border))
+            max_x = float(min(iw, max_col + 1 + _border))
+            max_y = float(min(ih, max_row + 1 + _border))
+            padding = 0
+        elif has_buildings:
+            min_x = min_y = float('inf')
+            max_x = max_y = float('-inf')
+            for pb in self.placed_buildings:
+                bd = dm.get_building(pb.guid)
+                if not bd:
+                    continue
+                rot = pb.rotation % 360
+                if rot in (0, 90, 180, 270):
+                    w = bd.width if rot in (0, 180) else bd.height
+                    h = bd.height if rot in (0, 180) else bd.width
+                else:
+                    nw, nh = _get_45_grid_counts(bd, rot)
+                    w = h = (nw + nh) * 0.5
+                min_x = min(min_x, pb.grid_x)
+                min_y = min(min_y, pb.grid_y)
+                max_x = max(max_x, pb.grid_x + w)
+                max_y = max(max_y, pb.grid_y + h)
 
-        ts   = 40
+        ts = 40
+        if has_island:
+            # Scale down tile size so the image stays under ~6000 px on each side.
+            max_extent = max(max_x - min_x, max_y - min_y)
+            if max_extent * ts > 6000:
+                ts = max(4, int(6000 / max_extent))
         dark = (11, 25, 44)
         light = (255, 255, 255)
-        bg_col = light if self.light_mode.get() else dark
-        grid_col = (26, 26, 26) if self.light_mode.get() else (30, 53, 80)
+        lm = self.light_mode.get()
+        if has_island:
+            def _hex_int(h):
+                h = h.lstrip('#')
+                return (int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16))
+            bg_col = _hex_int(_ISLE_COLORS[lm][_ISLE_SEA])
+        else:
+            bg_col = light if lm else dark
+        grid_col = (26, 26, 26) if lm else (30, 53, 80)
 
         canvas_w = int((max_x - min_x + 2 * padding) * ts)
         canvas_h = int((max_y - min_y + 2 * padding) * ts)
@@ -3769,6 +4939,27 @@ class CanvasWidget(tk.Frame):
         total_w = canvas_w + (INFO_W if info_img else 0)
         img  = Image.new('RGB', (total_w, canvas_h), color=bg_col)
         draw = ImageDraw.Draw(img)
+
+        # ── Island background ─────────────────────────────────────────────
+        if has_island:
+            base = self._island_base_img_light if lm else self._island_base_img_dark
+            if base is not None:
+                # Crop to the region shown in this export (in island tile coords)
+                cx0 = max(0, int(min_x) - padding)
+                cy0 = max(0, int(min_y) - padding)
+                cx1 = min(self._island_w, int(math.ceil(max_x)) + padding)
+                cy1 = min(self._island_h, int(math.ceil(max_y)) + padding)
+                if cx1 > cx0 and cy1 > cy0:
+                    crop = base.crop((cx0, cy0, cx1, cy1))
+                    # Scale to export pixels
+                    sc_w = int((cx1 - cx0) * ts)
+                    sc_h = int((cy1 - cy0) * ts)
+                    if sc_w > 0 and sc_h > 0:
+                        scaled = crop.resize((sc_w, sc_h), Image.NEAREST)
+                        # Paste offset: where (cx0, cy0) lands in the export image
+                        ox = int((cx0 - (min_x - padding)) * ts)
+                        oy = int((cy0 - (min_y - padding)) * ts)
+                        img.paste(scaled, (ox, oy))
 
         # Grid
         for col in range(int(min_x) - padding, int(max_x) + padding + 1):

@@ -158,7 +158,8 @@
   "13810": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 65,
     "guid": 13810,
@@ -196,7 +197,8 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -245,7 +247,9 @@
   },
   "145220": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 68,
     "guid": 145220,
@@ -288,7 +292,9 @@
   },
   "145221": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 157,
     "guid": 145221,
@@ -324,6 +330,36 @@
       "spanish": "Necesidad",
       "traditional_chinese": "​需求"
     },
+    "productionRegions": [
+      "Roman"
+    ],
+    "storageLevel": "Building"
+  },
+  "152719": {
+    "associatedRegion": [
+      "Roman"
+    ],
+    "basePrice": 0,
+    "guid": 152719,
+    "icon": "data/ui/fhd/dlc02/icon_content/hippodrome/icon_3d_construction_category_hippodrome.png",
+    "infoDescription": null,
+    "isAbstract": true,
+    "isWorkforce": false,
+    "name": {
+      "brazilian": "Hipódromo",
+      "english": "Hippodrome",
+      "french": "Hippodrome",
+      "german": "Hippodrom",
+      "italian": "Ippodromo",
+      "japanese": "​競馬​場",
+      "korean": "​히포드롬",
+      "polish": "Hipodrom",
+      "russian": "Ипподром",
+      "simplified_chinese": "​赛马​场",
+      "spanish": "Hipódromo",
+      "traditional_chinese": "​賽馬​場"
+    },
+    "productCategory": null,
     "productionRegions": [
       "Roman"
     ],
@@ -422,7 +458,8 @@
   "2063": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 12,
     "guid": 2063,
@@ -460,13 +497,15 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2068": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 4,
     "guid": 2068,
@@ -503,14 +542,16 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2069": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 6,
     "guid": 2069,
@@ -548,13 +589,16 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2070": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 12,
     "guid": 2070,
@@ -591,13 +635,16 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2071": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 12,
     "guid": 2071,
@@ -634,13 +681,15 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2072": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 12,
     "guid": 2072,
@@ -677,14 +726,16 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2073": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 2,
     "guid": 2073,
@@ -722,7 +773,8 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -774,7 +826,8 @@
   "2075": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 32,
     "guid": 2075,
@@ -812,14 +865,16 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2076": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 11,
     "guid": 2076,
@@ -857,14 +912,16 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2077": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 2,
     "guid": 2077,
@@ -902,14 +959,16 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2078": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 6,
     "guid": 2078,
@@ -947,7 +1006,8 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -997,7 +1057,8 @@
   "2080": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 5,
     "guid": 2080,
@@ -1035,7 +1096,8 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -1085,7 +1147,8 @@
   "2085": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 4,
     "guid": 2085,
@@ -1123,7 +1186,8 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -1345,7 +1409,8 @@
   "2091": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 8,
     "guid": 2091,
@@ -1383,13 +1448,15 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2093": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 4,
     "guid": 2093,
@@ -1426,7 +1493,8 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -1518,7 +1586,8 @@
   },
   "2099": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 2,
     "guid": 2099,
@@ -1555,13 +1624,15 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2100": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 2,
     "guid": 2100,
@@ -1598,13 +1669,15 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2101": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 6,
     "guid": 2101,
@@ -1641,13 +1714,15 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2102": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 6,
     "guid": 2102,
@@ -1684,13 +1759,15 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2103": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 2,
     "guid": 2103,
@@ -1727,7 +1804,8 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -1743,17 +1821,17 @@
     "isWorkforce": false,
     "name": {
       "brazilian": "Auroques",
-      "english": "Ochs",
-      "french": "Bœufs",
-      "german": "Ochsen",
+      "english": "Aurochs",
+      "french": "Aurochs",
+      "german": "Auerochsen",
       "italian": "Uri",
-      "japanese": "​牛",
-      "korean": "​소",
-      "polish": "Woły",
+      "japanese": "​オーロックス",
+      "korean": "​들소",
+      "polish": "Tury",
       "russian": "Коровы",
-      "simplified_chinese": "​牛",
-      "spanish": "Bueyes",
-      "traditional_chinese": "​公牛"
+      "simplified_chinese": "​野牛",
+      "spanish": "Uros",
+      "traditional_chinese": "​原​牛"
     },
     "productCategory": {
       "brazilian": "Matéria-prima",
@@ -1862,7 +1940,9 @@
   },
   "2110": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 17,
     "guid": 2110,
@@ -1900,7 +1980,8 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -1950,7 +2031,8 @@
   "2115": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 15,
     "guid": 2115,
@@ -1988,7 +2070,8 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -2038,7 +2121,8 @@
   "2119": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 10,
     "guid": 2119,
@@ -2076,13 +2160,15 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2121": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 36,
     "guid": 2121,
@@ -2119,7 +2205,8 @@
       "traditional_chinese": "​中間​產品"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -2168,7 +2255,8 @@
   },
   "2124": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 25,
     "guid": 2124,
@@ -2205,7 +2293,8 @@
       "traditional_chinese": "​中間​產品"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -2254,7 +2343,8 @@
   },
   "2127": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 14,
     "guid": 2127,
@@ -2291,7 +2381,8 @@
       "traditional_chinese": "​中間​產品"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -2383,7 +2474,8 @@
   },
   "2131": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 8,
     "guid": 2131,
@@ -2420,14 +2512,16 @@
       "traditional_chinese": "​中間​產品"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2132": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 15,
     "guid": 2132,
@@ -2465,7 +2559,8 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -2557,7 +2652,8 @@
   },
   "2136": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 12,
     "guid": 2136,
@@ -2594,14 +2690,16 @@
       "traditional_chinese": "​需求"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2137": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 26,
     "guid": 2137,
@@ -2639,13 +2737,16 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2138": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 45,
     "guid": 2138,
@@ -2682,7 +2783,9 @@
       "traditional_chinese": "​需求"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -2731,8 +2834,7 @@
   },
   "2140": {
     "associatedRegion": [
-      "Roman",
-      "Celtic"
+      "Roman"
     ],
     "basePrice": 99,
     "guid": 2140,
@@ -2776,7 +2878,8 @@
   "2141": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 12,
     "guid": 2141,
@@ -2814,7 +2917,8 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -2863,7 +2967,8 @@
   },
   "2143": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 39,
     "guid": 2143,
@@ -2900,14 +3005,16 @@
       "traditional_chinese": "​需求"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2144": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 41,
     "guid": 2144,
@@ -2944,7 +3051,8 @@
       "traditional_chinese": "​需求"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -2994,7 +3102,8 @@
   },
   "2146": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 198,
     "guid": 2146,
@@ -3031,13 +3140,15 @@
       "traditional_chinese": "​需求"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2147": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 143,
     "guid": 2147,
@@ -3081,7 +3192,8 @@
   "2149": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 36,
     "guid": 2149,
@@ -3118,7 +3230,8 @@
       "traditional_chinese": "​需求"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -3168,7 +3281,8 @@
   "2151": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 110,
     "guid": 2151,
@@ -3212,7 +3326,7 @@
   "2152": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Egyptian"
     ],
     "basePrice": 93,
     "guid": 2152,
@@ -3249,14 +3363,16 @@
       "traditional_chinese": "​建築​材料"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2153": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 24,
     "guid": 2153,
@@ -3293,13 +3409,16 @@
       "traditional_chinese": "​需求"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2154": {
     "associatedRegion": [
-      "Celtic"
+      "Roman",
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 20,
     "guid": 2154,
@@ -3336,7 +3455,8 @@
       "traditional_chinese": "​需求"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -3387,7 +3507,8 @@
   "2156": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 39,
     "guid": 2156,
@@ -3559,7 +3680,9 @@
   },
   "2161": {
     "associatedRegion": [
-      "Celtic"
+      "Roman",
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 62,
     "guid": 2161,
@@ -3603,7 +3726,8 @@
   "2162": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 94,
     "guid": 2162,
@@ -3777,7 +3901,8 @@
   "2171": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 24,
     "guid": 2171,
@@ -3815,14 +3940,16 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2172": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 20,
     "guid": 2172,
@@ -3860,14 +3987,16 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2173": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 42,
     "guid": 2173,
@@ -3905,14 +4034,16 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2174": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 6,
     "guid": 2174,
@@ -3950,14 +4081,16 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2176": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 18,
     "guid": 2176,
@@ -3995,14 +4128,16 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2178": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 38,
     "guid": 2178,
@@ -4040,14 +4175,14 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "2179": {
     "associatedRegion": [
-      "Roman",
-      "Celtic"
+      "Roman"
     ],
     "basePrice": 52,
     "guid": 2179,
@@ -4411,7 +4546,8 @@
     "productCategory": null,
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -4471,7 +4607,8 @@
     },
     "productCategory": null,
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -4501,7 +4638,8 @@
     },
     "productCategory": null,
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -4533,7 +4671,8 @@
     "productCategory": null,
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -4627,7 +4766,8 @@
     "productCategory": null,
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -4659,7 +4799,8 @@
     "productCategory": null,
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -4721,7 +4862,8 @@
     "productCategory": null,
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -4801,7 +4943,8 @@
   "31694": {
     "associatedRegion": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 4,
     "guid": 31694,
@@ -4839,7 +4982,8 @@
     },
     "productionRegions": [
       "Roman",
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -4890,7 +5034,8 @@
   },
   "31697": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 80,
     "guid": 31697,
@@ -4927,13 +5072,15 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
   "31698": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 108,
     "guid": 31698,
@@ -4970,7 +5117,8 @@
       "traditional_chinese": "​中間​產品"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -5279,7 +5427,8 @@
   },
   "31708": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 96,
     "guid": 31708,
@@ -5322,7 +5471,8 @@
   },
   "31709": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 38,
     "guid": 31709,
@@ -5359,7 +5509,8 @@
       "traditional_chinese": "​建築​材料"
     },
     "productionRegions": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
@@ -5500,7 +5651,8 @@
   },
   "55954": {
     "associatedRegion": [
-      "Celtic"
+      "Celtic",
+      "Egyptian"
     ],
     "basePrice": 30,
     "guid": 55954,
@@ -6054,7 +6206,8 @@
   },
   "8563": {
     "associatedRegion": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "basePrice": 15,
     "guid": 8563,
@@ -6091,7 +6244,8 @@
       "traditional_chinese": "​原料"
     },
     "productionRegions": [
-      "Roman"
+      "Roman",
+      "Egyptian"
     ],
     "storageLevel": "Building"
   },
